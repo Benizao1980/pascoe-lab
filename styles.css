@@ -211,3 +211,9 @@ p{margin:0 0 1rem}
   h1{font-size:clamp(3rem,15vw,5rem)}
   .publication-card{grid-template-columns:1fr}
 }
+
+.hero-art>img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.photo-triptych figure{overflow:hidden}
+.photo-triptych img{transition:transform .35s ease}
+.photo-triptych figure:hover img{transform:scale(1.015)}
+@media(prefers-reduced-motion:reduce){.photo-triptych img{transition:none}}

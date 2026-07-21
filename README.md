@@ -28,3 +28,17 @@ repository and commit to `main`. GitHub Pages will deploy automatically.
 4. Import exact URLs for selected Bluesky/X threads.
 5. Add student and collaborator profiles only with consent.
 6. Download and host project photographs locally if long-term independence from the CCC site is preferred.
+
+
+## Version 2.2 photo and technical pass
+
+- Curated professional photographs recovered from `Photos.zip`
+- Local, web-optimised WebP assets
+- New homepage research collage
+- Expanded GETCampy and supervision imagery
+- Open Graph/social sharing image
+- Favicon, sitemap, robots.txt and 404 page
+- Redirect directories for common legacy URLs
+- Canonical metadata on substantive pages
+
+See `PHOTO_AUDIT.csv` for provisional photo use and remaining checks.

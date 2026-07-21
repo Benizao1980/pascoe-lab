@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://pascoelab.com/sitemap.xml

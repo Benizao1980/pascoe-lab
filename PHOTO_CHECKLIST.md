@@ -1,22 +1,9 @@
-# Photo and content checklist
+# Remaining photo checks
 
-The redesign intentionally uses only public CCC project images that do not focus on
-identifiable study participants or children.
+The first curation pass is complete. Before treating captions as final:
 
-Currently linked remotely:
-
-- workshop-group.jpg
-- lab-practical.jpg
-- fran-training.jpg
-- livestock-sheep.jpg
-- water-pump.jpg
-- gambia-setting.jpg
-
-Before the final production pass:
-
-- Recover the original Pascoe Lab photographs from the GoDaddy media library.
-- Confirm photographer credit and publication permission.
-- Export web-sized copies (ideally 1600–2200 px wide, JPEG/WebP).
-- Add descriptive alt text and a concise caption.
-- Do not publish identifiable community or participant photographs without documented consent.
-- Replace remote project-photo links with local files under `assets/photos/` if desired.
+1. Confirm the location, date, project and photographer for each provisionally used image.
+2. Confirm permission for group photographs and conference photography.
+3. Choose a preferred portrait for the People page.
+4. Replace figure screenshots with publication-quality exports where available.
+5. Keep identifiable study-participant or community images off the public site unless explicit consent is documented.
