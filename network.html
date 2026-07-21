@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Global network | Pascoe Lab</title>
+  <meta name="description" content="Map of project hubs, collaborators and study settings across the Pascoe Lab network.">
+  <meta name="theme-color" content="#6f3c48">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,650;9..144,750&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="masthead wrap">
+    <a class="brand" href="index.html" aria-label="Pascoe Lab home">
+      <span class="brand-mark" aria-hidden="true">PL</span>
+      <span><strong>Pascoe Lab</strong><small>Pathogen genomics · evolution · One Health</small></span>
+    </a>
+    <button class="menu-button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+      <a href="research.html">Research</a><a href="projects.html">Projects</a><a href="publications.html">Publications</a><a href="stories.html">Stories</a><a href="people.html">People</a><a class="active" href="network.html">Network</a><a href="resources.html">Resources</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+
+<section class="page-hero tone-teal">
+  <div class="wrap page-hero-grid">
+    <div>
+      <p class="kicker">Global network</p>
+      <h1>Projects live in places, institutions and relationships.</h1>
+      <p class="lead">An evolving map of research hubs, study settings, sequencing and analytical partners, and training connections. It is illustrative rather than exhaustive.</p>
+    </div>
+    <span class="folio">06</span>
+  </div>
+</section>
+<section class="section"><div class="wrap">
+<div class="map-shell"><div id="collaborator-map" role="region" aria-label="Interactive map of collaborators and study locations"></div>
+<div class="map-legend"><span><i class="legend-dot" style="background:#6f3c48"></i> Core / UK</span><span><i class="legend-dot" style="background:#d3a647"></i> GETcampy / CCC</span><span><i class="legend-dot" style="background:#608c86"></i> One Health / AMR</span><span><i class="legend-dot" style="background:#82a6b5"></i> Wider genomic network</span></div></div>
+<div id="network-fallback" class="network-list" aria-label="Collaborator location list"></div>
+</div></section>
+<section class="section" style="background:#efd0c8"><div class="wrap split">
+<div><p class="kicker">What a pin means</p><h2>Different kinds of connection.</h2></div>
+<div class="accordion">
+<details open><summary>Project hub</summary><p>A site coordinating study activity, sampling, laboratory work, analysis or training.</p></details>
+<details><summary>Study setting</summary><p>A location represented in a dataset or field programme; not necessarily a permanent institutional partnership.</p></details>
+<details><summary>Research collaborator</summary><p>A longer-term scientific relationship spanning projects, papers, methods or supervision.</p></details>
+<details><summary>Training and sequencing link</summary><p>A site contributing specialist infrastructure, workshops, mentoring or analytical support.</p></details>
+</div>
+</div></section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <div class="footer-brand">Pascoe Lab</div>
+      <p>Genomics, evolution and epidemiology of bacterial pathogens across global populations.</p>
+    </div>
+    <div>
+      <h2>Profiles</h2>
+      <p><a href="https://orcid.org/0000-0001-6376-5121">ORCID</a> ·
+      <a href="https://scholar.google.co.uk/citations?hl=en&user=UQrZ-fgAAAAJ">Google Scholar</a> ·
+      <a href="https://github.com/Benizao1980">GitHub</a></p>
+      <p><a href="https://bsky.app/profile/benizao.bsky.social">Bluesky</a> ·
+      <a href="https://www.linkedin.com/in/benpascoe">LinkedIn</a> ·
+      <a href="https://www.x.com/Benizao">X/Twitter</a></p>
+    </div>
+    <div>
+      <h2>Project links</h2>
+      <p><a href="https://campylobacter-control-campaign.github.io/website/">Campylobacter Control Campaign</a><br>
+      <a href="https://github.com/Campylobacter-control-campaign">CCC code and workflows</a></p>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>© 2026 Pascoe Lab</span>
+    <span>Designed as an open, version-controlled research site.</span>
+  </div>
+</footer>
+<script src="script.js"></script>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+const places = [
+ {name:'Oxford, United Kingdom',lat:51.7520,lng:-1.2577,type:'Core / UK',desc:'Pathogen genomics, population biology, AMR and supervision.'},
+ {name:'Swansea, United Kingdom',lat:51.6214,lng:-3.9436,type:'Core / UK',desc:'Sequencing, training and long-term pathogen genomics collaboration.'},
+ {name:'Iquitos, Peru',lat:-3.7437,lng:-73.2516,type:'Wider genomic network',desc:'Childhood enteric disease, Campylobacter population genomics and AMR.'},
+ {name:'The Gambia',lat:13.4549,lng:-16.5790,type:'GETcampy / CCC',desc:'GETcampy and CCC field, laboratory and training hub.'},
+ {name:'Ouagadougou, Burkina Faso',lat:12.3714,lng:-1.5197,type:'GETcampy / CCC',desc:'Enteric disease, animal sampling and regional collaboration.'},
+ {name:'Kumasi, Ghana',lat:6.6885,lng:-1.6244,type:'GETcampy / CCC',desc:'One Health sampling and genomic epidemiology collaboration.'},
+ {name:"Taabo, Côte d'Ivoire",lat:6.2356,lng:-5.1088,type:'GETcampy / CCC',desc:'CCC One Health study setting and regional hub.'},
+ {name:'Lagos, Nigeria',lat:6.5244,lng:3.3792,type:'GETcampy / CCC',desc:'CCC sampling, microbiology and genomic epidemiology.'},
+ {name:'Chiang Mai, Thailand',lat:18.7883,lng:98.9853,type:'One Health / AMR',desc:'Poultry, pigs, food systems, AMR and training.'},
+ {name:'Bangladesh',lat:23.8103,lng:90.4125,type:'Wider genomic network',desc:'Childhood enteric disease and international cohort collaboration.'},
+ {name:'India',lat:12.9716,lng:77.5946,type:'Wider genomic network',desc:'Genomic surveillance of AMR and vaccine-relevant diversity.'},
+ {name:'Cairo, Egypt',lat:30.0444,lng:31.2357,type:'One Health / AMR',desc:'Campylobacter, staphylococci and AMR population genomics.'},
+ {name:'Cotonou, Benin',lat:6.3703,lng:2.3912,type:'GETcampy / CCC',desc:'Regional CCC and enteric genomic network.'},
+ {name:'Maputo, Mozambique',lat:-25.9692,lng:32.5732,type:'Wider genomic network',desc:'Child-health and genomic surveillance connections.'}
+];
+const colors = {'Core / UK':'#6f3c48','GETcampy / CCC':'#d3a647','One Health / AMR':'#608c86','Wider genomic network':'#82a6b5'};
+const fallback = document.getElementById('network-fallback');
+places.forEach(p => fallback.insertAdjacentHTML('beforeend', `<article class="network-place"><p class="meta">${p.type}</p><h3>${p.name}</h3><p>${p.desc}</p></article>`));
+if (window.L) {
+ const map = L.map('collaborator-map',{scrollWheelZoom:false}).setView([18,5],2);
+ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'&copy; OpenStreetMap contributors'}).addTo(map);
+ places.forEach(p => {
+   const marker = L.circleMarker([p.lat,p.lng],{radius:9,color:'#263238',weight:2,fillColor:colors[p.type],fillOpacity:1}).addTo(map);
+   marker.bindPopup(`<strong>${p.name}</strong><br><small>${p.type}</small><p>${p.desc}</p>`);
+ });
+} else {
+ document.getElementById('collaborator-map').innerHTML = '<p class="loading">The interactive map could not load. The complete location list is shown below.</p>';
+}
+</script>
+
+</body>
+</html>

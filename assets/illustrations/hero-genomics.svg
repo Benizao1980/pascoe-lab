@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" role="img" aria-labelledby="t d">
+<title id="t">Abstract pathogen genomics illustration</title>
+<desc id="d">Symmetrical bacterial forms, DNA lines and sampling points in a muted scientific palette.</desc>
+<rect width="900" height="700" fill="#d8a09a"/>
+<rect x="34" y="34" width="832" height="632" rx="6" fill="#f7eddc" stroke="#6f3c48" stroke-width="3"/>
+<g fill="none" stroke="#6f3c48" stroke-width="4">
+  <path d="M108 350 C215 175 325 175 450 350 S685 525 792 350"/>
+  <path d="M108 350 C215 525 325 525 450 350 S685 175 792 350"/>
+</g>
+<g fill="#d3a647" stroke="#263238" stroke-width="3">
+  <circle cx="155" cy="350" r="30"/><circle cx="300" cy="250" r="22"/>
+  <circle cx="300" cy="450" r="22"/><circle cx="450" cy="350" r="38"/>
+  <circle cx="600" cy="250" r="22"/><circle cx="600" cy="450" r="22"/>
+  <circle cx="745" cy="350" r="30"/>
+</g>
+<g fill="#608c86" stroke="#263238" stroke-width="3">
+  <path d="M182 128c85-45 146 20 124 91-24 78-152 70-173-8-12-43 8-67 49-83z"/>
+  <path d="M718 572c-85 45-146-20-124-91 24-78 152-70 173 8 12 43-8 67-49 83z"/>
+</g>
+<g stroke="#263238" stroke-width="3">
+  <path d="M137 169l-42-22m49 45l-55 6m70 17l-31 43"/>
+  <path d="M763 531l42 22m-49-45l55-6m-70-17l31-43"/>
+</g>
+<g fill="#82a6b5">
+  <rect x="385" y="104" width="130" height="66" rx="33"/>
+  <rect x="385" y="530" width="130" height="66" rx="33"/>
+</g>
+<text x="450" y="143" text-anchor="middle" font-family="Georgia,serif" font-size="22" fill="#263238">GENOMES</text>
+<text x="450" y="570" text-anchor="middle" font-family="Georgia,serif" font-size="22" fill="#263238">POPULATIONS</text>
+</svg>
