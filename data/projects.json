@@ -1,0 +1,54 @@
+[
+  {
+    "id": "getcampy",
+    "code": "GETcampy",
+    "title": "Childhood enteric disease across One Health systems",
+    "summary": "Coordinated sampling and genomics linking childhood infection to household, animal, food and environmental reservoirs.",
+    "image": "assets/photos/getcampy-presentation.webp",
+    "imageAlt": "Presentation describing the GETcampy genomic epidemiology programme",
+    "imagePosition": "center 48%",
+    "url": "project-getcampy.html",
+    "accent": "rose",
+    "featuredHome": true,
+    "order": 1
+  },
+  {
+    "id": "ccc",
+    "code": "CCC",
+    "title": "Campylobacter Control Campaign",
+    "summary": "Connecting surveillance, source attribution, modelling, training and practical prevention across high-burden settings.",
+    "image": "assets/photos/ccc-stella-kanny.webp",
+    "imageAlt": "Stella and Kanny examining a Campylobacter culture during laboratory work",
+    "imagePosition": "center 52%",
+    "url": "project-ccc.html",
+    "accent": "green",
+    "featuredHome": true,
+    "order": 2
+  },
+  {
+    "id": "peru",
+    "code": "PERU",
+    "title": "Campylobacter in the Peruvian Amazon",
+    "summary": "Population genomics, antimicrobial resistance, source attribution and childhood infection in and around Iquitos.",
+    "image": "assets/photos/market-sampling.webp",
+    "imageAlt": "Poultry and food-system fieldwork in an urban market",
+    "imagePosition": "center 52%",
+    "url": "project-peru.html",
+    "accent": "mustard",
+    "featuredHome": true,
+    "order": 3
+  },
+  {
+    "id": "hurizon",
+    "code": "HU-RIZON",
+    "title": "Wildlife, poultry and antimicrobial-resistance ecology",
+    "summary": "Metagenomics of microbial communities and resistance across migratory birds, poultry and human-influenced environments.",
+    "image": "assets/illustrations/hurizon.svg",
+    "imageAlt": "Illustration of wild birds, environments and microbial networks",
+    "imagePosition": "center",
+    "url": "project-hurizon.html",
+    "accent": "blue",
+    "featuredHome": true,
+    "order": 4
+  }
+]

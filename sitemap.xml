@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://pascoelab.com/404.html</loc></url>
   <url><loc>https://pascoelab.com/all-publications.html</loc></url>
   <url><loc>https://pascoelab.com/</loc></url>
   <url><loc>https://pascoelab.com/network.html</loc></url>
@@ -7,7 +8,9 @@
   <url><loc>https://pascoelab.com/project-ccc.html</loc></url>
   <url><loc>https://pascoelab.com/project-getcampy.html</loc></url>
   <url><loc>https://pascoelab.com/project-hurizon.html</loc></url>
+  <url><loc>https://pascoelab.com/project-peru.html</loc></url>
   <url><loc>https://pascoelab.com/projects.html</loc></url>
+  <url><loc>https://pascoelab.com/publications/index.html</loc></url>
   <url><loc>https://pascoelab.com/publications.html</loc></url>
   <url><loc>https://pascoelab.com/research.html</loc></url>
   <url><loc>https://pascoelab.com/resources.html</loc></url>

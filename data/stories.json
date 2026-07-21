@@ -1,0 +1,50 @@
+[
+  {
+    "id": "source-attribution",
+    "title": "Attributing the source of Campylobacter infections",
+    "format": "Behind the paper",
+    "date": "2024-11-10",
+    "summary": "How national genomic surveillance and machine learning can map the likely origins of human infection.",
+    "image": "assets/photos/source-attribution-figure.webp",
+    "imageAlt": "Multi-panel genomic source-attribution figure",
+    "url": "stories/source-attribution.html",
+    "tags": [
+      "Campylobacter",
+      "Machine learning",
+      "Source attribution"
+    ],
+    "featuredHome": true
+  },
+  {
+    "id": "one-health-sampling",
+    "title": "Sampling an interconnected One Health system",
+    "format": "Field note",
+    "date": "2026-07-01",
+    "summary": "Why credible source attribution begins with people, environments and study design—not with an algorithm.",
+    "image": "assets/photos/market-sampling.webp",
+    "imageAlt": "Poultry-market fieldwork",
+    "url": "stories/one-health-sampling.html",
+    "tags": [
+      "GETcampy",
+      "CCC",
+      "Sampling"
+    ],
+    "featuredHome": true
+  },
+  {
+    "id": "wild-birds-amr-story",
+    "title": "Wild birds and the rise of resistance",
+    "format": "Behind the paper",
+    "date": "2024-09-09",
+    "summary": "What urban-adapted birds reveal about human influence on microbial ecology and antimicrobial resistance.",
+    "image": "assets/illustrations/hurizon.svg",
+    "imageAlt": "Illustration of birds and microbial networks",
+    "url": "stories/wild-birds-amr.html",
+    "tags": [
+      "Wildlife",
+      "AMR",
+      "One Health"
+    ],
+    "featuredHome": true
+  }
+]
