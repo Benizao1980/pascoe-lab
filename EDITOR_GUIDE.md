@@ -111,3 +111,52 @@ python tools/validate_content.py
 ```
 
 GitHub also runs this check automatically after each push.
+
+
+# Version 5 additions
+
+## Publication source
+
+The full published-output list was imported from:
+
+`BenPascoe_CV.full_NOV2025(1).docx`
+
+The site currently contains **102 completed outputs**. The import deliberately
+omits manuscripts in preparation, papers under review, preprints, and items still
+marked "In press" in the CV.
+
+To add a newly published paper, append one record to `data/publications.json`.
+
+```json
+{
+  "id": "year-short-title",
+  "year": 2026,
+  "citation": "Full completed citation",
+  "authors": "Authors",
+  "title": "Paper title",
+  "doi": "10.xxxx/xxxxx",
+  "type": "publication",
+  "status": "published",
+  "selected": false,
+  "featuredHome": false
+}
+```
+
+Only set `selected` or `featuredHome` to true when the paper has a final
+publication record.
+
+## People
+
+Current doctoral researchers are stored in `data/people.json`. Add a person once
+and the homepage and People page update together.
+
+## Projects
+
+The four current project cards are:
+
+1. Enteric disease in Africa
+2. Peru child health
+3. Thailand One Health
+4. HU-RIZON wildlife and AMR
+
+They are maintained in `data/projects.json`.

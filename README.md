@@ -1,16 +1,15 @@
-# Pascoe Lab website — v4
+# Pascoe Lab website — v5
 
-## Main changes
+Major changes:
 
-- White is now the default page background.
-- Burgundy is the primary accent.
-- Dark pastel green is the main contrast colour.
-- Soft rose, mustard and blue are secondary accents.
-- Individual images replace collages and generic group photographs.
-- The supplied bacterial artwork is the homepage hero.
-- Stella and Kanny are the CCC project image.
-- Peru is now a fourth flagship project.
-- Publications, stories and project cards are maintained in JSON data files.
-- A GitHub Action validates the content files after each update.
+- Four research themes defined as scientific questions
+- Four flagship programmes: Africa, Peru, Thailand and HU-RIZON
+- Madison Goforth, Eve Hallett and Henry Badji added
+- Oxford / Ineos Oxford Institute identity strengthened
+- Join page added
+- Citation metrics retained only on the Publications page
+- 102 completed outputs extracted from the uploaded CV
+- Unfinished manuscripts, under-review papers, preprints and records marked in press excluded
+- JSON-driven projects, people, publications and stories
 
 Read `EDITOR_GUIDE.md` before making routine updates.

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "madison-goforth",
+    "name": "Madison Goforth",
+    "initials": "MG",
+    "role": "DPhil student",
+    "supervision": "Co-supervised with Sam Sheppard",
+    "summary": "Studies the (meta)genomics of Campylobacter in low- and middle-income settings, including source-associated variation and antimicrobial resistance.",
+    "url": "https://sheppardlab.wordpress.com/people/madison-goforth/",
+    "accent": "rose"
+  },
+  {
+    "id": "eve-hallett",
+    "name": "Eve Hallett",
+    "initials": "EH",
+    "role": "DPhil student",
+    "supervision": "Co-supervised with Sam Sheppard and Paul Keim",
+    "summary": "Investigates bacterial species boundaries, homologous recombination and the emergence of traits between Campylobacter jejuni and Campylobacter coli.",
+    "url": "https://sheppardlab.wordpress.com/people/eve-hallett/",
+    "accent": "green"
+  },
+  {
+    "id": "henry-badji",
+    "name": "Henry Badji",
+    "initials": "HB",
+    "role": "PhD student",
+    "supervision": "Co-supervised with Jahangir Hossain and Ozan Gundogdu",
+    "summary": "Works on genomic epidemiology and source attribution of enteric bacteria in The Gambia through GETcampy and the Campylobacter Control Campaign.",
+    "url": "https://www.researchgate.net/profile/Henry-Badji",
+    "accent": "mustard"
+  }
+]

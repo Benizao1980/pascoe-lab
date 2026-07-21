@@ -316,3 +316,47 @@ p{margin:0 0 1rem}
   h1{font-size:clamp(2.9rem,14vw,4.8rem)}
 }
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+
+.institution-line{
+  margin-top:24px;padding-top:17px;border-top:3px solid var(--line);
+  color:var(--green-dark);font-size:.78rem;font-weight:800;
+  text-transform:uppercase;letter-spacing:.12em
+}
+.homepage-feature-grid{display:grid;grid-template-columns:1fr 1fr;gap:42px;align-items:start}
+.grid-1{grid-template-columns:1fr}
+.people-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.person-card{
+  display:grid;grid-template-columns:82px 1fr;gap:20px;align-items:start;
+  min-height:285px;padding:25px;border:3px solid var(--line);
+  background:var(--white);box-shadow:var(--shadow)
+}
+.person-card.accent-rose{border-top:13px solid var(--rose)}
+.person-card.accent-green{border-top:13px solid var(--green)}
+.person-card.accent-mustard{border-top:13px solid var(--mustard)}
+.person-monogram{
+  display:grid;place-items:center;width:76px;height:92px;border:3px solid var(--line);
+  background:var(--burgundy);color:#fff;font-family:Georgia,serif;font-size:1.8rem;
+  box-shadow:4px 4px 0 var(--line)
+}
+.person-card.accent-green .person-monogram{background:var(--green)}
+.person-card.accent-mustard .person-monogram{background:var(--mustard);color:var(--ink)}
+.person-supervision{font-size:.82rem;color:var(--green-dark);font-weight:800}
+.research-question{display:grid;grid-template-columns:110px minmax(0,850px);gap:32px;align-items:start}
+.question-number{
+  display:grid;place-items:center;width:88px;height:88px;border:3px solid var(--line);
+  background:var(--burgundy);color:#fff;box-shadow:5px 5px 0 var(--line);
+  font-family:Georgia,serif;font-size:2rem
+}
+.citation-text{font-size:.98rem;line-height:1.55}
+.footer-institution{font-size:.82rem;color:var(--rose)}
+@media(max-width:1050px){
+  .people-grid{grid-template-columns:1fr 1fr}
+  .homepage-feature-grid{grid-template-columns:1fr}
+}
+@media(max-width:700px){
+  .people-grid{grid-template-columns:1fr}
+  .person-card{grid-template-columns:64px 1fr}
+  .person-monogram{width:58px;height:72px;font-size:1.35rem}
+  .research-question{grid-template-columns:1fr}
+  .question-number{width:68px;height:68px;font-size:1.5rem}
+}
