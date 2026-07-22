@@ -1,4 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360"><rect width="1200" height="360" fill="#ffffff"/>
+<g transform="translate(20 10) scale(.66)">
 <title id="title">Pascoe Lab bacterium logo</title><desc id="desc">A simplified bacterium with flagella inside a circular burgundy and green emblem.</desc>
 <circle cx="256" cy="256" r="232" fill="#fffaf1" stroke="#26343a" stroke-width="18"/>
 <circle cx="256" cy="256" r="204" fill="#723f50"/>
@@ -13,4 +14,7 @@
 <path d="M205 178 C273 134 318 185 287 231 C259 273 199 266 202 318 C205 352 252 367 293 339" fill="none" stroke="#fffaf1" stroke-width="12" stroke-linecap="round"/>
 <path d="M210 320 C262 350 311 320 304 277 C298 241 256 237 228 215" fill="none" stroke="#d8b35c" stroke-width="9" stroke-linecap="round"/>
 <g stroke="#26343a" stroke-width="8" stroke-linecap="round"><path d="M169 164 l-32 -18"/><path d="M158 207 l-36 -7"/><path d="M157 253 l-38 5"/><path d="M164 303 l-35 16"/><path d="M188 356 l-25 27"/><path d="M344 164 l31 -19"/><path d="M354 208 l36 -7"/><path d="M355 255 l38 7"/><path d="M347 306 l35 18"/><path d="M324 356 l24 28"/></g>
-</g></svg>
+</g></g>
+<text x="390" y="165" font-family="Georgia,serif" font-size="92" font-weight="700" fill="#26343a">Pascoe Lab</text>
+<text x="394" y="224" font-family="Arial,sans-serif" font-size="28" font-weight="700" letter-spacing="4" fill="#723f50">PATHOGEN GENOMICS · EVOLUTION · ONE HEALTH</text>
+<text x="394" y="276" font-family="Arial,sans-serif" font-size="25" fill="#586f68">University of Oxford · Ineos Oxford Institute</text></svg>

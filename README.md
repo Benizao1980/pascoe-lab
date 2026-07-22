@@ -1,15 +1,16 @@
-# Pascoe Lab website — v5
+# Pascoe Lab website — v6.1
 
-Major changes:
+Main changes:
 
-- Four research themes defined as scientific questions
-- Four flagship programmes: Africa, Peru, Thailand and HU-RIZON
-- Madison Goforth, Eve Hallett and Henry Badji added
-- Oxford / Ineos Oxford Institute identity strengthened
-- Join page added
-- Citation metrics retained only on the Publications page
-- 102 completed outputs extracted from the uploaded CV
-- Unfinished manuscripts, under-review papers, preprints and records marked in press excluded
-- JSON-driven projects, people, publications and stories
+- New bacterium mascot logo and horizontal lock-up
+- Moderated homepage heading sizes and corrected the malformed hero markup
+- Increased small text, metadata, navigation and caption sizes
+- Publications limited to journal articles and public preprints
+- Reports, book chapters, unfinished manuscripts and non-public submissions excluded
+- Searchable publication browser with four theme filters and theme icons
+- Publications can be grouped by research theme or year
+- Thailand collaboration photographs added to the Thailand project page
 
-Read `EDITOR_GUIDE.md` before making routine updates.
+Publication browser: 97 journal articles and 7 preprints.
+
+- Re-exported with the illustrated bacterium logo generated from the supplied artwork.

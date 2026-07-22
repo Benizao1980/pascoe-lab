@@ -160,3 +160,22 @@ The four current project cards are:
 4. HU-RIZON wildlife and AMR
 
 They are maintained in `data/projects.json`.
+
+
+# Version 6 publication themes
+
+Every publication record now requires:
+
+- `publicationType`: `journal` or `preprint`
+- `themeId`: `transmission`, `evolution`, `tools`, or `prediction`
+
+The labels and icons are maintained in `data/themes.json`.
+
+Reports, book chapters, unfinished manuscripts and private submissions should
+not be added to `data/publications.json`.
+
+# Logo files
+
+- `assets/logo/pascoe-bacterium-mark.svg`
+- `assets/logo/pascoe-bacterium-mark.png`
+- `assets/logo/pascoe-lab-lockup.svg`

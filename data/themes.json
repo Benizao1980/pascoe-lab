@@ -1,0 +1,26 @@
+[
+  {
+    "id": "transmission",
+    "label": "Transmission across One Health systems",
+    "short": "Transmission",
+    "icon": "assets/icons/theme-transmission.svg"
+  },
+  {
+    "id": "evolution",
+    "label": "Evolution and host adaptation",
+    "short": "Evolution",
+    "icon": "assets/icons/theme-evolution.svg"
+  },
+  {
+    "id": "tools",
+    "label": "Open genomic tools and surveillance",
+    "short": "Open tools",
+    "icon": "assets/icons/theme-tools.svg"
+  },
+  {
+    "id": "prediction",
+    "label": "Genomics, AI and disease prediction",
+    "short": "Prediction",
+    "icon": "assets/icons/theme-prediction.svg"
+  }
+]
