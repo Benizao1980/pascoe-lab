@@ -1,4 +1,4 @@
-# Pascoe Lab website — v6.1
+# Pascoe Lab website — v6.2
 
 Main changes:
 
@@ -14,3 +14,6 @@ Main changes:
 Publication browser: 97 journal articles and 7 preprints.
 
 - Re-exported with the illustrated bacterium logo generated from the supplied artwork.
+
+- Fixed header/site logo path and replaced with the supplied final logo artwork.
+- Updated Thailand project cards to use the attached collaboration photo.
