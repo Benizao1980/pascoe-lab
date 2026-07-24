@@ -37,3 +37,13 @@ Publication browser: 97 journal articles and 7 preprints.
 - A weekly GitHub Action can refresh Scholar metrics after adding a `SERPAPI_KEY` repository secret.
 - Missing publication links fall back to an exact-title Google Scholar search.
 - `tools/enrich_publications.py` provides a conservative Crossref DOI review workflow.
+
+
+## Version 6.6
+
+- Burgundy masthead across the site.
+- Shortened homepage and page introductions.
+- Research themes now use visuals and representative papers; visible numbering removed.
+- Added Ben Pascoe portrait to the People page.
+- Resources now lists SourceRunnerML, BAMPS-ML, PANOPTICON, LINwalker and ICassigner separately.
+- Scholar metric fallback updated to the successful 24 July 2026 refresh.
