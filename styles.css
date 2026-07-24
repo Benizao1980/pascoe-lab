@@ -390,3 +390,5 @@ body{font-size:17px}.brand-logo{padding:3px;background:var(--white)}.brand-logo 
   .hero-art>img{height:360px}
   .compact-feature{min-height:auto}
 }
+
+.type-badge.in-press{background:var(--rose-soft)}

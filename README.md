@@ -1,4 +1,4 @@
-# Pascoe Lab website — v6.3
+# Pascoe Lab website — v6.4
 
 Main changes:
 
@@ -23,3 +23,7 @@ Publication browser: 97 journal articles and 7 preprints.
 - Reduced project cards to a title and one short line.
 - Simplified recent publication and story cards.
 - Removed decorative page, section and project numbering throughout the site.
+
+- Publication counts now update automatically from data/publications.json.
+- H-index and citation totals load from data/site.json.
+- In-press journal articles are supported and labelled.
