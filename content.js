@@ -1,17 +1,54 @@
-
 (() => {
 const esc=v=>String(v??"").replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[ch]));
 async function loadJson(path){const r=await fetch(path,{cache:"no-store"});if(!r.ok)throw new Error(`${path}: ${r.status}`);return r.json();}
+function external(url,label){return `<a href="${esc(url)}" target="_blank" rel="noopener">${label}</a>`;}
+function publicationHref(p){
+  if(p.doi)return `https://doi.org/${p.doi}`;
+  if(p.url)return p.url;
+  return `https://scholar.google.com/scholar?q=${encodeURIComponent('"'+p.title+'"')}`;
+}
+function publicationLabel(p){return p.status==="in press"?"In press":p.publicationType==="preprint"?"Preprint":"Paper";}
 function projectCard(p){const pos=p.imagePosition?` style="object-position:${esc(p.imagePosition)}"`:"";return `<article class="project-card accent-${esc(p.accent||"rose")}"><img class="project-image" src="${esc(p.image)}" alt="${esc(p.imageAlt)}"${pos}><div class="project-body"><h3>${esc(p.title)}</h3><p>${esc(p.summary)}</p><a href="${esc(p.url)}">Project overview →</a></div></article>`;}
 function storyCard(s,compact=false){return compact?`<article class="card compact-feature"><div><p class="meta">${esc(s.format)}</p><h3>${esc(s.title)}</h3><a class="pill" href="${esc(s.url)}">Read story</a></div></article>`:`<article class="card story-card"><img class="story-cover" src="${esc(s.image)}" alt="${esc(s.imageAlt)}"><div class="story-body"><span class="story-format">${esc(s.format)}</span><h3>${esc(s.title)}</h3><p>${esc(s.summary)}</p><a href="${esc(s.url)}">Read →</a></div></article>`;}
-function publicationFeature(p,compact=false){const label=p.status==="in press"?"In press":p.publicationType==="preprint"?"Preprint":"Paper";const href=p.doi?`https://doi.org/${esc(p.doi)}`:(p.url?esc(p.url):"");return compact?`<article class="card compact-feature"><div><p class="meta">${esc(p.journal||(p.status==="in press"?"In press":p.publicationType==="preprint"?"Preprint":"Journal article"))} · ${esc(p.year)}</p><h3>${esc(p.title)}</h3>${href?`<a class="pill" href="${href}">${label}</a>`:""}</div></article>`:`<article class="card publication-card"><div><p class="meta">${esc(p.theme||"Publication")}</p><h3>${esc(p.title)}</h3><p class="journal">${esc(p.journal||(p.status==="in press"?"In press":p.publicationType==="preprint"?"Preprint":"Journal article"))} · ${esc(p.year)}</p>${p.summary?`<p>${esc(p.summary)}</p>`:""}<div class="pub-links">${href?`<a class="pill" href="${href}">${label}</a>`:""}</div></div></article>`;}
+function publicationFeature(p,compact=false){const href=publicationHref(p),label=publicationLabel(p);return compact?`<article class="card compact-feature"><div><p class="meta">${esc(p.journal||(p.status==="in press"?"In press":p.publicationType==="preprint"?"Preprint":"Journal article"))} · ${esc(p.year)}</p><h3>${esc(p.title)}</h3><a class="pill" href="${esc(href)}" target="_blank" rel="noopener">${label}</a></div></article>`:`<article class="card publication-card"><div><p class="meta">${esc(p.theme||"Publication")}</p><h3>${esc(p.title)}</h3><p class="journal">${esc(p.journal||(p.status==="in press"?"In press":p.publicationType==="preprint"?"Preprint":"Journal article"))} · ${esc(p.year)}</p>${p.summary?`<p>${esc(p.summary)}</p>`:""}<div class="pub-links"><a class="pill" href="${esc(href)}" target="_blank" rel="noopener">${label}</a></div></div></article>`;}
 async function renderProjects(){const nodes=document.querySelectorAll('[data-content="projects"]');if(!nodes.length)return;const data=(await loadJson("data/projects.json")).sort((a,b)=>(a.order||99)-(b.order||99));nodes.forEach(n=>n.innerHTML=data.slice(0,Number(n.dataset.limit||999)).map(projectCard).join(""));}
 async function renderStories(){const nodes=document.querySelectorAll('[data-content="stories"]');if(!nodes.length)return;const data=(await loadJson("data/stories.json")).sort((a,b)=>String(b.date).localeCompare(String(a.date)));nodes.forEach(n=>{const compact=n.dataset.compact==="true";n.innerHTML=data.slice(0,Number(n.dataset.limit||999)).map(s=>storyCard(s,compact)).join("");});}
 async function renderFeatured(){const nodes=document.querySelectorAll('[data-content="publications"]');if(!nodes.length)return;const data=await loadJson("data/publications.json");nodes.forEach(n=>{const s=data.filter(p=>n.dataset.featured==="home"?p.featuredHome:p.selected).sort((a,b)=>(b.year-a.year)||String(a.title).localeCompare(String(b.title))).slice(0,Number(n.dataset.limit||999));n.innerHTML=s.map(p=>publicationFeature(p,n.dataset.compact==="true")).join("");});}
-async function renderMetrics(){const nodes=document.querySelectorAll("[data-metric]");if(!nodes.length)return;const [pubs,site]=await Promise.all([loadJson("data/publications.json"),loadJson("data/site.json")]);const values={journal:pubs.filter(p=>p.publicationType==="journal").length,preprint:pubs.filter(p=>p.publicationType==="preprint").length,"h-index":site.h_index??"—",citations:Number.isFinite(Number(site.citations))?Number(site.citations).toLocaleString("en-GB"):"—"};nodes.forEach(n=>{n.textContent=values[n.dataset.metric]??"—";});}
-async function renderBrowser(){const list=document.getElementById("publication-list");if(!list)return;const [pubs,themes]=await Promise.all([loadJson("data/publications.json"),loadJson("data/themes.json")]);const tmap=Object.fromEntries(themes.map(t=>[t.id,t]));const search=document.getElementById("pub-search"),type=document.getElementById("pub-type"),group=document.getElementById("pub-group"),count=document.getElementById("pub-count");let active="all";
-function item(p){const t=tmap[p.themeId]||themes[0];const typeLabel=p.status==="in press"?"In press":p.publicationType==="preprint"?"Preprint":"Journal article";const typeClass=p.status==="in press"?"in-press":p.publicationType;const href=p.doi?`https://doi.org/${esc(p.doi)}`:(p.url?esc(p.url):"");return `<article class="publication-row"><div class="publication-theme-mark"><img src="${esc(t.icon)}" alt=""><span>${esc(t.short)}</span></div><div class="publication-details"><div class="publication-meta"><span class="type-badge ${esc(typeClass)}">${typeLabel}</span><span>${esc(p.year)}</span></div><h3>${href?`<a href="${href}">${esc(p.title)}</a>`:esc(p.title)}</h3><p class="publication-authors">${esc(p.authors||"")}</p><p class="publication-citation">${esc(p.citation||"")}</p></div></article>`;}
-function render(){const q=search.value.trim().toLowerCase(),tv=type.value;let data=pubs.filter(p=>{const h=[p.title,p.authors,p.citation,p.year,p.theme,p.doi].join(" ").toLowerCase();return(!q||h.includes(q))&&(tv==="all"||p.publicationType===tv)&&(active==="all"||p.themeId===active);});data.sort((a,b)=>(b.year-a.year)||String(a.title).localeCompare(String(b.title)));count.textContent=`${data.length} output${data.length===1?"":"s"}`;const grouped={};if(group.value==="theme"){themes.forEach(t=>grouped[t.id]=[]);data.forEach(p=>(grouped[p.themeId]||=[]).push(p));list.innerHTML=themes.map(t=>grouped[t.id].length?`<section class="publication-group"><div class="publication-group-title"><img src="${esc(t.icon)}" alt=""><div><p class="kicker">${esc(t.short)}</p><h2>${esc(t.label)}</h2></div><span>${grouped[t.id].length}</span></div><div class="publication-group-list">${grouped[t.id].map(item).join("")}</div></section>`:"").join("");}else{data.forEach(p=>(grouped[p.year]||=[]).push(p));list.innerHTML=Object.keys(grouped).sort((a,b)=>b-a).map(y=>`<section class="publication-group"><div class="publication-group-title year"><h2>${esc(y)}</h2><span>${grouped[y].length}</span></div><div class="publication-group-list">${grouped[y].map(item).join("")}</div></section>`).join("");}}
-document.querySelectorAll(".theme-filter").forEach(b=>b.addEventListener("click",()=>{active=b.dataset.theme;document.querySelectorAll(".theme-filter").forEach(x=>x.classList.toggle("active",x===b));render();}));search.addEventListener("input",render);type.addEventListener("change",render);group.addEventListener("change",render);render();}
+async function renderMetrics(){
+  const nodes=document.querySelectorAll("[data-metric]");if(!nodes.length)return;
+  const pubs=await loadJson("data/publications.json");
+  let scholar;
+  try{scholar=await loadJson("data/scholar-metrics.json");}catch(e){scholar=await loadJson("data/site.json");}
+  const values={journal:pubs.filter(p=>p.publicationType==="journal").length,preprint:pubs.filter(p=>p.publicationType==="preprint").length,"h-index":scholar.h_index??"—",citations:Number.isFinite(Number(scholar.citations))?Number(scholar.citations).toLocaleString("en-GB"):"—"};
+  nodes.forEach(n=>{n.textContent=values[n.dataset.metric]??"—";});
+}
+function refreshAltmetric(context){if(typeof window._altmetric_embed_init==="function")window._altmetric_embed_init(context||document);}
+async function renderBrowser(){
+  const list=document.getElementById("publication-list");if(!list)return;
+  const [pubs,themes]=await Promise.all([loadJson("data/publications.json"),loadJson("data/themes.json")]);
+  const tmap=Object.fromEntries(themes.map(t=>[t.id,t])),search=document.getElementById("pub-search"),type=document.getElementById("pub-type"),group=document.getElementById("pub-group"),count=document.getElementById("pub-count");let active="all";
+  function item(p){
+    const t=tmap[p.themeId]||themes[0],typeLabel=p.status==="in press"?"In press":p.publicationType==="preprint"?"Preprint":"Journal article",typeClass=p.status==="in press"?"in-press":p.publicationType,href=publicationHref(p);
+    const badge=p.doi?`<div class="publication-altmetric" aria-label="Altmetric attention"><div class="altmetric-embed" data-badge-type="donut" data-badge-popover="right" data-doi="${esc(p.doi)}"></div></div>`:`<div class="publication-altmetric publication-altmetric-empty" aria-hidden="true"></div>`;
+    return `<article class="publication-row"><div class="publication-theme-mark"><img src="${esc(t.icon)}" alt=""><span>${esc(t.short)}</span></div><div class="publication-details"><div class="publication-meta"><span class="type-badge ${esc(typeClass)}">${typeLabel}</span><span>${esc(p.year)}</span></div><h3><a href="${esc(href)}" target="_blank" rel="noopener">${esc(p.title)}</a></h3><p class="publication-authors">${esc(p.authors||"")}</p><p class="publication-citation">${esc(p.citation||"")}</p></div>${badge}</article>`;
+  }
+  function render(){
+    const q=search.value.trim().toLowerCase(),tv=type.value;
+    let data=pubs.filter(p=>{const h=[p.title,p.authors,p.citation,p.year,p.theme,p.doi,p.url,p.status].join(" ").toLowerCase();return(!q||h.includes(q))&&(tv==="all"||p.publicationType===tv)&&(active==="all"||p.themeId===active);});
+    data.sort((a,b)=>(b.year-a.year)||String(a.title).localeCompare(String(b.title)));
+    count.textContent=`${data.length} output${data.length===1?"":"s"}`;
+    const grouped={};
+    if(group.value==="theme"){
+      themes.forEach(t=>grouped[t.id]=[]);data.forEach(p=>(grouped[p.themeId]||=[]).push(p));
+      list.innerHTML=themes.map(t=>grouped[t.id].length?`<section class="publication-group"><div class="publication-group-title"><img src="${esc(t.icon)}" alt=""><div><p class="kicker">${esc(t.short)}</p><h2>${esc(t.label)}</h2></div><span>${grouped[t.id].length}</span></div><div class="publication-group-list">${grouped[t.id].map(item).join("")}</div></section>`:"").join("");
+    }else{
+      data.forEach(p=>(grouped[p.year]||=[]).push(p));
+      list.innerHTML=Object.keys(grouped).sort((a,b)=>b-a).map(y=>`<section class="publication-group"><div class="publication-group-title year"><h2>${esc(y)}</h2><span>${grouped[y].length}</span></div><div class="publication-group-list">${grouped[y].map(item).join("")}</div></section>`).join("");
+    }
+    window.setTimeout(()=>refreshAltmetric(list),0);
+  }
+  document.querySelectorAll(".theme-filter").forEach(b=>b.addEventListener("click",()=>{active=b.dataset.theme;document.querySelectorAll(".theme-filter").forEach(x=>x.classList.toggle("active",x===b));render();}));
+  search.addEventListener("input",render);type.addEventListener("change",render);group.addEventListener("change",render);render();
+}
 Promise.allSettled([renderProjects(),renderStories(),renderFeatured(),renderMetrics(),renderBrowser()]).then(rs=>rs.filter(r=>r.status==="rejected").forEach(r=>console.error(r.reason)));
 })();

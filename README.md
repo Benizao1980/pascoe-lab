@@ -1,4 +1,4 @@
-# Pascoe Lab website — v6.4
+# Pascoe Lab website — v6.5
 
 Main changes:
 
@@ -27,3 +27,13 @@ Publication browser: 97 journal articles and 7 preprints.
 - Publication counts now update automatically from data/publications.json.
 - H-index and citation totals load from data/site.json.
 - In-press journal articles are supported and labelled.
+
+## v6.5 publication upgrades
+
+- Publications are grouped by year by default, newest first.
+- Altmetric donuts are inserted for records with a DOI.
+- Journal/preprint counts are calculated from `data/publications.json`.
+- Google Scholar metrics load from `data/scholar-metrics.json`.
+- A weekly GitHub Action can refresh Scholar metrics after adding a `SERPAPI_KEY` repository secret.
+- Missing publication links fall back to an exact-title Google Scholar search.
+- `tools/enrich_publications.py` provides a conservative Crossref DOI review workflow.

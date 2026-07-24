@@ -179,3 +179,25 @@ not be added to `data/publications.json`.
 - `assets/logo/pascoe-bacterium-mark.svg`
 - `assets/logo/pascoe-bacterium-mark.png`
 - `assets/logo/pascoe-lab-lockup.svg`
+
+# Automatic Google Scholar metrics
+
+1. Create a SerpAPI account and copy its API key.
+2. In GitHub open **Settings → Secrets and variables → Actions**.
+3. Add a repository secret named `SERPAPI_KEY`.
+4. Run **Actions → Update Google Scholar metrics → Run workflow** once.
+
+The workflow then runs each Monday and updates `data/scholar-metrics.json`.
+The API key is never exposed in the public website.
+
+# Altmetric badges
+
+A badge appears automatically for every record containing a DOI. Because the
+publication list is rendered dynamically, `content.js` calls
+`_altmetric_embed_init()` after each search/filter/grouping update.
+
+# DOI review
+
+Run **Actions → Review missing publication DOIs**. The default mode creates a
+`DOI_REVIEW.csv` artifact without changing the website. Enabling
+`write_matches` commits only very high-confidence Crossref matches.
