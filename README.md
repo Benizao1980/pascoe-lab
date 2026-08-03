@@ -74,3 +74,12 @@ Publication browser: 97 journal articles and 7 preprints.
 - Search includes all tag fields.
 - Publication cards show up to three compact tags.
 - Default year grouping orders each year as: in press, published, preprint; each status is then newest first.
+
+
+## v6.10 publication cards
+
+- Publication tags are clickable filters.
+- The duplicate full citation block has been removed from cards.
+- Cards show authors once and a two-line summary or abstract excerpt.
+- PubMed abstracts and publication status are stored during synchronisation.
+- PMID 42532029 is explicitly imported even if Google Scholar indexing lags.

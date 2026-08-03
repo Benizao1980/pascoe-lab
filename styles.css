@@ -442,7 +442,8 @@ body{font-size:17px}.brand-logo{padding:3px;background:var(--white)}.brand-logo 
 /* v6.9 structured publication tags and filters */
 .publication-controls{grid-template-columns:minmax(300px,1.5fr) repeat(4,minmax(155px,.65fr)) auto}
 .publication-tags{display:flex;flex-wrap:wrap;gap:7px;margin:.35rem 0 .8rem}
-.publication-tag{display:inline-flex;align-items:center;min-height:27px;padding:3px 8px;border:2px solid var(--line);font-size:.74rem;font-weight:800;line-height:1.1;background:var(--offwhite)}
+.publication-tag{display:inline-flex;align-items:center;min-height:27px;padding:3px 8px;border:2px solid var(--line);font-size:.74rem;font-weight:800;line-height:1.1;background:var(--offwhite);color:var(--ink);text-decoration:none;cursor:pointer;transition:transform .12s ease,box-shadow .12s ease,background .12s ease}
+.publication-tag:hover,.publication-tag:focus-visible{background:var(--burgundy);color:#fff;transform:translate(-1px,-1px);box-shadow:2px 2px 0 var(--line);outline:none}
 .publication-tag.tag-organism{background:var(--rose-soft)}
 .publication-tag.tag-topic{background:var(--green-soft)}
 .publication-tag.tag-project{background:var(--mustard-soft)}
@@ -450,3 +451,6 @@ body{font-size:17px}.brand-logo{padding:3px;background:var(--white)}.brand-logo 
 @media(max-width:1280px){.publication-controls{grid-template-columns:minmax(280px,1.3fr) repeat(2,minmax(170px,1fr));}.publication-count{align-self:center}}
 @media(max-width:850px){.publication-controls{grid-template-columns:1fr 1fr}.search-field{grid-column:1/-1}}
 @media(max-width:600px){.publication-controls{grid-template-columns:1fr}.search-field{grid-column:auto}}
+
+.publication-summary{font-size:.92rem;color:var(--muted);line-height:1.45;margin:.55rem 0 0;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}
+.publication-meta span:last-child{white-space:normal}

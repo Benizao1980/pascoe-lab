@@ -24,6 +24,7 @@ METRIC_FILE=ROOT/'data'/'scholar-metrics.json'
 SYNC_FILE=ROOT/'data'/'publication-sync.json'
 KEY=os.environ.get('SERPAPI_KEY','').strip()
 AUTHOR_ID=os.environ.get('SCHOLAR_AUTHOR_ID','UQrZ-fgAAAAJ').strip()
+FORCED_PMIDS={'42532029'}
 if not KEY:
     raise SystemExit('SERPAPI_KEY is required')
 
@@ -78,7 +79,7 @@ def pubmed_records():
     search=fetch_json('https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi',{
         'db':'pubmed','term':'pascoe b[au]','retmode':'json','retmax':500,'sort':'pub_date'
     })
-    ids=search.get('esearchresult',{}).get('idlist',[])
+    ids=list(dict.fromkeys(list(FORCED_PMIDS)+search.get('esearchresult',{}).get('idlist',[])))
     if not ids:return []
     xml=fetch_text('https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi',{
         'db':'pubmed','id':','.join(ids),'retmode':'xml'
@@ -88,6 +89,7 @@ def pubmed_records():
         med=art.find('./MedlineCitation'); article=med.find('./Article') if med is not None else None
         if article is None:continue
         title=xml_text(article.find('./ArticleTitle'))
+        abstract=' '.join(xml_text(x) for x in article.findall('./Abstract/AbstractText') if xml_text(x))
         pmid=xml_text(med.find('./PMID'))
         authors=[]; aff=[]
         for a in article.findall('./AuthorList/Author'):
@@ -120,9 +122,15 @@ def pubmed_records():
         for aid in art.findall('./PubmedData/ArticleIdList/ArticleId'):
             if aid.attrib.get('IdType')=='doi':doi=clean_doi(xml_text(aid));break
         types=[xml_text(x) for x in article.findall('./PublicationTypeList/PublicationType')]
+        publication_status=xml_text(art.find('./PubmedData/PublicationStatus')).lower()
+        history_statuses={x.attrib.get('PubStatus','').lower() for x in art.findall('./PubmedData/History/PubMedPubDate')}
+        ahead=publication_status in {'aheadofprint','epublish'} and not volume and not pages
+        ahead=ahead or ('aheadofprint' in history_statuses and not volume and not pages)
+        record_status='in press' if ahead else 'published'
         out.append({'title':title,'title_norm':norm(title),'pmid':pmid,'doi':doi,'authors':', '.join(authors),
                     'journal':journal,'volume':volume,'issue':issue,'pages':pages,'publishedDate':date,
-                    'year':int(year) if year.isdigit() else None,'affiliations':' | '.join(aff),'publication_types':types})
+                    'year':int(year) if year.isdigit() else None,'affiliations':' | '.join(aff),'publication_types':types,
+                    'abstract':abstract,'status':record_status})
     return out
 
 def best_pubmed(title, records):
@@ -245,10 +253,11 @@ for a in scholar:
     p['doi']=pm.get('doi') if pm and pm.get('doi') else clean_doi(p.get('doi'))
     p['pmid']=pm.get('pmid') if pm else p.get('pmid','')
     p['journal']=pm.get('journal') if pm and pm.get('journal') else p.get('journal') or a.get('publication','')
+    if pm and pm.get('abstract'):p['abstract']=pm['abstract']
     p['scholarCitationId']=a.get('citation_id','')
     p['scholarUrl']=a.get('link','')
     p['publicationType']='preprint' if pre else 'journal'
-    p['status']=p.get('status') if p.get('status')=='in press' else ('preprint' if pre else 'published')
+    p['status']='preprint' if pre else (pm.get('status','published') if pm else (p.get('status') or 'published'))
     p['type']='preprint' if pre else 'publication'
     p.setdefault('selected',False);p.setdefault('featuredHome',False)
     tid=theme_for(p['title'],old);p['themeId']=tid;p['theme']=THEMES[tid]
@@ -265,6 +274,28 @@ for a in scholar:
     key=p.get('doi') or norm(p['title'])
     if key in seen:continue
     seen.add(key);merged.append(p)
+# Add explicitly requested PubMed records even when Scholar indexing lags.
+# This is deliberately limited to FORCED_PMIDS to avoid importing namesakes.
+for pm in pubmed:
+    if pm.get('pmid') not in FORCED_PMIDS:continue
+    key=pm.get('doi') or norm(pm.get('title'))
+    if key in seen:continue
+    old=by_title.get(norm(pm.get('title'))) or (by_doi.get(pm.get('doi')) if pm.get('doi') else None)
+    p=dict(old or {})
+    p.update({'title':pm.get('title',''),'authors':pm.get('authors',''),'year':pm.get('year') or 0,
+              'publishedDate':pm.get('publishedDate'), 'doi':pm.get('doi',''),'pmid':pm.get('pmid',''),
+              'journal':pm.get('journal',''),'publicationType':'journal','type':'publication',
+              'status':pm.get('status','published'),'url':f"https://pubmed.ncbi.nlm.nih.gov/{pm.get('pmid')}/",
+              'abstract':pm.get('abstract','')})
+    p.setdefault('selected',False);p.setdefault('featuredHome',False);p.setdefault('summary','')
+    tid=theme_for(p['title'],old);p['themeId']=tid;p['theme']=THEMES[tid]
+    if not p.get('id'):p['id']=str(p['year'])+'-'+re.sub(r'[^a-z0-9]+','-',norm(p['title'])).strip('-')[:80]
+    vol=pm.get('volume','');iss=pm.get('issue','');pages=pm.get('pages','')
+    vi=vol+(f'({iss})' if iss else '')
+    tail=' '.join(x for x in [pm.get('journal',''),vi,(':'+pages if pages and vi else pages)] if x).replace(' :',':')
+    p['citation']=f"{p['authors']} ({p['year']}) {p['title']}. {tail}."+(f" doi: {p['doi']}" if p.get('doi') else '')
+    seen.add(key);merged.append(p)
+
 # Retain manually curated records not returned by Scholar (e.g. in press), without duplicating.
 for p in existing:
     key=clean_doi(p.get('doi')) or norm(p.get('title'))

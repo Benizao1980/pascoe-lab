@@ -55,19 +55,36 @@ async function renderBrowser(){
     const dateDiff=publicationTime(b)-publicationTime(a);if(dateDiff)return dateDiff;
     return String(a.title).localeCompare(String(b.title));
   }
+  function tagHref(kind,value){
+    const params=new URLSearchParams();
+    if(kind==="organism")params.set("organism",value);
+    else if(kind==="project")params.set("project",value);
+    else params.set("q",value);
+    return `publications.html?${params.toString()}`;
+  }
   function displayTags(p){
-    const candidates=[];
-    if(p.organisms?.[0])candidates.push([p.organisms[0],"organism"]);
-    if(p.topics?.[0])candidates.push([p.topics[0],"topic"]);
-    if(p.projects?.[0])candidates.push([p.projects[0],"project"]);
-    else if(p.geographies?.[0])candidates.push([p.geographies[0],"geography"]);
-    const seen=new Set();return candidates.filter(([label])=>{if(seen.has(label))return false;seen.add(label);return true;}).slice(0,3);
+    const tags=[];
+    const push=(kind,value)=>{if(value&&!tags.some(t=>t.value===value))tags.push({kind,value});};
+    (p.organisms||[]).slice(0,1).forEach(v=>push("organism",v));
+    (p.topics||[]).slice(0,1).forEach(v=>push("topic",v));
+    (p.projects||[]).slice(0,1).forEach(v=>push("project",v));
+    if(tags.length<3)(p.geographies||[]).slice(0,1).forEach(v=>push("geography",v));
+    return tags.slice(0,3).map(t=>`<a class="publication-tag tag-${esc(t.kind)}" href="${esc(tagHref(t.kind,t.value))}" data-tag-kind="${esc(t.kind)}" data-tag-value="${esc(t.value)}">${esc(t.value)}</a>`).join("");
+  }
+  function conciseSummary(p){
+    const source=String(p.summary||p.abstract||"").replace(/\s+/g," ").trim();
+    if(!source)return "";
+    if(p.summary)return source;
+    const sentences=source.match(/[^.!?]+[.!?]+/g)||[];
+    const text=(sentences.slice(0,2).join(" ")||source).trim();
+    return text.length>360?text.slice(0,357).replace(/\s+\S*$/,"")+"…":text;
   }
   function item(p){
     const t=tmap[p.themeId]||themes[0],typeLabel=p.status==="in press"?"In press":p.publicationType==="preprint"?"Preprint":"Journal article",typeClass=p.status==="in press"?"in-press":p.publicationType,href=publicationHref(p);
     const badge=p.doi?`<div class="publication-altmetric" aria-label="Altmetric attention"><div class="altmetric-embed" data-badge-type="donut" data-badge-popover="right" data-doi="${esc(p.doi)}"></div></div>`:`<div class="publication-altmetric publication-altmetric-empty" aria-hidden="true"></div>`;
-    const tags=displayTags(p).map(([label,kind])=>`<span class="publication-tag tag-${kind}">${esc(label)}</span>`).join("");
-    return `<article class="publication-row"><div class="publication-theme-mark"><img src="${esc(t.icon)}" alt=""><span>${esc(t.short)}</span></div><div class="publication-details"><div class="publication-meta"><span class="type-badge ${esc(typeClass)}">${typeLabel}</span><span>${esc(p.publishedDate||p.year)}</span></div><h3><a href="${esc(href)}" target="_blank" rel="noopener">${esc(p.title)}</a></h3>${tags?`<div class="publication-tags" aria-label="Publication tags">${tags}</div>`:""}<p class="publication-authors">${esc(p.authors||"")}</p><p class="publication-citation">${esc(p.citation||"")}</p></div>${badge}</article>`;
+    const tags=displayTags(p),summary=conciseSummary(p),journal=p.journal||"";
+    const details=[p.publishedDate||p.year,journal].filter(Boolean).map(esc).join(" · ");
+    return `<article class="publication-row"><div class="publication-theme-mark"><img src="${esc(t.icon)}" alt=""><span>${esc(t.short)}</span></div><div class="publication-details"><div class="publication-meta"><span class="type-badge ${esc(typeClass)}">${typeLabel}</span><span>${details}</span></div><h3><a href="${esc(href)}" target="_blank" rel="noopener">${esc(p.title)}</a></h3>${tags?`<div class="publication-tags" aria-label="Filter using publication tags">${tags}</div>`:""}<p class="publication-authors">${esc(p.authors||"")}</p>${summary?`<p class="publication-summary">${esc(summary)}</p>`:""}</div>${badge}</article>`;
   }
   function render(){
     const q=search.value.trim().toLowerCase(),tv=type.value,ov=organism.value,pv=project.value;
@@ -88,7 +105,27 @@ async function renderBrowser(){
     }
     window.setTimeout(()=>refreshAltmetric(list),0);
   }
-  document.querySelectorAll(".theme-filter").forEach(b=>b.addEventListener("click",()=>{active=b.dataset.theme;document.querySelectorAll(".theme-filter").forEach(x=>x.classList.toggle("active",x===b));render();}));
+  const initial=new URLSearchParams(window.location.search);
+  if(initial.get("q"))search.value=initial.get("q");
+  if(initial.get("organism")&&[...organism.options].some(o=>o.value===initial.get("organism")))organism.value=initial.get("organism");
+  if(initial.get("project")&&[...project.options].some(o=>o.value===initial.get("project")))project.value=initial.get("project");
+  if(initial.get("type")&&[...type.options].some(o=>o.value===initial.get("type")))type.value=initial.get("type");
+  if(initial.get("group")&&[...group.options].some(o=>o.value===initial.get("group")))group.value=initial.get("group");
+  if(initial.get("theme"))active=initial.get("theme");
+  document.querySelectorAll(".theme-filter").forEach(b=>{
+    b.classList.toggle("active",b.dataset.theme===active);
+    b.addEventListener("click",()=>{active=b.dataset.theme;document.querySelectorAll(".theme-filter").forEach(x=>x.classList.toggle("active",x===b));render();});
+  });
+  list.addEventListener("click",event=>{
+    const tag=event.target.closest(".publication-tag");if(!tag)return;
+    event.preventDefault();
+    const kind=tag.dataset.tagKind,value=tag.dataset.tagValue;
+    if(kind==="organism"&&[...organism.options].some(o=>o.value===value)){organism.value=value;search.value="";}
+    else if(kind==="project"&&[...project.options].some(o=>o.value===value)){project.value=value;search.value="";}
+    else search.value=value;
+    render();
+    document.querySelector(".publication-controls")?.scrollIntoView({behavior:"smooth",block:"start"});
+  });
   search.addEventListener("input",render);type.addEventListener("change",render);organism.addEventListener("change",render);project.addEventListener("change",render);group.addEventListener("change",render);render();
 }
 Promise.allSettled([renderProjects(),renderStories(),renderFeatured(),renderMetrics(),renderBrowser()]).then(rs=>rs.filter(r=>r.status==="rejected").forEach(r=>console.error(r.reason)));
