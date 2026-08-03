@@ -1,9 +1,435 @@
 {
-  "updated_at": null,
-  "sources": [
-    "Google Scholar profile via SerpAPI",
-    "PubMed via NCBI E-utilities"
-  ],
-  "policy": "Google Scholar profile is the identity source. PubMed enriches matching works with DOI, PMID, journal and publication date. New non-PubMed works require an existing record or clear preprint source.",
-  "review": []
+  "updated_at": "2026-08-03T11:57:02+00:00",
+  "scholar_records": 170,
+  "pubmed_records_examined": 103,
+  "site_records": 117,
+  "review": [
+    {
+      "title": "Genomics of Antimicrobial Resistant Campylobacter Transmission Through UK Agri-Food Systems",
+      "authors": "F Colles, B Pascoe, K Parfitt, K Jolley, J Bray, M Varga, S MacKay, ...",
+      "publication": "FSA Research and Evidence, 2026",
+      "year": "2026",
+      "reason": "Not matched to PubMed and not clearly a preprint"
+    },
+    {
+      "title": "Monitoring antimicrobial resistance trends from global genomics data: amr. watch",
+      "authors": "S David, JD Caballero, N Couto, K Abudahab, NF Alikhan, C Yeats, ...",
+      "publication": "PLOS global public health 5 (11), e0005256, 2025",
+      "year": "2025",
+      "reason": "Not matched to PubMed and not clearly a preprint"
+    },
+    {
+      "title": "C-SOP-202: Genomic DNA Purity Measurement using a Nanodrop Spectrophotometer",
+      "authors": "M Kekre",
+      "publication": null,
+      "year": "2025",
+      "reason": "Not matched to PubMed and not clearly a preprint"
+    },
+    {
+      "title": "GETCampy Sequencing protocols",
+      "authors": "B Pascoe, H Badji, M Goforth, E Mourkas, E Bako, I Bonkoungou, ...",
+      "publication": null,
+      "year": "2025",
+      "reason": "Not matched to PubMed and not clearly a preprint"
+    },
+    {
+      "title": "GetCampy_Laboratory Procedures",
+      "authors": "M Goforth, H Badji, B Pascoe, E Mourkas, L Drammeh, B Faye, CE Jane, ...",
+      "publication": null,
+      "year": "2025",
+      "reason": "Not matched to PubMed and not clearly a preprint"
+    },
+    {
+      "title": "Gene content, phage cycle regulation model and prophage inactivation disclosed by prophage genomics in the Helicobacter pylori Genome Project",
+      "authors": "FF Vale, HGPR Network, RJ Roberts, I Kobayashi, MC Camargo, ...",
+      "publication": "Gut Microbes 16 (1), 2379440, 2024",
+      "year": "2024",
+      "reason": "Not matched to PubMed and not clearly a preprint"
+    },
+    {
+      "title": "Geographical distribution, disease association and diversity of Klebsiella pneumoniae K/L and O antigens in India: roadmap for vaccine development",
+      "authors": "V Shamanna, S Srinivas, N Couto, G Nagaraj, SP Sajankila, ...",
+      "publication": "Microbial Genomics 10 (7), 001271, 2024",
+      "year": "2024",
+      "reason": "Not matched to PubMed and not clearly a preprint"
+    },
+    {
+      "title": "C-SOP-1001: High Molecular Weight DNA (HMW DNA) Extraction from Bacteria using NEB Monarch HMW DNA extraction kit",
+      "authors": "B Pascoe",
+      "publication": null,
+      "year": "2023",
+      "reason": "Not matched to PubMed and not clearly a preprint"
+    },
+    {
+      "title": "C-SOP-401: Quality Control (QC) of DNA Libraries for Whole Genome Sequencing",
+      "authors": "M Kekre, B Pascoe",
+      "publication": null,
+      "year": "2023",
+      "reason": "Not matched to PubMed and not clearly a preprint"
+    },
+    {
+      "title": "C-SOP-601: Operation of the Illumina MiSeq for Whole Genome Sequencing (WGS)",
+      "authors": "M Kekre, B Pascoe",
+      "publication": null,
+      "year": "2023",
+      "reason": "Not matched to PubMed and not clearly a preprint"
+    },
+    {
+      "title": "C-SOP-501: Normalisation and Pooling of DNA Libraries for Illumina Whole Genome Sequencing",
+      "authors": "M Kekre, B Pascoe",
+      "publication": null,
+      "year": "2023",
+      "reason": "Not matched to PubMed and not clearly a preprint"
+    },
+    {
+      "title": "C-SOP-901: Preparation of DNA Isolates for Domestic and Overseas Transport",
+      "authors": "M Kekre, B Pascoe",
+      "publication": null,
+      "year": "2023",
+      "reason": "Not matched to PubMed and not clearly a preprint"
+    },
+    {
+      "title": "C-SOP-201: Genomic DNA Quantification using a Qubit Fluorometer",
+      "authors": "M Kekre, B Pascoe",
+      "publication": null,
+      "year": "2023",
+      "reason": "Not matched to PubMed and not clearly a preprint"
+    },
+    {
+      "title": "C-SOP-101: Bacterial Genomic DNA Isolation using the Nexttec 1-step Kit (96-plate format)",
+      "authors": "M Kekre, B Pascoe",
+      "publication": null,
+      "year": "2023",
+      "reason": "Not matched to PubMed and not clearly a preprint"
+    },
+    {
+      "title": "C-SOP-301: DNA Library Preparation using the NEBNext Ultra II FS DNA Kit (≥ 100 ng DNA input)",
+      "authors": "M Kekre, B Pascoe",
+      "publication": null,
+      "year": "2023",
+      "reason": "Not matched to PubMed and not clearly a preprint"
+    },
+    {
+      "title": "Novel multidrug-resistant sublineages of Staphylococcus aureus clonal complex 22 discovered in India",
+      "authors": "MI Abrudan, V Shamanna, A Prasanna, A Underwood, S Argimón, ...",
+      "publication": "MSphere 8 (5), e00185-23, 2023",
+      "year": "2023",
+      "reason": "Not matched to PubMed and not clearly a preprint"
+    },
+    {
+      "title": "Salmonella linkaged between good agricultural practice certified broiler farms and poultry slaughterhouses in an intensive farming area in upper northern part of …",
+      "authors": "T Buawiratlert, P Tadee, S Chotinun, P Chuammitri, S Kheowsri, ...",
+      "publication": null,
+      "year": "2023",
+      "reason": "Not matched to PubMed and not clearly a preprint"
+    },
+    {
+      "title": "Prevalence and Antimicrobial-Resistant Patterns of Non-typhoidal Salmonella in Good Agricultural Practice Certified Broiler Farms and Poultry Slaughterhouses in an Intensive …",
+      "authors": "T Buawiratlert, P Tadee, S Chotinun, P Chuammitri, S Kheowsri, ...",
+      "publication": "Veterinary Integrative Sciences 21 (3), 2023",
+      "year": "2023",
+      "reason": "Not matched to PubMed and not clearly a preprint"
+    },
+    {
+      "title": "A pilot study revealing host‐associated genetic signatures for source attribution of sporadic Campylobacter jejuni infection in Egypt",
+      "authors": "NA Saif, JF Cobo‐Díaz, M Elserafy, I El‐Shiekh, A Álvarez‐Ordóñez, ...",
+      "publication": "Transboundary and emerging diseases 69 (4), 1847-1861, 2022",
+      "year": "2022",
+      "reason": "Not matched to PubMed and not clearly a preprint"
+    },
+    {
+      "title": "Comparative genomics of Bordetella pertussis isolates from New Zealand, a country with an uncommonly high incidence of whooping cough",
+      "authors": "N Ring, H Davies, J Morgan, M Sundaresan, A Tiong, A Preston, S Bagby",
+      "publication": "Microbial Genomics 8 (1), 000756, 2022",
+      "year": "2022",
+      "reason": "Not matched to PubMed and not clearly a preprint"
+    },
+    {
+      "title": "High-throughput sequencing reveals genetic determinants associated with antibiotic resistance in Campylobacter spp. from farm-to-fork",
+      "authors": "SF Mouftah, JF Cobo-Díaz, A Álvarez-Ordóñez, M Elserafy, NA Saif, ...",
+      "publication": "PloS one 16 (6), e0253797, 2021",
+      "year": "2021",
+      "reason": "Not matched to PubMed and not clearly a preprint"
+    },
+    {
+      "title": "A two-hit epistasis model prevents core genome disharmony in recombining bacteria",
+      "authors": "D Falush, L Mageiros, KA Jolley, G Méric, X Didelot, K Yahara, ...",
+      "publication": "(No Title), 2021",
+      "year": "2021",
+      "reason": "Not matched to PubMed and not clearly a preprint"
+    },
+    {
+      "title": "In Silico Characterization of Toxin-Antitoxin Systems in Campylobacter Isolates Recovered from Food Sources and Sporadic Human Illness",
+      "authors": "B Wadie, MA Abdel-Fattah, A Yousef, SF Mouftah, M Elhadidy, TZ Salem",
+      "publication": "Genes 12 (1), 72, 2021",
+      "year": "2021",
+      "reason": "Not matched to PubMed and not clearly a preprint"
+    },
+    {
+      "title": "The ecology of interspecies recombination among the zoonotic bacterium Campylobacter",
+      "authors": "B Pascoe",
+      "publication": "(No Title), 2021",
+      "year": "2021",
+      "reason": "Not matched to PubMed and not clearly a preprint"
+    },
+    {
+      "title": "Whole-genome characterisation of multidrug resistant monophasic variants of Salmonella typhimurium from pig production in Thailand",
+      "authors": "P Patchanee, P Tanamai, P Tadee, MD Hitchings, JK Calland, ...",
+      "publication": "PeerJ 8, e9700, 2020",
+      "year": "2020",
+      "reason": "Not matched to PubMed and not clearly a preprint"
+    },
+    {
+      "title": "Genomics and evolution of Campylobacter: host adaptation and the emergence of globally disseminated lineages",
+      "authors": "E Mourkas",
+      "publication": "University of Bath, 2020",
+      "year": "2020",
+      "reason": "Not matched to PubMed and not clearly a preprint"
+    },
+    {
+      "title": "Population genomics and evolution of Avian Pathogenic E. coli",
+      "authors": "B Pascoe",
+      "publication": "(No Title), 2020",
+      "year": "2020",
+      "reason": "Not matched to PubMed and not clearly a preprint"
+    },
+    {
+      "title": "Diversity of staphylococcal species cultured from captive Livingstone's fruit bats (Pteropus livingstonii) and their environment",
+      "authors": "K Fountain, L Roberts, V Young, A Barbon, SM Frosini, DH Lloyd, ...",
+      "publication": "Journal of Zoo and Wildlife Medicine 50 (1), 266-269, 2019",
+      "year": "2019",
+      "reason": "Not matched to PubMed and not clearly a preprint"
+    },
+    {
+      "title": "Comparative pangenomics of Campylobacter species",
+      "authors": "E Mourkas, S Bayliss, K Yahara, J Calland, B Pascoe, S Sheppard",
+      "publication": "Access Microbiology 1 (1A), 810, 2019",
+      "year": "2019",
+      "reason": "Not matched to PubMed and not clearly a preprint"
+    },
+    {
+      "title": "Comparative pangenomics of Campylobacter species",
+      "authors": "SC Bayliss, K Yahara, SK Sheppard, JK Calland, E Mourkas, B Pascoe",
+      "publication": "Access Microbiology 1, 2019",
+      "year": "2019",
+      "reason": "Not matched to PubMed and not clearly a preprint"
+    },
+    {
+      "title": "Local genes, for local bacteria: biogeographical variation in Campylobacter accessory genome content",
+      "authors": "B Pascoe, S Sheppard",
+      "publication": "Access Microbiology 1 (1A), 682, 2019",
+      "year": "2019",
+      "reason": "Not matched to PubMed and not clearly a preprint"
+    },
+    {
+      "title": "Genomics for rational autogenous vaccine design to control Campylobacter infection in poultry",
+      "authors": "J Calland, E Mourkas, B Pascoe, S Sheppard",
+      "publication": "Access Microbiology 1 (1A), 681, 2019",
+      "year": "2019",
+      "reason": "Not matched to PubMed and not clearly a preprint"
+    },
+    {
+      "title": "DNA extraction: Campylobacter",
+      "authors": "B Pascoe",
+      "publication": null,
+      "year": "2019",
+      "reason": "Not matched to PubMed and not clearly a preprint"
+    },
+    {
+      "title": "Agricultural intensification drives the evolution of host specialism in the ecological generalist bacterium Campylobacter jejuni",
+      "authors": "B Pascoe",
+      "publication": "(No Title), 2019",
+      "year": "2019",
+      "reason": "Not matched to PubMed and not clearly a preprint"
+    },
+    {
+      "title": "Promise and Challenges of Whole Genome Sequencing for Campylobacter Source Attribution",
+      "authors": "B Pascoe",
+      "publication": "IAFP 2018 Annual Meeting, 2018",
+      "year": "2018",
+      "reason": "Not matched to PubMed and not clearly a preprint"
+    },
+    {
+      "title": "Using Campylobacter Genomes to Track Clusters and Lineages",
+      "authors": "B Pascoe",
+      "publication": "IAFP 2018 Annual Meeting, 2018",
+      "year": "2018",
+      "reason": "Not matched to PubMed and not clearly a preprint"
+    },
+    {
+      "title": "The Conundrum of Campylobacter Source Attribution",
+      "authors": "M Batz, D Goldman, R Tauxe, K Vierk, J Zablotsky-Kufel, A Havelaar, ...",
+      "publication": "IAFP 2018 Annual Meeting, 2018",
+      "year": "2018",
+      "reason": "Not matched to PubMed and not clearly a preprint"
+    },
+    {
+      "title": "High resolution whole genome Multilocus Sequence Typing (wgMLST) schemes for Salmonella enterica weltevreden epidemiologic investigations",
+      "authors": "P Tadee, P Tadee, MD Hitchings, B Pascoe, SK Sheppard, P Patchanee",
+      "publication": "Microbiology and Biotechnology Letters 46 (2), 162, 2018",
+      "year": "2018",
+      "reason": "Not matched to PubMed and not clearly a preprint"
+    },
+    {
+      "title": "Bacillus cereus: Caracterização genômica na cadeia produtiva de leite e influência da pasteurização na expressão de genes relacionados a toxinas diarreicas",
+      "authors": "GAM Rossi",
+      "publication": "Universidade Estadual Paulista (Unesp), 2017",
+      "year": "2017",
+      "reason": "Not matched to PubMed and not clearly a preprint"
+    },
+    {
+      "title": "Phenotypic and genotypic characterisation of Staphylococcus epidermidis from orthopaedic device-related infections correlated with patient outcome",
+      "authors": "V Post, M Morgenstern, L Harris, L Mageiros, MD Hitchings, G Méric, ...",
+      "publication": "Bone Joint J 99 (SUPP 22), 65-65, 2017",
+      "year": "2017",
+      "reason": "Not matched to PubMed and not clearly a preprint"
+    },
+    {
+      "title": "Determination of regional relationships among Salmonella spp. isolated from retail pork circulating in the Chiang Mai municipality area using a WGS data approach",
+      "authors": "P Patchanee, T Eiamsam-Ang, J Vanaseang, P Boonkhot, P Tadee",
+      "publication": "International journal of food microbiology 254, 18-24, 2017",
+      "year": "2017",
+      "reason": "Not matched to PubMed and not clearly a preprint"
+    },
+    {
+      "title": "Characterization of nasal methicillin-resistant Staphylococcus aureus isolated from international human and veterinary surgeons",
+      "authors": "V Post, LG Harris, M Morgenstern, R Geoff Richards, SK Sheppard, ...",
+      "publication": "Journal of medical microbiology 66 (3), 360-370, 2017",
+      "year": "2017",
+      "reason": "Not matched to PubMed and not clearly a preprint"
+    },
+    {
+      "title": "Campylobacter concisus & Inflammatory Bowel Disease:–Insights through cultivation and whole-genome sequencing",
+      "authors": "KF Kirk",
+      "publication": null,
+      "year": "2017",
+      "reason": "Not matched to PubMed and not clearly a preprint"
+    },
+    {
+      "title": "Caracterización genómica y resistencias a antimicrobianos de campylobacter",
+      "authors": "DF Cuadrado",
+      "publication": "Universidad Complutense de Madrid, 2017",
+      "year": "2017",
+      "reason": "Not matched to PubMed and not clearly a preprint"
+    },
+    {
+      "title": "Generating tools for the molecular epidemiology of Campylobacter coli by next generation genome sequencing",
+      "authors": "AHM van Vliet, BM Pearson, NJ Williams, B Pascoe, G Meric, P Ashton, ...",
+      "publication": null,
+      "year": "2016",
+      "reason": "Not matched to PubMed and not clearly a preprint"
+    },
+    {
+      "title": "CLIMB (the Cloud Infrastructure for Microbial Bioinformatics): an online resource for the medical microbiology community",
+      "authors": "TR Connor, NJ Loman, S Thompson, A Smith, J Southgate, R Poplawski, ...",
+      "publication": "Microbial genomics 2 (9), e000086, 2016",
+      "year": "2016",
+      "reason": "Not matched to PubMed and not clearly a preprint"
+    },
+    {
+      "title": "Disease severity associated genomic variation among Campylobacter jejuni isolates from asymptomatic and acute infection in children of the Peruvian Amazon",
+      "authors": "M Hitchings",
+      "publication": null,
+      "year": "2016",
+      "reason": "Not matched to PubMed and not clearly a preprint"
+    },
+    {
+      "title": "Genomes of Helicobacter pylori prophages",
+      "authors": "FF Vale, A Nunes, M Oleastro, JP Gomes, D Sampaio, R Rocha, J Vítor, ...",
+      "publication": "XXIXth International Workshop on Helicobacter and Microbiota in Inflammation …, 2016",
+      "year": "2016",
+      "reason": "Not matched to PubMed and not clearly a preprint"
+    },
+    {
+      "title": "Persistent Staphylococcus aureus isolates from two independent bacteraemia cases display phenotypic traits that increase in vivo bacterial fitness and immune evasion",
+      "authors": "R Richards, R Haigh, B Pascoe, S Sheppard, F Price, D Jenkins, ...",
+      "publication": "Infection and Immunity, 2015",
+      "year": "2015",
+      "reason": "Not matched to PubMed and not clearly a preprint"
+    },
+    {
+      "title": "Genome-wide association study links biofilm formation with protection from oxidative stress in host generalist lineages of Campylobacter",
+      "authors": "B Pascoe, S Murray, SK Sheppard",
+      "publication": "Campy UK, 2014",
+      "year": "2014",
+      "reason": "Not matched to PubMed and not clearly a preprint"
+    },
+    {
+      "title": "Does Biofilm Formation Aid Colonization and Infection in Campylobacter?",
+      "authors": "B Pascoe, H Lappin-Scott, SK Sheppard, H Asakura",
+      "publication": "Campylobacter Ecology and Evolution, 2014",
+      "year": "2014",
+      "reason": "Not matched to PubMed and not clearly a preprint"
+    },
+    {
+      "title": "Biomaterials associated infection",
+      "authors": "D Mack, AP Davies, LG Harris, R Jeeves, B Pascoe, JKM Knobloch, ...",
+      "publication": null,
+      "year": "2013",
+      "reason": "Not matched to PubMed and not clearly a preprint"
+    },
+    {
+      "title": "Staphylococcus epidermidis",
+      "authors": "D Mack, AP Davies, LG Harris, R Jeeves, B Pascoe, JKM Knobloch, ...",
+      "publication": "Biomaterials Associated Infection: Immunological Aspects and Antimicrobial …, 2012",
+      "year": "2012",
+      "reason": "Not matched to PubMed and not clearly a preprint"
+    },
+    {
+      "title": "Staphylococcus epidermidis in Biomaterial-Associated Infections",
+      "authors": "D Mack, AP Davies, LG Harris, R Jeeves, B Pascoe, JKM Knobloch, ...",
+      "publication": "Biomaterials associated infection: immunological aspects and antimicrobial …, 2012",
+      "year": "2012",
+      "reason": "Not matched to PubMed and not clearly a preprint"
+    },
+    {
+      "title": "Staphylococcus epidermidis in Biomaterial-Associated Infections",
+      "authors": "A Davies, D Mack, AP Davies, LG Harris, R Jeeves, B Pascoe, ...",
+      "publication": "Springer, 2012",
+      "year": "2012",
+      "reason": "Not matched to PubMed and not clearly a preprint"
+    },
+    {
+      "title": "Functional analysis of Zur, the zinc uptake regulator of Streptomyces coelicolor A3 (2)",
+      "authors": "B Pascoe",
+      "publication": "University of Sussex, 2009",
+      "year": "2009",
+      "reason": "Not matched to PubMed and not clearly a preprint"
+    },
+    {
+      "title": "Can crab protect roses from blackspot?",
+      "authors": "AM Hall, A Ali, B Pascoe",
+      "publication": "Proceedings of the BCPC Conference - Crop Science and Technology 2, 925-928, 2003",
+      "year": "2003",
+      "reason": "Not matched to PubMed and not clearly a preprint"
+    },
+    {
+      "title": "Vet Integr Sci Veterinary Integrative Sciences",
+      "authors": "T Buawiratlert, P Tadee, S Chotinun, P Chuammitri, S Kheowsri, ...",
+      "publication": null,
+      "year": "",
+      "reason": "Not matched to PubMed and not clearly a preprint"
+    },
+    {
+      "title": "University of Oxford",
+      "authors": "B Pascoe",
+      "publication": "United Kingdom, 0",
+      "year": "",
+      "reason": "Not matched to PubMed and not clearly a preprint"
+    },
+    {
+      "title": "Université Montpellier 2-Master Sciences pour l’Environnement",
+      "authors": "G Méric, S Sheppard, C Monteil, B Pascoe, T Wilkinson, L Harris, ...",
+      "publication": null,
+      "year": "",
+      "reason": "Not matched to PubMed and not clearly a preprint"
+    },
+    {
+      "title": "University of Bath",
+      "authors": "B Pascoe",
+      "publication": "United Kingdom, 0",
+      "year": "",
+      "reason": "Not matched to PubMed and not clearly a preprint"
+    }
+  ]
 }
