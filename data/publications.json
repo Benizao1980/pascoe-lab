@@ -23,10 +23,14 @@
       "Campylobacter"
     ],
     "topics": [
-      "Population genomics"
+      "Population genomics",
+      "AMR"
     ],
     "projects": [],
-    "geographies": []
+    "geographies": [],
+    "preprintDoi": "10.64898/2026.02.06.704332",
+    "preprintUrl": "https://doi.org/10.64898/2026.02.06.704332",
+    "preprintTitle": "Phenotypic Resistance of Ciprofloxacin and Azithromycin Resistant Campylobacter Isolates to an Extended Panel of Antibiotics."
   },
   {
     "id": "2026-genomic-insights-mrsa-metabolism-gene-clusters",
@@ -72,14 +76,14 @@
     "abstract": "Staphylococcus epidermidis is a major cause of orthopaedic device-related infections (ODRIs), which are often challenging to treat due to their extensive antimicrobial resistance (AMR) and biofilm formation. It has been hypothesised that S. epidermidis may rapidly adapt to the medical device niche, enhancing persistence, but direct evidence of within-host pathoadaptive evolution remains limited. To investigate within-host evolution during chronic infection by S. epidermidis, we analysed isolates from patients with confirmed ODRIs and used a rat infection model to examine the evolution of strains from two distinct epidemic lineages (ST2 and ST23). Our analysis revealed that the replicative transposition of insertion sequence (IS) elements within the accessory genome was the predominant mechanism of genetic diversification. This was largely driven by the IS256 family, which accounted for approximately 25% of all mutational events. However, other than SCCmec deletions resulting in the loss of mecA, no mutations, including those which exhibited parallel evolution, were predicted or observed to influence AMR or biofilm formation. These findings suggest that the strains investigated in this study, which already exhibited high-level multidrug resistance and biofilm-forming ability, were likely pre-adapted epidemic S. epidermidis clones well suited to establishing persistent ODRIs. Our findings highlight the prominent role of IS elements in driving genetic diversification in S. epidermidis, underscoring the need for closer examination of their contribution to pathoadaptation during persistent infection.",
     "scholarCitationId": "UQrZ-fgAAAAJ:RfUwGJFMQ-0C",
     "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=UQrZ-fgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=UQrZ-fgAAAAJ:RfUwGJFMQ-0C",
-    "publicationType": "preprint",
-    "status": "preprint",
-    "type": "preprint",
+    "publicationType": "journal",
+    "status": "published",
+    "type": "publication",
     "selected": false,
     "featuredHome": false,
     "themeId": "evolution",
     "theme": "Evolution and host adaptation",
-    "summary": "",
+    "summary": "Within-host evolution and insertion-sequence dynamics in persistent device-related infection.",
     "id": "2026-insertion-sequence-elements-associated-with-staphylococcus-epidermidis-evolution",
     "citation": "Littlefair JC, Kobras CM, Post V, Pascoe B, Baker DJ, Erichsen C, Stracy M, Moriarty F, Sheppard SK (2026) Insertion sequence elements associated with Staphylococcus epidermidis evolution in persistent orthopaedic device-related infections.. BMC genomics 10.1186/s12864-026-13148-1. doi: 10.1186/s12864-026-13148-1",
     "organisms": [
@@ -89,7 +93,10 @@
       "Evolution"
     ],
     "projects": [],
-    "geographies": []
+    "geographies": [],
+    "preprintDoi": "10.64898/2026.05.21.726754",
+    "preprintUrl": "https://doi.org/10.64898/2026.05.21.726754",
+    "preprintTitle": "Insertion sequence elements drive within-host evolution of Staphylococcus epidermidis in persistent orthopaedic device-related infections"
   },
   {
     "id": "2026-protocols-for-genomic-epidemiology-and-source-attribution-of-enteric-bacteria-causing",
@@ -132,31 +139,6 @@
     "abstract": "Enteric bacterial pathogens are a major cause of diarrhoeal disease in low-income and middle-income countries, with complex transmission pathways involving human, animal and environmental reservoirs. Conventional epidemiological and microbiological approaches provide important insights into pathogen burden and distribution but lack the resolution needed to characterise fine-scale diversity, antimicrobial resistance (AMR) and transmission dynamics. Whole-genome sequencing offers high-resolution tools to investigate these processes within a One Health framework. The Genomic Epidemiology and Transmission of Campylobacter in Africa (GETCampy-Africa) study uses a multicountry, One Health design to investigate pathogen diversity, source attribution and transmission pathways. The study uses a case-control framework, recruiting children with medically attended diarrhoea and asymptomatic community controls across sites in Burkina Faso, Ghana and The Gambia. Samples were collected from human participants, domestic animals and environmental sources following standardised protocols. Participant enrolment and sample collection have been completed, while laboratory processing, sequencing and genomic analyses are ongoing. Genomic data are analysed to assess population structure, AMR profiles and probabilistic attribution of isolates to potential reservoirs using comparative genomics and machine learning approaches. Ethical approval was obtained from relevant national and institutional committees in all participating countries. Written informed consent was obtained from participants or their guardians prior to enrolment. Findings will be disseminated through peer-reviewed publications, stakeholder engagement activities and open-access platforms to support public health interventions and policy development.",
     "scholarCitationId": "UQrZ-fgAAAAJ:rbGdIwl2e6cC",
     "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=UQrZ-fgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=UQrZ-fgAAAAJ:rbGdIwl2e6cC"
-  },
-  {
-    "id": "2026-staph-epidermidis-is-preprint",
-    "year": 2026,
-    "citation": "Littlefair J, Kobras CM, Post V, Pascoe B, et al. (2026) Insertion sequence elements drive within-host evolution of Staphylococcus epidermidis in persistent orthopaedic device-related infections. bioRxiv. doi: 10.64898/2026.05.21.726754",
-    "authors": "Littlefair J, Kobras CM, Post V, Pascoe B, et al.",
-    "title": "Insertion sequence elements drive within-host evolution of Staphylococcus epidermidis in persistent orthopaedic device-related infections",
-    "doi": "10.64898/2026.05.21.726754",
-    "type": "preprint",
-    "publicationType": "preprint",
-    "status": "preprint",
-    "selected": false,
-    "featuredHome": false,
-    "summary": "Within-host evolution and insertion-sequence dynamics in persistent device-related infection.",
-    "themeId": "evolution",
-    "theme": "Evolution and host adaptation",
-    "publishedDate": "2026-05-21",
-    "organisms": [
-      "Staphylococcus"
-    ],
-    "topics": [
-      "Evolution"
-    ],
-    "projects": [],
-    "geographies": []
   },
   {
     "id": "2026-pathoadaptive-evolution-and-clonal-dissemination-of-community-associated-methicillin-",
@@ -231,36 +213,6 @@
     "abstract": "Oropouche virus (OROV) is an emerging vector-borne pathogen endemic to the Americas, which causes acute febrile illness (AFI) in humans. Starting in late 2023, surges in OROV infections were reported across Latin America, including an outbreak in Iquitos, a city in the Eastern Peruvian Amazon, where RIVERA, an ongoing AFI surveillance program detected and characterized incident OROV cases. AFI cases presenting to health facilities were screened for OROV using PCR. OROV-positive subjects were compared to AFI OROV negative cases to describe the principal features of clinical disease. Genomes from OROV strains were sequenced and compared using phylogenetic analysis with those from extant samples isolated from other locations in the Americas. In early 2024, an 8.6% OROV-positivity rate (29 detections in 339 samples) in RIVERA subjects was recorded, a more than 20-fold increase compared with pre-outbreak levels. Illness was characterized by fever, arthralgia, myalgia and dysuria. Genome sequences from strains in this outbreak were phylogenetically distinct from those from a concurrent one in Brazil, but resembled strains from Colombia and Ecuador. The last common ancestor of outbreak strains from Peru and Brazil was 226 years prior to sampling, and that of Peru and Ecuador and Colombia approximately 10 and 8 years prior to sampling, respectively. Genomic analysis suggests that the current outbreak in South America is multifocal in origin and not the result of geographic spread from Brazil. An existing AFI surveillance program successfully documented the emergence and characterized the symptom profile of this emerging arboviral disease. CDC/HHS U01GH002270; NIH D43TW010913, K43TW012298, K01AI168493, 5T32AI007046-48.",
     "scholarCitationId": "UQrZ-fgAAAAJ:v_tt_AnqfNMC",
     "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=UQrZ-fgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=UQrZ-fgAAAAJ:v_tt_AnqfNMC"
-  },
-  {
-    "title": "Phenotypic Resistance of Ciprofloxacin and Azithromycin Resistant Campylobacter Isolates to an Extended Panel of Antibiotics.",
-    "authors": "Romaina Cachique L, Schiaffino F, Paredes Olortegui M, Manzanares K, Pinedo T, Castro A, Najarro J, Cooper KK, Mourkas E, Pascoe B, Peñataro Yori P, Parker CT, Kosek MN",
-    "year": 2026,
-    "publishedDate": "2026-02-10",
-    "doi": "10.64898/2026.02.06.704332",
-    "pmid": "41726879",
-    "journal": "bioRxiv : the preprint server for biology",
-    "abstract": "In this study we explored phenotypic resistance using traditional Kirby-Bauer methods in human and animal derived Campylobacter isolates that were concurrently resistant to both azithromycin and ciprofloxacin to an expanded panel of antimicrobials, including clindamycin, fosfomycin, ampicillin sulbactam and tigecycline. Out of 236 Campylobacter isolates, over 85% of C. jejuni and C. coli were resistant to clindamycin, over 60% were resistant to ampicillin sulbactam and over 30% to fosfomycin. Less than 2% of isolates were resistant to tigecycline and there was no observed resistance to Imipenem.",
-    "scholarCitationId": "UQrZ-fgAAAAJ:RXiHnyRawswC",
-    "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=UQrZ-fgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=UQrZ-fgAAAAJ:RXiHnyRawswC",
-    "publicationType": "preprint",
-    "status": "preprint",
-    "type": "preprint",
-    "selected": false,
-    "featuredHome": false,
-    "themeId": "evolution",
-    "theme": "Evolution and host adaptation",
-    "summary": "",
-    "id": "2026-phenotypic-resistance-of-ciprofloxacin-and-azithromycin-resistant-campylobacter-",
-    "citation": "Romaina Cachique L, Schiaffino F, Paredes Olortegui M, Manzanares K, Pinedo T, Castro A, Najarro J, Cooper KK, Mourkas E, Pascoe B, Peñataro Yori P, Parker CT, Kosek MN (2026) Phenotypic Resistance of Ciprofloxacin and Azithromycin Resistant Campylobacter Isolates to an Extended Panel of Antibiotics.. bioRxiv: the preprint server for biology 2026.02.06.704332. doi: 10.64898/2026.02.06.704332",
-    "organisms": [
-      "Campylobacter"
-    ],
-    "topics": [
-      "AMR"
-    ],
-    "projects": [],
-    "geographies": []
   },
   {
     "id": "2026-lin-code-campylobacter-preprint",
@@ -669,35 +621,6 @@
     "summary": ""
   },
   {
-    "title": "Strain specific virulence signatures of Campylobacter jejuni associated with watery versus bloody diarrhoea in a neonatal piglet model",
-    "authors": "JM Bosquez, B Pascoe, CT Parker, KK Cooper",
-    "year": 2025,
-    "publishedDate": "2025-01-01",
-    "doi": "",
-    "pmid": "",
-    "journal": "bioRxiv, 2025.04. 25.650680, 2025",
-    "scholarCitationId": "UQrZ-fgAAAAJ:aEW5N-EHWIMC",
-    "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=UQrZ-fgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=UQrZ-fgAAAAJ:aEW5N-EHWIMC",
-    "publicationType": "preprint",
-    "status": "preprint",
-    "type": "preprint",
-    "selected": false,
-    "featuredHome": false,
-    "themeId": "evolution",
-    "theme": "Evolution and host adaptation",
-    "summary": "",
-    "id": "2025-strain-specific-virulence-signatures-of-campylobacter-jejuni-associated-with-wat",
-    "citation": "JM Bosquez, B Pascoe, CT Parker, KK Cooper (2025) Strain specific virulence signatures of Campylobacter jejuni associated with watery versus bloody diarrhoea in a neonatal piglet model. bioRxiv, 2025.04. 25.650680, 2025",
-    "organisms": [
-      "Campylobacter"
-    ],
-    "topics": [
-      "Virulence and disease"
-    ],
-    "projects": [],
-    "geographies": []
-  },
-  {
     "id": "2025-stability-of-helicobacter-pylori-resistance-to-clarithromycin",
     "year": 2025,
     "citation": "Ngoyi ENO, Berthenet E, Benejat L, Guilloteau C, Vadivelu J, Goh KL, Lehours P, Abena AA, Hitchings MD, Pascoe B, Sheppard SK, Mégraud F (2025) Stability of Helicobacter pylori Resistance to Clarithromycin. Open Journal of Medical Microbiology, 15(4): 273-289",
@@ -757,17 +680,46 @@
     "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=UQrZ-fgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=UQrZ-fgAAAAJ:vVJNg6_NJEsC"
   },
   {
+    "title": "Strain specific virulence signatures of Campylobacter jejuni associated with watery versus bloody diarrhoea in a neonatal piglet model",
+    "authors": "JM Bosquez, B Pascoe, CT Parker, KK Cooper",
+    "year": 2025,
+    "publishedDate": "2025-01-01",
+    "doi": "",
+    "pmid": "",
+    "journal": "bioRxiv, 2025.04. 25.650680, 2025",
+    "scholarCitationId": "UQrZ-fgAAAAJ:aEW5N-EHWIMC",
+    "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=UQrZ-fgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=UQrZ-fgAAAAJ:aEW5N-EHWIMC",
+    "publicationType": "preprint",
+    "status": "preprint",
+    "type": "preprint",
+    "selected": false,
+    "featuredHome": false,
+    "themeId": "evolution",
+    "theme": "Evolution and host adaptation",
+    "summary": "",
+    "id": "2025-strain-specific-virulence-signatures-of-campylobacter-jejuni-associated-with-wat",
+    "citation": "JM Bosquez, B Pascoe, CT Parker, KK Cooper (2025) Strain specific virulence signatures of Campylobacter jejuni associated with watery versus bloody diarrhoea in a neonatal piglet model. bioRxiv, 2025.04. 25.650680, 2025",
+    "organisms": [
+      "Campylobacter"
+    ],
+    "topics": [
+      "Virulence and disease"
+    ],
+    "projects": [],
+    "geographies": []
+  },
+  {
     "id": "2025-consortium-member-monitoring-antimicrobial-resistance-trends-from-global-genomics-dat",
     "year": 2025,
     "citation": "David S*, Diaz Caballero J*, Couto N*, Abudahab K*, Fareed-Alikhan N, Yeats C, Underwood A, Molloy A, Connor D, Shane HM, Ashton PM, Grundmann H, Holden MTG, Feil EJ, Sia SB, Donado-Godoy P, Lingegowda RK, Okeke IN, Argimón S and Aanensen DM on behalf of the NIHR Global Health Research Unit on Genomics and enabling data for the Surveillance of AMR (2025) [Consortium member] Monitoring antimicrobial resistance trends from global genomics data: AMR.watch. PLoS Global Public Health 5 (11), e0005256; bioRxiv doi.org/10.1101/2025.04.17.649298",
     "authors": "David S*, Diaz Caballero J*, Couto N*, Abudahab K*, Fareed-Alikhan N, Yeats C, Underwood A, Molloy A, Connor D, Shane HM, Ashton PM, Grundmann H, Holden MTG, Feil EJ, Sia SB, Donado-Godoy P, Lingegowda RK, Okeke IN, Argimón S and Aanensen DM on behalf of the NIHR Global Health Research Unit on Genomics and enabling data for the Surveillance of AMR",
     "title": "[Consortium member] Monitoring antimicrobial resistance trends from global genomics data: AMR.watch",
     "doi": "10.1371/journal.pgph.0005256",
-    "type": "publication",
-    "status": "published",
+    "type": "preprint",
+    "status": "preprint",
     "selected": false,
     "featuredHome": false,
-    "publicationType": "journal",
+    "publicationType": "preprint",
     "themeId": "tools",
     "theme": "Open genomic tools and surveillance",
     "publishedDate": "2025-01-01",
@@ -1121,36 +1073,6 @@
     "summary": ""
   },
   {
-    "id": "2024-urbanization-spreads-antimicrobial-resistant-enteric-pathogens-in-wild-bird-microbiom",
-    "year": 2024,
-    "citation": "Mourkas E*, Valdebenito JO*, Marsh H, Hitchings MD, Copper KK, Parker CT, Székely T, Johansson H, Ellstrom P, Pascoe B** Waldenström J**, & Sheppard SK** (2024) Urbanization spreads antimicrobial-resistant enteric pathogens in wild bird microbiomes. Current Biology 17: 3955-3965; bioRxiv doi: 10.1101/2023.07.11.548564",
-    "authors": "Mourkas E*, Valdebenito JO*, Marsh H, Hitchings MD, Copper KK, Parker CT, Székely T, Johansson H, Ellstrom P, Pascoe B** Waldenström J**, & Sheppard SK**",
-    "title": "Proximity to humans is associated with antimicrobial-resistant enteric pathogens in wild-bird microbiomes",
-    "doi": "10.1016/j.cub.2024.07.013",
-    "type": "publication",
-    "status": "published",
-    "selected": true,
-    "featuredHome": false,
-    "theme": "Transmission across One Health systems",
-    "summary": "Human-altered ecology is associated with greater bacterial lineage and resistance diversity in wild birds.",
-    "project": "HU-RIZON",
-    "story": "stories/wild-birds-amr.html",
-    "journal": "Current Biology",
-    "publicationType": "journal",
-    "themeId": "transmission",
-    "publishedDate": "2024-01-01",
-    "organisms": [],
-    "topics": [
-      "One Health",
-      "Transmission",
-      "Metagenomics"
-    ],
-    "projects": [
-      "HU-RIZON"
-    ],
-    "geographies": []
-  },
-  {
     "id": "2024-commercial-farmed-swine-harbour-a-variety-of-pathogenic-bacteria-and-antimicrobial-re",
     "year": 2024,
     "citation": "Eiamsam-Ang T, Tadee P, Buddhasiri S, Chuammitri P, Kittiwan N, Pascoe B, Patchanee P (2024) Commercial farmed swine harbour a variety of pathogenic bacteria and antimicrobial resistance genes.. Journal of medical microbiology 73(1):001787. doi: 10.1099/jmm.0.001787",
@@ -1180,35 +1102,6 @@
     "summary": ""
   },
   {
-    "id": "2024-consortium-member-geographical-distribution-disease-association-and-diversity-of-kleb",
-    "year": 2024,
-    "citation": "Shamanna V, Srinivas S, Couto N*, Nagaraj G, Sajankila SP, Krishnappa HG, Kumar KA, Aanensen DM, Lingegowda RK* and the NIHR Global Health Research Unit consortium (2024) [consortium member] Geographical distribution, disease association and diversity of Klebsiella pneumoniae K/L and O antigens in India: roadmap for vaccine development. Microbial Genomics 10(7): 001271; bioRxiv doi: 10.1101/2024.03.15.585133",
-    "authors": "Shamanna V, Srinivas S, Couto N*, Nagaraj G, Sajankila SP, Krishnappa HG, Kumar KA, Aanensen DM, Lingegowda RK* and the NIHR Global Health Research Unit consortium",
-    "title": "[consortium member] Geographical distribution, disease association and diversity of Klebsiella pneumoniae K/L and O antigens in India: roadmap for vaccine development",
-    "doi": "10.1099/mgen.0.001271",
-    "type": "publication",
-    "status": "published",
-    "selected": false,
-    "featuredHome": false,
-    "publicationType": "journal",
-    "themeId": "transmission",
-    "theme": "Transmission across One Health systems",
-    "publishedDate": "2024-01-01",
-    "organisms": [
-      "Klebsiella"
-    ],
-    "topics": [
-      "Surveillance",
-      "Vaccines",
-      "Virulence and disease"
-    ],
-    "projects": [],
-    "geographies": [
-      "India",
-      "Global"
-    ]
-  },
-  {
     "id": "2024-consortium-member-gene-content-phage-cycle-regulation-model-and-prophage-inactivation",
     "year": 2024,
     "citation": "Vale FF, HpGP Research Network, Roberts RJ, Kobayashi I, Camargo MC, Rabkin CS (2024) [Consortium member] Gene content, phage cycle regulation model and prophage inactivation disclosed by prophage genomics in the Helicobacter pylori Genome Project. Gut Microbes 16: 2379440",
@@ -1231,6 +1124,65 @@
     ],
     "projects": [],
     "geographies": []
+  },
+  {
+    "id": "2024-urbanization-spreads-antimicrobial-resistant-enteric-pathogens-in-wild-bird-microbiom",
+    "year": 2024,
+    "citation": "Mourkas E*, Valdebenito JO*, Marsh H, Hitchings MD, Copper KK, Parker CT, Székely T, Johansson H, Ellstrom P, Pascoe B** Waldenström J**, & Sheppard SK** (2024) Urbanization spreads antimicrobial-resistant enteric pathogens in wild bird microbiomes. Current Biology 17: 3955-3965; bioRxiv doi: 10.1101/2023.07.11.548564",
+    "authors": "Mourkas E*, Valdebenito JO*, Marsh H, Hitchings MD, Copper KK, Parker CT, Székely T, Johansson H, Ellstrom P, Pascoe B** Waldenström J**, & Sheppard SK**",
+    "title": "Proximity to humans is associated with antimicrobial-resistant enteric pathogens in wild-bird microbiomes",
+    "doi": "10.1016/j.cub.2024.07.013",
+    "type": "preprint",
+    "status": "preprint",
+    "selected": true,
+    "featuredHome": false,
+    "theme": "Transmission across One Health systems",
+    "summary": "Human-altered ecology is associated with greater bacterial lineage and resistance diversity in wild birds.",
+    "project": "HU-RIZON",
+    "story": "stories/wild-birds-amr.html",
+    "journal": "Current Biology",
+    "publicationType": "preprint",
+    "themeId": "transmission",
+    "publishedDate": "2024-01-01",
+    "organisms": [],
+    "topics": [
+      "One Health",
+      "Transmission",
+      "Metagenomics"
+    ],
+    "projects": [
+      "HU-RIZON"
+    ],
+    "geographies": []
+  },
+  {
+    "id": "2024-consortium-member-geographical-distribution-disease-association-and-diversity-of-kleb",
+    "year": 2024,
+    "citation": "Shamanna V, Srinivas S, Couto N*, Nagaraj G, Sajankila SP, Krishnappa HG, Kumar KA, Aanensen DM, Lingegowda RK* and the NIHR Global Health Research Unit consortium (2024) [consortium member] Geographical distribution, disease association and diversity of Klebsiella pneumoniae K/L and O antigens in India: roadmap for vaccine development. Microbial Genomics 10(7): 001271; bioRxiv doi: 10.1101/2024.03.15.585133",
+    "authors": "Shamanna V, Srinivas S, Couto N*, Nagaraj G, Sajankila SP, Krishnappa HG, Kumar KA, Aanensen DM, Lingegowda RK* and the NIHR Global Health Research Unit consortium",
+    "title": "[consortium member] Geographical distribution, disease association and diversity of Klebsiella pneumoniae K/L and O antigens in India: roadmap for vaccine development",
+    "doi": "10.1099/mgen.0.001271",
+    "type": "preprint",
+    "status": "preprint",
+    "selected": false,
+    "featuredHome": false,
+    "publicationType": "preprint",
+    "themeId": "transmission",
+    "theme": "Transmission across One Health systems",
+    "publishedDate": "2024-01-01",
+    "organisms": [
+      "Klebsiella"
+    ],
+    "topics": [
+      "Surveillance",
+      "Vaccines",
+      "Virulence and disease"
+    ],
+    "projects": [],
+    "geographies": [
+      "India",
+      "Global"
+    ]
   },
   {
     "id": "2023-recombination-mediated-adaptation-of-methicillin-resistant-s",
@@ -1366,9 +1318,9 @@
     "abstract": "Salmonella is an important enteric pathogen that poses a threat to human and livestock animal health, with emerging multidrug resistance (MDR) a major public health issue globally. We investigated the prevalence of Salmonella in healthy and diseased pigs from Thai pig farms and determined their phenotypic and genotypic antimicrobial resistance profiles. A total of 150 fecal samples were collected from pigs housed in pens from four separate pig farms in southern Thailand and tested for the presence of Salmonella. Confirmed Salmonella isolates were tested for their susceptibility to 11 antimicrobials, and PCR used to detect known antimicrobial resistance genes (ARGs). Salmonella isolates were cultured from 69% (103/150) of all fecal samples, with higher prevalence in disease pigs (12/15; 80%), compared with healthy pigs (91/135; 67%). Serotype Rissen was the most frequently identified serotype among the Salmonella isolates. Resistance to ampicillin (AMP) (97%), sulfonamide-trimethoprim (SXT) (97%), and tetracycline (TET) (94%) were the most common phenotypes observed. The most common ARGs identified were blaTEM gene (99.%), tetA (87%), sul1 (77%), and dfrA1 (74%), and more than 95% of the Salmonella isolates tested were MDR - based on resistance to three or more antimicrobial classes. The most common antimicrobial resistance pattern exhibited was AMP-TET-SXT (76%), and resistance to colistin (via the mcr-1 gene) was observed in both healthy and diseased pigs. The clonal groups of PFGE analysis in serotype Typhimurium revealed the genetic relationship among Salmonella isolated from healthy and diseased pigs from different pig farms.",
     "scholarCitationId": "UQrZ-fgAAAAJ:GYcXSSpN504C",
     "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=UQrZ-fgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=UQrZ-fgAAAAJ:GYcXSSpN504C",
-    "publicationType": "journal",
-    "status": "published",
-    "type": "publication",
+    "publicationType": "preprint",
+    "status": "preprint",
+    "type": "preprint",
     "selected": false,
     "featuredHome": false,
     "themeId": "evolution",
@@ -2010,11 +1962,11 @@
     "authors": "P Tadee, P Patchanee, B Pascoe, SK Sheppard, D Meunsene, ...",
     "title": "Occurrence and sequence type of antimicrobial resistant Salmonella spp. circulating in antibiotic-free organic pig farms of northern-Thailand",
     "doi": "10.14456/tjvm.2021.39",
-    "type": "publication",
-    "status": "published",
+    "type": "preprint",
+    "status": "preprint",
     "selected": false,
     "featuredHome": false,
-    "publicationType": "journal",
+    "publicationType": "preprint",
     "themeId": "transmission",
     "theme": "Transmission across One Health systems",
     "journal": "Thai Journal of Veterinary Medicine",
@@ -2259,29 +2211,6 @@
     ]
   },
   {
-    "id": "2020-high-resolution-sweep-metagenomics-using-fast-probabilistic-inference-wellcome-open-r",
-    "year": 2020,
-    "citation": "Mäklin T, Kallonen T, David S, Boinett CJ, Pascoe B, Méric G, Aanensen DM, Feil EJ, Baker S, Parkhill J, Sheppard SK, Corander J, Honkela A. (2020) High-resolution sweep metagenomics using fast probabilistic inference. Wellcome Open Research 5:14; doi: 10.12688/wellcomeopenres.15639.1; [bioRxiv doi: 10.1101/332544]",
-    "authors": "Mäklin T, Kallonen T, David S, Boinett CJ, Pascoe B, Méric G, Aanensen DM, Feil EJ, Baker S, Parkhill J, Sheppard SK, Corander J, Honkela A",
-    "title": "High-resolution sweep metagenomics using fast probabilistic inference. Wellcome Open Research 5:14; doi: 10.12688/wellcomeopenres.15639.1; [bioRxiv doi: 10.1101/332544]",
-    "doi": "10.12688/wellcomeopenres.15639.1",
-    "type": "publication",
-    "status": "preprint",
-    "selected": false,
-    "featuredHome": false,
-    "publicationType": "preprint",
-    "themeId": "tools",
-    "theme": "Open genomic tools and surveillance",
-    "publishedDate": "2020-01-01",
-    "organisms": [],
-    "topics": [
-      "Machine learning",
-      "Metagenomics"
-    ],
-    "projects": [],
-    "geographies": []
-  },
-  {
     "id": "2020-determination-of-campylobacter-coli-host-segregating-snps-and-their-use-for-source-at",
     "year": 2020,
     "citation": "Jehanne Q, Pascoe B, Bénéjat L, Ducournau A, Buissonnière A, Mourkas E, Mégraud F, Bessède E, Sheppard SK & Lehours P. (2020) Determination of Campylobacter coli host-segregating SNPs and their use for source attribution of clinical isolates. AEM 86 (24) doi: 10.1128/AEM.01787-2",
@@ -2301,6 +2230,29 @@
     ],
     "topics": [
       "Source attribution"
+    ],
+    "projects": [],
+    "geographies": []
+  },
+  {
+    "id": "2020-high-resolution-sweep-metagenomics-using-fast-probabilistic-inference-wellcome-open-r",
+    "year": 2020,
+    "citation": "Mäklin T, Kallonen T, David S, Boinett CJ, Pascoe B, Méric G, Aanensen DM, Feil EJ, Baker S, Parkhill J, Sheppard SK, Corander J, Honkela A. (2020) High-resolution sweep metagenomics using fast probabilistic inference. Wellcome Open Research 5:14; doi: 10.12688/wellcomeopenres.15639.1; [bioRxiv doi: 10.1101/332544]",
+    "authors": "Mäklin T, Kallonen T, David S, Boinett CJ, Pascoe B, Méric G, Aanensen DM, Feil EJ, Baker S, Parkhill J, Sheppard SK, Corander J, Honkela A",
+    "title": "High-resolution sweep metagenomics using fast probabilistic inference. Wellcome Open Research 5:14; doi: 10.12688/wellcomeopenres.15639.1; [bioRxiv doi: 10.1101/332544]",
+    "doi": "10.12688/wellcomeopenres.15639.1",
+    "type": "preprint",
+    "status": "preprint",
+    "selected": false,
+    "featuredHome": false,
+    "publicationType": "preprint",
+    "themeId": "tools",
+    "theme": "Open genomic tools and surveillance",
+    "publishedDate": "2020-01-01",
+    "organisms": [],
+    "topics": [
+      "Machine learning",
+      "Metagenomics"
     ],
     "projects": [],
     "geographies": []
@@ -3008,31 +2960,6 @@
     "summary": ""
   },
   {
-    "id": "2017-phenotypic-and-genotypic-characterisation-of-staphylococcus-epidermidis-from-orthopae",
-    "year": 2017,
-    "citation": "Post, V., Morgenstern, M., Harris, LG., Mageiros, L., Hitchings, MD., Méric, G., Pascoe, B., Sheppard, SK., Richards, GR., Moriarty, TF. (2017) Phenotypic and genotypic characterisation of Staphylococcus epidermidis from orthopaedic device-related infections correlated with patient outcome Orthopaedic Proceedings 99-B (22): 65",
-    "authors": "Post, V., Morgenstern, M., Harris, LG., Mageiros, L., Hitchings, MD., Méric, G., Pascoe, B., Sheppard, SK., Richards, GR., Moriarty, TF",
-    "title": "Phenotypic and genotypic characterisation of Staphylococcus epidermidis from orthopaedic device-related infections correlated with patient outcome Orthopaedic Proceedings 99-B (22): 65",
-    "doi": "",
-    "type": "publication",
-    "status": "published",
-    "selected": false,
-    "featuredHome": false,
-    "publicationType": "journal",
-    "themeId": "evolution",
-    "theme": "Evolution and host adaptation",
-    "url": "http://bjjprocs.boneandjoint.org.uk/content/99-B/SUPP_22/65",
-    "publishedDate": "2017-01-01",
-    "organisms": [
-      "Staphylococcus"
-    ],
-    "topics": [
-      "Virulence and disease"
-    ],
-    "projects": [],
-    "geographies": []
-  },
-  {
     "id": "2016-genome-wide-association-of-functional-traits-linked-with-campylobacter-jejuni-surviva",
     "year": 2017,
     "citation": "Yahara K, Méric G, Taylor AJ, de Vries SP, Murray S, Pascoe B, Mageiros L, Torralbo A, Vidal A, Ridley A, Komukai S, Wimalarathna H, Cody AJ, Colles FM, McCarthy N, Harris D, Bray JE, Jolley KA, Maiden MC, Bentley SD, Parkhill J, Bayliss CD, Grant A, Maskell D, Didelot X, Kelly DJ, Sheppard SK (2017) Genome-wide association of functional traits linked with Campylobacter jejuni survival from farm to fork.. Environmental microbiology 19(1):361-380. doi: 10.1111/1462-2920.13628",
@@ -3065,6 +2992,59 @@
     "scholarCitationId": "UQrZ-fgAAAAJ:KNjnJ3z-R6IC",
     "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=UQrZ-fgAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=UQrZ-fgAAAAJ:KNjnJ3z-R6IC",
     "summary": ""
+  },
+  {
+    "id": "2017-phenotypic-and-genotypic-characterisation-of-staphylococcus-epidermidis-from-orthopae",
+    "year": 2017,
+    "citation": "Post, V., Morgenstern, M., Harris, LG., Mageiros, L., Hitchings, MD., Méric, G., Pascoe, B., Sheppard, SK., Richards, GR., Moriarty, TF. (2017) Phenotypic and genotypic characterisation of Staphylococcus epidermidis from orthopaedic device-related infections correlated with patient outcome Orthopaedic Proceedings 99-B (22): 65",
+    "authors": "Post, V., Morgenstern, M., Harris, LG., Mageiros, L., Hitchings, MD., Méric, G., Pascoe, B., Sheppard, SK., Richards, GR., Moriarty, TF",
+    "title": "Phenotypic and genotypic characterisation of Staphylococcus epidermidis from orthopaedic device-related infections correlated with patient outcome Orthopaedic Proceedings 99-B (22): 65",
+    "doi": "",
+    "type": "publication",
+    "status": "published",
+    "selected": false,
+    "featuredHome": false,
+    "publicationType": "journal",
+    "themeId": "evolution",
+    "theme": "Evolution and host adaptation",
+    "url": "http://bjjprocs.boneandjoint.org.uk/content/99-B/SUPP_22/65",
+    "publishedDate": "2017-01-01",
+    "organisms": [
+      "Staphylococcus"
+    ],
+    "topics": [
+      "Virulence and disease"
+    ],
+    "projects": [],
+    "geographies": []
+  },
+  {
+    "title": "Hidden antibiotic resistance fitness costs revealed by GWAS-based epistasis analysis",
+    "authors": "M Yokoyama, M Laabei, E Stevens, L Bacon, K Heesom, S Bayliss, N Ooi, ...",
+    "year": 2017,
+    "publishedDate": "2017-01-01",
+    "doi": "",
+    "pmid": "",
+    "journal": "bioRxiv, 2017",
+    "scholarCitationId": "UQrZ-fgAAAAJ:_AeoHAGD03cC",
+    "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=UQrZ-fgAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=UQrZ-fgAAAAJ:_AeoHAGD03cC",
+    "publicationType": "preprint",
+    "status": "preprint",
+    "type": "preprint",
+    "selected": false,
+    "featuredHome": false,
+    "themeId": "prediction",
+    "theme": "Genomics, AI and disease prediction",
+    "summary": "",
+    "id": "2017-hidden-antibiotic-resistance-fitness-costs-revealed-by-gwas-based-epistasis-anal",
+    "citation": "M Yokoyama, M Laabei, E Stevens, L Bacon, K Heesom, S Bayliss, N Ooi, ... (2017) Hidden antibiotic resistance fitness costs revealed by GWAS-based epistasis analysis. bioRxiv, 2017",
+    "organisms": [],
+    "topics": [
+      "AMR",
+      "Evolution"
+    ],
+    "projects": [],
+    "geographies": []
   },
   {
     "id": "2016-genetic-and-chemical-differentiation-of-campylobacter-coli-and-campylobacter-jejuni-l",
