@@ -30,6 +30,9 @@ jobs:
           SCHOLAR_AUTHOR_ID: UQrZ-fgAAAAJ
         run: python tools/update_publications.py
 
+      - name: Collapse preprint and journal duplicates
+        run: python tools/deduplicate_publications.py
+
       - name: Commit updated data
         run: |
           if git diff --quiet -- data/publications.json data/scholar-metrics.json data/publication-sync.json; then
