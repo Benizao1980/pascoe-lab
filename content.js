@@ -7,7 +7,32 @@ async function loadLiveJson(path){
   try{return await loadJson(raw);}catch(e){console.warn(`Raw GitHub fallback for ${path}:`,e);return loadJson(`${path}?v=${Date.now()}`);}
 }
 async function loadPublications(){return loadLiveJson("data/publications.json");}
-async function loadScholarMetrics(){return loadLiveJson("data/scholar-metrics.json");}
+async function loadGitHubContentJson(path){
+  const api=`https://api.github.com/repos/Benizao1980/pascoe-lab/contents/${path}?ref=main&ts=${Date.now()}`;
+  const response=await fetch(api,{cache:"no-store"});
+  if(!response.ok)throw new Error(`${api}: ${response.status}`);
+  const payload=await response.json();
+  if(payload&&payload.content){
+    const compact=String(payload.content).replace(/\s+/g,"");
+    const binary=window.atob(compact);
+    const bytes=Uint8Array.from(binary,char=>char.charCodeAt(0));
+    return JSON.parse(new TextDecoder("utf-8").decode(bytes));
+  }
+  if(payload&&payload.download_url)return loadJson(`${payload.download_url}?ts=${Date.now()}`);
+  throw new Error(`No readable content returned for ${path}`);
+}
+async function loadScholarMetrics(){
+  try{return await loadGitHubContentJson("data/scholar-metrics.json");}
+  catch(apiError){
+    console.warn("GitHub API metrics fetch failed; trying raw file",apiError);
+    try{return await loadLiveJson("data/scholar-metrics.json");}
+    catch(rawError){
+      console.warn("Live metrics fetch failed; using packaged fallback",rawError);
+      try{return await loadJson(`data/scholar-metrics.json?ts=${Date.now()}`);}
+      catch(localError){return loadJson("data/site.json");}
+    }
+  }
+}
 function publicationTime(p){const d=Date.parse(p.publishedDate||`${p.year||0}-01-01`);return Number.isFinite(d)?d:0;}
 function external(url,label){return `<a href="${esc(url)}" target="_blank" rel="noopener">${label}</a>`;}
 function publicationHref(p){
@@ -24,16 +49,14 @@ async function renderStories(){const nodes=document.querySelectorAll('[data-cont
 async function renderFeatured(){const nodes=document.querySelectorAll('[data-content="publications"]');if(!nodes.length)return;const data=await loadPublications();nodes.forEach(n=>{const s=data.filter(p=>n.dataset.featured==="home"?p.featuredHome:p.selected).sort((a,b)=>(publicationTime(b)-publicationTime(a))||String(a.title).localeCompare(String(b.title))).slice(0,Number(n.dataset.limit||999));n.innerHTML=s.map(p=>publicationFeature(p,n.dataset.compact==="true")).join("");});}
 async function renderMetrics(){
   const nodes=document.querySelectorAll("[data-metric]");if(!nodes.length)return;
-  const pubs=await loadPublications();
-  let scholar;
-  const rawScholar=`https://raw.githubusercontent.com/Benizao1980/pascoe-lab/main/data/scholar-metrics.json?v=${Date.now()}`;
-  try{scholar=await loadJson(rawScholar);}
-  catch(e1){
-    try{scholar=await loadJson(`data/scholar-metrics.json?v=${Date.now()}`);}
-    catch(e2){scholar=await loadJson("data/site.json");}
-  }
+  const [pubs,scholar]=await Promise.all([loadPublications(),loadScholarMetrics()]);
   const values={journal:pubs.filter(p=>p.publicationType==="journal").length,preprint:pubs.filter(p=>p.publicationType==="preprint").length,"h-index":scholar.h_index??"—",citations:Number.isFinite(Number(scholar.citations))?Number(scholar.citations).toLocaleString("en-GB"):"—"};
   nodes.forEach(n=>{n.textContent=values[n.dataset.metric]??"—";});
+  const updated=document.querySelector("[data-scholar-updated]");
+  if(updated&&scholar.updated_at){
+    const when=new Date(scholar.updated_at);
+    updated.textContent=Number.isNaN(when.getTime())?"Google Scholar metrics loaded live.":`Google Scholar metrics updated ${when.toLocaleDateString("en-GB",{day:"numeric",month:"short",year:"numeric"})}.`;
+  }
 }
 function refreshAltmetric(context){if(typeof window._altmetric_embed_init==="function")window._altmetric_embed_init(context||document);}
 let dimensionsRefreshTimer;
