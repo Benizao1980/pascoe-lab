@@ -437,3 +437,16 @@ body{font-size:17px}.brand-logo{padding:3px;background:var(--white)}.brand-logo 
 @media(max-width:700px){.research-theme-visual img{height:280px}}
 
 .publication-sync-note{margin:16px 0 0;font-size:.88rem;color:var(--muted);text-align:right}
+
+
+/* v6.9 structured publication tags and filters */
+.publication-controls{grid-template-columns:minmax(300px,1.5fr) repeat(4,minmax(155px,.65fr)) auto}
+.publication-tags{display:flex;flex-wrap:wrap;gap:7px;margin:.35rem 0 .8rem}
+.publication-tag{display:inline-flex;align-items:center;min-height:27px;padding:3px 8px;border:2px solid var(--line);font-size:.74rem;font-weight:800;line-height:1.1;background:var(--offwhite)}
+.publication-tag.tag-organism{background:var(--rose-soft)}
+.publication-tag.tag-topic{background:var(--green-soft)}
+.publication-tag.tag-project{background:var(--mustard-soft)}
+.publication-tag.tag-geography{background:var(--blue-soft)}
+@media(max-width:1280px){.publication-controls{grid-template-columns:minmax(280px,1.3fr) repeat(2,minmax(170px,1fr));}.publication-count{align-self:center}}
+@media(max-width:850px){.publication-controls{grid-template-columns:1fr 1fr}.search-field{grid-column:1/-1}}
+@media(max-width:600px){.publication-controls{grid-template-columns:1fr}.search-field{grid-column:auto}}

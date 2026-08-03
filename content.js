@@ -38,16 +38,45 @@ function refreshAltmetric(context){if(typeof window._altmetric_embed_init==="fun
 async function renderBrowser(){
   const list=document.getElementById("publication-list");if(!list)return;
   const [pubs,themes]=await Promise.all([loadPublications(),loadJson("data/themes.json")]);
-  const tmap=Object.fromEntries(themes.map(t=>[t.id,t])),search=document.getElementById("pub-search"),type=document.getElementById("pub-type"),group=document.getElementById("pub-group"),count=document.getElementById("pub-count");let active="all";
+  const tmap=Object.fromEntries(themes.map(t=>[t.id,t]));
+  const search=document.getElementById("pub-search"),type=document.getElementById("pub-type"),
+    organism=document.getElementById("pub-organism"),project=document.getElementById("pub-project"),
+    group=document.getElementById("pub-group"),count=document.getElementById("pub-count");
+  let active="all";
+
+  function uniqueValues(field){return [...new Set(pubs.flatMap(p=>Array.isArray(p[field])?p[field]:[]).filter(Boolean))].sort((a,b)=>a.localeCompare(b));}
+  function fillSelect(node,values){values.forEach(value=>{const option=document.createElement("option");option.value=value;option.textContent=value;node.appendChild(option);});}
+  fillSelect(organism,uniqueValues("organisms"));fillSelect(project,uniqueValues("projects"));
+
+  function statusRank(p){return p.status==="in press"?0:p.publicationType==="preprint"?2:1;}
+  function comparePublications(a,b){
+    const yearDiff=Number(b.year||0)-Number(a.year||0);if(yearDiff)return yearDiff;
+    const statusDiff=statusRank(a)-statusRank(b);if(statusDiff)return statusDiff;
+    const dateDiff=publicationTime(b)-publicationTime(a);if(dateDiff)return dateDiff;
+    return String(a.title).localeCompare(String(b.title));
+  }
+  function displayTags(p){
+    const candidates=[];
+    if(p.organisms?.[0])candidates.push([p.organisms[0],"organism"]);
+    if(p.topics?.[0])candidates.push([p.topics[0],"topic"]);
+    if(p.projects?.[0])candidates.push([p.projects[0],"project"]);
+    else if(p.geographies?.[0])candidates.push([p.geographies[0],"geography"]);
+    const seen=new Set();return candidates.filter(([label])=>{if(seen.has(label))return false;seen.add(label);return true;}).slice(0,3);
+  }
   function item(p){
     const t=tmap[p.themeId]||themes[0],typeLabel=p.status==="in press"?"In press":p.publicationType==="preprint"?"Preprint":"Journal article",typeClass=p.status==="in press"?"in-press":p.publicationType,href=publicationHref(p);
     const badge=p.doi?`<div class="publication-altmetric" aria-label="Altmetric attention"><div class="altmetric-embed" data-badge-type="donut" data-badge-popover="right" data-doi="${esc(p.doi)}"></div></div>`:`<div class="publication-altmetric publication-altmetric-empty" aria-hidden="true"></div>`;
-    return `<article class="publication-row"><div class="publication-theme-mark"><img src="${esc(t.icon)}" alt=""><span>${esc(t.short)}</span></div><div class="publication-details"><div class="publication-meta"><span class="type-badge ${esc(typeClass)}">${typeLabel}</span><span>${esc(p.year)}</span></div><h3><a href="${esc(href)}" target="_blank" rel="noopener">${esc(p.title)}</a></h3><p class="publication-authors">${esc(p.authors||"")}</p><p class="publication-citation">${esc(p.citation||"")}</p></div>${badge}</article>`;
+    const tags=displayTags(p).map(([label,kind])=>`<span class="publication-tag tag-${kind}">${esc(label)}</span>`).join("");
+    return `<article class="publication-row"><div class="publication-theme-mark"><img src="${esc(t.icon)}" alt=""><span>${esc(t.short)}</span></div><div class="publication-details"><div class="publication-meta"><span class="type-badge ${esc(typeClass)}">${typeLabel}</span><span>${esc(p.publishedDate||p.year)}</span></div><h3><a href="${esc(href)}" target="_blank" rel="noopener">${esc(p.title)}</a></h3>${tags?`<div class="publication-tags" aria-label="Publication tags">${tags}</div>`:""}<p class="publication-authors">${esc(p.authors||"")}</p><p class="publication-citation">${esc(p.citation||"")}</p></div>${badge}</article>`;
   }
   function render(){
-    const q=search.value.trim().toLowerCase(),tv=type.value;
-    let data=pubs.filter(p=>{const h=[p.title,p.authors,p.citation,p.year,p.theme,p.doi,p.url,p.status].join(" ").toLowerCase();return(!q||h.includes(q))&&(tv==="all"||p.publicationType===tv)&&(active==="all"||p.themeId===active);});
-    data.sort((a,b)=>(publicationTime(b)-publicationTime(a))||String(a.title).localeCompare(String(b.title)));
+    const q=search.value.trim().toLowerCase(),tv=type.value,ov=organism.value,pv=project.value;
+    let data=pubs.filter(p=>{
+      const tagText=[...(p.organisms||[]),...(p.topics||[]),...(p.projects||[]),...(p.geographies||[])];
+      const h=[p.title,p.authors,p.citation,p.year,p.publishedDate,p.theme,p.doi,p.url,p.status,...tagText].join(" ").toLowerCase();
+      return(!q||h.includes(q))&&(tv==="all"||p.publicationType===tv)&&(ov==="all"||(p.organisms||[]).includes(ov))&&(pv==="all"||(p.projects||[]).includes(pv))&&(active==="all"||p.themeId===active);
+    });
+    data.sort(comparePublications);
     count.textContent=`${data.length} output${data.length===1?"":"s"}`;
     const grouped={};
     if(group.value==="theme"){
@@ -60,7 +89,7 @@ async function renderBrowser(){
     window.setTimeout(()=>refreshAltmetric(list),0);
   }
   document.querySelectorAll(".theme-filter").forEach(b=>b.addEventListener("click",()=>{active=b.dataset.theme;document.querySelectorAll(".theme-filter").forEach(x=>x.classList.toggle("active",x===b));render();}));
-  search.addEventListener("input",render);type.addEventListener("change",render);group.addEventListener("change",render);render();
+  search.addEventListener("input",render);type.addEventListener("change",render);organism.addEventListener("change",render);project.addEventListener("change",render);group.addEventListener("change",render);render();
 }
 Promise.allSettled([renderProjects(),renderStories(),renderFeatured(),renderMetrics(),renderBrowser()]).then(rs=>rs.filter(r=>r.status==="rejected").forEach(r=>console.error(r.reason)));
 })();

@@ -32,7 +32,7 @@
 <section class="section">
 <div class="wrap">
 <div class="metrics metrics-compact"><div class="metric"><strong data-metric="journal">—</strong><span>journal articles &amp; in press</span></div><div class="metric"><strong data-metric="preprint">—</strong><span>preprints</span></div><div class="metric"><strong data-metric="h-index">—</strong><span>H-index</span></div><div class="metric"><strong data-metric="citations">—</strong><span>citations</span></div></div>
-<p class="publication-sync-note">Publication records are synchronised from the curated Google Scholar profile and checked against PubMed.</p>
+<p class="publication-sync-note">Search by theme, organism, topic, project or geography. Publication records are synchronised from Google Scholar and checked against PubMed.</p>
 </div>
 </section>
 <section class="section section-soft-green">
@@ -45,8 +45,10 @@
 </div>
 </div>
 <div class="publication-controls">
-<label class="search-field"><span>Search</span><input id="pub-search" placeholder="Title, author, journal, organism or year" type="search"/></label>
-<label><span>Type</span><select id="pub-type"><option value="all">Journal articles and preprints</option><option value="journal">Journal articles / in press</option><option value="preprint">Preprints</option></select></label>
+<label class="search-field"><span>Search</span><input id="pub-search" placeholder="Title, author, organism, topic, project or place" type="search"/></label>
+<label><span>Type</span><select id="pub-type"><option value="all">All publication types</option><option value="journal">Journal articles / in press</option><option value="preprint">Preprints</option></select></label>
+<label><span>Organism</span><select id="pub-organism"><option value="all">All organisms</option></select></label>
+<label><span>Project</span><select id="pub-project"><option value="all">All projects</option></select></label>
 <label><span>Group by</span><select id="pub-group"><option value="year">Publication year</option><option value="theme">Research theme</option></select></label>
 <span class="publication-count" id="pub-count">Loading…</span>
 </div>
@@ -83,5 +85,5 @@
 </footer>
 <script src="script.js"></script>
 <script async="" src="https://embed.altmetric.com/assets/embed.js"></script>
-<script defer="" src="content.js?v=6.8"></script></body>
+<script defer="" src="content.js?v=6.9"></script></body>
 </html>

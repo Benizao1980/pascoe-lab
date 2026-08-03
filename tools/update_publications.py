@@ -149,6 +149,78 @@ def theme_for(title, old=None):
 
 THEMES={'transmission':'Transmission across One Health systems','evolution':'Evolution and host adaptation',
         'tools':'Open genomic tools and surveillance','prediction':'Genomics, AI and disease prediction'}
+
+
+# Controlled publication tags. Existing manually curated tags are retained and
+# inferred tags are added from titles, citations and explicit project fields.
+def ordered_unique(items):
+    seen=set(); result=[]
+    for item in items:
+        if item and item not in seen:
+            seen.add(item); result.append(item)
+    return result
+
+ORGANISM_RULES=[
+ ('Campylobacter',('campylobacter','c jejuni','c coli','c concisus')),
+ ('Salmonella',('salmonella',)),('Acinetobacter',('acinetobacter',)),
+ ('Staphylococcus',('staphylococcus','methicillin resistant staphylococcus','methicillin sensitive staphylococcus')),
+ ('Helicobacter',('helicobacter','h pylori')),('Shigella',('shigella',)),
+ ('Escherichia coli',('escherichia coli','avian escherichia','mcr 1 genes and plasmids')),
+ ('Mycoplasma',('mycoplasma',)),('Yersinia',('yersinia',)),('Streptococcus',('streptococcus',)),
+ ('Listeria',('listeria',)),('Bacillus',('bacillus',)),('Pseudomonas',('pseudomonas',)),
+ ('Enterobacter',('enterobacter species',)),('Renibacterium',('renibacterium',)),
+ ('Streptomyces',('streptomyces',)),('Klebsiella',('klebsiella',)),('Oropouche virus',('oropouche',))]
+TOPIC_RULES=[
+ ('AMR',('antimicrobial resistance','antibiotic resistance','drug resistance','multidrug resistant','multidrug resistance','resistant determinants','resistance genes','resistance to','mcr 1','esbl','colistin','ciprofloxacin','azithromycin','clarithromycin','erythromycin','chloramphenicol','methicillin resistant','methicillin sensitive')),
+ ('One Health',('one health','farm to fork','livestock','poultry','pig farms','swine','wild bird','wildlife','animal and human','pork production','broiler farms','slaughterhouses','multi host')),
+ ('Transmission',('transmission','spread','outbreak','zooanthroponosis','host switching','land sea transfer','farm to fork','gene pool transmission')),
+ ('Source attribution',('source attribution','tracing human infections','host segregating','isolation source','source of campylobacter','predict colonisation')),
+ ('Surveillance',('surveillance','monitoring','genomic epidemiology','molecular epidemiology','typing','genome project','geographical distribution')),
+ ('Evolution',('evolution','adaptation','selection','domestication','introgression','diversification','allopatry','co evolution','pathoadaptive','fitness costs')),
+ ('Recombination',('recombination','horizontal gene transfer','gene sharing','allele sharing')),
+ ('Population genomics',('population genomics','comparative genomics','population structure','genome wide','genomic analysis','genomic insights','pan genome','pangenome','core genome')),
+ ('Machine learning',('machine learning','probabilistic inference','bayesian identification','bayesian belief network')),
+ ('Metagenomics',('metagenomics','microbiome','sweep metagenomics')),('Vaccines',('vaccine','vaccines')),
+ ('Biofilms',('biofilm','biofilms')),('Diagnostics',('assay','detection','qpcr','serotyping','primer probe','diagnostic')),
+ ('Virulence and disease',('virulence','pathogenicity','disease association','patient outcome','poor patient outcomes','irritable bowel syndrome','gastric cancer risk','diarrheal manifestation')),
+ ('Environmental microbiology',('water cycle','wastewater','environmental bacteria','sewage','environmental risk'))]
+GEO_RULES=[('The Gambia',('the gambia','gambia')),('Peru',('peru','peruvian','iquitos','amazon')),
+ ('Thailand',('thailand','thai','chiang mai')),('Egypt',('egypt','egyptian')),('India',('india','indian')),
+ ('United States',('united states','american black bear')),('United Kingdom',('united kingdom',)),
+ ('China',('china','chinese')),('Brazil',('brazil',)),('Chile',('chile','chilean')),
+ ('Africa',('across africa','out of africa','africa')),('Americas',('americas',)),('Global',('global','worldwide'))]
+PROJECT_FIELD_MAP={'enteric disease in africa':['GETcampy-Africa','Campylobacter Control Campaign'],
+ 'peru':['Peru'],'peru and childhood enteric disease':['Peru'],'hu rizon':['HU-RIZON'],
+ 'thailand and poultry systems':['Thailand']}
+PROJECT_TITLE_RULES=[
+ ('GETcampy-Africa',('protocols for genomic epidemiology and source attribution of enteric bacteria causing diarrhoeal disease across africa',)),
+ ('Campylobacter Control Campaign',('protocols for genomic epidemiology and source attribution of enteric bacteria causing diarrhoeal disease across africa','using a bayesian belief network to explore public health interventions in the gambia')),
+ ('Peru',('peruvian amazon','iquitos peru','in peru','paediatric infection in the peruvian amazon','childhood growth','diarrheal manifestation')),
+ ('Thailand',('thailand','thai pork','northern thailand','chiang mai')),
+ ('HU-RIZON',('proximity to humans is associated with antimicrobial resistant enteric pathogens in wild bird microbiomes',)),
+ ('CRAB Eastern Europe',('carbapenem resistance phenotypes are heterogeneous','eastern europe'))]
+
+def apply_tags(p):
+    text=norm(' '.join(str(p.get(k,'')) for k in ('title','citation','summary','journal','project')))
+    organisms=list(p.get('organisms') or [])
+    for label,terms in ORGANISM_RULES:
+        if any(norm(term) in text for term in terms):organisms.append(label)
+    if 'protocols for genomic epidemiology and source attribution of enteric bacteria causing diarrhoeal disease across africa' in text:
+        organisms += ['Campylobacter','Salmonella','Shigella','Escherichia coli']
+    topics=list(p.get('topics') or [])
+    for label,terms in TOPIC_RULES:
+        if any(norm(term) in text for term in terms):topics.append(label)
+    if not topics:topics.append('Population genomics')
+    projects=list(p.get('projects') or [])
+    projects += PROJECT_FIELD_MAP.get(norm(p.get('project','')),[])
+    for label,terms in PROJECT_TITLE_RULES:
+        if any(norm(term) in text for term in terms):projects.append(label)
+    geographies=list(p.get('geographies') or [])
+    for label,terms in GEO_RULES:
+        if any(norm(term) in text for term in terms):geographies.append(label)
+    p['organisms']=ordered_unique(organisms);p['topics']=ordered_unique(topics)
+    p['projects']=ordered_unique(projects);p['geographies']=ordered_unique(geographies)
+    return p
 existing=json.loads(PUB_FILE.read_text())
 by_doi={clean_doi(p.get('doi')):p for p in existing if clean_doi(p.get('doi'))}
 by_title={norm(p.get('title')):p for p in existing}
@@ -199,6 +271,7 @@ for p in existing:
     if key not in seen:
         p.setdefault('publishedDate',f"{int(p.get('year',1900)):04d}-01-01")
         merged.append(p);seen.add(key)
+for p in merged:apply_tags(p)
 merged.sort(key=lambda p:(p.get('publishedDate',''),p.get('title','').lower()),reverse=True)
 PUB_FILE.write_text(json.dumps(merged,ensure_ascii=False,indent=2)+'\n')
 

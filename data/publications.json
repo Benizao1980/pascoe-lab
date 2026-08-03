@@ -16,7 +16,18 @@
     "featuredHome": false,
     "themeId": "evolution",
     "theme": "Evolution and host adaptation",
-    "summary": "Genomic analysis of metabolic gene clusters in community-associated MRSA from Egypt."
+    "summary": "Genomic analysis of metabolic gene clusters in community-associated MRSA from Egypt.",
+    "organisms": [
+      "Staphylococcus"
+    ],
+    "topics": [
+      "AMR",
+      "Population genomics"
+    ],
+    "projects": [],
+    "geographies": [
+      "Egypt"
+    ]
   },
   {
     "id": "2026-protocols-for-genomic-epidemiology-and-source-attribution-of-enteric-bacteria-causing",
@@ -35,7 +46,26 @@
     "journal": "BMJ Open",
     "publicationType": "journal",
     "themeId": "tools",
-    "publishedDate": "2026-06-25"
+    "publishedDate": "2026-06-25",
+    "organisms": [
+      "Campylobacter",
+      "Salmonella",
+      "Shigella",
+      "Escherichia coli"
+    ],
+    "topics": [
+      "One Health",
+      "Source attribution",
+      "Surveillance"
+    ],
+    "projects": [
+      "GETcampy-Africa",
+      "Campylobacter Control Campaign"
+    ],
+    "geographies": [
+      "United Kingdom",
+      "Africa"
+    ]
   },
   {
     "id": "2026-staph-epidermidis-is-preprint",
@@ -52,7 +82,15 @@
     "summary": "Within-host evolution and insertion-sequence dynamics in persistent device-related infection.",
     "themeId": "evolution",
     "theme": "Evolution and host adaptation",
-    "publishedDate": "2026-05-21"
+    "publishedDate": "2026-05-21",
+    "organisms": [
+      "Staphylococcus"
+    ],
+    "topics": [
+      "Evolution"
+    ],
+    "projects": [],
+    "geographies": []
   },
   {
     "id": "2026-pathoadaptive-evolution-and-clonal-dissemination-of-community-associated-methicillin-",
@@ -72,7 +110,21 @@
     "publicationType": "journal",
     "themeId": "evolution",
     "publishedDate": "2026-04-02",
-    "pmid": "41928146"
+    "pmid": "41928146",
+    "organisms": [
+      "Staphylococcus"
+    ],
+    "topics": [
+      "AMR",
+      "Transmission",
+      "Evolution",
+      "Population genomics"
+    ],
+    "projects": [],
+    "geographies": [
+      "Egypt",
+      "Global"
+    ]
   },
   {
     "id": "2026-genomic-epidemiology-of-a-2023-2024-oropouche-virus-disease-outbreak-in-iquitos-peru-",
@@ -92,7 +144,21 @@
     "publicationType": "journal",
     "themeId": "transmission",
     "publishedDate": "2026-02-19",
-    "pmid": "41756787"
+    "pmid": "41756787",
+    "organisms": [
+      "Oropouche virus"
+    ],
+    "topics": [
+      "Transmission",
+      "Surveillance"
+    ],
+    "projects": [
+      "Peru"
+    ],
+    "geographies": [
+      "Peru",
+      "Americas"
+    ]
   },
   {
     "id": "2026-lin-code-campylobacter-preprint",
@@ -109,7 +175,17 @@
     "summary": "A stable genomic nomenclature for lineage-level typing and global Campylobacter surveillance.",
     "themeId": "tools",
     "theme": "Open genomic tools and surveillance",
-    "publishedDate": "2026-02-10"
+    "publishedDate": "2026-02-10",
+    "organisms": [
+      "Campylobacter"
+    ],
+    "topics": [
+      "Surveillance"
+    ],
+    "projects": [],
+    "geographies": [
+      "Global"
+    ]
   },
   {
     "id": "2026-consortium-member-lineage-linked-biofilm-formation-and-widespread-multidrug-resistanc",
@@ -127,7 +203,21 @@
     "theme": "Open genomic tools and surveillance",
     "publishedDate": "2026-01-10",
     "pmid": "41518211",
-    "journal": "Journal of Applied Microbiology"
+    "journal": "Journal of Applied Microbiology",
+    "organisms": [
+      "Acinetobacter"
+    ],
+    "topics": [
+      "AMR",
+      "Transmission",
+      "Surveillance",
+      "Biofilms"
+    ],
+    "projects": [],
+    "geographies": [
+      "India",
+      "Global"
+    ]
   },
   {
     "id": "2026-shigella-serotyping-preprint",
@@ -145,7 +235,16 @@
     "themeId": "tools",
     "theme": "Open genomic tools and surveillance",
     "publishedDate": "2026-01-06",
-    "pmid": "41542695"
+    "pmid": "41542695",
+    "organisms": [
+      "Shigella"
+    ],
+    "topics": [
+      "Surveillance",
+      "Diagnostics"
+    ],
+    "projects": [],
+    "geographies": []
   },
   {
     "id": "2026-bayesian-belief-network-gambia",
@@ -163,7 +262,20 @@
     "theme": "Transmission across One Health systems",
     "url": "",
     "summary": "A Bayesian Belief Network analysis exploring potential public-health interventions for reducing Campylobacter exposure in The Gambia.",
-    "publishedDate": "2026-01-01"
+    "publishedDate": "2026-01-01",
+    "organisms": [
+      "Campylobacter"
+    ],
+    "topics": [
+      "Machine learning"
+    ],
+    "projects": [
+      "Campylobacter Control Campaign"
+    ],
+    "geographies": [
+      "The Gambia",
+      "Africa"
+    ]
   },
   {
     "id": "2026-peru-coli-emergence-preprint",
@@ -180,7 +292,20 @@
     "summary": "Population-genomic evidence linking an emerging C. coli lineage, antimicrobial resistance and changing poultry systems.",
     "themeId": "evolution",
     "theme": "Evolution and host adaptation",
-    "publishedDate": "2026-01-01"
+    "publishedDate": "2026-01-01",
+    "organisms": [
+      "Campylobacter"
+    ],
+    "topics": [
+      "AMR",
+      "One Health"
+    ],
+    "projects": [
+      "Peru"
+    ],
+    "geographies": [
+      "Peru"
+    ]
   },
   {
     "id": "2025-comparative-genomic-analysis-of-mycoplasma-pneumoniae-isolated-in-the-united-kingdom-",
@@ -197,7 +322,17 @@
     "themeId": "evolution",
     "theme": "Evolution and host adaptation",
     "publishedDate": "2025-10-08",
-    "pmid": "41062935"
+    "pmid": "41062935",
+    "organisms": [
+      "Mycoplasma"
+    ],
+    "topics": [
+      "Population genomics"
+    ],
+    "projects": [],
+    "geographies": [
+      "United Kingdom"
+    ]
   },
   {
     "id": "2025-the-genomic-surveillance-gap-averting-the-antimicrobial-resistance-pandemic-requires-",
@@ -213,7 +348,16 @@
     "publicationType": "journal",
     "themeId": "tools",
     "theme": "Open genomic tools and surveillance",
-    "publishedDate": "2025-01-01"
+    "publishedDate": "2025-01-01",
+    "organisms": [],
+    "topics": [
+      "AMR",
+      "Surveillance"
+    ],
+    "projects": [],
+    "geographies": [
+      "Global"
+    ]
   },
   {
     "id": "2025-stability-of-helicobacter-pylori-resistance-to-clarithromycin",
@@ -229,7 +373,15 @@
     "publicationType": "journal",
     "themeId": "evolution",
     "theme": "Evolution and host adaptation",
-    "publishedDate": "2025-01-01"
+    "publishedDate": "2025-01-01",
+    "organisms": [
+      "Helicobacter"
+    ],
+    "topics": [
+      "AMR"
+    ],
+    "projects": [],
+    "geographies": []
   },
   {
     "id": "2025-vaccines-watch-preprint",
@@ -246,7 +398,16 @@
     "summary": "An open genomic framework for monitoring vaccine targets and interventions.",
     "themeId": "tools",
     "theme": "Open genomic tools and surveillance",
-    "publishedDate": "2025-01-01"
+    "publishedDate": "2025-01-01",
+    "organisms": [],
+    "topics": [
+      "Surveillance",
+      "Vaccines"
+    ],
+    "projects": [],
+    "geographies": [
+      "Global"
+    ]
   },
   {
     "id": "2025-methicillin-sensitive-staphylococcus-aureus-lineages-contribute-towards-poor-patient-",
@@ -262,7 +423,16 @@
     "publicationType": "journal",
     "themeId": "evolution",
     "theme": "Evolution and host adaptation",
-    "publishedDate": "2025-01-01"
+    "publishedDate": "2025-01-01",
+    "organisms": [
+      "Staphylococcus"
+    ],
+    "topics": [
+      "AMR",
+      "Virulence and disease"
+    ],
+    "projects": [],
+    "geographies": []
   },
   {
     "id": "2025-growth-rates-and-metabolic-traits-differentiate-campylobacter-jejuni-strains-by-diarr",
@@ -278,7 +448,17 @@
     "publicationType": "journal",
     "themeId": "evolution",
     "theme": "Evolution and host adaptation",
-    "publishedDate": "2025-01-01"
+    "publishedDate": "2025-01-01",
+    "organisms": [
+      "Campylobacter"
+    ],
+    "topics": [
+      "Virulence and disease"
+    ],
+    "projects": [
+      "Peru"
+    ],
+    "geographies": []
   },
   {
     "id": "2024-plasmid-and-chromosomal-locations-of-antibiotic-biocide-and-heavy-metal-resistance-ge",
@@ -295,7 +475,15 @@
     "themeId": "transmission",
     "theme": "Transmission across One Health systems",
     "journal": "Microbial Genomics",
-    "publishedDate": "2025-01-01"
+    "publishedDate": "2025-01-01",
+    "organisms": [
+      "Escherichia coli"
+    ],
+    "topics": [
+      "AMR"
+    ],
+    "projects": [],
+    "geographies": []
   },
   {
     "id": "2025-biotype-determines-survival-of-yersinia-enterocolitica-in-red-blood-cell-concentrates",
@@ -311,7 +499,15 @@
     "publicationType": "journal",
     "themeId": "evolution",
     "theme": "Evolution and host adaptation",
-    "publishedDate": "2025-01-01"
+    "publishedDate": "2025-01-01",
+    "organisms": [
+      "Yersinia"
+    ],
+    "topics": [
+      "Population genomics"
+    ],
+    "projects": [],
+    "geographies": []
   },
   {
     "id": "2024-american-black-bear-ursus-americanus-as-a-potential-host-for-campylobacter-jejuni",
@@ -328,7 +524,17 @@
     "themeId": "evolution",
     "theme": "Evolution and host adaptation",
     "journal": "PLOS ONE",
-    "publishedDate": "2025-01-01"
+    "publishedDate": "2025-01-01",
+    "organisms": [
+      "Campylobacter"
+    ],
+    "topics": [
+      "One Health"
+    ],
+    "projects": [],
+    "geographies": [
+      "United States"
+    ]
   },
   {
     "id": "2025-consortium-member-monitoring-antimicrobial-resistance-trends-from-global-genomics-dat",
@@ -344,7 +550,16 @@
     "publicationType": "journal",
     "themeId": "tools",
     "theme": "Open genomic tools and surveillance",
-    "publishedDate": "2025-01-01"
+    "publishedDate": "2025-01-01",
+    "organisms": [],
+    "topics": [
+      "AMR",
+      "Surveillance"
+    ],
+    "projects": [],
+    "geographies": [
+      "Global"
+    ]
   },
   {
     "id": "2024-the-epidemiology-and-impact-of-persistent-campylobacter-infections-on-childhood-growt",
@@ -363,7 +578,19 @@
     "journal": "eClinicalMedicine",
     "publicationType": "journal",
     "themeId": "transmission",
-    "publishedDate": "2024-01-01"
+    "publishedDate": "2024-01-01",
+    "organisms": [
+      "Campylobacter"
+    ],
+    "topics": [
+      "Diagnostics"
+    ],
+    "projects": [
+      "Peru"
+    ],
+    "geographies": [
+      "Peru"
+    ]
   },
   {
     "id": "2024-sharing-of-cmerabc-alleles-between-c",
@@ -382,7 +609,20 @@
     "journal": "mBio",
     "publicationType": "journal",
     "themeId": "transmission",
-    "publishedDate": "2024-01-01"
+    "publishedDate": "2024-01-01",
+    "organisms": [
+      "Campylobacter"
+    ],
+    "topics": [
+      "AMR",
+      "One Health"
+    ],
+    "projects": [
+      "Peru"
+    ],
+    "geographies": [
+      "Peru"
+    ]
   },
   {
     "id": "2024-urbanization-spreads-antimicrobial-resistant-enteric-pathogens-in-wild-bird-microbiom",
@@ -402,7 +642,17 @@
     "journal": "Current Biology",
     "publicationType": "journal",
     "themeId": "transmission",
-    "publishedDate": "2024-01-01"
+    "publishedDate": "2024-01-01",
+    "organisms": [],
+    "topics": [
+      "One Health",
+      "Transmission",
+      "Metagenomics"
+    ],
+    "projects": [
+      "HU-RIZON"
+    ],
+    "geographies": []
   },
   {
     "id": "2024-novel-rpsk-rpsd-primer-probe-assay-improves-detection-of-campylobacter-jejuni-and-cam",
@@ -418,7 +668,15 @@
     "publicationType": "journal",
     "themeId": "tools",
     "theme": "Open genomic tools and surveillance",
-    "publishedDate": "2024-01-01"
+    "publishedDate": "2024-01-01",
+    "organisms": [
+      "Campylobacter"
+    ],
+    "topics": [
+      "Diagnostics"
+    ],
+    "projects": [],
+    "geographies": []
   },
   {
     "id": "2024-machine-learning-to-attribute-the-source-of-campylobacter-infections-in-the-united-st",
@@ -438,7 +696,20 @@
     "journal": "Journal of Infection",
     "publicationType": "journal",
     "themeId": "transmission",
-    "publishedDate": "2024-01-01"
+    "publishedDate": "2024-01-01",
+    "organisms": [
+      "Campylobacter"
+    ],
+    "topics": [
+      "One Health",
+      "Source attribution",
+      "Surveillance",
+      "Machine learning"
+    ],
+    "projects": [],
+    "geographies": [
+      "United States"
+    ]
   },
   {
     "id": "2024-global-variation-in-escherichia-coli-mcr-1-genes-and-plasmids-from-animal-and-human-g",
@@ -454,7 +725,18 @@
     "publicationType": "journal",
     "themeId": "transmission",
     "theme": "Transmission across One Health systems",
-    "publishedDate": "2024-01-01"
+    "publishedDate": "2024-01-01",
+    "organisms": [
+      "Escherichia coli"
+    ],
+    "topics": [
+      "AMR",
+      "One Health"
+    ],
+    "projects": [],
+    "geographies": [
+      "Global"
+    ]
   },
   {
     "id": "2024-genomic-tailoring-of-autogenous-poultry-vaccines-to-reduce-campylobacter-from-farm-to",
@@ -473,7 +755,22 @@
     "journal": "npj Vaccines",
     "publicationType": "journal",
     "themeId": "transmission",
-    "publishedDate": "2024-01-01"
+    "publishedDate": "2024-01-01",
+    "organisms": [
+      "Campylobacter"
+    ],
+    "topics": [
+      "One Health",
+      "Transmission",
+      "Population genomics",
+      "Vaccines"
+    ],
+    "projects": [
+      "Thailand"
+    ],
+    "geographies": [
+      "Thailand"
+    ]
   },
   {
     "id": "2024-epistasis-core-genome-disharmony-and-adaptation-in-recombining-bacteria",
@@ -492,7 +789,14 @@
     "journal": "mBio",
     "publicationType": "journal",
     "themeId": "evolution",
-    "publishedDate": "2024-01-01"
+    "publishedDate": "2024-01-01",
+    "organisms": [],
+    "topics": [
+      "Evolution",
+      "Population genomics"
+    ],
+    "projects": [],
+    "geographies": []
   },
   {
     "id": "2024-commercial-farmed-swine-harbour-a-variety-of-pathogenic-bacteria-and-antimicrobial-re",
@@ -508,7 +812,14 @@
     "publicationType": "journal",
     "themeId": "transmission",
     "theme": "Transmission across One Health systems",
-    "publishedDate": "2024-01-01"
+    "publishedDate": "2024-01-01",
+    "organisms": [],
+    "topics": [
+      "AMR",
+      "One Health"
+    ],
+    "projects": [],
+    "geographies": []
   },
   {
     "id": "2024-campylobacter-jejuni-and-campylobacter-coli-genomic-resistant-determinants-imperfectl",
@@ -524,7 +835,20 @@
     "publicationType": "journal",
     "themeId": "prediction",
     "theme": "Genomics, AI and disease prediction",
-    "publishedDate": "2024-01-01"
+    "publishedDate": "2024-01-01",
+    "organisms": [
+      "Campylobacter"
+    ],
+    "topics": [
+      "AMR"
+    ],
+    "projects": [
+      "Peru"
+    ],
+    "geographies": [
+      "Peru",
+      "Global"
+    ]
   },
   {
     "id": "2024-assessing-antimicrobial-resistance-profiles-of-salmonella-enterica-in-the-pork-produc",
@@ -540,7 +864,16 @@
     "publicationType": "journal",
     "themeId": "evolution",
     "theme": "Evolution and host adaptation",
-    "publishedDate": "2024-01-01"
+    "publishedDate": "2024-01-01",
+    "organisms": [
+      "Salmonella"
+    ],
+    "topics": [
+      "AMR",
+      "One Health"
+    ],
+    "projects": [],
+    "geographies": []
   },
   {
     "id": "2024-consortium-member-geographical-distribution-disease-association-and-diversity-of-kleb",
@@ -556,7 +889,20 @@
     "publicationType": "journal",
     "themeId": "transmission",
     "theme": "Transmission across One Health systems",
-    "publishedDate": "2024-01-01"
+    "publishedDate": "2024-01-01",
+    "organisms": [
+      "Klebsiella"
+    ],
+    "topics": [
+      "Surveillance",
+      "Vaccines",
+      "Virulence and disease"
+    ],
+    "projects": [],
+    "geographies": [
+      "India",
+      "Global"
+    ]
   },
   {
     "id": "2024-consortium-member-gene-content-phage-cycle-regulation-model-and-prophage-inactivation",
@@ -572,7 +918,15 @@
     "publicationType": "journal",
     "themeId": "evolution",
     "theme": "Evolution and host adaptation",
-    "publishedDate": "2024-01-01"
+    "publishedDate": "2024-01-01",
+    "organisms": [
+      "Helicobacter"
+    ],
+    "topics": [
+      "Surveillance"
+    ],
+    "projects": [],
+    "geographies": []
   },
   {
     "id": "2023-consortium-member-the-helicobacter-pylori-genome-project-insights-into-h-pylori-popul",
@@ -589,7 +943,18 @@
     "themeId": "evolution",
     "theme": "Evolution and host adaptation",
     "journal": "Nature Communications",
-    "publishedDate": "2023-01-01"
+    "publishedDate": "2023-01-01",
+    "organisms": [
+      "Helicobacter"
+    ],
+    "topics": [
+      "Surveillance",
+      "Population genomics"
+    ],
+    "projects": [],
+    "geographies": [
+      "Global"
+    ]
   },
   {
     "id": "2023-salmonella-linkage-between-good-agricultural-practice-certified-broiler-farms-and-pou",
@@ -605,7 +970,19 @@
     "publicationType": "journal",
     "themeId": "transmission",
     "theme": "Transmission across One Health systems",
-    "publishedDate": "2023-01-01"
+    "publishedDate": "2023-01-01",
+    "organisms": [
+      "Salmonella"
+    ],
+    "topics": [
+      "One Health"
+    ],
+    "projects": [
+      "Thailand"
+    ],
+    "geographies": [
+      "Thailand"
+    ]
   },
   {
     "id": "2023-recombination-mediated-adaptation-of-methicillin-resistant-s",
@@ -622,7 +999,19 @@
     "themeId": "evolution",
     "theme": "Evolution and host adaptation",
     "journal": "Annals of Clinical Microbiology and Antimicrobials",
-    "publishedDate": "2023-01-01"
+    "publishedDate": "2023-01-01",
+    "organisms": [
+      "Staphylococcus"
+    ],
+    "topics": [
+      "AMR",
+      "Evolution",
+      "Recombination"
+    ],
+    "projects": [],
+    "geographies": [
+      "Egypt"
+    ]
   },
   {
     "id": "2023-oral-and-gut-microbiome-biomarkers-of-susceptibility-to-respiratory-tract-infection-i",
@@ -638,7 +1027,13 @@
     "publicationType": "journal",
     "themeId": "prediction",
     "theme": "Genomics, AI and disease prediction",
-    "publishedDate": "2023-01-01"
+    "publishedDate": "2023-01-01",
+    "organisms": [],
+    "topics": [
+      "Metagenomics"
+    ],
+    "projects": [],
+    "geographies": []
   },
   {
     "id": "2023-evidence-of-potential-campylobacter-jejuni-zooanthroponosis-in-captive-macaque-popula",
@@ -654,7 +1049,15 @@
     "publicationType": "journal",
     "themeId": "evolution",
     "theme": "Evolution and host adaptation",
-    "publishedDate": "2023-01-01"
+    "publishedDate": "2023-01-01",
+    "organisms": [
+      "Campylobacter"
+    ],
+    "topics": [
+      "Transmission"
+    ],
+    "projects": [],
+    "geographies": []
   },
   {
     "id": "2023-contrasting-genes-for-short-and-long-term-biofilm-adaptation-in-listeria",
@@ -670,7 +1073,16 @@
     "publicationType": "journal",
     "themeId": "evolution",
     "theme": "Evolution and host adaptation",
-    "publishedDate": "2023-01-01"
+    "publishedDate": "2023-01-01",
+    "organisms": [
+      "Listeria"
+    ],
+    "topics": [
+      "Evolution",
+      "Biofilms"
+    ],
+    "projects": [],
+    "geographies": []
   },
   {
     "id": "2023-consortium-member-novel-multidrug-resistant-sublineages-of-staphylococcus-aureus-clon",
@@ -686,7 +1098,18 @@
     "publicationType": "journal",
     "themeId": "evolution",
     "theme": "Evolution and host adaptation",
-    "publishedDate": "2023-01-01"
+    "publishedDate": "2023-01-01",
+    "organisms": [
+      "Staphylococcus"
+    ],
+    "topics": [
+      "AMR"
+    ],
+    "projects": [],
+    "geographies": [
+      "India",
+      "Global"
+    ]
   },
   {
     "id": "2022-stereospecific-metabolism-of-chloramphenicol-by-bacteria-isolated-wastewater-and-the-",
@@ -702,7 +1125,14 @@
     "publicationType": "journal",
     "themeId": "prediction",
     "theme": "Genomics, AI and disease prediction",
-    "publishedDate": "2022-01-01"
+    "publishedDate": "2022-01-01",
+    "organisms": [],
+    "topics": [
+      "AMR",
+      "Environmental microbiology"
+    ],
+    "projects": [],
+    "geographies": []
   },
   {
     "id": "2022-spatiotemporal-investigation-of-antibiotic-resistance-in-the-urban-water-cycle-influe",
@@ -718,7 +1148,14 @@
     "publicationType": "journal",
     "themeId": "transmission",
     "theme": "Transmission across One Health systems",
-    "publishedDate": "2022-01-01"
+    "publishedDate": "2022-01-01",
+    "organisms": [],
+    "topics": [
+      "AMR",
+      "Environmental microbiology"
+    ],
+    "projects": [],
+    "geographies": []
   },
   {
     "id": "2022-signatures-of-selection-in-core-and-accessory-genomes-indicate-different-ecological-d",
@@ -734,7 +1171,15 @@
     "publicationType": "journal",
     "themeId": "evolution",
     "theme": "Evolution and host adaptation",
-    "publishedDate": "2022-01-01"
+    "publishedDate": "2022-01-01",
+    "organisms": [
+      "Bacillus"
+    ],
+    "topics": [
+      "Evolution"
+    ],
+    "projects": [],
+    "geographies": []
   },
   {
     "id": "2022-repeated-out-of-africa-expansions-of-helicobacter-pylori-driven-by-replacement-of-del",
@@ -750,7 +1195,17 @@
     "publicationType": "journal",
     "themeId": "evolution",
     "theme": "Evolution and host adaptation",
-    "publishedDate": "2022-01-01"
+    "publishedDate": "2022-01-01",
+    "organisms": [
+      "Helicobacter"
+    ],
+    "topics": [
+      "Population genomics"
+    ],
+    "projects": [],
+    "geographies": [
+      "Africa"
+    ]
   },
   {
     "id": "2022-local-accessory-gene-sharing-among-egyptian-campylobacter-potentially-promotes-the-sp",
@@ -766,7 +1221,20 @@
     "publicationType": "journal",
     "themeId": "evolution",
     "theme": "Evolution and host adaptation",
-    "publishedDate": "2022-01-01"
+    "publishedDate": "2022-01-01",
+    "organisms": [
+      "Campylobacter"
+    ],
+    "topics": [
+      "AMR",
+      "Transmission",
+      "Recombination"
+    ],
+    "projects": [],
+    "geographies": [
+      "Egypt",
+      "United Kingdom"
+    ]
   },
   {
     "id": "2022-identification-of-streptococcus-suis-carriage-in-healthy-pigs-in-chiang-mai-thailand",
@@ -782,7 +1250,19 @@
     "publicationType": "journal",
     "themeId": "transmission",
     "theme": "Transmission across One Health systems",
-    "publishedDate": "2022-01-01"
+    "publishedDate": "2022-01-01",
+    "organisms": [
+      "Streptococcus"
+    ],
+    "topics": [
+      "Population genomics"
+    ],
+    "projects": [
+      "Thailand"
+    ],
+    "geographies": [
+      "Thailand"
+    ]
   },
   {
     "id": "2022-the-ecology-of-interspecies-recombination-among-the-zoonotic-bacterium-campylobacter",
@@ -801,7 +1281,16 @@
     "journal": "eLife",
     "publicationType": "journal",
     "themeId": "evolution",
-    "publishedDate": "2022-01-01"
+    "publishedDate": "2022-01-01",
+    "organisms": [
+      "Campylobacter"
+    ],
+    "topics": [
+      "Evolution",
+      "Recombination"
+    ],
+    "projects": [],
+    "geographies": []
   },
   {
     "id": "2022-genome-based-analysis-of-infrequent-salmonella-serotypes-through-the-thai-pork-produc",
@@ -817,7 +1306,19 @@
     "publicationType": "journal",
     "themeId": "evolution",
     "theme": "Evolution and host adaptation",
-    "publishedDate": "2022-01-01"
+    "publishedDate": "2022-01-01",
+    "organisms": [
+      "Salmonella"
+    ],
+    "topics": [
+      "One Health"
+    ],
+    "projects": [
+      "Thailand"
+    ],
+    "geographies": [
+      "Thailand"
+    ]
   },
   {
     "id": "2022-genetic-diversity-and-variation-in-antimicrobial-resistance-determinants-of-non-serot",
@@ -833,7 +1334,15 @@
     "publicationType": "journal",
     "themeId": "evolution",
     "theme": "Evolution and host adaptation",
-    "publishedDate": "2022-01-01"
+    "publishedDate": "2022-01-01",
+    "organisms": [
+      "Streptococcus"
+    ],
+    "topics": [
+      "AMR"
+    ],
+    "projects": [],
+    "geographies": []
   },
   {
     "id": "2021-stress-resistance-associated-with-multi-host-transmission-and-enhanced-biofilm-format",
@@ -849,7 +1358,17 @@
     "publicationType": "journal",
     "themeId": "transmission",
     "theme": "Transmission across One Health systems",
-    "publishedDate": "2021-01-01"
+    "publishedDate": "2021-01-01",
+    "organisms": [
+      "Campylobacter"
+    ],
+    "topics": [
+      "One Health",
+      "Transmission",
+      "Biofilms"
+    ],
+    "projects": [],
+    "geographies": []
   },
   {
     "id": "2021-stereoselective-bacterial-metabolism-of-antibiotics-in-environmental-bacteria-a-novel",
@@ -865,7 +1384,13 @@
     "publicationType": "journal",
     "themeId": "tools",
     "theme": "Open genomic tools and surveillance",
-    "publishedDate": "2021-01-01"
+    "publishedDate": "2021-01-01",
+    "organisms": [],
+    "topics": [
+      "Environmental microbiology"
+    ],
+    "projects": [],
+    "geographies": []
   },
   {
     "id": "2021-quantifying-bacterial-evolution-in-the-wild-a-birthday-problem-for-campylobacter-line",
@@ -881,7 +1406,15 @@
     "publicationType": "journal",
     "themeId": "evolution",
     "theme": "Evolution and host adaptation",
-    "publishedDate": "2021-01-01"
+    "publishedDate": "2021-01-01",
+    "organisms": [
+      "Campylobacter"
+    ],
+    "topics": [
+      "Evolution"
+    ],
+    "projects": [],
+    "geographies": []
   },
   {
     "id": "2021-antimicrobial-resistant-salmonella-spp",
@@ -898,7 +1431,19 @@
     "themeId": "transmission",
     "theme": "Transmission across One Health systems",
     "journal": "Thai Journal of Veterinary Medicine",
-    "publishedDate": "2021-01-01"
+    "publishedDate": "2021-01-01",
+    "organisms": [
+      "Salmonella"
+    ],
+    "topics": [
+      "One Health"
+    ],
+    "projects": [
+      "Thailand"
+    ],
+    "geographies": [
+      "Thailand"
+    ]
   },
   {
     "id": "2021-multiple-clones-of-colistin-resistant-salmonella-enterica-carrying-mcr-1-plasmids-in-",
@@ -914,7 +1459,19 @@
     "publicationType": "journal",
     "themeId": "transmission",
     "theme": "Transmission across One Health systems",
-    "publishedDate": "2021-01-01"
+    "publishedDate": "2021-01-01",
+    "organisms": [
+      "Salmonella"
+    ],
+    "topics": [
+      "AMR"
+    ],
+    "projects": [
+      "Thailand"
+    ],
+    "geographies": [
+      "Thailand"
+    ]
   },
   {
     "id": "2021-genome-wide-association-study-uncovers-signature-genetic-alterations-among-pseudomona",
@@ -931,7 +1488,15 @@
     "themeId": "prediction",
     "theme": "Genomics, AI and disease prediction",
     "journal": "PLOS Pathogens",
-    "publishedDate": "2021-01-01"
+    "publishedDate": "2021-01-01",
+    "organisms": [
+      "Pseudomonas"
+    ],
+    "topics": [
+      "Population genomics"
+    ],
+    "projects": [],
+    "geographies": []
   },
   {
     "id": "2021-genome-evolution-and-emergence-of-pathogenicity-in-avian-escherichia-coli",
@@ -950,7 +1515,16 @@
     "journal": "Nature Communications",
     "publicationType": "journal",
     "themeId": "evolution",
-    "publishedDate": "2021-01-01"
+    "publishedDate": "2021-01-01",
+    "organisms": [
+      "Escherichia coli"
+    ],
+    "topics": [
+      "Evolution",
+      "Virulence and disease"
+    ],
+    "projects": [],
+    "geographies": []
   },
   {
     "id": "2021-campylobacter-jejuni-genotypes-associated-with-post-infection-irritable-bowel-syndrom",
@@ -966,7 +1540,15 @@
     "publicationType": "journal",
     "themeId": "evolution",
     "theme": "Evolution and host adaptation",
-    "publishedDate": "2021-01-01"
+    "publishedDate": "2021-01-01",
+    "organisms": [
+      "Campylobacter"
+    ],
+    "topics": [
+      "Virulence and disease"
+    ],
+    "projects": [],
+    "geographies": []
   },
   {
     "id": "2020-whole-genome-informatics-of-monophasic-variant-of-salmonella-typhimurium-in-pig-produ",
@@ -982,7 +1564,19 @@
     "publicationType": "journal",
     "themeId": "tools",
     "theme": "Open genomic tools and surveillance",
-    "publishedDate": "2020-01-01"
+    "publishedDate": "2020-01-01",
+    "organisms": [
+      "Salmonella"
+    ],
+    "topics": [
+      "Population genomics"
+    ],
+    "projects": [
+      "Thailand"
+    ],
+    "geographies": [
+      "Thailand"
+    ]
   },
   {
     "id": "2020-high-resolution-sweep-metagenomics-using-fast-probabilistic-inference-wellcome-open-r",
@@ -998,7 +1592,14 @@
     "publicationType": "preprint",
     "themeId": "tools",
     "theme": "Open genomic tools and surveillance",
-    "publishedDate": "2020-01-01"
+    "publishedDate": "2020-01-01",
+    "organisms": [],
+    "topics": [
+      "Machine learning",
+      "Metagenomics"
+    ],
+    "projects": [],
+    "geographies": []
   },
   {
     "id": "2020-genomic-epidemiology-of-campylobacter-jejuni-associated-with-asymptomatic-pediatric-i",
@@ -1017,7 +1618,20 @@
     "journal": "PLOS Neglected Tropical Diseases",
     "publicationType": "journal",
     "themeId": "transmission",
-    "publishedDate": "2020-01-01"
+    "publishedDate": "2020-01-01",
+    "organisms": [
+      "Campylobacter"
+    ],
+    "topics": [
+      "Surveillance",
+      "Population genomics"
+    ],
+    "projects": [
+      "Peru"
+    ],
+    "geographies": [
+      "Peru"
+    ]
   },
   {
     "id": "2020-determination-of-campylobacter-coli-host-segregating-snps-and-their-use-for-source-at",
@@ -1033,7 +1647,15 @@
     "publicationType": "journal",
     "themeId": "prediction",
     "theme": "Genomics, AI and disease prediction",
-    "publishedDate": "2020-01-01"
+    "publishedDate": "2020-01-01",
+    "organisms": [
+      "Campylobacter"
+    ],
+    "topics": [
+      "Source attribution"
+    ],
+    "projects": [],
+    "geographies": []
   },
   {
     "id": "2020-agricultural-intensification-drives-the-evolution-of-host-specialism-in-the-enteric-p",
@@ -1049,7 +1671,15 @@
     "publicationType": "journal",
     "themeId": "evolution",
     "theme": "Evolution and host adaptation",
-    "publishedDate": "2020-01-01"
+    "publishedDate": "2020-01-01",
+    "organisms": [
+      "Campylobacter"
+    ],
+    "topics": [
+      "Evolution"
+    ],
+    "projects": [],
+    "geographies": []
   },
   {
     "id": "2020-a-five-hundred-year-tale-of-co-evolution-adaptation-and-virulence-helicobacter-pylori",
@@ -1065,7 +1695,18 @@
     "publicationType": "journal",
     "themeId": "evolution",
     "theme": "Evolution and host adaptation",
-    "publishedDate": "2020-01-01"
+    "publishedDate": "2020-01-01",
+    "organisms": [
+      "Helicobacter"
+    ],
+    "topics": [
+      "Evolution",
+      "Virulence and disease"
+    ],
+    "projects": [],
+    "geographies": [
+      "Americas"
+    ]
   },
   {
     "id": "2019-prevalence-of-faecal-carriage-of-extended-spectrum-beta-lactamase-esbl-producing-esch",
@@ -1081,7 +1722,15 @@
     "publicationType": "journal",
     "themeId": "transmission",
     "theme": "Transmission across One Health systems",
-    "publishedDate": "2019-01-01"
+    "publishedDate": "2019-01-01",
+    "organisms": [
+      "Escherichia coli"
+    ],
+    "topics": [
+      "AMR"
+    ],
+    "projects": [],
+    "geographies": []
   },
   {
     "id": "2019-genetic-diversity-of-composite-enterotoxigenic-staphylococcus-epidermidis-pathogenici",
@@ -1097,7 +1746,16 @@
     "publicationType": "journal",
     "themeId": "evolution",
     "theme": "Evolution and host adaptation",
-    "publishedDate": "2019-01-01"
+    "publishedDate": "2019-01-01",
+    "organisms": [
+      "Staphylococcus"
+    ],
+    "topics": [
+      "Evolution",
+      "Virulence and disease"
+    ],
+    "projects": [],
+    "geographies": []
   },
   {
     "id": "2019-gene-pool-transmission-of-multidrug-resistance-among-campylobacter-from-livestock-sew",
@@ -1113,7 +1771,18 @@
     "publicationType": "journal",
     "themeId": "transmission",
     "theme": "Transmission across One Health systems",
-    "publishedDate": "2019-01-01"
+    "publishedDate": "2019-01-01",
+    "organisms": [
+      "Campylobacter"
+    ],
+    "topics": [
+      "AMR",
+      "One Health",
+      "Transmission",
+      "Environmental microbiology"
+    ],
+    "projects": [],
+    "geographies": []
   },
   {
     "id": "2019-domestication-of-campylobacter-jejuni-nctc-11168",
@@ -1129,7 +1798,15 @@
     "publicationType": "journal",
     "themeId": "evolution",
     "theme": "Evolution and host adaptation",
-    "publishedDate": "2019-01-01"
+    "publishedDate": "2019-01-01",
+    "organisms": [
+      "Campylobacter"
+    ],
+    "topics": [
+      "Evolution"
+    ],
+    "projects": [],
+    "geographies": []
   },
   {
     "id": "2019-core-genome-sequence-analysis-to-characterise-salmonella-rissen-st469-from-swine-prod",
@@ -1145,7 +1822,16 @@
     "publicationType": "journal",
     "themeId": "transmission",
     "theme": "Transmission across One Health systems",
-    "publishedDate": "2019-01-01"
+    "publishedDate": "2019-01-01",
+    "organisms": [
+      "Salmonella"
+    ],
+    "topics": [
+      "One Health",
+      "Population genomics"
+    ],
+    "projects": [],
+    "geographies": []
   },
   {
     "id": "2018-whole-genome-multilocus-sequence-typing-wgmlst-and-acquired-antimicrobials-resistance",
@@ -1161,7 +1847,21 @@
     "publicationType": "journal",
     "themeId": "tools",
     "theme": "Open genomic tools and surveillance",
-    "publishedDate": "2018-01-01"
+    "publishedDate": "2018-01-01",
+    "organisms": [
+      "Salmonella"
+    ],
+    "topics": [
+      "AMR",
+      "One Health",
+      "Surveillance"
+    ],
+    "projects": [
+      "Thailand"
+    ],
+    "geographies": [
+      "Thailand"
+    ]
   },
   {
     "id": "2018-the-potential-of-isolation-source-to-predict-colonisation-in-avian-hosts-a-case-study",
@@ -1177,7 +1877,15 @@
     "publicationType": "journal",
     "themeId": "prediction",
     "theme": "Genomics, AI and disease prediction",
-    "publishedDate": "2018-01-01"
+    "publishedDate": "2018-01-01",
+    "organisms": [
+      "Campylobacter"
+    ],
+    "topics": [
+      "Source attribution"
+    ],
+    "projects": [],
+    "geographies": []
   },
   {
     "id": "2018-molecular-epidemiology-and-comparative-genomics-and-typing-of-campylobacter-concisus-",
@@ -1193,7 +1901,16 @@
     "publicationType": "journal",
     "themeId": "tools",
     "theme": "Open genomic tools and surveillance",
-    "publishedDate": "2018-01-01"
+    "publishedDate": "2018-01-01",
+    "organisms": [
+      "Campylobacter"
+    ],
+    "topics": [
+      "Surveillance",
+      "Population genomics"
+    ],
+    "projects": [],
+    "geographies": []
   },
   {
     "id": "2018-lineage-specific-plasmid-acquisition-and-the-evolution-of-specialized-pathogens-in-ba",
@@ -1209,7 +1926,15 @@
     "publicationType": "journal",
     "themeId": "evolution",
     "theme": "Evolution and host adaptation",
-    "publishedDate": "2018-01-01"
+    "publishedDate": "2018-01-01",
+    "organisms": [
+      "Bacillus"
+    ],
+    "topics": [
+      "Evolution"
+    ],
+    "projects": [],
+    "geographies": []
   },
   {
     "id": "2018-hidden-antibiotic-resistance-fitness-costs-revealed-by-gwas-based-epistasis-analysis",
@@ -1225,7 +1950,14 @@
     "publicationType": "journal",
     "themeId": "prediction",
     "theme": "Genomics, AI and disease prediction",
-    "publishedDate": "2018-01-01"
+    "publishedDate": "2018-01-01",
+    "organisms": [],
+    "topics": [
+      "AMR",
+      "Evolution"
+    ],
+    "projects": [],
+    "geographies": []
   },
   {
     "id": "2018-genomic-epidemiology-of-the-commercially-important-pathogen-renibacterium-salmoninaru",
@@ -1241,7 +1973,17 @@
     "publicationType": "journal",
     "themeId": "transmission",
     "theme": "Transmission across One Health systems",
-    "publishedDate": "2018-01-01"
+    "publishedDate": "2018-01-01",
+    "organisms": [
+      "Renibacterium"
+    ],
+    "topics": [
+      "Surveillance"
+    ],
+    "projects": [],
+    "geographies": [
+      "Chile"
+    ]
   },
   {
     "id": "2018-genomic-epidemiology-of-clinical-campylobacter-spp",
@@ -1257,7 +1999,15 @@
     "publicationType": "journal",
     "themeId": "transmission",
     "theme": "Transmission across One Health systems",
-    "publishedDate": "2018-01-01"
+    "publishedDate": "2018-01-01",
+    "organisms": [
+      "Campylobacter"
+    ],
+    "topics": [
+      "Surveillance"
+    ],
+    "projects": [],
+    "geographies": []
   },
   {
     "id": "2018-convergent-amino-acid-signatures-in-paraphyletic-campylobacter-jejuni-sub-populations",
@@ -1273,7 +2023,15 @@
     "publicationType": "journal",
     "themeId": "evolution",
     "theme": "Evolution and host adaptation",
-    "publishedDate": "2018-01-01"
+    "publishedDate": "2018-01-01",
+    "organisms": [
+      "Campylobacter"
+    ],
+    "topics": [
+      "Evolution"
+    ],
+    "projects": [],
+    "geographies": []
   },
   {
     "id": "2018-comparative-genomic-survey-of-bacillus-cereus-sensu-stricto-isolates-from-the-dairy-p",
@@ -1289,7 +2047,18 @@
     "publicationType": "journal",
     "themeId": "evolution",
     "theme": "Evolution and host adaptation",
-    "publishedDate": "2018-01-01"
+    "publishedDate": "2018-01-01",
+    "organisms": [
+      "Bacillus"
+    ],
+    "topics": [
+      "Population genomics"
+    ],
+    "projects": [],
+    "geographies": [
+      "United Kingdom",
+      "Brazil"
+    ]
   },
   {
     "id": "2018-a-pathogen-in-plain-sight-disease-causing-genotypes-of-the-commensal-skin-bacterium-s",
@@ -1305,7 +2074,15 @@
     "publicationType": "journal",
     "themeId": "evolution",
     "theme": "Evolution and host adaptation",
-    "publishedDate": "2018-01-01"
+    "publishedDate": "2018-01-01",
+    "organisms": [
+      "Staphylococcus"
+    ],
+    "topics": [
+      "Population genomics"
+    ],
+    "projects": [],
+    "geographies": []
   },
   {
     "id": "2018-predicting-gastric-cancer-risk-small-helicobacter-pylori-genome-wide-association-stud",
@@ -1322,7 +2099,16 @@
     "themeId": "prediction",
     "theme": "Genomics, AI and disease prediction",
     "journal": "BMC Biology",
-    "publishedDate": "2018-01-01"
+    "publishedDate": "2018-01-01",
+    "organisms": [
+      "Helicobacter"
+    ],
+    "topics": [
+      "Population genomics",
+      "Virulence and disease"
+    ],
+    "projects": [],
+    "geographies": []
   },
   {
     "id": "2017-recombination-mediated-host-adaptation-by-avian-staphylococcus-aureus",
@@ -1338,7 +2124,16 @@
     "publicationType": "journal",
     "themeId": "evolution",
     "theme": "Evolution and host adaptation",
-    "publishedDate": "2017-01-01"
+    "publishedDate": "2017-01-01",
+    "organisms": [
+      "Staphylococcus"
+    ],
+    "topics": [
+      "Evolution",
+      "Recombination"
+    ],
+    "projects": [],
+    "geographies": []
   },
   {
     "id": "2017-phenotypic-and-genotypic-characterisation-of-staphylococcus-epidermidis-from-orthopae",
@@ -1355,7 +2150,15 @@
     "themeId": "evolution",
     "theme": "Evolution and host adaptation",
     "url": "http://bjjprocs.boneandjoint.org.uk/content/99-B/SUPP_22/65",
-    "publishedDate": "2017-01-01"
+    "publishedDate": "2017-01-01",
+    "organisms": [
+      "Staphylococcus"
+    ],
+    "topics": [
+      "Virulence and disease"
+    ],
+    "projects": [],
+    "geographies": []
   },
   {
     "id": "2017-local-genes-for-local-bacteria-evidence-of-allopatry-in-the-genomes-of-transatlantic-",
@@ -1371,7 +2174,15 @@
     "publicationType": "journal",
     "themeId": "evolution",
     "theme": "Evolution and host adaptation",
-    "publishedDate": "2017-01-01"
+    "publishedDate": "2017-01-01",
+    "organisms": [
+      "Campylobacter"
+    ],
+    "topics": [
+      "Evolution"
+    ],
+    "projects": [],
+    "geographies": []
   },
   {
     "id": "2017-genomic-structure-and-insertion-sites-of-helicobacter-pylori-prophages-from-various-g",
@@ -1387,7 +2198,15 @@
     "publicationType": "journal",
     "themeId": "evolution",
     "theme": "Evolution and host adaptation",
-    "publishedDate": "2017-01-01"
+    "publishedDate": "2017-01-01",
+    "organisms": [
+      "Helicobacter"
+    ],
+    "topics": [
+      "Population genomics"
+    ],
+    "projects": [],
+    "geographies": []
   },
   {
     "id": "2017-genome-wide-identification-of-host-segregating-epidemiological-markers-for-source-att",
@@ -1403,7 +2222,16 @@
     "publicationType": "journal",
     "themeId": "prediction",
     "theme": "Genomics, AI and disease prediction",
-    "publishedDate": "2017-01-01"
+    "publishedDate": "2017-01-01",
+    "organisms": [
+      "Campylobacter"
+    ],
+    "topics": [
+      "Source attribution",
+      "Population genomics"
+    ],
+    "projects": [],
+    "geographies": []
   },
   {
     "id": "2017-genome-comparison-of-erythromycin-resistant-campylobacter-from-turkey-identifies-host",
@@ -1419,7 +2247,16 @@
     "publicationType": "journal",
     "themeId": "transmission",
     "theme": "Transmission across One Health systems",
-    "publishedDate": "2017-01-01"
+    "publishedDate": "2017-01-01",
+    "organisms": [
+      "Campylobacter"
+    ],
+    "topics": [
+      "AMR",
+      "Transmission"
+    ],
+    "projects": [],
+    "geographies": []
   },
   {
     "id": "2017-a-comparative-genomics-study-of-staphylococcus-epidermidis-from-orthopedic-device-rel",
@@ -1435,7 +2272,16 @@
     "publicationType": "journal",
     "themeId": "evolution",
     "theme": "Evolution and host adaptation",
-    "publishedDate": "2017-01-01"
+    "publishedDate": "2017-01-01",
+    "organisms": [
+      "Staphylococcus"
+    ],
+    "topics": [
+      "Population genomics",
+      "Virulence and disease"
+    ],
+    "projects": [],
+    "geographies": []
   },
   {
     "id": "2016-rapid-host-switching-in-generalist-campylobacter-strains-erodes-the-signal-for-tracin",
@@ -1451,7 +2297,16 @@
     "publicationType": "journal",
     "themeId": "evolution",
     "theme": "Evolution and host adaptation",
-    "publishedDate": "2016-01-01"
+    "publishedDate": "2016-01-01",
+    "organisms": [
+      "Campylobacter"
+    ],
+    "topics": [
+      "Transmission",
+      "Source attribution"
+    ],
+    "projects": [],
+    "geographies": []
   },
   {
     "id": "2016-livestock-associated-staphylococcus-aureus-st9-isolates-from-chinese-pigs-carry-the-l",
@@ -1467,7 +2322,17 @@
     "publicationType": "journal",
     "themeId": "transmission",
     "theme": "Transmission across One Health systems",
-    "publishedDate": "2016-01-01"
+    "publishedDate": "2016-01-01",
+    "organisms": [
+      "Staphylococcus"
+    ],
+    "topics": [
+      "One Health"
+    ],
+    "projects": [],
+    "geographies": [
+      "China"
+    ]
   },
   {
     "id": "2016-genome-wide-association-of-functional-traits-linked-with-campylobacter-jejuni-surviva",
@@ -1483,7 +2348,19 @@
     "publicationType": "journal",
     "themeId": "transmission",
     "theme": "Transmission across One Health systems",
-    "publishedDate": "2016-01-01"
+    "publishedDate": "2016-01-01",
+    "organisms": [
+      "Campylobacter"
+    ],
+    "topics": [
+      "One Health",
+      "Transmission",
+      "Population genomics"
+    ],
+    "projects": [],
+    "geographies": [
+      "United Kingdom"
+    ]
   },
   {
     "id": "2016-genetic-and-chemical-differentiation-of-campylobacter-coli-and-campylobacter-jejuni-l",
@@ -1499,7 +2376,15 @@
     "publicationType": "journal",
     "themeId": "evolution",
     "theme": "Evolution and host adaptation",
-    "publishedDate": "2016-01-01"
+    "publishedDate": "2016-01-01",
+    "organisms": [
+      "Campylobacter"
+    ],
+    "topics": [
+      "Population genomics"
+    ],
+    "projects": [],
+    "geographies": []
   },
   {
     "id": "2016-from-escherich-to-the-escherichia-coli-genome-how-a-commensal-bacterium-shaped-the-hi",
@@ -1515,7 +2400,15 @@
     "publicationType": "journal",
     "themeId": "evolution",
     "theme": "Evolution and host adaptation",
-    "publishedDate": "2016-01-01"
+    "publishedDate": "2016-01-01",
+    "organisms": [
+      "Escherichia coli"
+    ],
+    "topics": [
+      "Population genomics"
+    ],
+    "projects": [],
+    "geographies": []
   },
   {
     "id": "2016-draft-genome-sequence-of-an-enterobacter-species-associated-with-illnesses-and-powder",
@@ -1531,7 +2424,15 @@
     "publicationType": "journal",
     "themeId": "evolution",
     "theme": "Evolution and host adaptation",
-    "publishedDate": "2016-01-01"
+    "publishedDate": "2016-01-01",
+    "organisms": [
+      "Enterobacter"
+    ],
+    "topics": [
+      "Population genomics"
+    ],
+    "projects": [],
+    "geographies": []
   },
   {
     "id": "2016-combined-analysis-of-variation-in-core-accessory-and-regulatory-genome-regions-provid",
@@ -1547,7 +2448,13 @@
     "publicationType": "journal",
     "themeId": "evolution",
     "theme": "Evolution and host adaptation",
-    "publishedDate": "2016-01-01"
+    "publishedDate": "2016-01-01",
+    "organisms": [],
+    "topics": [
+      "Evolution"
+    ],
+    "projects": [],
+    "geographies": []
   },
   {
     "id": "2016-biofilm-morphotypes-and-population-structure-among-staphylococcus-epidermidis-from-co",
@@ -1564,7 +2471,16 @@
     "themeId": "evolution",
     "theme": "Evolution and host adaptation",
     "journal": "PLOS ONE",
-    "publishedDate": "2016-01-01"
+    "publishedDate": "2016-01-01",
+    "organisms": [
+      "Staphylococcus"
+    ],
+    "topics": [
+      "Population genomics",
+      "Biofilms"
+    ],
+    "projects": [],
+    "geographies": []
   },
   {
     "id": "2016-bayesian-identification-of-bacterial-strains-from-sequencing-data",
@@ -1580,7 +2496,13 @@
     "publicationType": "journal",
     "themeId": "tools",
     "theme": "Open genomic tools and surveillance",
-    "publishedDate": "2016-01-01"
+    "publishedDate": "2016-01-01",
+    "organisms": [],
+    "topics": [
+      "Machine learning"
+    ],
+    "projects": [],
+    "geographies": []
   },
   {
     "id": "2015-persistent-staphylococcus-aureus-isolates-from-two-independent-bacteraemia-display-in",
@@ -1596,7 +2518,15 @@
     "publicationType": "journal",
     "themeId": "evolution",
     "theme": "Evolution and host adaptation",
-    "publishedDate": "2015-01-01"
+    "publishedDate": "2015-01-01",
+    "organisms": [
+      "Staphylococcus"
+    ],
+    "topics": [
+      "Population genomics"
+    ],
+    "projects": [],
+    "geographies": []
   },
   {
     "id": "2015-evidence-of-land-sea-transfer-of-the-zoonotic-pathogen-campylobacter-to-a-wildlife-ma",
@@ -1612,7 +2542,16 @@
     "publicationType": "journal",
     "themeId": "transmission",
     "theme": "Transmission across One Health systems",
-    "publishedDate": "2015-01-01"
+    "publishedDate": "2015-01-01",
+    "organisms": [
+      "Campylobacter"
+    ],
+    "topics": [
+      "One Health",
+      "Transmission"
+    ],
+    "projects": [],
+    "geographies": []
   },
   {
     "id": "2015-enhanced-biofilm-formation-and-multi-host-transmission-evolve-from-divergent-genetic-",
@@ -1628,7 +2567,17 @@
     "publicationType": "journal",
     "themeId": "transmission",
     "theme": "Transmission across One Health systems",
-    "publishedDate": "2015-01-01"
+    "publishedDate": "2015-01-01",
+    "organisms": [
+      "Campylobacter"
+    ],
+    "topics": [
+      "One Health",
+      "Transmission",
+      "Biofilms"
+    ],
+    "projects": [],
+    "geographies": []
   },
   {
     "id": "2015-ecological-overlap-and-horizontal-gene-transfer-in-staphylococcus-aureus-and-staphylo",
@@ -1644,7 +2593,16 @@
     "publicationType": "journal",
     "themeId": "evolution",
     "theme": "Evolution and host adaptation",
-    "publishedDate": "2015-01-01"
+    "publishedDate": "2015-01-01",
+    "organisms": [
+      "Staphylococcus"
+    ],
+    "topics": [
+      "Evolution",
+      "Recombination"
+    ],
+    "projects": [],
+    "geographies": []
   },
   {
     "id": "2014-dormant-cells-of-staphylococcus-aureus-are-resuscitated-by-spent-culture-supernatant",
@@ -1660,7 +2618,15 @@
     "publicationType": "journal",
     "themeId": "evolution",
     "theme": "Evolution and host adaptation",
-    "publishedDate": "2014-01-01"
+    "publishedDate": "2014-01-01",
+    "organisms": [
+      "Staphylococcus"
+    ],
+    "topics": [
+      "Population genomics"
+    ],
+    "projects": [],
+    "geographies": []
   },
   {
     "id": "2014-a-reference-pan-genome-approach-to-comparative-bacterial-genomics-identification-of-n",
@@ -1676,7 +2642,15 @@
     "publicationType": "journal",
     "themeId": "evolution",
     "theme": "Evolution and host adaptation",
-    "publishedDate": "2014-01-01"
+    "publishedDate": "2014-01-01",
+    "organisms": [
+      "Campylobacter"
+    ],
+    "topics": [
+      "Population genomics"
+    ],
+    "projects": [],
+    "geographies": []
   },
   {
     "id": "2012-progressive-genome-wide-introgression-in-agricultural-campylobacter-coli-molecular-ec",
@@ -1692,7 +2666,16 @@
     "publicationType": "journal",
     "themeId": "transmission",
     "theme": "Transmission across One Health systems",
-    "publishedDate": "2012-01-01"
+    "publishedDate": "2012-01-01",
+    "organisms": [
+      "Campylobacter"
+    ],
+    "topics": [
+      "Evolution",
+      "Population genomics"
+    ],
+    "projects": [],
+    "geographies": []
   },
   {
     "id": "2011-mechanisms-of-staphylococcus-epidermidis-biofilm-formation-in-different-types-of-biom",
@@ -1709,7 +2692,15 @@
     "themeId": "evolution",
     "theme": "Evolution and host adaptation",
     "url": "https://researchportal.bath.ac.uk/en/publications/mechanisms-of-staphylococcus-epidermidis-biofilm-formation-in-dif",
-    "publishedDate": "2011-01-01"
+    "publishedDate": "2011-01-01",
+    "organisms": [
+      "Staphylococcus"
+    ],
+    "topics": [
+      "Biofilms"
+    ],
+    "projects": [],
+    "geographies": []
   },
   {
     "id": "2010-the-zinc-responsive-regulator-zur-controls-expression-of-the-coelibactin-gene-cluster",
@@ -1725,7 +2716,15 @@
     "publicationType": "journal",
     "themeId": "evolution",
     "theme": "Evolution and host adaptation",
-    "publishedDate": "2010-01-01"
+    "publishedDate": "2010-01-01",
+    "organisms": [
+      "Streptomyces"
+    ],
+    "topics": [
+      "Population genomics"
+    ],
+    "projects": [],
+    "geographies": []
   },
   {
     "id": "2007-zinc-responsive-regulation-of-alternative-ribosomal-protein-genes-in-streptomyces-coe",
@@ -1741,6 +2740,14 @@
     "publicationType": "journal",
     "themeId": "evolution",
     "theme": "Evolution and host adaptation",
-    "publishedDate": "2007-01-01"
+    "publishedDate": "2007-01-01",
+    "organisms": [
+      "Streptomyces"
+    ],
+    "topics": [
+      "Population genomics"
+    ],
+    "projects": [],
+    "geographies": []
   }
 ]

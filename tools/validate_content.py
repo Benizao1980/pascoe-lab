@@ -14,6 +14,8 @@ for p in pubs:
         if not p.get(f):errors.append(f"{p.get('id','?')}: missing {f}")
     if p.get('publicationType') not in {'journal','preprint'}:errors.append(f"{p.get('id')}: invalid publicationType")
     if p.get('themeId') not in ids:errors.append(f"{p.get('id')}: invalid themeId")
+    for tag_field in ('organisms','topics','projects','geographies'):
+        if not isinstance(p.get(tag_field,[]),list):errors.append(f"{p.get('id')}: {tag_field} must be a list")
     d=str(p.get('doi','')).lower().strip();t=norm(p.get('title'))
     if d:
         if d in dois:errors.append('duplicate DOI: '+d)

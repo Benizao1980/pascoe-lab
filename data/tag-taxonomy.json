@@ -1,0 +1,63 @@
+{
+  "organisms": [
+    "Acinetobacter",
+    "Bacillus",
+    "Campylobacter",
+    "Enterobacter",
+    "Escherichia coli",
+    "Helicobacter",
+    "Klebsiella",
+    "Listeria",
+    "Mycoplasma",
+    "Oropouche virus",
+    "Pseudomonas",
+    "Renibacterium",
+    "Salmonella",
+    "Shigella",
+    "Staphylococcus",
+    "Streptococcus",
+    "Streptomyces",
+    "Yersinia"
+  ],
+  "topics": [
+    "AMR",
+    "Biofilms",
+    "Diagnostics",
+    "Environmental microbiology",
+    "Evolution",
+    "Machine learning",
+    "Metagenomics",
+    "One Health",
+    "Population genomics",
+    "Recombination",
+    "Source attribution",
+    "Surveillance",
+    "Transmission",
+    "Vaccines",
+    "Virulence and disease"
+  ],
+  "projects": [
+    "GETcampy-Africa",
+    "Campylobacter Control Campaign",
+    "Peru",
+    "Thailand",
+    "HU-RIZON",
+    "CRAB Eastern Europe"
+  ],
+  "geographies": [
+    "Africa",
+    "Americas",
+    "Brazil",
+    "Chile",
+    "China",
+    "Egypt",
+    "Global",
+    "India",
+    "Peru",
+    "Thailand",
+    "The Gambia",
+    "United Kingdom",
+    "United States"
+  ],
+  "display_rule": "Publication cards show up to three tags, prioritising organism, topic and project. All tags remain searchable."
+}

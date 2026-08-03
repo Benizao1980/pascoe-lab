@@ -57,7 +57,7 @@ Publication browser: 97 journal articles and 7 preprints.
 - `content.js` is cache-busted on the publications page.
 
 
-## v6.8 publication synchronisation
+## v6.9 publication synchronisation
 
 - Google Scholar profile is the curated identity source.
 - PubMed enriches matching records with DOI, PMID, journal and exact publication date.
@@ -65,3 +65,12 @@ Publication browser: 97 journal articles and 7 preprints.
 - Themes and homepage selections remain manually curated.
 - The browser fetches publication data directly from the main GitHub branch, with the deployed local file as fallback.
 - Publications are sorted by `publishedDate`, not alphabetically within each year.
+
+
+## v6.9 publication tags
+
+- Added controlled organism, topic, project and geography tags.
+- Added organism and project dropdown filters.
+- Search includes all tag fields.
+- Publication cards show up to three compact tags.
+- Default year grouping orders each year as: in press, published, preprint; each status is then newest first.

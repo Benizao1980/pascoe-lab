@@ -201,3 +201,19 @@ publication list is rendered dynamically, `content.js` calls
 Run **Actions → Review missing publication DOIs**. The default mode creates a
 `DOI_REVIEW.csv` artifact without changing the website. Enabling
 `write_matches` commits only very high-confidence Crossref matches.
+
+
+# Structured publication tags (v6.9)
+
+Publication records contain four array fields:
+
+```json
+"organisms": ["Campylobacter"],
+"topics": ["AMR", "Source attribution"],
+"projects": ["Peru"],
+"geographies": ["Peru"]
+```
+
+Use controlled names from `data/tag-taxonomy.json`. The synchronisation script retains manual tags and adds conservative title-based suggestions. Project membership should be checked manually. The browser displays at most three tags, but every tag remains searchable.
+
+Within each year, the default order is **in press → published → preprint**, then newest publication date first.

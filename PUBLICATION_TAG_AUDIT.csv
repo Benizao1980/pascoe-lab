@@ -1,0 +1,106 @@
+year,status,title,organisms,topics,projects,geographies
+2026,published,Genomic insights into specialized and primary metabolism gene clusters in methicillin-resistant Staphylococcus aureus from Egyptian community settings,Staphylococcus,AMR; Population genomics,,Egypt
+2026,published,Protocols for genomic epidemiology and source attribution of enteric bacteria causing diarrhoeal disease across Africa,Campylobacter; Salmonella; Shigella; Escherichia coli,One Health; Source attribution; Surveillance,GETcampy-Africa; Campylobacter Control Campaign,United Kingdom; Africa
+2026,preprint,Insertion sequence elements drive within-host evolution of Staphylococcus epidermidis in persistent orthopaedic device-related infections,Staphylococcus,Evolution,,
+2026,published,Pathoadaptive evolution and clonal dissemination of community-associated methicillin-resistant Staphylococcus aureus in Egypt,Staphylococcus,AMR; Transmission; Evolution; Population genomics,,Egypt; Global
+2026,published,"Genomic epidemiology of a 2023–2024 Oropouche virus disease outbreak in Iquitos, Peru",Oropouche virus,Transmission; Surveillance,Peru,Peru; Americas
+2026,preprint,"A stable, hierarchical LIN code system for Campylobacter jejuni and Campylobacter coli",Campylobacter,Surveillance,,Global
+2026,published,Lineage-linked biofilm formation and widespread multidrug resistance among Indian Acinetobacter baumannii clinical isolates,Acinetobacter,AMR; Transmission; Surveillance; Biofilms,,India; Global
+2026,preprint,"Robust performance of culture, qPCR, and genomic approaches for Shigella serotyping in a pediatric surveillance cohort",Shigella,Surveillance; Diagnostics,,
+2026,in press,Using a Bayesian Belief Network to explore public health interventions in The Gambia,Campylobacter,Machine learning,Campylobacter Control Campaign,The Gambia; Africa
+2026,preprint,Recent emergence of a multidrug-resistant Campylobacter coli lineage linked to poultry intensification in the Peruvian Amazon,Campylobacter,AMR; One Health,Peru,Peru
+2025,published,"Comparative genomic analysis of Mycoplasma pneumoniae isolated in the United Kingdom, between 2016-2024",Mycoplasma,Population genomics,,United Kingdom
+2025,published,The genomic surveillance gap: averting the antimicrobial resistance pandemic requires global equity and action,,AMR; Surveillance,,Global
+2025,published,Stability of Helicobacter pylori Resistance to Clarithromycin,Helicobacter,AMR,,
+2025,preprint,Monitoring of vaccine targets and interventions using global genome data: vaccines.watch,,Surveillance; Vaccines,,Global
+2025,published,Methicillin-sensitive Staphylococcus aureus lineages contribute towards poor patient outcomes in orthopaedic device-related infections,Staphylococcus,AMR; Virulence and disease,,
+2025,published,Growth rates and metabolic traits differentiate Campylobacter jejuni strains by diarrheal manifestation,Campylobacter,Virulence and disease,Peru,
+2025,published,Characterization of antibiotic determinants and heavy metal resistance genes in Escherichia coli from pigs in Catalonia,Escherichia coli,AMR,,
+2025,published,Biotype determines survival of Yersinia enterocolitica in red blood cell concentrates,Yersinia,Population genomics,,
+2025,published,American black bear (Ursus americanus) as a potential host for Campylobacter jejuni,Campylobacter,One Health,,United States
+2025,published,[Consortium member] Monitoring antimicrobial resistance trends from global genomics data: AMR.watch,,AMR; Surveillance,,Global
+2024,published,The epidemiology and impact of persistent Campylobacter infections on childhood growth,Campylobacter,Diagnostics,Peru,Peru
+2024,published,Sharing of cmeRABC alleles between C. coli and C. jejuni associated with extensive drug resistance,Campylobacter,AMR; One Health,Peru,Peru
+2024,published,Proximity to humans is associated with antimicrobial-resistant enteric pathogens in wild-bird microbiomes,,One Health; Transmission; Metagenomics,HU-RIZON,
+2024,published,Novel rpsK / rpsD primer-probe assay improves detection of Campylobacter jejuni and Campylobacter coli in human stool,Campylobacter,Diagnostics,,
+2024,published,Machine learning to attribute the source of Campylobacter infections in the United States,Campylobacter,One Health; Source attribution; Surveillance; Machine learning,,United States
+2024,published,Global variation in Escherichia coli mcr-1 genes and plasmids from animal and human genomes following colistin usage restrictions in livestock,Escherichia coli,AMR; One Health,,Global
+2024,published,Genomic tailoring of autogenous poultry vaccines to reduce Campylobacter from farm to fork,Campylobacter,One Health; Transmission; Population genomics; Vaccines,Thailand,Thailand
+2024,published,"Epistasis, core-genome disharmony, and adaptation in recombining bacteria",,Evolution; Population genomics,,
+2024,published,Commercial farmed swine harbour a variety of pathogenic bacteria and antimicrobial resistance genes,,AMR; One Health,,
+2024,published,Campylobacter jejuni and Campylobacter coli genomic resistant determinants imperfectly explain phenotypic resistance to ciprofloxacin and azithromycin in Peru,Campylobacter,AMR,Peru,Peru; Global
+2024,published,Assessing antimicrobial resistance profiles of Salmonella enterica in the pork production system,Salmonella,AMR; One Health,,
+2024,published,"[consortium member] Geographical distribution, disease association and diversity of Klebsiella pneumoniae K/L and O antigens in India: roadmap for vaccine development",Klebsiella,Surveillance; Vaccines; Virulence and disease,,India; Global
+2024,published,"[Consortium member] Gene content, phage cycle regulation model and prophage inactivation disclosed by prophage genomics in the Helicobacter pylori Genome Project",Helicobacter,Surveillance,,
+2023,published,The Helicobacter pylori Genome Project: insights into H. pylori population structure from analysis of a worldwide collection of complete genomes,Helicobacter,Surveillance; Population genomics,,Global
+2023,published,Salmonella linkage between good agricultural practice certified broiler farms and poultry slaughterhouses in an intensive farming area in upper northern part of Thailand,Salmonella,One Health,Thailand,Thailand
+2023,published,Recombination-mediated adaptation of methicillin-resistant Staphylococcus aureus clonal complex 1 in Egyptian healthcare settings,Staphylococcus,AMR; Evolution; Recombination,,Egypt
+2023,published,Oral and gut microbiome biomarkers of susceptibility to respiratory tract infection in adults: a longitudinal cohort feasibility study,,Metagenomics,,
+2023,published,Evidence of potential Campylobacter jejuni zooanthroponosis in captive macaque populations,Campylobacter,Transmission,,
+2023,published,Contrasting genes for short and long-term biofilm adaptation in Listeria,Listeria,Evolution; Biofilms,,
+2023,published,[consortium member] Novel multidrug-resistant sublineages of Staphylococcus aureus clonal complex 22 discovered in India,Staphylococcus,AMR,,India; Global
+2022,published,"Stereospecific metabolism of chloramphenicol by bacteria isolated wastewater, and the importance of stereochemistry in environmental risk assessments for antibiotics",,AMR; Environmental microbiology,,
+2022,published,Spatiotemporal investigation of antibiotic resistance in the urban water cycle influenced by environmental and anthropogenic activity,,AMR; Environmental microbiology,,
+2022,published,Signatures of selection in core and accessory genomes indicate different ecological drivers of diversification among Bacillus cereus clades,Bacillus,Evolution,,
+2022,published,Repeated out-of-Africa expansions of Helicobacter pylori driven by replacement of deleterious mutations,Helicobacter,Population genomics,,Africa
+2022,published,Local accessory gene sharing among Egyptian Campylobacter potentially promotes the spread of antimicrobial resistance,Campylobacter,AMR; Transmission; Recombination,,Egypt; United Kingdom
+2022,published,"Identification of Streptococcus suis carriage in healthy pigs in Chiang Mai, Thailand",Streptococcus,Population genomics,Thailand,Thailand
+2022,published,Host ecology regulates interspecies recombination in bacteria of the genus Campylobacter,Campylobacter,Evolution; Recombination,,
+2022,published,Genome-based analysis of infrequent Salmonella serotypes through the Thai pork production chain,Salmonella,One Health,Thailand,Thailand
+2022,published,Genetic diversity and variation in antimicrobial-resistance determinants of non-serotype 2 Streptococcus suis isolates from healthy pigs,Streptococcus,AMR,,
+2021,published,Stress-resistance associated with multi-host transmission and enhanced biofilm formation at 42°C among hyper-aerotolerant generalist Campylobacter jejuni,Campylobacter,One Health; Transmission; Biofilms,,
+2021,published,Stereoselective bacterial metabolism of antibiotics in environmental bacteria – a novel biochemical workflow,,Environmental microbiology,,
+2021,published,Quantifying bacterial evolution in the wild: a birthday problem for Campylobacter lineages,Campylobacter,Evolution,,
+2021,published,Occurrence and sequence type of antimicrobial-resistant Salmonella spp. circulating in antibiotic-free organic pig farms of northern Thailand,Salmonella,One Health,Thailand,Thailand
+2021,published,Multiple clones of colistin-resistant Salmonella enterica carrying mcr-1 plasmids in meat products and patients in Northern Thailand,Salmonella,AMR,Thailand,Thailand
+2021,published,Genome-wide association study uncovers signature genetic alterations among Pseudomonas aeruginosa cystic fibrosis isolates,Pseudomonas,Population genomics,,
+2021,published,Genome evolution and emergence of pathogenicity in avian Escherichia coli,Escherichia coli,Evolution; Virulence and disease,,
+2021,published,Campylobacter jejuni genotypes associated with post infection irritable bowel syndrome in humans,Campylobacter,Virulence and disease,,
+2020,published,Whole-genome informatics of monophasic variant of Salmonella Typhimurium in pig production in Thailand,Salmonella,Population genomics,Thailand,Thailand
+2020,preprint,High-resolution sweep metagenomics using fast probabilistic inference. Wellcome Open Research 5:14; doi: 10.12688/wellcomeopenres.15639.1; [bioRxiv doi: 10.1101/332544],,Machine learning; Metagenomics,,
+2020,published,Genomic epidemiology of Campylobacter jejuni associated with asymptomatic paediatric infection in the Peruvian Amazon,Campylobacter,Surveillance; Population genomics,Peru,Peru
+2020,published,Determination of Campylobacter coli host-segregating SNPs and their use for source attribution of clinical isolates,Campylobacter,Source attribution,,
+2020,published,Agricultural intensification drives the evolution of host specialism in the enteric pathogen Campylobacter jejuni,Campylobacter,Evolution,,
+2020,published,"A five-hundred year tale of co-evolution, adaptation and virulence: Helicobacter pylori in the Americas",Helicobacter,Evolution; Virulence and disease,,Americas
+2019,published,Prevalence of faecal carriage of extended-spectrum beta-lactamase (ESBL)-producing Escherichia coli in veterinary hospital staff and students Veterinary Record Open 6: e000307; doi: 10.1136/vetreco-2018-000307,Escherichia coli,AMR,,
+2019,published,Genetic diversity of composite enterotoxigenic Staphylococcus epidermidis pathogenicity islands,Staphylococcus,Evolution; Virulence and disease,,
+2019,published,"Gene pool transmission of multidrug resistance among Campylobacter from livestock, sewage and human disease",Campylobacter,AMR; One Health; Transmission; Environmental microbiology,,
+2019,published,Domestication of Campylobacter jejuni NCTC 11168,Campylobacter,Evolution,,
+2019,published,Core genome sequence analysis to characterise Salmonella Rissen ST469 from swine production chain,Salmonella,One Health; Population genomics,,
+2018,published,Whole genome Multilocus Sequence Typing (wgMLST) and acquired antimicrobials resistance genes of pan-susceptible Salmonella Weltevreden from Thai pork production processes,Salmonella,AMR; One Health; Surveillance,Thailand,Thailand
+2018,published,The potential of isolation source to predict colonisation in avian hosts: A case study in Campylobacter jejuni strains from three bird species Frontiers in Microbiology 9:591 doi: 10.3389/fmicb.2018.00591,Campylobacter,Source attribution,,
+2018,published,"Molecular epidemiology and comparative genomics and typing of Campylobacter concisus strains from saliva, faeces and gut mucosal biopsies in inflammatory bowel disease Scientific Reports 8:1902; doi:10.1038/s41598-018-20135-4",Campylobacter,Surveillance; Population genomics,,
+2018,published,Lineage-specific plasmid acquisition and the evolution of specialized pathogens in Bacillus thuringiensis and the Bacillus cereus group Molecular Ecology 27(7): 1524-1540 doi: 10.1111/mec.14546,Bacillus,Evolution,,
+2018,published,Hidden antibiotic resistance fitness costs revealed by GWAS-based epistasis analysis,,AMR; Evolution,,
+2018,published,Genomic epidemiology of the commercially important pathogen Renibacterium salmoninarum within the Chilean salmon industry. Microbial Genomics doi:10.1099/mgen.0.000201,Renibacterium,Surveillance,,Chile
+2018,published,Genomic Epidemiology of clinical Campylobacter spp,Campylobacter,Surveillance,,
+2018,published,Convergent amino acid signatures in paraphyletic Campylobacter jejuni sub-populations suggest human niche tropism Genome Biology & Evolution 10 (3): 763-774; doi:10.1093/gbe/evy026,Campylobacter,Evolution,,
+2018,published,Comparative genomic survey of Bacillus cereus sensu stricto isolates from the dairy production chain in Brazil FEMS Microbiology Letters 365(3); doi: 10.1093/femsle/fnx283,Bacillus,Population genomics,,United Kingdom; Brazil
+2018,published,A pathogen in plain sight: disease-causing genotypes of the commensal skin bacterium Staphylococcus epidermidis,Staphylococcus,Population genomics,,
+2018,published,A GWAS on Helicobacter pylori strains points to genetic variants associated with gastric cancer risk,Helicobacter,Population genomics; Virulence and disease,,
+2017,published,Recombination-mediated host-adaptation by avian Staphylococcus aureus,Staphylococcus,Evolution; Recombination,,
+2017,published,Phenotypic and genotypic characterisation of Staphylococcus epidermidis from orthopaedic device-related infections correlated with patient outcome Orthopaedic Proceedings 99-B (22): 65,Staphylococcus,Virulence and disease,,
+2017,published,Local genes for local bacteria: evidence of allopatry in the genomes of transatlantic Campylobacter populations Molecular Ecology 26 (17): 4497-4508; DOI: 10.1111/mec.14176 [PeerJ preprint doi: 10.7287/peerj.preprints.2638v1],Campylobacter,Evolution,,
+2017,published,Genomic structure and insertion sites of Helicobacter pylori prophages from various geographical origins Scientific Reports 7:42471; DOI: 10.1038/srep42471,Helicobacter,Population genomics,,
+2017,published,Genome-wide identification of host-segregating epidemiological markers for source attribution in Campylobacter jejuni AEM 83 (7): e03085-16; doi: 10.1128/AEM.03085-16,Campylobacter,Source attribution; Population genomics,,
+2017,published,Genome comparison of erythromycin resistant Campylobacter from turkey identifies hosts and pathways for horizontal spread of erm(B) genes Frontiers in Microbiology 8: 2240; DOI: 10.3389/fmicb.2017.02240,Campylobacter,AMR; Transmission,,
+2017,published,A comparative genomics study of Staphylococcus epidermidis from orthopedic device-related infections correlated with patient outcome Journal of Clinical Microbiology 55 (10): 3089-3103; (doi:10.1128/JCM.00881-17),Staphylococcus,Population genomics; Virulence and disease,,
+2016,published,Rapid host switching in generalist Campylobacter strains erodes the signal for tracing human infections. The ISME Journal 10 (3): 721-9 [arXiv:1504.01607],Campylobacter,Transmission; Source attribution,,
+2016,published,Livestock-associated Staphylococcus aureus ST9 isolates from Chinese pigs carry the lsa(E) gene and are quinupristin/ dalfopristin resistant IJMM doi:10.1016/j.ijmm.2016.08.001,Staphylococcus,One Health,,China
+2016,published,Genome-wide association of functional traits linked with Campylobacter jejuni survival from farm to fork,Campylobacter,One Health; Transmission; Population genomics,,United Kingdom
+2016,published,Genetic and chemical differentiation of Campylobacter coli and Campylobacter jejuni lipooligosaccharide pathways JBact doi: 10.1128/JB.00347-16 [Bioarxiv: dx.doi.org/10.1101/050328],Campylobacter,Population genomics,,
+2016,published,From Escherich to the Escherichia coli genome: how a commensal bacterium shaped the history of modern microbiology,Escherichia coli,Population genomics,,
+2016,published,Draft Genome Sequence of an Enterobacter Species Associated with Illnesses and Powdered Infant Formula,Enterobacter,Population genomics,,
+2016,published,"Combined analysis of variation in core, accessory and regulatory genome regions provides a super-resolution view into the evolution of bacterial populations",,Evolution,,
+2016,published,Biofilm morphotypes and population structure among Staphylococcus epidermidis from commensal and clinical samples,Staphylococcus,Population genomics; Biofilms,,
+2016,published,Bayesian identification of bacterial strains from sequencing data,,Machine learning,,
+2015,published,Persistent Staphylococcus aureus isolates from two independent bacteraemia display increased bacterial fitness and novel immune evasion phenotypes. Infection and Immunity 83 (8): 3311-24,Staphylococcus,Population genomics,,
+2015,published,Evidence of land-sea transfer of the zoonotic pathogen Campylobacter to a wildlife marine sentinel species. Molecular Ecology 24 (1): 208-21,Campylobacter,One Health; Transmission,,
+2015,published,Enhanced biofilm formation and multi-host transmission evolve from divergent genetic backgrounds in Campylobacter jejuni,Campylobacter,One Health; Transmission; Biofilms,,
+2015,published,Ecological overlap and horizontal gene transfer in Staphylococcus aureus and Staphylococcus epidermidis,Staphylococcus,Evolution; Recombination,,
+2014,published,Dormant cells of Staphylococcus aureus are resuscitated by spent culture supernatant,Staphylococcus,Population genomics,,
+2014,published,A Reference Pan-Genome Approach to Comparative Bacterial Genomics: Identification of Novel Epidemiological Markers in Pathogenic Campylobacter,Campylobacter,Population genomics,,
+2012,published,Progressive genome-wide introgression in agricultural Campylobacter coli Molecular Ecology,Campylobacter,Evolution; Population genomics,,
+2011,published,Mechanisms of Staphylococcus epidermidis biofilm formation in different types of biomaterial-related infections,Staphylococcus,Biofilms,,
+2010,published,The Zinc-responsive Regulator Zur Controls Expression of the Coelibactin Gene Cluster in Streptomyces coelicolor,Streptomyces,Population genomics,,
+2007,published,Zinc-responsive regulation of alternative ribosomal protein genes in Streptomyces coelicolor involves Zur and σR,Streptomyces,Population genomics,,
