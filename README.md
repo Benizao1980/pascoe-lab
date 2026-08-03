@@ -47,3 +47,11 @@ Publication browser: 97 journal articles and 7 preprints.
 - Added Ben Pascoe portrait to the People page.
 - Resources now lists SourceRunnerML, BAMPS-ML, PANOPTICON, LINwalker and ICassigner separately.
 - Scholar metric fallback updated to the successful 24 July 2026 refresh.
+
+
+## v6.7 Scholar metrics reliability fix
+
+- The publications page reads the latest Scholar metrics directly from the repository raw file.
+- The Scholar workflow explicitly requests a GitHub Pages rebuild after updating metrics.
+- GitHub Actions dependencies upgraded to Node 24-compatible releases.
+- `content.js` is cache-busted on the publications page.

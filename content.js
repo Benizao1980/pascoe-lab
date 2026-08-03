@@ -18,7 +18,12 @@ async function renderMetrics(){
   const nodes=document.querySelectorAll("[data-metric]");if(!nodes.length)return;
   const pubs=await loadJson("data/publications.json");
   let scholar;
-  try{scholar=await loadJson("data/scholar-metrics.json");}catch(e){scholar=await loadJson("data/site.json");}
+  const rawScholar=`https://raw.githubusercontent.com/Benizao1980/pascoe-lab/main/data/scholar-metrics.json?v=${Date.now()}`;
+  try{scholar=await loadJson(rawScholar);}
+  catch(e1){
+    try{scholar=await loadJson(`data/scholar-metrics.json?v=${Date.now()}`);}
+    catch(e2){scholar=await loadJson("data/site.json");}
+  }
   const values={journal:pubs.filter(p=>p.publicationType==="journal").length,preprint:pubs.filter(p=>p.publicationType==="preprint").length,"h-index":scholar.h_index??"—",citations:Number.isFinite(Number(scholar.citations))?Number(scholar.citations).toLocaleString("en-GB"):"—"};
   nodes.forEach(n=>{n.textContent=values[n.dataset.metric]??"—";});
 }
