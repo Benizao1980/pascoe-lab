@@ -435,3 +435,5 @@ body{font-size:17px}.brand-logo{padding:3px;background:var(--white)}.brand-logo 
 
 @media(max-width:900px){.research-theme-layout{grid-template-columns:1fr}.research-theme-visual{max-width:720px}.research-theme-visual img{height:340px}}
 @media(max-width:700px){.research-theme-visual img{height:280px}}
+
+.publication-sync-note{margin:16px 0 0;font-size:.88rem;color:var(--muted);text-align:right}

@@ -55,3 +55,13 @@ Publication browser: 97 journal articles and 7 preprints.
 - The Scholar workflow explicitly requests a GitHub Pages rebuild after updating metrics.
 - GitHub Actions dependencies upgraded to Node 24-compatible releases.
 - `content.js` is cache-busted on the publications page.
+
+
+## v6.8 publication synchronisation
+
+- Google Scholar profile is the curated identity source.
+- PubMed enriches matching records with DOI, PMID, journal and exact publication date.
+- New unmatched non-preprint records are placed in `data/publication-sync.json` for review.
+- Themes and homepage selections remain manually curated.
+- The browser fetches publication data directly from the main GitHub branch, with the deployed local file as fallback.
+- Publications are sorted by `publishedDate`, not alphabetically within each year.

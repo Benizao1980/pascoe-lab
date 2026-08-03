@@ -1,0 +1,9 @@
+{
+  "updated_at": null,
+  "sources": [
+    "Google Scholar profile via SerpAPI",
+    "PubMed via NCBI E-utilities"
+  ],
+  "policy": "Google Scholar profile is the identity source. PubMed enriches matching works with DOI, PMID, journal and publication date. New non-PubMed works require an existing record or clear preprint source.",
+  "review": []
+}

@@ -1,52 +1,22 @@
 [
   {
-    "id": "2026-bayesian-belief-network-gambia",
+    "id": "2026-genomic-insights-mrsa-metabolism-gene-clusters",
     "year": 2026,
-    "citation": "Levontin P, Badji H, Bass P, Ceesay O, Conteh B, Hossain MJ, Goforth MP, Leach A, Pascoe B, Ssebisubi M, Sheppard SK, Collins CM (2026) Using a Bayesian Belief Network to explore public health interventions in The Gambia. Journal of Public Health in Africa. In press.",
-    "authors": "Levontin P, Badji H, Bass P, Ceesay O, Conteh B, Hossain MJ, Goforth MP, Leach A, Pascoe B, Ssebisubi M, Sheppard SK, Collins CM",
-    "title": "Using a Bayesian Belief Network to explore public health interventions in The Gambia",
-    "doi": "",
+    "publishedDate": "2026-07-15",
+    "citation": "Aboushanab AA, Saif NA, Salem S, Eltaher SS, Elghaish RA, Pascoe B, Sheppard SK, Elhadidy M, Ziko L (2026) Genomic insights into specialized and primary metabolism gene clusters in methicillin-resistant Staphylococcus aureus from Egyptian community settings. BMC Genomics 27:621. doi: 10.1186/s12864-026-13121-y",
+    "authors": "Aboushanab AA, Saif NA, Salem S, Eltaher SS, Elghaish RA, Pascoe B, Sheppard SK, Elhadidy M, Ziko L",
+    "title": "Genomic insights into specialized and primary metabolism gene clusters in methicillin-resistant Staphylococcus aureus from Egyptian community settings",
+    "doi": "10.1186/s12864-026-13121-y",
+    "pmid": "42458242",
+    "journal": "BMC Genomics",
     "type": "publication",
-    "status": "in press",
-    "selected": false,
-    "featuredHome": false,
+    "status": "published",
     "publicationType": "journal",
-    "themeId": "transmission",
-    "theme": "Transmission across One Health systems",
-    "url": "",
-    "summary": "A Bayesian Belief Network analysis exploring potential public-health interventions for reducing Campylobacter exposure in The Gambia."
-  },
-  {
-    "id": "2026-shigella-serotyping-preprint",
-    "year": 2026,
-    "citation": "Schiaffino F, Parker CT, Romaina-Cachique L, et al. (2026) Robust performance of culture, qPCR, and genomic approaches for Shigella serotyping in a pediatric surveillance cohort. medRxiv. doi: 10.64898/2026.01.05.26343460",
-    "authors": "Schiaffino F, Parker CT, Romaina-Cachique L, et al.",
-    "title": "Robust performance of culture, qPCR, and genomic approaches for Shigella serotyping in a pediatric surveillance cohort",
-    "doi": "10.64898/2026.01.05.26343460",
-    "type": "preprint",
-    "publicationType": "preprint",
-    "status": "preprint",
     "selected": false,
     "featuredHome": false,
-    "summary": "Comparison of culture, qPCR and genomic approaches for Shigella serotyping.",
-    "themeId": "tools",
-    "theme": "Open genomic tools and surveillance"
-  },
-  {
-    "id": "2026-peru-coli-emergence-preprint",
-    "year": 2026,
-    "citation": "Pascoe B, Mourkas E, Schiaffino F, et al. (2026) Recent emergence of a multidrug-resistant Campylobacter coli lineage linked to poultry intensification in the Peruvian Amazon. Research Square. doi: 10.21203/rs.3.rs-8865396/v1",
-    "authors": "Pascoe B, Mourkas E, Schiaffino F, et al.",
-    "title": "Recent emergence of a multidrug-resistant Campylobacter coli lineage linked to poultry intensification in the Peruvian Amazon",
-    "doi": "10.21203/rs.3.rs-8865396/v1",
-    "type": "preprint",
-    "publicationType": "preprint",
-    "status": "preprint",
-    "selected": true,
-    "featuredHome": false,
-    "summary": "Population-genomic evidence linking an emerging C. coli lineage, antimicrobial resistance and changing poultry systems.",
     "themeId": "evolution",
-    "theme": "Evolution and host adaptation"
+    "theme": "Evolution and host adaptation",
+    "summary": "Genomic analysis of metabolic gene clusters in community-associated MRSA from Egypt."
   },
   {
     "id": "2026-protocols-for-genomic-epidemiology-and-source-attribution-of-enteric-bacteria-causing",
@@ -64,7 +34,25 @@
     "project": "Enteric disease in Africa",
     "journal": "BMJ Open",
     "publicationType": "journal",
-    "themeId": "tools"
+    "themeId": "tools",
+    "publishedDate": "2026-06-25"
+  },
+  {
+    "id": "2026-staph-epidermidis-is-preprint",
+    "year": 2026,
+    "citation": "Littlefair J, Kobras CM, Post V, Pascoe B, et al. (2026) Insertion sequence elements drive within-host evolution of Staphylococcus epidermidis in persistent orthopaedic device-related infections. bioRxiv. doi: 10.64898/2026.05.21.726754",
+    "authors": "Littlefair J, Kobras CM, Post V, Pascoe B, et al.",
+    "title": "Insertion sequence elements drive within-host evolution of Staphylococcus epidermidis in persistent orthopaedic device-related infections",
+    "doi": "10.64898/2026.05.21.726754",
+    "type": "preprint",
+    "publicationType": "preprint",
+    "status": "preprint",
+    "selected": false,
+    "featuredHome": false,
+    "summary": "Within-host evolution and insertion-sequence dynamics in persistent device-related infection.",
+    "themeId": "evolution",
+    "theme": "Evolution and host adaptation",
+    "publishedDate": "2026-05-21"
   },
   {
     "id": "2026-pathoadaptive-evolution-and-clonal-dissemination-of-community-associated-methicillin-",
@@ -82,23 +70,9 @@
     "project": "Global pathogen genomics",
     "journal": "BMC Infectious Diseases",
     "publicationType": "journal",
-    "themeId": "evolution"
-  },
-  {
-    "id": "2026-staph-epidermidis-is-preprint",
-    "year": 2026,
-    "citation": "Littlefair J, Kobras CM, Post V, Pascoe B, et al. (2026) Insertion sequence elements drive within-host evolution of Staphylococcus epidermidis in persistent orthopaedic device-related infections. bioRxiv. doi: 10.64898/2026.05.21.726754",
-    "authors": "Littlefair J, Kobras CM, Post V, Pascoe B, et al.",
-    "title": "Insertion sequence elements drive within-host evolution of Staphylococcus epidermidis in persistent orthopaedic device-related infections",
-    "doi": "10.64898/2026.05.21.726754",
-    "type": "preprint",
-    "publicationType": "preprint",
-    "status": "preprint",
-    "selected": false,
-    "featuredHome": false,
-    "summary": "Within-host evolution and insertion-sequence dynamics in persistent device-related infection.",
     "themeId": "evolution",
-    "theme": "Evolution and host adaptation"
+    "publishedDate": "2026-04-02",
+    "pmid": "41928146"
   },
   {
     "id": "2026-genomic-epidemiology-of-a-2023-2024-oropouche-virus-disease-outbreak-in-iquitos-peru-",
@@ -116,7 +90,9 @@
     "project": "Peru",
     "journal": "Lancet Regional Health – Americas",
     "publicationType": "journal",
-    "themeId": "transmission"
+    "themeId": "transmission",
+    "publishedDate": "2026-02-19",
+    "pmid": "41756787"
   },
   {
     "id": "2026-lin-code-campylobacter-preprint",
@@ -132,14 +108,15 @@
     "featuredHome": false,
     "summary": "A stable genomic nomenclature for lineage-level typing and global Campylobacter surveillance.",
     "themeId": "tools",
-    "theme": "Open genomic tools and surveillance"
+    "theme": "Open genomic tools and surveillance",
+    "publishedDate": "2026-02-10"
   },
   {
     "id": "2026-consortium-member-lineage-linked-biofilm-formation-and-widespread-multidrug-resistanc",
     "year": 2026,
-    "citation": "Subbaraya VM*, Shamanna V*, Kumar KA, Nagaraj G, Krishnappa HG, Ravi M, Aanensen DA, Lingegowda RK, NIHR Global Health Research Unit on genomic surveillance - India consortium (2026) [Consortium member] Lineage-Linked Biofilm Formation and Widespread Multidrug Resistance among Indian Acinetobacter baumannii Clinical Isolates. Journal of Applied Microbiology, lxag007, doi: 10.1093/jambio/lxag007",
+    "citation": "Subbaraya VM, Shamanna V, Kumar KA, Nagaraj G, Krishnappa HG, Ravi M, Aanensen DA, Lingegowda RK, NIHR Global Health Research Unit on Genomic Surveillance – India consortium (2026) Lineage-linked biofilm formation and widespread multidrug resistance among Indian Acinetobacter baumannii clinical isolates. Journal of Applied Microbiology 137(1):lxag007. doi: 10.1093/jambio/lxag007",
     "authors": "Subbaraya VM*, Shamanna V*, Kumar KA, Nagaraj G, Krishnappa HG, Ravi M, Aanensen DA, Lingegowda RK, NIHR Global Health Research Unit on genomic surveillance - India consortium",
-    "title": "[Consortium member] Lineage-Linked Biofilm Formation and Widespread Multidrug Resistance among Indian Acinetobacter baumannii Clinical Isolates. Journal of Applied Microbiology, lxag007, doi: 10.1093/jambio/lxag007",
+    "title": "Lineage-linked biofilm formation and widespread multidrug resistance among Indian Acinetobacter baumannii clinical isolates",
     "doi": "10.1093/jambio/lxag007",
     "type": "publication",
     "status": "published",
@@ -147,7 +124,80 @@
     "featuredHome": false,
     "publicationType": "journal",
     "themeId": "tools",
-    "theme": "Open genomic tools and surveillance"
+    "theme": "Open genomic tools and surveillance",
+    "publishedDate": "2026-01-10",
+    "pmid": "41518211",
+    "journal": "Journal of Applied Microbiology"
+  },
+  {
+    "id": "2026-shigella-serotyping-preprint",
+    "year": 2026,
+    "citation": "Schiaffino F, Parker CT, Romaina-Cachique L, et al. (2026) Robust performance of culture, qPCR, and genomic approaches for Shigella serotyping in a pediatric surveillance cohort. medRxiv. doi: 10.64898/2026.01.05.26343460",
+    "authors": "Schiaffino F, Parker CT, Romaina-Cachique L, et al.",
+    "title": "Robust performance of culture, qPCR, and genomic approaches for Shigella serotyping in a pediatric surveillance cohort",
+    "doi": "10.64898/2026.01.05.26343460",
+    "type": "preprint",
+    "publicationType": "preprint",
+    "status": "preprint",
+    "selected": false,
+    "featuredHome": false,
+    "summary": "Comparison of culture, qPCR and genomic approaches for Shigella serotyping.",
+    "themeId": "tools",
+    "theme": "Open genomic tools and surveillance",
+    "publishedDate": "2026-01-06",
+    "pmid": "41542695"
+  },
+  {
+    "id": "2026-bayesian-belief-network-gambia",
+    "year": 2026,
+    "citation": "Levontin P, Badji H, Bass P, Ceesay O, Conteh B, Hossain MJ, Goforth MP, Leach A, Pascoe B, Ssebisubi M, Sheppard SK, Collins CM (2026) Using a Bayesian Belief Network to explore public health interventions in The Gambia. Journal of Public Health in Africa. In press.",
+    "authors": "Levontin P, Badji H, Bass P, Ceesay O, Conteh B, Hossain MJ, Goforth MP, Leach A, Pascoe B, Ssebisubi M, Sheppard SK, Collins CM",
+    "title": "Using a Bayesian Belief Network to explore public health interventions in The Gambia",
+    "doi": "",
+    "type": "publication",
+    "status": "in press",
+    "selected": false,
+    "featuredHome": false,
+    "publicationType": "journal",
+    "themeId": "transmission",
+    "theme": "Transmission across One Health systems",
+    "url": "",
+    "summary": "A Bayesian Belief Network analysis exploring potential public-health interventions for reducing Campylobacter exposure in The Gambia.",
+    "publishedDate": "2026-01-01"
+  },
+  {
+    "id": "2026-peru-coli-emergence-preprint",
+    "year": 2026,
+    "citation": "Pascoe B, Mourkas E, Schiaffino F, et al. (2026) Recent emergence of a multidrug-resistant Campylobacter coli lineage linked to poultry intensification in the Peruvian Amazon. Research Square. doi: 10.21203/rs.3.rs-8865396/v1",
+    "authors": "Pascoe B, Mourkas E, Schiaffino F, et al.",
+    "title": "Recent emergence of a multidrug-resistant Campylobacter coli lineage linked to poultry intensification in the Peruvian Amazon",
+    "doi": "10.21203/rs.3.rs-8865396/v1",
+    "type": "preprint",
+    "publicationType": "preprint",
+    "status": "preprint",
+    "selected": true,
+    "featuredHome": false,
+    "summary": "Population-genomic evidence linking an emerging C. coli lineage, antimicrobial resistance and changing poultry systems.",
+    "themeId": "evolution",
+    "theme": "Evolution and host adaptation",
+    "publishedDate": "2026-01-01"
+  },
+  {
+    "id": "2025-comparative-genomic-analysis-of-mycoplasma-pneumoniae-isolated-in-the-united-kingdom-",
+    "year": 2025,
+    "citation": "Tewolde R, D’Aeth JC, Thombre R, Beeton ML, Rowlands RS, Sheppard SK, Hitchings MD, Pascoe B, Chalker VJ, Afshar B (2025) Comparative genomic analysis of Mycoplasma pneumoniae isolated in the United Kingdom, between 2016-2024. BMC Genomics 26 (1), 1-13",
+    "authors": "Tewolde R, D’Aeth JC, Thombre R, Beeton ML, Rowlands RS, Sheppard SK, Hitchings MD, Pascoe B, Chalker VJ, Afshar B",
+    "title": "Comparative genomic analysis of Mycoplasma pneumoniae isolated in the United Kingdom, between 2016-2024",
+    "doi": "10.1186/s12864-025-12101-y",
+    "type": "publication",
+    "status": "published",
+    "selected": false,
+    "featuredHome": false,
+    "publicationType": "journal",
+    "themeId": "evolution",
+    "theme": "Evolution and host adaptation",
+    "publishedDate": "2025-10-08",
+    "pmid": "41062935"
   },
   {
     "id": "2025-the-genomic-surveillance-gap-averting-the-antimicrobial-resistance-pandemic-requires-",
@@ -162,7 +212,8 @@
     "featuredHome": false,
     "publicationType": "journal",
     "themeId": "tools",
-    "theme": "Open genomic tools and surveillance"
+    "theme": "Open genomic tools and surveillance",
+    "publishedDate": "2025-01-01"
   },
   {
     "id": "2025-stability-of-helicobacter-pylori-resistance-to-clarithromycin",
@@ -177,7 +228,8 @@
     "featuredHome": false,
     "publicationType": "journal",
     "themeId": "evolution",
-    "theme": "Evolution and host adaptation"
+    "theme": "Evolution and host adaptation",
+    "publishedDate": "2025-01-01"
   },
   {
     "id": "2025-vaccines-watch-preprint",
@@ -193,7 +245,8 @@
     "featuredHome": false,
     "summary": "An open genomic framework for monitoring vaccine targets and interventions.",
     "themeId": "tools",
-    "theme": "Open genomic tools and surveillance"
+    "theme": "Open genomic tools and surveillance",
+    "publishedDate": "2025-01-01"
   },
   {
     "id": "2025-methicillin-sensitive-staphylococcus-aureus-lineages-contribute-towards-poor-patient-",
@@ -208,7 +261,8 @@
     "featuredHome": false,
     "publicationType": "journal",
     "themeId": "evolution",
-    "theme": "Evolution and host adaptation"
+    "theme": "Evolution and host adaptation",
+    "publishedDate": "2025-01-01"
   },
   {
     "id": "2025-growth-rates-and-metabolic-traits-differentiate-campylobacter-jejuni-strains-by-diarr",
@@ -223,22 +277,8 @@
     "featuredHome": false,
     "publicationType": "journal",
     "themeId": "evolution",
-    "theme": "Evolution and host adaptation"
-  },
-  {
-    "id": "2025-comparative-genomic-analysis-of-mycoplasma-pneumoniae-isolated-in-the-united-kingdom-",
-    "year": 2025,
-    "citation": "Tewolde R, D’Aeth JC, Thombre R, Beeton ML, Rowlands RS, Sheppard SK, Hitchings MD, Pascoe B, Chalker VJ, Afshar B (2025) Comparative genomic analysis of Mycoplasma pneumoniae isolated in the United Kingdom, between 2016-2024. BMC Genomics 26 (1), 1-13",
-    "authors": "Tewolde R, D’Aeth JC, Thombre R, Beeton ML, Rowlands RS, Sheppard SK, Hitchings MD, Pascoe B, Chalker VJ, Afshar B",
-    "title": "Comparative genomic analysis of Mycoplasma pneumoniae isolated in the United Kingdom, between 2016-2024",
-    "doi": "10.1186/s12864-025-12101-y",
-    "type": "publication",
-    "status": "published",
-    "selected": false,
-    "featuredHome": false,
-    "publicationType": "journal",
-    "themeId": "evolution",
-    "theme": "Evolution and host adaptation"
+    "theme": "Evolution and host adaptation",
+    "publishedDate": "2025-01-01"
   },
   {
     "id": "2024-plasmid-and-chromosomal-locations-of-antibiotic-biocide-and-heavy-metal-resistance-ge",
@@ -254,7 +294,8 @@
     "publicationType": "journal",
     "themeId": "transmission",
     "theme": "Transmission across One Health systems",
-    "journal": "Microbial Genomics"
+    "journal": "Microbial Genomics",
+    "publishedDate": "2025-01-01"
   },
   {
     "id": "2025-biotype-determines-survival-of-yersinia-enterocolitica-in-red-blood-cell-concentrates",
@@ -269,7 +310,8 @@
     "featuredHome": false,
     "publicationType": "journal",
     "themeId": "evolution",
-    "theme": "Evolution and host adaptation"
+    "theme": "Evolution and host adaptation",
+    "publishedDate": "2025-01-01"
   },
   {
     "id": "2024-american-black-bear-ursus-americanus-as-a-potential-host-for-campylobacter-jejuni",
@@ -285,7 +327,8 @@
     "publicationType": "journal",
     "themeId": "evolution",
     "theme": "Evolution and host adaptation",
-    "journal": "PLOS ONE"
+    "journal": "PLOS ONE",
+    "publishedDate": "2025-01-01"
   },
   {
     "id": "2025-consortium-member-monitoring-antimicrobial-resistance-trends-from-global-genomics-dat",
@@ -300,7 +343,8 @@
     "featuredHome": false,
     "publicationType": "journal",
     "themeId": "tools",
-    "theme": "Open genomic tools and surveillance"
+    "theme": "Open genomic tools and surveillance",
+    "publishedDate": "2025-01-01"
   },
   {
     "id": "2024-the-epidemiology-and-impact-of-persistent-campylobacter-infections-on-childhood-growt",
@@ -318,7 +362,8 @@
     "project": "Peru and childhood enteric disease",
     "journal": "eClinicalMedicine",
     "publicationType": "journal",
-    "themeId": "transmission"
+    "themeId": "transmission",
+    "publishedDate": "2024-01-01"
   },
   {
     "id": "2024-sharing-of-cmerabc-alleles-between-c",
@@ -336,7 +381,8 @@
     "project": "Peru",
     "journal": "mBio",
     "publicationType": "journal",
-    "themeId": "transmission"
+    "themeId": "transmission",
+    "publishedDate": "2024-01-01"
   },
   {
     "id": "2024-urbanization-spreads-antimicrobial-resistant-enteric-pathogens-in-wild-bird-microbiom",
@@ -355,7 +401,8 @@
     "story": "stories/wild-birds-amr.html",
     "journal": "Current Biology",
     "publicationType": "journal",
-    "themeId": "transmission"
+    "themeId": "transmission",
+    "publishedDate": "2024-01-01"
   },
   {
     "id": "2024-novel-rpsk-rpsd-primer-probe-assay-improves-detection-of-campylobacter-jejuni-and-cam",
@@ -370,7 +417,8 @@
     "featuredHome": false,
     "publicationType": "journal",
     "themeId": "tools",
-    "theme": "Open genomic tools and surveillance"
+    "theme": "Open genomic tools and surveillance",
+    "publishedDate": "2024-01-01"
   },
   {
     "id": "2024-machine-learning-to-attribute-the-source-of-campylobacter-infections-in-the-united-st",
@@ -389,7 +437,8 @@
     "story": "stories/source-attribution.html",
     "journal": "Journal of Infection",
     "publicationType": "journal",
-    "themeId": "transmission"
+    "themeId": "transmission",
+    "publishedDate": "2024-01-01"
   },
   {
     "id": "2024-global-variation-in-escherichia-coli-mcr-1-genes-and-plasmids-from-animal-and-human-g",
@@ -404,7 +453,8 @@
     "featuredHome": false,
     "publicationType": "journal",
     "themeId": "transmission",
-    "theme": "Transmission across One Health systems"
+    "theme": "Transmission across One Health systems",
+    "publishedDate": "2024-01-01"
   },
   {
     "id": "2024-genomic-tailoring-of-autogenous-poultry-vaccines-to-reduce-campylobacter-from-farm-to",
@@ -422,7 +472,8 @@
     "project": "Thailand and poultry systems",
     "journal": "npj Vaccines",
     "publicationType": "journal",
-    "themeId": "transmission"
+    "themeId": "transmission",
+    "publishedDate": "2024-01-01"
   },
   {
     "id": "2024-epistasis-core-genome-disharmony-and-adaptation-in-recombining-bacteria",
@@ -440,7 +491,8 @@
     "project": "Evolution",
     "journal": "mBio",
     "publicationType": "journal",
-    "themeId": "evolution"
+    "themeId": "evolution",
+    "publishedDate": "2024-01-01"
   },
   {
     "id": "2024-commercial-farmed-swine-harbour-a-variety-of-pathogenic-bacteria-and-antimicrobial-re",
@@ -455,7 +507,8 @@
     "featuredHome": false,
     "publicationType": "journal",
     "themeId": "transmission",
-    "theme": "Transmission across One Health systems"
+    "theme": "Transmission across One Health systems",
+    "publishedDate": "2024-01-01"
   },
   {
     "id": "2024-campylobacter-jejuni-and-campylobacter-coli-genomic-resistant-determinants-imperfectl",
@@ -470,7 +523,8 @@
     "featuredHome": false,
     "publicationType": "journal",
     "themeId": "prediction",
-    "theme": "Genomics, AI and disease prediction"
+    "theme": "Genomics, AI and disease prediction",
+    "publishedDate": "2024-01-01"
   },
   {
     "id": "2024-assessing-antimicrobial-resistance-profiles-of-salmonella-enterica-in-the-pork-produc",
@@ -485,7 +539,8 @@
     "featuredHome": false,
     "publicationType": "journal",
     "themeId": "evolution",
-    "theme": "Evolution and host adaptation"
+    "theme": "Evolution and host adaptation",
+    "publishedDate": "2024-01-01"
   },
   {
     "id": "2024-consortium-member-geographical-distribution-disease-association-and-diversity-of-kleb",
@@ -500,7 +555,8 @@
     "featuredHome": false,
     "publicationType": "journal",
     "themeId": "transmission",
-    "theme": "Transmission across One Health systems"
+    "theme": "Transmission across One Health systems",
+    "publishedDate": "2024-01-01"
   },
   {
     "id": "2024-consortium-member-gene-content-phage-cycle-regulation-model-and-prophage-inactivation",
@@ -515,7 +571,8 @@
     "featuredHome": false,
     "publicationType": "journal",
     "themeId": "evolution",
-    "theme": "Evolution and host adaptation"
+    "theme": "Evolution and host adaptation",
+    "publishedDate": "2024-01-01"
   },
   {
     "id": "2023-consortium-member-the-helicobacter-pylori-genome-project-insights-into-h-pylori-popul",
@@ -531,7 +588,8 @@
     "publicationType": "journal",
     "themeId": "evolution",
     "theme": "Evolution and host adaptation",
-    "journal": "Nature Communications"
+    "journal": "Nature Communications",
+    "publishedDate": "2023-01-01"
   },
   {
     "id": "2023-salmonella-linkage-between-good-agricultural-practice-certified-broiler-farms-and-pou",
@@ -546,7 +604,8 @@
     "featuredHome": false,
     "publicationType": "journal",
     "themeId": "transmission",
-    "theme": "Transmission across One Health systems"
+    "theme": "Transmission across One Health systems",
+    "publishedDate": "2023-01-01"
   },
   {
     "id": "2023-recombination-mediated-adaptation-of-methicillin-resistant-s",
@@ -562,7 +621,8 @@
     "publicationType": "journal",
     "themeId": "evolution",
     "theme": "Evolution and host adaptation",
-    "journal": "Annals of Clinical Microbiology and Antimicrobials"
+    "journal": "Annals of Clinical Microbiology and Antimicrobials",
+    "publishedDate": "2023-01-01"
   },
   {
     "id": "2023-oral-and-gut-microbiome-biomarkers-of-susceptibility-to-respiratory-tract-infection-i",
@@ -577,7 +637,8 @@
     "featuredHome": false,
     "publicationType": "journal",
     "themeId": "prediction",
-    "theme": "Genomics, AI and disease prediction"
+    "theme": "Genomics, AI and disease prediction",
+    "publishedDate": "2023-01-01"
   },
   {
     "id": "2023-evidence-of-potential-campylobacter-jejuni-zooanthroponosis-in-captive-macaque-popula",
@@ -592,7 +653,8 @@
     "featuredHome": false,
     "publicationType": "journal",
     "themeId": "evolution",
-    "theme": "Evolution and host adaptation"
+    "theme": "Evolution and host adaptation",
+    "publishedDate": "2023-01-01"
   },
   {
     "id": "2023-contrasting-genes-for-short-and-long-term-biofilm-adaptation-in-listeria",
@@ -607,7 +669,8 @@
     "featuredHome": false,
     "publicationType": "journal",
     "themeId": "evolution",
-    "theme": "Evolution and host adaptation"
+    "theme": "Evolution and host adaptation",
+    "publishedDate": "2023-01-01"
   },
   {
     "id": "2023-consortium-member-novel-multidrug-resistant-sublineages-of-staphylococcus-aureus-clon",
@@ -622,7 +685,8 @@
     "featuredHome": false,
     "publicationType": "journal",
     "themeId": "evolution",
-    "theme": "Evolution and host adaptation"
+    "theme": "Evolution and host adaptation",
+    "publishedDate": "2023-01-01"
   },
   {
     "id": "2022-stereospecific-metabolism-of-chloramphenicol-by-bacteria-isolated-wastewater-and-the-",
@@ -637,7 +701,8 @@
     "featuredHome": false,
     "publicationType": "journal",
     "themeId": "prediction",
-    "theme": "Genomics, AI and disease prediction"
+    "theme": "Genomics, AI and disease prediction",
+    "publishedDate": "2022-01-01"
   },
   {
     "id": "2022-spatiotemporal-investigation-of-antibiotic-resistance-in-the-urban-water-cycle-influe",
@@ -652,7 +717,8 @@
     "featuredHome": false,
     "publicationType": "journal",
     "themeId": "transmission",
-    "theme": "Transmission across One Health systems"
+    "theme": "Transmission across One Health systems",
+    "publishedDate": "2022-01-01"
   },
   {
     "id": "2022-signatures-of-selection-in-core-and-accessory-genomes-indicate-different-ecological-d",
@@ -667,7 +733,8 @@
     "featuredHome": false,
     "publicationType": "journal",
     "themeId": "evolution",
-    "theme": "Evolution and host adaptation"
+    "theme": "Evolution and host adaptation",
+    "publishedDate": "2022-01-01"
   },
   {
     "id": "2022-repeated-out-of-africa-expansions-of-helicobacter-pylori-driven-by-replacement-of-del",
@@ -682,7 +749,8 @@
     "featuredHome": false,
     "publicationType": "journal",
     "themeId": "evolution",
-    "theme": "Evolution and host adaptation"
+    "theme": "Evolution and host adaptation",
+    "publishedDate": "2022-01-01"
   },
   {
     "id": "2022-local-accessory-gene-sharing-among-egyptian-campylobacter-potentially-promotes-the-sp",
@@ -697,7 +765,8 @@
     "featuredHome": false,
     "publicationType": "journal",
     "themeId": "evolution",
-    "theme": "Evolution and host adaptation"
+    "theme": "Evolution and host adaptation",
+    "publishedDate": "2022-01-01"
   },
   {
     "id": "2022-identification-of-streptococcus-suis-carriage-in-healthy-pigs-in-chiang-mai-thailand",
@@ -712,7 +781,8 @@
     "featuredHome": false,
     "publicationType": "journal",
     "themeId": "transmission",
-    "theme": "Transmission across One Health systems"
+    "theme": "Transmission across One Health systems",
+    "publishedDate": "2022-01-01"
   },
   {
     "id": "2022-the-ecology-of-interspecies-recombination-among-the-zoonotic-bacterium-campylobacter",
@@ -730,7 +800,8 @@
     "project": "Evolution",
     "journal": "eLife",
     "publicationType": "journal",
-    "themeId": "evolution"
+    "themeId": "evolution",
+    "publishedDate": "2022-01-01"
   },
   {
     "id": "2022-genome-based-analysis-of-infrequent-salmonella-serotypes-through-the-thai-pork-produc",
@@ -745,7 +816,8 @@
     "featuredHome": false,
     "publicationType": "journal",
     "themeId": "evolution",
-    "theme": "Evolution and host adaptation"
+    "theme": "Evolution and host adaptation",
+    "publishedDate": "2022-01-01"
   },
   {
     "id": "2022-genetic-diversity-and-variation-in-antimicrobial-resistance-determinants-of-non-serot",
@@ -760,7 +832,8 @@
     "featuredHome": false,
     "publicationType": "journal",
     "themeId": "evolution",
-    "theme": "Evolution and host adaptation"
+    "theme": "Evolution and host adaptation",
+    "publishedDate": "2022-01-01"
   },
   {
     "id": "2021-stress-resistance-associated-with-multi-host-transmission-and-enhanced-biofilm-format",
@@ -775,7 +848,8 @@
     "featuredHome": false,
     "publicationType": "journal",
     "themeId": "transmission",
-    "theme": "Transmission across One Health systems"
+    "theme": "Transmission across One Health systems",
+    "publishedDate": "2021-01-01"
   },
   {
     "id": "2021-stereoselective-bacterial-metabolism-of-antibiotics-in-environmental-bacteria-a-novel",
@@ -790,7 +864,8 @@
     "featuredHome": false,
     "publicationType": "journal",
     "themeId": "tools",
-    "theme": "Open genomic tools and surveillance"
+    "theme": "Open genomic tools and surveillance",
+    "publishedDate": "2021-01-01"
   },
   {
     "id": "2021-quantifying-bacterial-evolution-in-the-wild-a-birthday-problem-for-campylobacter-line",
@@ -805,7 +880,8 @@
     "featuredHome": false,
     "publicationType": "journal",
     "themeId": "evolution",
-    "theme": "Evolution and host adaptation"
+    "theme": "Evolution and host adaptation",
+    "publishedDate": "2021-01-01"
   },
   {
     "id": "2021-antimicrobial-resistant-salmonella-spp",
@@ -821,7 +897,8 @@
     "publicationType": "journal",
     "themeId": "transmission",
     "theme": "Transmission across One Health systems",
-    "journal": "Thai Journal of Veterinary Medicine"
+    "journal": "Thai Journal of Veterinary Medicine",
+    "publishedDate": "2021-01-01"
   },
   {
     "id": "2021-multiple-clones-of-colistin-resistant-salmonella-enterica-carrying-mcr-1-plasmids-in-",
@@ -836,7 +913,8 @@
     "featuredHome": false,
     "publicationType": "journal",
     "themeId": "transmission",
-    "theme": "Transmission across One Health systems"
+    "theme": "Transmission across One Health systems",
+    "publishedDate": "2021-01-01"
   },
   {
     "id": "2021-genome-wide-association-study-uncovers-signature-genetic-alterations-among-pseudomona",
@@ -852,7 +930,8 @@
     "publicationType": "journal",
     "themeId": "prediction",
     "theme": "Genomics, AI and disease prediction",
-    "journal": "PLOS Pathogens"
+    "journal": "PLOS Pathogens",
+    "publishedDate": "2021-01-01"
   },
   {
     "id": "2021-genome-evolution-and-emergence-of-pathogenicity-in-avian-escherichia-coli",
@@ -870,7 +949,8 @@
     "project": "Evolution and host adaptation",
     "journal": "Nature Communications",
     "publicationType": "journal",
-    "themeId": "evolution"
+    "themeId": "evolution",
+    "publishedDate": "2021-01-01"
   },
   {
     "id": "2021-campylobacter-jejuni-genotypes-associated-with-post-infection-irritable-bowel-syndrom",
@@ -885,7 +965,8 @@
     "featuredHome": false,
     "publicationType": "journal",
     "themeId": "evolution",
-    "theme": "Evolution and host adaptation"
+    "theme": "Evolution and host adaptation",
+    "publishedDate": "2021-01-01"
   },
   {
     "id": "2020-whole-genome-informatics-of-monophasic-variant-of-salmonella-typhimurium-in-pig-produ",
@@ -900,7 +981,8 @@
     "featuredHome": false,
     "publicationType": "journal",
     "themeId": "tools",
-    "theme": "Open genomic tools and surveillance"
+    "theme": "Open genomic tools and surveillance",
+    "publishedDate": "2020-01-01"
   },
   {
     "id": "2020-high-resolution-sweep-metagenomics-using-fast-probabilistic-inference-wellcome-open-r",
@@ -915,7 +997,8 @@
     "featuredHome": false,
     "publicationType": "preprint",
     "themeId": "tools",
-    "theme": "Open genomic tools and surveillance"
+    "theme": "Open genomic tools and surveillance",
+    "publishedDate": "2020-01-01"
   },
   {
     "id": "2020-genomic-epidemiology-of-campylobacter-jejuni-associated-with-asymptomatic-pediatric-i",
@@ -933,7 +1016,8 @@
     "project": "Peru",
     "journal": "PLOS Neglected Tropical Diseases",
     "publicationType": "journal",
-    "themeId": "transmission"
+    "themeId": "transmission",
+    "publishedDate": "2020-01-01"
   },
   {
     "id": "2020-determination-of-campylobacter-coli-host-segregating-snps-and-their-use-for-source-at",
@@ -948,7 +1032,8 @@
     "featuredHome": false,
     "publicationType": "journal",
     "themeId": "prediction",
-    "theme": "Genomics, AI and disease prediction"
+    "theme": "Genomics, AI and disease prediction",
+    "publishedDate": "2020-01-01"
   },
   {
     "id": "2020-agricultural-intensification-drives-the-evolution-of-host-specialism-in-the-enteric-p",
@@ -963,7 +1048,8 @@
     "featuredHome": false,
     "publicationType": "journal",
     "themeId": "evolution",
-    "theme": "Evolution and host adaptation"
+    "theme": "Evolution and host adaptation",
+    "publishedDate": "2020-01-01"
   },
   {
     "id": "2020-a-five-hundred-year-tale-of-co-evolution-adaptation-and-virulence-helicobacter-pylori",
@@ -978,7 +1064,8 @@
     "featuredHome": false,
     "publicationType": "journal",
     "themeId": "evolution",
-    "theme": "Evolution and host adaptation"
+    "theme": "Evolution and host adaptation",
+    "publishedDate": "2020-01-01"
   },
   {
     "id": "2019-prevalence-of-faecal-carriage-of-extended-spectrum-beta-lactamase-esbl-producing-esch",
@@ -993,7 +1080,8 @@
     "featuredHome": false,
     "publicationType": "journal",
     "themeId": "transmission",
-    "theme": "Transmission across One Health systems"
+    "theme": "Transmission across One Health systems",
+    "publishedDate": "2019-01-01"
   },
   {
     "id": "2019-genetic-diversity-of-composite-enterotoxigenic-staphylococcus-epidermidis-pathogenici",
@@ -1008,7 +1096,8 @@
     "featuredHome": false,
     "publicationType": "journal",
     "themeId": "evolution",
-    "theme": "Evolution and host adaptation"
+    "theme": "Evolution and host adaptation",
+    "publishedDate": "2019-01-01"
   },
   {
     "id": "2019-gene-pool-transmission-of-multidrug-resistance-among-campylobacter-from-livestock-sew",
@@ -1023,7 +1112,8 @@
     "featuredHome": false,
     "publicationType": "journal",
     "themeId": "transmission",
-    "theme": "Transmission across One Health systems"
+    "theme": "Transmission across One Health systems",
+    "publishedDate": "2019-01-01"
   },
   {
     "id": "2019-domestication-of-campylobacter-jejuni-nctc-11168",
@@ -1038,7 +1128,8 @@
     "featuredHome": false,
     "publicationType": "journal",
     "themeId": "evolution",
-    "theme": "Evolution and host adaptation"
+    "theme": "Evolution and host adaptation",
+    "publishedDate": "2019-01-01"
   },
   {
     "id": "2019-core-genome-sequence-analysis-to-characterise-salmonella-rissen-st469-from-swine-prod",
@@ -1053,7 +1144,8 @@
     "featuredHome": false,
     "publicationType": "journal",
     "themeId": "transmission",
-    "theme": "Transmission across One Health systems"
+    "theme": "Transmission across One Health systems",
+    "publishedDate": "2019-01-01"
   },
   {
     "id": "2018-whole-genome-multilocus-sequence-typing-wgmlst-and-acquired-antimicrobials-resistance",
@@ -1068,7 +1160,8 @@
     "featuredHome": false,
     "publicationType": "journal",
     "themeId": "tools",
-    "theme": "Open genomic tools and surveillance"
+    "theme": "Open genomic tools and surveillance",
+    "publishedDate": "2018-01-01"
   },
   {
     "id": "2018-the-potential-of-isolation-source-to-predict-colonisation-in-avian-hosts-a-case-study",
@@ -1083,7 +1176,8 @@
     "featuredHome": false,
     "publicationType": "journal",
     "themeId": "prediction",
-    "theme": "Genomics, AI and disease prediction"
+    "theme": "Genomics, AI and disease prediction",
+    "publishedDate": "2018-01-01"
   },
   {
     "id": "2018-molecular-epidemiology-and-comparative-genomics-and-typing-of-campylobacter-concisus-",
@@ -1098,7 +1192,8 @@
     "featuredHome": false,
     "publicationType": "journal",
     "themeId": "tools",
-    "theme": "Open genomic tools and surveillance"
+    "theme": "Open genomic tools and surveillance",
+    "publishedDate": "2018-01-01"
   },
   {
     "id": "2018-lineage-specific-plasmid-acquisition-and-the-evolution-of-specialized-pathogens-in-ba",
@@ -1113,7 +1208,8 @@
     "featuredHome": false,
     "publicationType": "journal",
     "themeId": "evolution",
-    "theme": "Evolution and host adaptation"
+    "theme": "Evolution and host adaptation",
+    "publishedDate": "2018-01-01"
   },
   {
     "id": "2018-hidden-antibiotic-resistance-fitness-costs-revealed-by-gwas-based-epistasis-analysis",
@@ -1128,7 +1224,8 @@
     "featuredHome": false,
     "publicationType": "journal",
     "themeId": "prediction",
-    "theme": "Genomics, AI and disease prediction"
+    "theme": "Genomics, AI and disease prediction",
+    "publishedDate": "2018-01-01"
   },
   {
     "id": "2018-genomic-epidemiology-of-the-commercially-important-pathogen-renibacterium-salmoninaru",
@@ -1143,7 +1240,8 @@
     "featuredHome": false,
     "publicationType": "journal",
     "themeId": "transmission",
-    "theme": "Transmission across One Health systems"
+    "theme": "Transmission across One Health systems",
+    "publishedDate": "2018-01-01"
   },
   {
     "id": "2018-genomic-epidemiology-of-clinical-campylobacter-spp",
@@ -1158,7 +1256,8 @@
     "featuredHome": false,
     "publicationType": "journal",
     "themeId": "transmission",
-    "theme": "Transmission across One Health systems"
+    "theme": "Transmission across One Health systems",
+    "publishedDate": "2018-01-01"
   },
   {
     "id": "2018-convergent-amino-acid-signatures-in-paraphyletic-campylobacter-jejuni-sub-populations",
@@ -1173,7 +1272,8 @@
     "featuredHome": false,
     "publicationType": "journal",
     "themeId": "evolution",
-    "theme": "Evolution and host adaptation"
+    "theme": "Evolution and host adaptation",
+    "publishedDate": "2018-01-01"
   },
   {
     "id": "2018-comparative-genomic-survey-of-bacillus-cereus-sensu-stricto-isolates-from-the-dairy-p",
@@ -1188,7 +1288,8 @@
     "featuredHome": false,
     "publicationType": "journal",
     "themeId": "evolution",
-    "theme": "Evolution and host adaptation"
+    "theme": "Evolution and host adaptation",
+    "publishedDate": "2018-01-01"
   },
   {
     "id": "2018-a-pathogen-in-plain-sight-disease-causing-genotypes-of-the-commensal-skin-bacterium-s",
@@ -1203,7 +1304,8 @@
     "featuredHome": false,
     "publicationType": "journal",
     "themeId": "evolution",
-    "theme": "Evolution and host adaptation"
+    "theme": "Evolution and host adaptation",
+    "publishedDate": "2018-01-01"
   },
   {
     "id": "2018-predicting-gastric-cancer-risk-small-helicobacter-pylori-genome-wide-association-stud",
@@ -1219,7 +1321,8 @@
     "publicationType": "journal",
     "themeId": "prediction",
     "theme": "Genomics, AI and disease prediction",
-    "journal": "BMC Biology"
+    "journal": "BMC Biology",
+    "publishedDate": "2018-01-01"
   },
   {
     "id": "2017-recombination-mediated-host-adaptation-by-avian-staphylococcus-aureus",
@@ -1234,7 +1337,8 @@
     "featuredHome": false,
     "publicationType": "journal",
     "themeId": "evolution",
-    "theme": "Evolution and host adaptation"
+    "theme": "Evolution and host adaptation",
+    "publishedDate": "2017-01-01"
   },
   {
     "id": "2017-phenotypic-and-genotypic-characterisation-of-staphylococcus-epidermidis-from-orthopae",
@@ -1250,7 +1354,8 @@
     "publicationType": "journal",
     "themeId": "evolution",
     "theme": "Evolution and host adaptation",
-    "url": "http://bjjprocs.boneandjoint.org.uk/content/99-B/SUPP_22/65"
+    "url": "http://bjjprocs.boneandjoint.org.uk/content/99-B/SUPP_22/65",
+    "publishedDate": "2017-01-01"
   },
   {
     "id": "2017-local-genes-for-local-bacteria-evidence-of-allopatry-in-the-genomes-of-transatlantic-",
@@ -1265,7 +1370,8 @@
     "featuredHome": false,
     "publicationType": "journal",
     "themeId": "evolution",
-    "theme": "Evolution and host adaptation"
+    "theme": "Evolution and host adaptation",
+    "publishedDate": "2017-01-01"
   },
   {
     "id": "2017-genomic-structure-and-insertion-sites-of-helicobacter-pylori-prophages-from-various-g",
@@ -1280,7 +1386,8 @@
     "featuredHome": false,
     "publicationType": "journal",
     "themeId": "evolution",
-    "theme": "Evolution and host adaptation"
+    "theme": "Evolution and host adaptation",
+    "publishedDate": "2017-01-01"
   },
   {
     "id": "2017-genome-wide-identification-of-host-segregating-epidemiological-markers-for-source-att",
@@ -1295,7 +1402,8 @@
     "featuredHome": false,
     "publicationType": "journal",
     "themeId": "prediction",
-    "theme": "Genomics, AI and disease prediction"
+    "theme": "Genomics, AI and disease prediction",
+    "publishedDate": "2017-01-01"
   },
   {
     "id": "2017-genome-comparison-of-erythromycin-resistant-campylobacter-from-turkey-identifies-host",
@@ -1310,7 +1418,8 @@
     "featuredHome": false,
     "publicationType": "journal",
     "themeId": "transmission",
-    "theme": "Transmission across One Health systems"
+    "theme": "Transmission across One Health systems",
+    "publishedDate": "2017-01-01"
   },
   {
     "id": "2017-a-comparative-genomics-study-of-staphylococcus-epidermidis-from-orthopedic-device-rel",
@@ -1325,7 +1434,8 @@
     "featuredHome": false,
     "publicationType": "journal",
     "themeId": "evolution",
-    "theme": "Evolution and host adaptation"
+    "theme": "Evolution and host adaptation",
+    "publishedDate": "2017-01-01"
   },
   {
     "id": "2016-rapid-host-switching-in-generalist-campylobacter-strains-erodes-the-signal-for-tracin",
@@ -1340,7 +1450,8 @@
     "featuredHome": false,
     "publicationType": "journal",
     "themeId": "evolution",
-    "theme": "Evolution and host adaptation"
+    "theme": "Evolution and host adaptation",
+    "publishedDate": "2016-01-01"
   },
   {
     "id": "2016-livestock-associated-staphylococcus-aureus-st9-isolates-from-chinese-pigs-carry-the-l",
@@ -1355,7 +1466,8 @@
     "featuredHome": false,
     "publicationType": "journal",
     "themeId": "transmission",
-    "theme": "Transmission across One Health systems"
+    "theme": "Transmission across One Health systems",
+    "publishedDate": "2016-01-01"
   },
   {
     "id": "2016-genome-wide-association-of-functional-traits-linked-with-campylobacter-jejuni-surviva",
@@ -1370,7 +1482,8 @@
     "featuredHome": false,
     "publicationType": "journal",
     "themeId": "transmission",
-    "theme": "Transmission across One Health systems"
+    "theme": "Transmission across One Health systems",
+    "publishedDate": "2016-01-01"
   },
   {
     "id": "2016-genetic-and-chemical-differentiation-of-campylobacter-coli-and-campylobacter-jejuni-l",
@@ -1385,7 +1498,8 @@
     "featuredHome": false,
     "publicationType": "journal",
     "themeId": "evolution",
-    "theme": "Evolution and host adaptation"
+    "theme": "Evolution and host adaptation",
+    "publishedDate": "2016-01-01"
   },
   {
     "id": "2016-from-escherich-to-the-escherichia-coli-genome-how-a-commensal-bacterium-shaped-the-hi",
@@ -1400,7 +1514,8 @@
     "featuredHome": false,
     "publicationType": "journal",
     "themeId": "evolution",
-    "theme": "Evolution and host adaptation"
+    "theme": "Evolution and host adaptation",
+    "publishedDate": "2016-01-01"
   },
   {
     "id": "2016-draft-genome-sequence-of-an-enterobacter-species-associated-with-illnesses-and-powder",
@@ -1415,7 +1530,8 @@
     "featuredHome": false,
     "publicationType": "journal",
     "themeId": "evolution",
-    "theme": "Evolution and host adaptation"
+    "theme": "Evolution and host adaptation",
+    "publishedDate": "2016-01-01"
   },
   {
     "id": "2016-combined-analysis-of-variation-in-core-accessory-and-regulatory-genome-regions-provid",
@@ -1430,7 +1546,8 @@
     "featuredHome": false,
     "publicationType": "journal",
     "themeId": "evolution",
-    "theme": "Evolution and host adaptation"
+    "theme": "Evolution and host adaptation",
+    "publishedDate": "2016-01-01"
   },
   {
     "id": "2016-biofilm-morphotypes-and-population-structure-among-staphylococcus-epidermidis-from-co",
@@ -1446,7 +1563,8 @@
     "publicationType": "journal",
     "themeId": "evolution",
     "theme": "Evolution and host adaptation",
-    "journal": "PLOS ONE"
+    "journal": "PLOS ONE",
+    "publishedDate": "2016-01-01"
   },
   {
     "id": "2016-bayesian-identification-of-bacterial-strains-from-sequencing-data",
@@ -1461,7 +1579,8 @@
     "featuredHome": false,
     "publicationType": "journal",
     "themeId": "tools",
-    "theme": "Open genomic tools and surveillance"
+    "theme": "Open genomic tools and surveillance",
+    "publishedDate": "2016-01-01"
   },
   {
     "id": "2015-persistent-staphylococcus-aureus-isolates-from-two-independent-bacteraemia-display-in",
@@ -1476,7 +1595,8 @@
     "featuredHome": false,
     "publicationType": "journal",
     "themeId": "evolution",
-    "theme": "Evolution and host adaptation"
+    "theme": "Evolution and host adaptation",
+    "publishedDate": "2015-01-01"
   },
   {
     "id": "2015-evidence-of-land-sea-transfer-of-the-zoonotic-pathogen-campylobacter-to-a-wildlife-ma",
@@ -1491,7 +1611,8 @@
     "featuredHome": false,
     "publicationType": "journal",
     "themeId": "transmission",
-    "theme": "Transmission across One Health systems"
+    "theme": "Transmission across One Health systems",
+    "publishedDate": "2015-01-01"
   },
   {
     "id": "2015-enhanced-biofilm-formation-and-multi-host-transmission-evolve-from-divergent-genetic-",
@@ -1506,7 +1627,8 @@
     "featuredHome": false,
     "publicationType": "journal",
     "themeId": "transmission",
-    "theme": "Transmission across One Health systems"
+    "theme": "Transmission across One Health systems",
+    "publishedDate": "2015-01-01"
   },
   {
     "id": "2015-ecological-overlap-and-horizontal-gene-transfer-in-staphylococcus-aureus-and-staphylo",
@@ -1521,7 +1643,8 @@
     "featuredHome": false,
     "publicationType": "journal",
     "themeId": "evolution",
-    "theme": "Evolution and host adaptation"
+    "theme": "Evolution and host adaptation",
+    "publishedDate": "2015-01-01"
   },
   {
     "id": "2014-dormant-cells-of-staphylococcus-aureus-are-resuscitated-by-spent-culture-supernatant",
@@ -1536,7 +1659,8 @@
     "featuredHome": false,
     "publicationType": "journal",
     "themeId": "evolution",
-    "theme": "Evolution and host adaptation"
+    "theme": "Evolution and host adaptation",
+    "publishedDate": "2014-01-01"
   },
   {
     "id": "2014-a-reference-pan-genome-approach-to-comparative-bacterial-genomics-identification-of-n",
@@ -1551,7 +1675,8 @@
     "featuredHome": false,
     "publicationType": "journal",
     "themeId": "evolution",
-    "theme": "Evolution and host adaptation"
+    "theme": "Evolution and host adaptation",
+    "publishedDate": "2014-01-01"
   },
   {
     "id": "2012-progressive-genome-wide-introgression-in-agricultural-campylobacter-coli-molecular-ec",
@@ -1566,7 +1691,8 @@
     "featuredHome": false,
     "publicationType": "journal",
     "themeId": "transmission",
-    "theme": "Transmission across One Health systems"
+    "theme": "Transmission across One Health systems",
+    "publishedDate": "2012-01-01"
   },
   {
     "id": "2011-mechanisms-of-staphylococcus-epidermidis-biofilm-formation-in-different-types-of-biom",
@@ -1582,7 +1708,8 @@
     "publicationType": "journal",
     "themeId": "evolution",
     "theme": "Evolution and host adaptation",
-    "url": "https://researchportal.bath.ac.uk/en/publications/mechanisms-of-staphylococcus-epidermidis-biofilm-formation-in-dif"
+    "url": "https://researchportal.bath.ac.uk/en/publications/mechanisms-of-staphylococcus-epidermidis-biofilm-formation-in-dif",
+    "publishedDate": "2011-01-01"
   },
   {
     "id": "2010-the-zinc-responsive-regulator-zur-controls-expression-of-the-coelibactin-gene-cluster",
@@ -1597,7 +1724,8 @@
     "featuredHome": false,
     "publicationType": "journal",
     "themeId": "evolution",
-    "theme": "Evolution and host adaptation"
+    "theme": "Evolution and host adaptation",
+    "publishedDate": "2010-01-01"
   },
   {
     "id": "2007-zinc-responsive-regulation-of-alternative-ribosomal-protein-genes-in-streptomyces-coe",
@@ -1612,6 +1740,7 @@
     "featuredHome": false,
     "publicationType": "journal",
     "themeId": "evolution",
-    "theme": "Evolution and host adaptation"
+    "theme": "Evolution and host adaptation",
+    "publishedDate": "2007-01-01"
   }
 ]

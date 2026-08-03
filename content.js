@@ -1,6 +1,13 @@
 (() => {
 const esc=v=>String(v??"").replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[ch]));
 async function loadJson(path){const r=await fetch(path,{cache:"no-store"});if(!r.ok)throw new Error(`${path}: ${r.status}`);return r.json();}
+async function loadLiveJson(path){
+  const raw=`https://raw.githubusercontent.com/Benizao1980/pascoe-lab/main/${path}?v=${Date.now()}`;
+  try{return await loadJson(raw);}catch(e){console.warn(`Raw GitHub fallback for ${path}:`,e);return loadJson(path);}
+}
+async function loadPublications(){return loadLiveJson("data/publications.json");}
+async function loadScholarMetrics(){return loadLiveJson("data/scholar-metrics.json");}
+function publicationTime(p){const d=Date.parse(p.publishedDate||`${p.year||0}-01-01`);return Number.isFinite(d)?d:0;}
 function external(url,label){return `<a href="${esc(url)}" target="_blank" rel="noopener">${label}</a>`;}
 function publicationHref(p){
   if(p.doi)return `https://doi.org/${p.doi}`;
@@ -13,10 +20,10 @@ function storyCard(s,compact=false){return compact?`<article class="card compact
 function publicationFeature(p,compact=false){const href=publicationHref(p),label=publicationLabel(p);return compact?`<article class="card compact-feature"><div><p class="meta">${esc(p.journal||(p.status==="in press"?"In press":p.publicationType==="preprint"?"Preprint":"Journal article"))} · ${esc(p.year)}</p><h3>${esc(p.title)}</h3><a class="pill" href="${esc(href)}" target="_blank" rel="noopener">${label}</a></div></article>`:`<article class="card publication-card"><div><p class="meta">${esc(p.theme||"Publication")}</p><h3>${esc(p.title)}</h3><p class="journal">${esc(p.journal||(p.status==="in press"?"In press":p.publicationType==="preprint"?"Preprint":"Journal article"))} · ${esc(p.year)}</p>${p.summary?`<p>${esc(p.summary)}</p>`:""}<div class="pub-links"><a class="pill" href="${esc(href)}" target="_blank" rel="noopener">${label}</a></div></div></article>`;}
 async function renderProjects(){const nodes=document.querySelectorAll('[data-content="projects"]');if(!nodes.length)return;const data=(await loadJson("data/projects.json")).sort((a,b)=>(a.order||99)-(b.order||99));nodes.forEach(n=>n.innerHTML=data.slice(0,Number(n.dataset.limit||999)).map(projectCard).join(""));}
 async function renderStories(){const nodes=document.querySelectorAll('[data-content="stories"]');if(!nodes.length)return;const data=(await loadJson("data/stories.json")).sort((a,b)=>String(b.date).localeCompare(String(a.date)));nodes.forEach(n=>{const compact=n.dataset.compact==="true";n.innerHTML=data.slice(0,Number(n.dataset.limit||999)).map(s=>storyCard(s,compact)).join("");});}
-async function renderFeatured(){const nodes=document.querySelectorAll('[data-content="publications"]');if(!nodes.length)return;const data=await loadJson("data/publications.json");nodes.forEach(n=>{const s=data.filter(p=>n.dataset.featured==="home"?p.featuredHome:p.selected).sort((a,b)=>(b.year-a.year)||String(a.title).localeCompare(String(b.title))).slice(0,Number(n.dataset.limit||999));n.innerHTML=s.map(p=>publicationFeature(p,n.dataset.compact==="true")).join("");});}
+async function renderFeatured(){const nodes=document.querySelectorAll('[data-content="publications"]');if(!nodes.length)return;const data=await loadPublications();nodes.forEach(n=>{const s=data.filter(p=>n.dataset.featured==="home"?p.featuredHome:p.selected).sort((a,b)=>(publicationTime(b)-publicationTime(a))||String(a.title).localeCompare(String(b.title))).slice(0,Number(n.dataset.limit||999));n.innerHTML=s.map(p=>publicationFeature(p,n.dataset.compact==="true")).join("");});}
 async function renderMetrics(){
   const nodes=document.querySelectorAll("[data-metric]");if(!nodes.length)return;
-  const pubs=await loadJson("data/publications.json");
+  const pubs=await loadPublications();
   let scholar;
   const rawScholar=`https://raw.githubusercontent.com/Benizao1980/pascoe-lab/main/data/scholar-metrics.json?v=${Date.now()}`;
   try{scholar=await loadJson(rawScholar);}
@@ -30,7 +37,7 @@ async function renderMetrics(){
 function refreshAltmetric(context){if(typeof window._altmetric_embed_init==="function")window._altmetric_embed_init(context||document);}
 async function renderBrowser(){
   const list=document.getElementById("publication-list");if(!list)return;
-  const [pubs,themes]=await Promise.all([loadJson("data/publications.json"),loadJson("data/themes.json")]);
+  const [pubs,themes]=await Promise.all([loadPublications(),loadJson("data/themes.json")]);
   const tmap=Object.fromEntries(themes.map(t=>[t.id,t])),search=document.getElementById("pub-search"),type=document.getElementById("pub-type"),group=document.getElementById("pub-group"),count=document.getElementById("pub-count");let active="all";
   function item(p){
     const t=tmap[p.themeId]||themes[0],typeLabel=p.status==="in press"?"In press":p.publicationType==="preprint"?"Preprint":"Journal article",typeClass=p.status==="in press"?"in-press":p.publicationType,href=publicationHref(p);
@@ -40,7 +47,7 @@ async function renderBrowser(){
   function render(){
     const q=search.value.trim().toLowerCase(),tv=type.value;
     let data=pubs.filter(p=>{const h=[p.title,p.authors,p.citation,p.year,p.theme,p.doi,p.url,p.status].join(" ").toLowerCase();return(!q||h.includes(q))&&(tv==="all"||p.publicationType===tv)&&(active==="all"||p.themeId===active);});
-    data.sort((a,b)=>(b.year-a.year)||String(a.title).localeCompare(String(b.title)));
+    data.sort((a,b)=>(publicationTime(b)-publicationTime(a))||String(a.title).localeCompare(String(b.title)));
     count.textContent=`${data.length} output${data.length===1?"":"s"}`;
     const grouped={};
     if(group.value==="theme"){
