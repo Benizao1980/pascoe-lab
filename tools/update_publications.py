@@ -124,8 +124,9 @@ def pubmed_records():
         types=[xml_text(x) for x in article.findall('./PublicationTypeList/PublicationType')]
         publication_status=xml_text(art.find('./PubmedData/PublicationStatus')).lower()
         history_statuses={x.attrib.get('PubStatus','').lower() for x in art.findall('./PubmedData/History/PubMedPubDate')}
-        ahead=publication_status in {'aheadofprint','epublish'} and not volume and not pages
-        ahead=ahead or ('aheadofprint' in history_statuses and not volume and not pages)
+        # PublicationStatus is the authoritative current state. History can retain
+        # an earlier ahead-of-print event after final publication.
+        ahead=publication_status=='aheadofprint'
         record_status='in press' if ahead else 'published'
         out.append({'title':title,'title_norm':norm(title),'pmid':pmid,'doi':doi,'authors':', '.join(authors),
                     'journal':journal,'volume':volume,'issue':issue,'pages':pages,'publishedDate':date,

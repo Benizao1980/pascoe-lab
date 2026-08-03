@@ -57,7 +57,7 @@ Publication browser: 97 journal articles and 7 preprints.
 - `content.js` is cache-busted on the publications page.
 
 
-## v6.9 publication synchronisation
+## v6.11 publication synchronisation
 
 - Google Scholar profile is the curated identity source.
 - PubMed enriches matching records with DOI, PMID, journal and exact publication date.
@@ -67,7 +67,7 @@ Publication browser: 97 journal articles and 7 preprints.
 - Publications are sorted by `publishedDate`, not alphabetically within each year.
 
 
-## v6.9 publication tags
+## v6.11 publication tags
 
 - Added controlled organism, topic, project and geography tags.
 - Added organism and project dropdown filters.
@@ -76,10 +76,17 @@ Publication browser: 97 journal articles and 7 preprints.
 - Default year grouping orders each year as: in press, published, preprint; each status is then newest first.
 
 
-## v6.10 publication cards
+## v6.11 publication cards
 
 - Publication tags are clickable filters.
 - The duplicate full citation block has been removed from cards.
 - Cards show authors once and a two-line summary or abstract excerpt.
 - PubMed abstracts and publication status are stored during synchronisation.
 - PMID 42532029 is explicitly imported even if Google Scholar indexing lags.
+
+
+## v6.11 publication updates
+
+- cache-busted publication CSS and JavaScript to prevent an older browser bundle reappearing after a Pages rebuild
+- added compact Dimensions citation badges beside Altmetric badges
+- added a separate, automatically generated publication-overview page with output-by-year, theme, organism and project charts

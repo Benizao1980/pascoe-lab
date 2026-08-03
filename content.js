@@ -2,8 +2,9 @@
 const esc=v=>String(v??"").replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[ch]));
 async function loadJson(path){const r=await fetch(path,{cache:"no-store"});if(!r.ok)throw new Error(`${path}: ${r.status}`);return r.json();}
 async function loadLiveJson(path){
+  if(["localhost","127.0.0.1",""].includes(window.location.hostname))return loadJson(path);
   const raw=`https://raw.githubusercontent.com/Benizao1980/pascoe-lab/main/${path}?v=${Date.now()}`;
-  try{return await loadJson(raw);}catch(e){console.warn(`Raw GitHub fallback for ${path}:`,e);return loadJson(path);}
+  try{return await loadJson(raw);}catch(e){console.warn(`Raw GitHub fallback for ${path}:`,e);return loadJson(`${path}?v=${Date.now()}`);}
 }
 async function loadPublications(){return loadLiveJson("data/publications.json");}
 async function loadScholarMetrics(){return loadLiveJson("data/scholar-metrics.json");}
@@ -35,6 +36,18 @@ async function renderMetrics(){
   nodes.forEach(n=>{n.textContent=values[n.dataset.metric]??"—";});
 }
 function refreshAltmetric(context){if(typeof window._altmetric_embed_init==="function")window._altmetric_embed_init(context||document);}
+let dimensionsRefreshTimer;
+function refreshDimensions(){
+  window.clearTimeout(dimensionsRefreshTimer);
+  dimensionsRefreshTimer=window.setTimeout(()=>{
+    document.querySelectorAll('script[data-dimensions-runtime="true"]').forEach(s=>s.remove());
+    const script=document.createElement("script");
+    script.src=`https://integration-badge.dimensions.ai/static/ai/badge.js?v=${Date.now()}`;
+    script.async=true;script.charset="utf-8";script.dataset.dimensionsRuntime="true";
+    document.body.appendChild(script);
+  },220);
+}
+function refreshPublicationBadges(context){refreshAltmetric(context);refreshDimensions();}
 async function renderBrowser(){
   const list=document.getElementById("publication-list");if(!list)return;
   const [pubs,themes]=await Promise.all([loadPublications(),loadJson("data/themes.json")]);
@@ -81,7 +94,10 @@ async function renderBrowser(){
   }
   function item(p){
     const t=tmap[p.themeId]||themes[0],typeLabel=p.status==="in press"?"In press":p.publicationType==="preprint"?"Preprint":"Journal article",typeClass=p.status==="in press"?"in-press":p.publicationType,href=publicationHref(p);
-    const badge=p.doi?`<div class="publication-altmetric" aria-label="Altmetric attention"><div class="altmetric-embed" data-badge-type="donut" data-badge-popover="right" data-doi="${esc(p.doi)}"></div></div>`:`<div class="publication-altmetric publication-altmetric-empty" aria-hidden="true"></div>`;
+    const altmetric=p.doi?`<div class="publication-altmetric" aria-label="Altmetric attention"><div class="altmetric-embed" data-badge-type="donut" data-badge-popover="left" data-doi="${esc(p.doi)}"></div></div>`:"";
+    const dimensionsId=p.doi?`data-doi="${esc(p.doi)}"`:p.pmid?`data-pmid="${esc(p.pmid)}"`:"";
+    const dimensions=dimensionsId?`<span class="__dimensions_badge_embed__" ${dimensionsId} data-style="small_rectangle" data-legend="hover-left" data-hide-zero-citations="true"></span>`:"";
+    const badge=(altmetric||dimensions)?`<div class="publication-metrics" aria-label="Publication attention and citation metrics">${altmetric}${dimensions}</div>`:`<div class="publication-metrics publication-metrics-empty" aria-hidden="true"></div>`;
     const tags=displayTags(p),summary=conciseSummary(p),journal=p.journal||"";
     const details=[p.publishedDate||p.year,journal].filter(Boolean).map(esc).join(" · ");
     return `<article class="publication-row"><div class="publication-theme-mark"><img src="${esc(t.icon)}" alt=""><span>${esc(t.short)}</span></div><div class="publication-details"><div class="publication-meta"><span class="type-badge ${esc(typeClass)}">${typeLabel}</span><span>${details}</span></div><h3><a href="${esc(href)}" target="_blank" rel="noopener">${esc(p.title)}</a></h3>${tags?`<div class="publication-tags" aria-label="Filter using publication tags">${tags}</div>`:""}<p class="publication-authors">${esc(p.authors||"")}</p>${summary?`<p class="publication-summary">${esc(summary)}</p>`:""}</div>${badge}</article>`;
@@ -103,7 +119,7 @@ async function renderBrowser(){
       data.forEach(p=>(grouped[p.year]||=[]).push(p));
       list.innerHTML=Object.keys(grouped).sort((a,b)=>b-a).map(y=>`<section class="publication-group"><div class="publication-group-title year"><h2>${esc(y)}</h2><span>${grouped[y].length}</span></div><div class="publication-group-list">${grouped[y].map(item).join("")}</div></section>`).join("");
     }
-    window.setTimeout(()=>refreshAltmetric(list),0);
+    window.setTimeout(()=>refreshPublicationBadges(list),0);
   }
   const initial=new URLSearchParams(window.location.search);
   if(initial.get("q"))search.value=initial.get("q");
@@ -128,5 +144,37 @@ async function renderBrowser(){
   });
   search.addEventListener("input",render);type.addEventListener("change",render);organism.addEventListener("change",render);project.addEventListener("change",render);group.addEventListener("change",render);render();
 }
-Promise.allSettled([renderProjects(),renderStories(),renderFeatured(),renderMetrics(),renderBrowser()]).then(rs=>rs.filter(r=>r.status==="rejected").forEach(r=>console.error(r.reason)));
+
+function renderVerticalYearBars(rows){
+  if(!rows.length)return `<p class="note">No dated publications are available.</p>`;
+  const max=Math.max(...rows.map(r=>r.count),1);
+  const aria=rows.map(r=>`${r.year}: ${r.count}`).join(", ");
+  return `<div class="year-bar-chart" role="img" aria-label="Publications by year. ${esc(aria)}">${rows.map(r=>`<div class="year-bar-column"><span class="year-bar-value">${r.count}</span><div class="year-bar-track"><span class="year-bar-fill" style="height:${Math.max(5,(r.count/max)*100)}%"></span></div><span class="year-bar-label">${r.year}</span></div>`).join("")}</div>`;
+}
+function renderHorizontalBars(rows){
+  if(!rows.length)return `<p class="note">No tagged publications are available.</p>`;
+  const max=Math.max(...rows.map(r=>r.count),1);
+  return `<div class="horizontal-bar-chart">${rows.map(r=>`<div class="horizontal-bar-row"><span class="horizontal-bar-label">${esc(r.label)}</span><span class="horizontal-bar-track"><span class="horizontal-bar-fill" style="width:${Math.max(3,(r.count/max)*100)}%"></span></span><strong>${r.count}</strong></div>`).join("")}</div>`;
+}
+async function renderPublicationInsights(){
+  const yearNode=document.getElementById("publication-year-chart");
+  if(!yearNode)return;
+  const [pubs,themes]=await Promise.all([loadPublications(),loadJson("data/themes.json")]);
+  const byYear={};
+  pubs.forEach(p=>{const y=Number(p.year);if(y)byYear[y]=(byYear[y]||0)+1;});
+  const allYears=Object.keys(byYear).map(Number).sort((a,b)=>a-b);
+  const recentYears=allYears.slice(-15).map(year=>({year:String(year),count:byYear[year]}));
+  yearNode.innerHTML=renderVerticalYearBars(recentYears);
+
+  const themeRows=themes.map(t=>({label:t.short,count:pubs.filter(p=>p.themeId===t.id).length})).sort((a,b)=>b.count-a.count);
+  document.getElementById("publication-theme-chart").innerHTML=renderHorizontalBars(themeRows);
+
+  function topTagged(field,limit){
+    const counts={};pubs.forEach(p=>(p[field]||[]).forEach(v=>counts[v]=(counts[v]||0)+1));
+    return Object.entries(counts).map(([label,count])=>({label,count})).sort((a,b)=>b.count-a.count||a.label.localeCompare(b.label)).slice(0,limit);
+  }
+  document.getElementById("publication-organism-chart").innerHTML=renderHorizontalBars(topTagged("organisms",8));
+  document.getElementById("publication-project-chart").innerHTML=renderHorizontalBars(topTagged("projects",8));
+}
+Promise.allSettled([renderProjects(),renderStories(),renderFeatured(),renderMetrics(),renderBrowser(),renderPublicationInsights()]).then(rs=>rs.filter(r=>r.status==="rejected").forEach(r=>console.error(r.reason)));
 })();
