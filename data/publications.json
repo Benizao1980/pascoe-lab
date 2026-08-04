@@ -30,7 +30,9 @@
     "geographies": [],
     "preprintDoi": "10.64898/2026.02.06.704332",
     "preprintUrl": "https://doi.org/10.64898/2026.02.06.704332",
-    "preprintTitle": "Phenotypic Resistance of Ciprofloxacin and Azithromycin Resistant Campylobacter Isolates to an Extended Panel of Antibiotics."
+    "preprintTitle": "Phenotypic Resistance of Ciprofloxacin and Azithromycin Resistant Campylobacter Isolates to an Extended Panel of Antibiotics.",
+    "scholarCitationId": "UQrZ-fgAAAAJ:4n0clTBhZ78C",
+    "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=UQrZ-fgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=UQrZ-fgAAAAJ:4n0clTBhZ78C"
   },
   {
     "id": "2026-genomic-insights-mrsa-metabolism-gene-clusters",
@@ -904,7 +906,9 @@
     "pmid": "39142288",
     "abstract": "Humans are radically altering global ecology, and one of the most apparent human-induced effects is urbanization, where high-density human habitats disrupt long-established ecotones. Changes to these transitional areas between organisms, especially enhanced contact among humans and wild animals, provide new opportunities for the spread of zoonotic pathogens. This poses a serious threat to global public health, but little is known about how habitat disruption impacts cross-species pathogen spread. Here, we investigated variation in the zoonotic enteric pathogen Campylobacter jejuni. The ubiquity of C. jejuni in wild bird gut microbiomes makes it an ideal organism for understanding how host behavior and ecology influence pathogen transition and spread. We analyzed 700 C. jejuni isolate genomes from 30 bird species in eight countries using a scalable generalized linear model approach. Comparing multiple behavioral and ecological traits showed that proximity to human habitation promotes lineage diversity and is associated with antimicrobial-resistant (AMR) strains in natural populations. Specifically, wild birds from urban areas harbored up to three times more C. jejuni genotypes and AMR genes. This study provides novel methodology and much-needed quantitative evidence linking urbanization to gene pool spread and zoonoses.",
     "scholarCitationId": "UQrZ-fgAAAAJ:xm0LlTxljI0C",
-    "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=UQrZ-fgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=UQrZ-fgAAAAJ:xm0LlTxljI0C"
+    "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=UQrZ-fgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=UQrZ-fgAAAAJ:xm0LlTxljI0C",
+    "preprintDoi": "10.1016/j.cub.2024.07.013",
+    "preprintUrl": "https://doi.org/10.1016/j.cub.2024.07.013"
   },
   {
     "id": "2024-global-variation-in-escherichia-coli-mcr-1-genes-and-plasmids-from-animal-and-human-g",
@@ -1123,36 +1127,6 @@
       "Surveillance"
     ],
     "projects": [],
-    "geographies": []
-  },
-  {
-    "id": "2024-urbanization-spreads-antimicrobial-resistant-enteric-pathogens-in-wild-bird-microbiom",
-    "year": 2024,
-    "citation": "Mourkas E*, Valdebenito JO*, Marsh H, Hitchings MD, Copper KK, Parker CT, Székely T, Johansson H, Ellstrom P, Pascoe B** Waldenström J**, & Sheppard SK** (2024) Urbanization spreads antimicrobial-resistant enteric pathogens in wild bird microbiomes. Current Biology 17: 3955-3965; bioRxiv doi: 10.1101/2023.07.11.548564",
-    "authors": "Mourkas E*, Valdebenito JO*, Marsh H, Hitchings MD, Copper KK, Parker CT, Székely T, Johansson H, Ellstrom P, Pascoe B** Waldenström J**, & Sheppard SK**",
-    "title": "Proximity to humans is associated with antimicrobial-resistant enteric pathogens in wild-bird microbiomes",
-    "doi": "10.1016/j.cub.2024.07.013",
-    "type": "preprint",
-    "status": "preprint",
-    "selected": true,
-    "featuredHome": false,
-    "theme": "Transmission across One Health systems",
-    "summary": "Human-altered ecology is associated with greater bacterial lineage and resistance diversity in wild birds.",
-    "project": "HU-RIZON",
-    "story": "stories/wild-birds-amr.html",
-    "journal": "Current Biology",
-    "publicationType": "preprint",
-    "themeId": "transmission",
-    "publishedDate": "2024-01-01",
-    "organisms": [],
-    "topics": [
-      "One Health",
-      "Transmission",
-      "Metagenomics"
-    ],
-    "projects": [
-      "HU-RIZON"
-    ],
     "geographies": []
   },
   {
