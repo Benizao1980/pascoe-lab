@@ -13,8 +13,36 @@
 <meta content="Why don't we vaccinate chickens against Campylobacter? | Pascoe Lab" property="og:title"/>
 <meta content="How pathogen diversity, host biology and genomics are changing the search for Campylobacter vaccines." property="og:description"/>
 <meta content="https://pascoelab.com/stories/campylobacter-vaccines.html" property="og:url"/>
-<meta content="https://pascoelab.com/assets/illustrations/campylobacter-reverse-vaccinology.png" property="og:image"/>
+<meta content="https://pascoelab.com/assets/illustrations/campylobacter-vaccine-banner.png" property="og:image"/>
 <meta content="summary_large_image" name="twitter:card"/>
+<style>
+  .story-hero-banner{
+    width:100%;
+    height:auto;
+    height:clamp(260px,32vw,430px);
+    object-fit:cover;
+    object-position:center;
+    display:block;
+    border-bottom:2px solid var(--ink);
+  }
+  .story-figure{
+    margin:2rem 0;
+  }
+  .story-figure img{
+    width:100%;
+    height:auto;
+    display:block;
+    border:1px solid var(--line);
+    border-radius:14px;
+    background:#fff;
+  }
+  .story-figure figcaption{
+    margin-top:.7rem;
+    font-size:.92rem;
+    color:var(--muted);
+    line-height:1.45;
+  }
+</style>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -30,16 +58,21 @@
 </nav>
 </div>
 </header>
+
 <main id="main">
-<section style="background:#efd0c8;border-bottom:2px solid var(--ink)">
+<section style="background:#efd0c8">
 <div class="wrap" style="padding:66px 0 48px">
 <p class="kicker">Explainer</p>
 <h1 style="max-width:980px">Why don't we vaccinate chickens against <em>Campylobacter</em>?</h1>
 <p class="lead">How pathogen diversity, host biology and genomics are changing the search for Campylobacter vaccines.</p>
 <div class="byline"><span>7 August 2026</span><span>Campylobacter · Vaccines · Population genomics · One Health</span></div>
 </div>
-<img alt="Reverse-vaccinology schematic showing genomic surveillance, pan-genome analysis, antigen prioritisation, validation and population-informed vaccine design" class="story-hero-image" src="../assets/illustrations/campylobacter-reverse-vaccinology.png"/>
+<img
+  alt="Wide illustration showing a chicken, diverse Campylobacter cells, genomic motifs and a vaccine shield"
+  class="story-hero-banner"
+  src="../assets/illustrations/campylobacter-vaccine-banner.png"/>
 </section>
+
 <section class="section"><div class="wrap story-layout">
 <article class="prose">
 <p class="kicker">The question</p>
@@ -48,7 +81,7 @@
 
 <h2>The chicken is not simply a container</h2>
 <p>Chickens often carry very high numbers of <em>Campylobacter</em> in the gut without obvious clinical disease. That has encouraged the shorthand that <em>Campylobacter</em> is merely a harmless commensal of poultry. Work from Paul Wigley, Lisa Williams and colleagues has helped show that the relationship is more nuanced: strain background, chicken breed and host response can influence gut health, inflammation, colonisation and performance.</p>
-<p>That matters for vaccination. Reducing colonisation could have public-health value by lowering the bacterial burden entering the food chain, while the consequences for the bird itself may depend on the particular host-pathogen combination.</p>
+<p>That matters for vaccination. Reducing colonisation could have public-health value by lowering the bacterial burden entering the food chain, while the consequences for the bird itself may depend on the particular host–pathogen combination.</p>
 
 <h2>Elimination is not the only useful endpoint</h2>
 <p>A poultry vaccine does not necessarily need to produce sterilising immunity to be valuable. A substantial reduction in intestinal colonisation could reduce opportunities for carcass contamination during processing and therefore reduce human exposure. In practice, the relevant outcome may be a reduction in carriage, transmission or persistence rather than complete clearance.</p>
@@ -68,6 +101,14 @@
 
 <h2>From population genomics to reverse vaccinology</h2>
 <p>Reverse vaccinology turns the traditional discovery process around. Instead of starting with individual bacterial strains and testing components one by one, we can begin with large collections of genomes and search systematically for proteins that could make useful vaccine antigens.</p>
+
+<figure class="story-figure">
+<img
+  src="../assets/illustrations/campylobacter-reverse-vaccinology.png"
+  alt="Detailed schematic of a population-informed reverse-vaccinology workflow, from genomic surveillance and pan-genome analysis through antigen prioritisation, validation and vaccine design"/>
+<figcaption>Population-informed reverse vaccinology: use representative genomic diversity to identify candidate antigens, estimate their coverage across bacterial populations and prioritise combinations for experimental testing.</figcaption>
+</figure>
+
 <p>Candidate targets can be prioritised because they are conserved across relevant populations, predicted to be surface exposed or accessible to the immune system, immunogenic, involved in colonisation or bacterial fitness, and sufficiently distinct from host proteins. Population genomics then lets us ask a question that is often missed during early vaccine discovery: <strong>how much of the real circulating population would this target actually cover?</strong></p>
 <p>That makes it possible to compare individual antigens and antigen combinations across lineages, reservoirs, regions and countries before moving the strongest candidates into experimental validation.</p>
 
@@ -121,6 +162,7 @@
 </aside>
 </div></section>
 </main>
+
 <footer class="site-footer">
 <div class="wrap footer-grid">
 <div><div class="footer-brand">Pascoe Lab</div><p>Pathogen genomics, evolution and One Health research at the University of Oxford and across an international collaborative network.</p></div>

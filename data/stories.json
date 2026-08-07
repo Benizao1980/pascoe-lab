@@ -5,15 +5,10 @@
     "format": "Explainer",
     "date": "2026-08-07",
     "summary": "How pathogen diversity, host biology and genomics are changing the search for Campylobacter vaccines.",
-    "image": "assets/illustrations/campylobacter-reverse-vaccinology.png",
-    "imageAlt": "Reverse-vaccinology schematic showing the path from genomic surveillance to population-informed vaccine design",
+    "image": "assets/illustrations/campylobacter-vaccine-banner.png",
+    "imageAlt": "Wide illustration showing a chicken, diverse Campylobacter cells, genomic motifs and a vaccine shield",
     "url": "stories/campylobacter-vaccines.html",
-    "tags": [
-      "Campylobacter",
-      "Vaccines",
-      "Population genomics",
-      "One Health"
-    ],
+    "tags": ["Campylobacter", "Vaccines", "Population genomics", "One Health"],
     "featuredHome": true
   },
   {
@@ -25,11 +20,7 @@
     "image": "assets/photos/market-sampling.webp",
     "imageAlt": "Poultry-market fieldwork",
     "url": "stories/one-health-sampling.html",
-    "tags": [
-      "GETcampy",
-      "CCC",
-      "Sampling"
-    ],
+    "tags": ["GETcampy", "CCC", "Sampling"],
     "featuredHome": true
   },
   {
@@ -41,11 +32,7 @@
     "image": "assets/photos/source-attribution-figure.webp",
     "imageAlt": "Multi-panel genomic source-attribution figure",
     "url": "stories/source-attribution.html",
-    "tags": [
-      "Campylobacter",
-      "Machine learning",
-      "Source attribution"
-    ],
+    "tags": ["Campylobacter", "Machine learning", "Source attribution"],
     "featuredHome": true
   },
   {
@@ -57,11 +44,7 @@
     "image": "assets/illustrations/hurizon.svg",
     "imageAlt": "Illustration of birds and microbial networks",
     "url": "stories/wild-birds-amr.html",
-    "tags": [
-      "Wildlife",
-      "AMR",
-      "One Health"
-    ],
+    "tags": ["Wildlife", "AMR", "One Health"],
     "featuredHome": true
   }
 ]
