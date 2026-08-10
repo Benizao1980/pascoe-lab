@@ -179,6 +179,51 @@ def merge_curated_metadata(journal: dict, preprint: dict) -> dict:
     return result
 
 
+
+def likely_same_journal_work(left: dict, right: dict) -> bool:
+    """Match an old manual in-press record to its later DOI-bearing article."""
+    years = {
+        int(value)
+        for value in (left.get("year"), right.get("year"))
+        if str(value or "").isdigit()
+    }
+    if len(years) == 2 and max(years) - min(years) > 1:
+        return False
+
+    sequence, containment = title_scores(left, right)
+    overlap = author_overlap(left, right)
+    left_authors = author_keys(left)
+    right_authors = author_keys(right)
+    first_left = next(iter(left_authors), "")
+    first_right = next(iter(right_authors), "")
+    first_author_matches = first_left and first_left == first_right
+
+    return bool(
+        first_author_matches
+        and overlap >= 0.60
+        and (
+            sequence >= 0.88
+            or (containment >= 0.90 and sequence >= 0.72)
+        )
+    )
+
+
+def merge_manual_inpress_metadata(canonical: dict, manual: dict) -> dict:
+    result = dict(canonical)
+    for field in ("selected", "featuredHome"):
+        result[field] = bool(result.get(field) or manual.get(field))
+    for field in ("summary", "themeId", "theme", "project", "acceptedDate"):
+        if not result.get(field) and manual.get(field):
+            result[field] = manual[field]
+    for field in ("organisms", "topics", "projects", "geographies"):
+        combined = []
+        for value in list(result.get(field) or []) + list(manual.get(field) or []):
+            if value and value not in combined:
+                combined.append(value)
+        if combined:
+            result[field] = combined
+    return result
+
 def quality_rank(record: dict) -> tuple[int, int, str]:
     status = str(record.get("status", "")).lower()
     status_rank = {"in press": 3, "published": 2, "preprint": 1}.get(status, 0)
@@ -256,6 +301,51 @@ def main() -> None:
         if id(record) in removed_ids:
             continue
         cleaned.append(replacements.get(id(record), record))
+
+    # When a manually curated in-press record later receives a DOI/indexed
+    # journal record, retain only the DOI-bearing version.
+    manual_inpress = [
+        r for r in cleaned
+        if str(r.get("status", "")).lower() == "in press" and not clean_doi(r.get("doi"))
+    ]
+    doi_journals = [
+        r for r in cleaned
+        if clean_doi(r.get("doi")) and not is_preprint_source(r)
+    ]
+    remove_manual_ids = set()
+    journal_replacements = {}
+
+    for manual in manual_inpress:
+        candidates = [j for j in doi_journals if likely_same_journal_work(manual, j)]
+        if not candidates:
+            continue
+        canonical = max(
+            candidates,
+            key=lambda candidate: (
+                title_scores(manual, candidate)[0],
+                title_scores(manual, candidate)[1],
+                author_overlap(manual, candidate),
+                quality_rank(candidate),
+            ),
+        )
+        journal_replacements[id(canonical)] = merge_manual_inpress_metadata(
+            journal_replacements.get(id(canonical), canonical),
+            manual,
+        )
+        remove_manual_ids.add(id(manual))
+        resolved.append(
+            {
+                "manual_in_press": manual.get("title"),
+                "retained": canonical.get("title"),
+                "journal_doi": clean_doi(canonical.get("doi")),
+            }
+        )
+
+    cleaned = [
+        journal_replacements.get(id(record), record)
+        for record in cleaned
+        if id(record) not in remove_manual_ids
+    ]
 
     cleaned.sort(
         key=lambda record: (
