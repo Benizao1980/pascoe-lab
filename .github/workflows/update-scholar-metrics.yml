@@ -24,13 +24,16 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Add manually curated in-press papers
+        run: python tools/merge_manual_publications.py
+
       - name: Synchronise publications and Scholar metrics
         env:
           SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
           SCHOLAR_AUTHOR_ID: UQrZ-fgAAAAJ
         run: python tools/update_publications.py
 
-      - name: Collapse preprint and journal duplicates
+      - name: Collapse preprint, in-press and journal duplicates
         run: python tools/deduplicate_publications.py
 
       - name: Commit updated data
