@@ -32,5 +32,42 @@
     "geographies": [
       "Thailand"
     ]
+  },
+  {
+    "id": "2026-shigella-serotyping-plos-ntd-in-press",
+    "year": 2026,
+    "publishedDate": "2026-08-14",
+    "acceptedDate": "2026-08-14",
+    "title": "Robust Performance of Culture, Real-Time PCR, and Genomic Approaches for Shigella Serotyping in a Pediatric Surveillance Cohort",
+    "authors": "Schiaffino F, Parker CT, Romaina Cachique L, Garcia Bardales PF, Liu J, Peñataro Yori P, Cooper KK, Pascoe B, Pavlinac P, Houpt E, Paredes Olortegui M, Kosek MN",
+    "journal": "PLOS Neglected Tropical Diseases",
+    "type": "publication",
+    "publicationType": "journal",
+    "status": "in press",
+    "doi": "",
+    "pmid": "",
+    "url": "https://doi.org/10.64898/2026.01.05.26343460",
+    "preprintDoi": "10.64898/2026.01.05.26343460",
+    "preprintUrl": "https://doi.org/10.64898/2026.01.05.26343460",
+    "citation": "Schiaffino F, Parker CT, Romaina Cachique L, Garcia Bardales PF, Liu J, Peñataro Yori P, Cooper KK, Pascoe B, Pavlinac P, Houpt E, Paredes Olortegui M, Kosek MN (2026) Robust Performance of Culture, Real-Time PCR, and Genomic Approaches for Shigella Serotyping in a Pediatric Surveillance Cohort. PLOS Neglected Tropical Diseases. In press.",
+    "selected": false,
+    "featuredHome": false,
+    "themeId": "tools",
+    "theme": "Open genomic tools and surveillance",
+    "summary": "Compares culture, real-time PCR and whole-genome sequencing approaches for Shigella serotyping in a pediatric surveillance cohort, showing high accuracy for vaccine-relevant serotypes and resolving the genomic basis of discrepant calls.",
+    "organisms": [
+      "Shigella"
+    ],
+    "topics": [
+      "Diagnostics",
+      "Surveillance",
+      "Vaccines"
+    ],
+    "projects": [
+      "Peru"
+    ],
+    "geographies": [
+      "Peru"
+    ]
   }
 ]
