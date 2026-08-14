@@ -1,5 +1,43 @@
 [
   {
+    "id": "2026-shigella-serotyping-plos-ntd-in-press",
+    "year": 2026,
+    "publishedDate": "2026-08-14",
+    "acceptedDate": "2026-08-14",
+    "title": "Robust Performance of Culture, Real-Time PCR, and Genomic Approaches for Shigella Serotyping in a Pediatric Surveillance Cohort",
+    "authors": "Schiaffino F, Parker CT, Romaina Cachique L, Garcia Bardales PF, Liu J, Peñataro Yori P, Cooper KK, Pascoe B, Pavlinac P, Houpt E, Paredes Olortegui M, Kosek MN",
+    "journal": "PLOS Neglected Tropical Diseases",
+    "type": "publication",
+    "publicationType": "journal",
+    "status": "in press",
+    "doi": "",
+    "pmid": "",
+    "url": "https://doi.org/10.64898/2026.01.05.26343460",
+    "preprintDoi": "10.64898/2026.01.05.26343460",
+    "preprintUrl": "https://doi.org/10.64898/2026.01.05.26343460",
+    "citation": "Schiaffino F, Parker CT, Romaina Cachique L, Garcia Bardales PF, Liu J, Peñataro Yori P, Cooper KK, Pascoe B, Pavlinac P, Houpt E, Paredes Olortegui M, Kosek MN (2026) Robust Performance of Culture, Real-Time PCR, and Genomic Approaches for Shigella Serotyping in a Pediatric Surveillance Cohort. PLOS Neglected Tropical Diseases. In press.",
+    "selected": false,
+    "featuredHome": false,
+    "themeId": "tools",
+    "theme": "Open genomic tools and surveillance",
+    "summary": "Compares culture, real-time PCR and whole-genome sequencing approaches for Shigella serotyping in a pediatric surveillance cohort, showing high accuracy for vaccine-relevant serotypes and resolving the genomic basis of discrepant calls.",
+    "organisms": [
+      "Shigella"
+    ],
+    "topics": [
+      "Diagnostics",
+      "Surveillance",
+      "Vaccines"
+    ],
+    "projects": [
+      "Peru"
+    ],
+    "geographies": [
+      "Peru"
+    ],
+    "preprintTitle": "Robust Performance of Culture, qPCR, and Genomic Approaches for Shigella Serotyping in a Pediatric Surveillance Cohort."
+  },
+  {
     "id": "2026-pradu-hang-dam-commercial-chicken-microbiota",
     "year": 2026,
     "publishedDate": "2026-08-10",
@@ -311,37 +349,6 @@
     "scholarCitationId": "UQrZ-fgAAAAJ:8VtEwCQfWZkC",
     "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=UQrZ-fgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=UQrZ-fgAAAAJ:8VtEwCQfWZkC",
     "summary": ""
-  },
-  {
-    "id": "2026-shigella-serotyping-preprint",
-    "year": 2026,
-    "citation": "Schiaffino F, Parker CT, Romaina Cachique L, Garcia Bardales PF, Liu J, Peñataro Yori P, Cooper KK, Pascoe B, Pavlinac P, Houpt E, Paredes Olortegui M, Kosek MN (2026) Robust Performance of Culture, qPCR, and Genomic Approaches for Shigella Serotyping in a Pediatric Surveillance Cohort.. medRxiv: the preprint server for health sciences 2026.01.05.26343460. doi: 10.64898/2026.01.05.26343460",
-    "authors": "Schiaffino F, Parker CT, Romaina Cachique L, Garcia Bardales PF, Liu J, Peñataro Yori P, Cooper KK, Pascoe B, Pavlinac P, Houpt E, Paredes Olortegui M, Kosek MN",
-    "title": "Robust Performance of Culture, qPCR, and Genomic Approaches for Shigella Serotyping in a Pediatric Surveillance Cohort.",
-    "doi": "10.64898/2026.01.05.26343460",
-    "type": "preprint",
-    "publicationType": "preprint",
-    "status": "preprint",
-    "selected": false,
-    "featuredHome": false,
-    "summary": "Comparison of culture, qPCR and genomic approaches for Shigella serotyping.",
-    "themeId": "tools",
-    "theme": "Open genomic tools and surveillance",
-    "publishedDate": "2026-01-06",
-    "pmid": "41542695",
-    "organisms": [
-      "Shigella"
-    ],
-    "topics": [
-      "Surveillance",
-      "Diagnostics"
-    ],
-    "projects": [],
-    "geographies": [],
-    "journal": "medRxiv : the preprint server for health sciences",
-    "abstract": "Shigella causes severe diarrheal disease, and S. flexneri and S. sonnei are the targets for multivalent vaccine development. Culture-based agglutination has been the gold standard for serotyping, but it is limited by logistics, subjectivity, and the availability of antisera for emerging serotypes. Newer methods, including a qPCR-based approach and whole-genome sequencing offer alternatives, but their performance in Shigella endemic populations are not well documented. Shigella isolates obtained from the Enterics for Global Health (EFGH) study in Iquitos, Peru were simultaneously serotyped using four methods: culture-based agglutination, isolate-based qPCR serotyping, stool-based qPCR serotyping and WGS using the in-silico tool ShigaPass. The definitive adjudicated serotype was established by an expert analysis of the WGS data, involving the mapping of sequence reads to known O-antigen biosynthesis and modification genes to identify key mutations. Results from all four serotyping methods were available for 107/114 isolates. Accuracy for vaccine subtypes S. flexneri 1b, 2a, 3a, 6, and S. sonnei, ranged from 93.3-100% for all methods. Complete concordance between methods was noted in 83/107 isolates, while 24/107 (22.4%) exhibited at least one discrepancy. Most discrepancies derived from S. flexneri serotypes Y, Yv and 1a. Agglutination misclassified eight Y/Yv isolates as 4a, and six isolates correctly classified as 1a by agglutination were classified as 1b by the other methods, a discrepancy associated with a nonsense mutation in the oac gene. All four serotyping methods achieved acceptable accuracy for Shigella vaccine efficacy evaluation. Although discrepancies are infrequent, WGS provides information of their genomic basis.",
-    "scholarCitationId": "UQrZ-fgAAAAJ:h168fVGZblEC",
-    "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=UQrZ-fgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=UQrZ-fgAAAAJ:h168fVGZblEC"
   },
   {
     "id": "2026-bayesian-belief-network-gambia",
