@@ -1,5 +1,22 @@
 [
   {
+    "id": "campylobacter-infection-outcomes",
+    "title": "Not all Campylobacter infections are the same",
+    "format": "Explainer",
+    "date": "2026-08-14",
+    "summary": "From asymptomatic carriage to acute gastroenteritis and post-infectious disease: why detecting Campylobacter is only the beginning.",
+    "image": "assets/illustrations/campylobacter-infection-outcomes-hero.png",
+    "imageAlt": "Campylobacter exposure from animal and environmental sources leading to different human outcomes",
+    "url": "stories/campylobacter-infection-outcomes.html",
+    "tags": [
+      "Campylobacter",
+      "Disease ecology",
+      "Genomic epidemiology",
+      "One Health"
+    ],
+    "featuredHome": true
+  },
+  {
     "id": "campylobacter-vaccines",
     "title": "Why don't we vaccinate chickens against Campylobacter?",
     "format": "Explainer",
@@ -8,7 +25,12 @@
     "image": "assets/illustrations/campylobacter-vaccine-banner.png",
     "imageAlt": "Wide illustration showing a chicken, diverse Campylobacter cells, genomic motifs and a vaccine shield",
     "url": "stories/campylobacter-vaccines.html",
-    "tags": ["Campylobacter", "Vaccines", "Population genomics", "One Health"],
+    "tags": [
+      "Campylobacter",
+      "Vaccines",
+      "Population genomics",
+      "One Health"
+    ],
     "featuredHome": true
   },
   {
@@ -20,7 +42,11 @@
     "image": "assets/photos/market-sampling.webp",
     "imageAlt": "Poultry-market fieldwork",
     "url": "stories/one-health-sampling.html",
-    "tags": ["GETcampy", "CCC", "Sampling"],
+    "tags": [
+      "GETcampy",
+      "CCC",
+      "Sampling"
+    ],
     "featuredHome": true
   },
   {
@@ -32,7 +58,11 @@
     "image": "assets/photos/source-attribution-figure.webp",
     "imageAlt": "Multi-panel genomic source-attribution figure",
     "url": "stories/source-attribution.html",
-    "tags": ["Campylobacter", "Machine learning", "Source attribution"],
+    "tags": [
+      "Campylobacter",
+      "Machine learning",
+      "Source attribution"
+    ],
     "featuredHome": true
   },
   {
@@ -44,7 +74,11 @@
     "image": "assets/illustrations/hurizon.svg",
     "imageAlt": "Illustration of birds and microbial networks",
     "url": "stories/wild-birds-amr.html",
-    "tags": ["Wildlife", "AMR", "One Health"],
+    "tags": [
+      "Wildlife",
+      "AMR",
+      "One Health"
+    ],
     "featuredHome": true
   }
 ]
