@@ -1,5 +1,39 @@
 [
   {
+    "id": "2026-pradu-hang-dam-commercial-chicken-microbiota",
+    "year": 2026,
+    "publishedDate": "2026-08-20",
+    "acceptedDate": "2026-08-10",
+    "title": "Comparative Gut Microbiota and Predicted Antibiotic Resistance Profiles of Thai Indigenous Pradu Hang Dam and Commercial Chickens",
+    "authors": "Buddhasiri S, Tadee P, Kittiwan N, Pascoe B, Patchanee P",
+    "journal": "Scientific Reports",
+    "type": "publication",
+    "publicationType": "journal",
+    "status": "published",
+    "doi": "10.1038/s41598-026-66631-w",
+    "pmid": "",
+    "url": "https://www.nature.com/articles/s41598-026-66631-w",
+    "citation": "Buddhasiri S, Tadee P, Kittiwan N, Pascoe B, Patchanee P (2026) Comparative Gut Microbiota and Predicted Antibiotic Resistance Profiles of Thai Indigenous Pradu Hang Dam and Commercial Chickens. Scientific Reports. doi: 10.1038/s41598-026-66631-w",
+    "selected": false,
+    "featuredHome": false,
+    "themeId": "evolution",
+    "theme": "Evolution and host adaptation",
+    "summary": "Compares gut microbiota and predicted resistance-associated functional profiles in Thai indigenous Pradu Hang Dam and commercial chickens, revealing distinct community composition across the two production settings.",
+    "abstract": "This study compared the gut microbiota of Thai Indigenous Pradu Hang Dam (PD) chickens and commercial broiler chickens (CC) raised on separate farms under distinct diets and management systems. Cecal contents from 14 PD birds sampled at 16 weeks of age and 15 CC birds sampled at 45 days of age were profiled using 16S rRNA gene sequencing. Alpha-diversity metrics did not differ significantly between groups, whereas beta-diversity analyses showed clear differences in community composition. PD chickens showed broader taxonomic representation and a lower Firmicutes-to-Bacteroidota (F/B) ratio than CC chickens. Several taxa previously associated with short-chain fatty acid (SCFA) production were enriched in PD chickens, although potentially pathogenic taxa were also more abundant in this group. Predicted resistance-associated functional profiles were inferred from the 16S data using PICRUSt2. The two groups showed distinct predicted profiles: aggregate aminoglycoside-associated abundance was slightly higher in CC chickens, whereas several other functional categories were higher in PD chickens; individual aminoglycoside-associated functions varied in direction. These predictions do not demonstrate ARG carriage, genomic location, or phenotypic resistance. Overall, the two sampled production settings harbored compositionally distinct gut microbiota and predicted resistance-associated profiles. Because breed, age, diet, farm, and management were confounded, multi-farm studies incorporating antimicrobial-use histories and direct metagenomic and phenotypic validation are needed to identify the drivers and functional consequences of these differences.",
+    "organisms": [],
+    "topics": [
+      "AMR",
+      "One Health",
+      "Metagenomics"
+    ],
+    "projects": [
+      "Thailand"
+    ],
+    "geographies": [
+      "Thailand"
+    ]
+  },
+  {
     "id": "2026-shigella-serotyping-plos-ntd-in-press",
     "year": 2026,
     "publishedDate": "2026-08-14",
@@ -36,40 +70,6 @@
       "Peru"
     ],
     "preprintTitle": "Robust Performance of Culture, qPCR, and Genomic Approaches for Shigella Serotyping in a Pediatric Surveillance Cohort."
-  },
-  {
-    "id": "2026-pradu-hang-dam-commercial-chicken-microbiota",
-    "year": 2026,
-    "publishedDate": "2026-08-10",
-    "acceptedDate": "2026-08-10",
-    "title": "Comparative Gut Microbiota and Predicted Antibiotic Resistance Profiles of Thai Indigenous Pradu Hang Dam and Commercial Chickens",
-    "authors": "Buddhasiri S, Tadee P, Kittiwan N, Pascoe B, Patchanee P",
-    "journal": "Scientific Reports",
-    "type": "publication",
-    "publicationType": "journal",
-    "status": "in press",
-    "doi": "",
-    "pmid": "",
-    "url": "",
-    "citation": "Buddhasiri S, Tadee P, Kittiwan N, Pascoe B, Patchanee P (2026) Comparative Gut Microbiota and Predicted Antibiotic Resistance Profiles of Thai Indigenous Pradu Hang Dam and Commercial Chickens. Scientific Reports. In press.",
-    "selected": false,
-    "featuredHome": false,
-    "themeId": "evolution",
-    "theme": "Evolution and host adaptation",
-    "summary": "Compares gut microbiota and predicted resistance-associated functional profiles in Thai indigenous Pradu Hang Dam and commercial chickens, revealing distinct community composition across the two production settings.",
-    "abstract": "This study compared the gut microbiota of Thai Indigenous Pradu Hang Dam (PD) chickens and commercial broiler chickens (CC) raised on separate farms under distinct diets and management systems. Cecal contents from 14 PD birds sampled at 16 weeks of age and 15 CC birds sampled at 45 days of age were profiled using 16S rRNA gene sequencing. Alpha-diversity metrics did not differ significantly between groups, whereas beta-diversity analyses showed clear differences in community composition. PD chickens showed broader taxonomic representation and a lower Firmicutes-to-Bacteroidota (F/B) ratio than CC chickens. Several taxa previously associated with short-chain fatty acid (SCFA) production were enriched in PD chickens, although potentially pathogenic taxa were also more abundant in this group. Predicted resistance-associated functional profiles were inferred from the 16S data using PICRUSt2. The two groups showed distinct predicted profiles: aggregate aminoglycoside-associated abundance was slightly higher in CC chickens, whereas several other functional categories were higher in PD chickens; individual aminoglycoside-associated functions varied in direction. These predictions do not demonstrate ARG carriage, genomic location, or phenotypic resistance. Overall, the two sampled production settings harbored compositionally distinct gut microbiota and predicted resistance-associated profiles. Because breed, age, diet, farm, and management were confounded, multi-farm studies incorporating antimicrobial-use histories and direct metagenomic and phenotypic validation are needed to identify the drivers and functional consequences of these differences.",
-    "organisms": [],
-    "topics": [
-      "AMR",
-      "One Health",
-      "Metagenomics"
-    ],
-    "projects": [
-      "Thailand"
-    ],
-    "geographies": [
-      "Thailand"
-    ]
   },
   {
     "title": "Phenotypic Resistance of Campylobacter Isolates to an Extended Panel of Antibiotics.",
