@@ -1,9 +1,16 @@
 {
-  "updated_at": "2026-08-21T12:15:14+00:00",
-  "scholar_records": 170,
+  "updated_at": "2026-08-24T07:31:59+00:00",
+  "scholar_records": 171,
   "pubmed_records_examined": 103,
   "site_records": 117,
   "review": [
+    {
+      "title": "Comparative gut microbiota and predicted functions associated with antibiotic resistance in Thai indigenous Pradu Hang Dam and commercial chickens",
+      "authors": "S Buddhasiri, P Tadee, N Kittiwan, B Pascoe, P Patchanee",
+      "publication": "Scientific Reports, 2026",
+      "year": "2026",
+      "reason": "Not matched to PubMed and not clearly a preprint"
+    },
     {
       "title": "Genomics of Antimicrobial Resistant Campylobacter Transmission Through UK Agri-Food Systems",
       "authors": "F Colles, B Pascoe, K Parfitt, K Jolley, J Bray, M Varga, S MacKay, ...",
