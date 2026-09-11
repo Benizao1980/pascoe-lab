@@ -36,11 +36,12 @@ async function loadScholarMetrics(){
 function publicationTime(p){const d=Date.parse(p.publishedDate||`${p.year||0}-01-01`);return Number.isFinite(d)?d:0;}
 function external(url,label){return `<a href="${esc(url)}" target="_blank" rel="noopener">${label}</a>`;}
 function publicationHref(p){
+  if(p.status==="pending")return "";
   if(p.doi)return `https://doi.org/${p.doi}`;
   if(p.url)return p.url;
   return `https://scholar.google.com/scholar?q=${encodeURIComponent('"'+p.title+'"')}`;
 }
-function publicationLabel(p){return p.status==="in press"?"In press":p.publicationType==="preprint"?"Preprint":"Paper";}
+function publicationLabel(p){return p.status==="pending"?"Pending / TBC":p.status==="in press"?"In press":p.publicationType==="preprint"?"Preprint":"Paper";}
 function projectCard(p){const pos=p.imagePosition?` style="object-position:${esc(p.imagePosition)}"`:"";return `<article class="project-card accent-${esc(p.accent||"rose")}"><img class="project-image" src="${esc(p.image)}" alt="${esc(p.imageAlt)}"${pos}><div class="project-body"><h3>${esc(p.title)}</h3><p>${esc(p.summary)}</p><a href="${esc(p.url)}">Project overview →</a></div></article>`;}
 function storyCard(s,compact=false){return compact?`<article class="card compact-feature"><div><p class="meta">${esc(s.format)}</p><h3>${esc(s.title)}</h3><a class="pill" href="${esc(s.url)}">Read story</a></div></article>`:`<article class="card story-card"><img class="story-cover" src="${esc(s.image)}" alt="${esc(s.imageAlt)}"><div class="story-body"><span class="story-format">${esc(s.format)}</span><h3>${esc(s.title)}</h3><p>${esc(s.summary)}</p><a href="${esc(s.url)}">Read →</a></div></article>`;}
 function publicationFeature(p,compact=false){const href=publicationHref(p),label=publicationLabel(p);return compact?`<article class="card compact-feature"><div><p class="meta">${esc(p.journal||(p.status==="in press"?"In press":p.publicationType==="preprint"?"Preprint":"Journal article"))} · ${esc(p.year)}</p><h3>${esc(p.title)}</h3><a class="pill" href="${esc(href)}" target="_blank" rel="noopener">${label}</a></div></article>`:`<article class="card publication-card"><div><p class="meta">${esc(p.theme||"Publication")}</p><h3>${esc(p.title)}</h3><p class="journal">${esc(p.journal||(p.status==="in press"?"In press":p.publicationType==="preprint"?"Preprint":"Journal article"))} · ${esc(p.year)}</p>${p.summary?`<p>${esc(p.summary)}</p>`:""}<div class="pub-links"><a class="pill" href="${esc(href)}" target="_blank" rel="noopener">${label}</a></div></div></article>`;}
@@ -84,7 +85,7 @@ async function renderBrowser(){
   function fillSelect(node,values){values.forEach(value=>{const option=document.createElement("option");option.value=value;option.textContent=value;node.appendChild(option);});}
   fillSelect(organism,uniqueValues("organisms"));fillSelect(project,uniqueValues("projects"));
 
-  function statusRank(p){return p.status==="in press"?0:p.publicationType==="preprint"?2:1;}
+  function statusRank(p){return p.status==="in press"?0:p.status==="pending"?3:p.publicationType==="preprint"?2:1;}
   function comparePublications(a,b){
     const yearDiff=Number(b.year||0)-Number(a.year||0);if(yearDiff)return yearDiff;
     const statusDiff=statusRank(a)-statusRank(b);if(statusDiff)return statusDiff;
@@ -116,14 +117,18 @@ async function renderBrowser(){
     return text.length>360?text.slice(0,357).replace(/\s+\S*$/,"")+"…":text;
   }
   function item(p){
-    const t=tmap[p.themeId]||themes[0],typeLabel=p.status==="in press"?"In press":p.publicationType==="preprint"?"Preprint":"Journal article",typeClass=p.status==="in press"?"in-press":p.publicationType,href=publicationHref(p);
+    const t=tmap[p.themeId]||themes[0],typeLabel=p.status==="pending"?"Pending / TBC":p.status==="in press"?"In press":p.publicationType==="preprint"?"Preprint":"Journal article",typeClass=p.status==="pending"?"pending":p.status==="in press"?"in-press":p.publicationType,href=publicationHref(p);
     const altmetric=p.doi?`<div class="publication-altmetric" aria-label="Altmetric attention"><div class="altmetric-embed" data-badge-type="donut" data-badge-popover="left" data-doi="${esc(p.doi)}"></div></div>`:"";
     const dimensionsId=p.doi?`data-doi="${esc(p.doi)}"`:p.pmid?`data-pmid="${esc(p.pmid)}"`:"";
     const dimensions=dimensionsId?`<span class="__dimensions_badge_embed__" ${dimensionsId} data-style="small_rectangle" data-legend="hover-left" data-hide-zero-citations="true"></span>`:"";
     const badge=(altmetric||dimensions)?`<div class="publication-metrics" aria-label="Publication attention and citation metrics">${altmetric}${dimensions}</div>`:`<div class="publication-metrics publication-metrics-empty" aria-hidden="true"></div>`;
     const tags=displayTags(p),summary=conciseSummary(p),journal=p.journal||"";
-    const details=[p.publishedDate||p.year,journal].filter(Boolean).map(esc).join(" · ");
-    return `<article class="publication-row"><div class="publication-theme-mark"><img src="${esc(t.icon)}" alt=""><span>${esc(t.short)}</span></div><div class="publication-details"><div class="publication-meta"><span class="type-badge ${esc(typeClass)}">${typeLabel}</span><span>${details}</span></div><h3><a href="${esc(href)}" target="_blank" rel="noopener">${esc(p.title)}</a></h3>${tags?`<div class="publication-tags" aria-label="Filter using publication tags">${tags}</div>`:""}<p class="publication-authors">${esc(p.authors||"")}</p>${summary?`<p class="publication-summary">${esc(summary)}</p>`:""}</div>${badge}</article>`;
+    const details=p.status==="pending"
+      ? [p.submittedDate?`Submitted ${p.submittedDate}`:"Submitted",journal?`${journal} TBC`:"Preprint TBC",p.targetJournal?`${p.targetJournal} under review`:""].filter(Boolean).map(esc).join(" · ")
+      : [p.publishedDate||p.year,journal].filter(Boolean).map(esc).join(" · ");
+    const titleMarkup=href?`<a href="${esc(href)}" target="_blank" rel="noopener">${esc(p.title)}</a>`:`<span>${esc(p.title)}</span>`;
+    const authorsMarkup=p.authors?`<p class="publication-authors">${esc(p.authors)}</p>`:"";
+    return `<article class="publication-row"><div class="publication-theme-mark"><img src="${esc(t.icon)}" alt=""><span>${esc(t.short)}</span></div><div class="publication-details"><div class="publication-meta"><span class="type-badge ${esc(typeClass)}">${typeLabel}</span><span>${details}</span></div><h3>${titleMarkup}</h3>${tags?`<div class="publication-tags" aria-label="Filter using publication tags">${tags}</div>`:""}${authorsMarkup}${summary?`<p class="publication-summary">${esc(summary)}</p>`:""}</div>${badge}</article>`;
   }
   function render(){
     const q=search.value.trim().toLowerCase(),tv=type.value,ov=organism.value,pv=project.value;
@@ -133,7 +138,9 @@ async function renderBrowser(){
       return(!q||h.includes(q))&&(tv==="all"||p.publicationType===tv)&&(ov==="all"||(p.organisms||[]).includes(ov))&&(pv==="all"||(p.projects||[]).includes(pv))&&(active==="all"||p.themeId===active);
     });
     data.sort(comparePublications);
-    count.textContent=`${data.length} output${data.length===1?"":"s"}`;
+    const pendingCount=data.filter(p=>p.status==="pending").length;
+    const outputCount=data.length-pendingCount;
+    count.textContent=outputCount===0&&pendingCount?`${pendingCount} pending`:`${outputCount} output${outputCount===1?"":"s"}${pendingCount?` + ${pendingCount} pending`:""}`;
     const grouped={};
     if(group.value==="theme"){
       themes.forEach(t=>grouped[t.id]=[]);data.forEach(p=>(grouped[p.themeId]||=[]).push(p));
@@ -183,17 +190,18 @@ async function renderPublicationInsights(){
   const yearNode=document.getElementById("publication-year-chart");
   if(!yearNode)return;
   const [pubs,themes]=await Promise.all([loadPublications(),loadJson("data/themes.json")]);
+  const portfolioPubs=pubs.filter(p=>p.status!=="pending"&&p.publicationType!=="pending");
   const byYear={};
-  pubs.forEach(p=>{const y=Number(p.year);if(y)byYear[y]=(byYear[y]||0)+1;});
+  portfolioPubs.forEach(p=>{const y=Number(p.year);if(y)byYear[y]=(byYear[y]||0)+1;});
   const allYears=Object.keys(byYear).map(Number).sort((a,b)=>a-b);
   const recentYears=allYears.slice(-15).map(year=>({year:String(year),count:byYear[year]}));
   yearNode.innerHTML=renderVerticalYearBars(recentYears);
 
-  const themeRows=themes.map(t=>({label:t.short,count:pubs.filter(p=>p.themeId===t.id).length})).sort((a,b)=>b.count-a.count);
+  const themeRows=themes.map(t=>({label:t.short,count:portfolioPubs.filter(p=>p.themeId===t.id).length})).sort((a,b)=>b.count-a.count);
   document.getElementById("publication-theme-chart").innerHTML=renderHorizontalBars(themeRows);
 
   function topTagged(field,limit){
-    const counts={};pubs.forEach(p=>(p[field]||[]).forEach(v=>counts[v]=(counts[v]||0)+1));
+    const counts={};portfolioPubs.forEach(p=>(p[field]||[]).forEach(v=>counts[v]=(counts[v]||0)+1));
     return Object.entries(counts).map(([label,count])=>({label,count})).sort((a,b)=>b.count-a.count||a.label.localeCompare(b.label)).slice(0,limit);
   }
   document.getElementById("publication-organism-chart").innerHTML=renderHorizontalBars(topTagged("organisms",8));

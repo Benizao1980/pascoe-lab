@@ -23,6 +23,7 @@ PREPRINT_DOI_PREFIXES = (
     "10.1101/",
     "10.21203/",
     "10.64898/",
+    "10.20944/preprints",
 )
 
 PREPRINT_MARKERS = (
@@ -31,6 +32,8 @@ PREPRINT_MARKERS = (
     "research square",
     "ssrn",
     "arxiv",
+    "preprints.org",
+    "preprints",
     "preprint server",
 )
 
@@ -69,7 +72,9 @@ def is_preprint_source(record: dict) -> bool:
 
 
 def normalise_record_type(record: dict) -> None:
-    """Correct records whose old preprint status survived PubMed enrichment."""
+    """Correct record types while preserving not-yet-public pending entries."""
+    if str(record.get("status", "")).lower() == "pending" or record.get("publicationType") == "pending":
+        return
     if is_preprint_source(record):
         record["publicationType"] = "preprint"
         record["type"] = "preprint"
