@@ -451,7 +451,7 @@
     "year": 2026,
     "submittedDate": "2026-09-11",
     "title": "Temporal pathological and proteomic characterization of watery diarrhea in a neonatal piglet model of Campylobacter jejuni infection",
-    "authors": "",
+    "authors": "Cooper KK, Pascoe B, Parker CT",
     "journal": "Preprints.org",
     "targetJournal": "Pathogens",
     "manuscriptId": "pathogens-4589148",
@@ -461,7 +461,7 @@
     "doi": "",
     "pmid": "",
     "url": "",
-    "citation": "Preprint pending. Submitted to Pathogens (manuscript pathogens-4589148).",
+    "citation": "Cooper KK, Pascoe B, Parker CT (2026) Temporal pathological and proteomic characterization of watery diarrhea in a neonatal piglet model of Campylobacter jejuni infection. Preprint pending. Submitted to Pathogens (manuscript pathogens-4589148).",
     "selected": false,
     "featuredHome": false,
     "themeId": "evolution",
@@ -477,6 +477,48 @@
     ],
     "projects": [],
     "geographies": [],
+    "publishedDate": "2026-01-01"
+  },
+  {
+    "id": "2026-acinetobacter-resistance-architectures-pending",
+    "year": 2026,
+    "submittedDate": "2026-09-11",
+    "title": "Resistance architectures underpin the evolution of antimicrobial resistance in Acinetobacter baumannii",
+    "authors": "Pascoe B, Mourkas E, Carvalho MJ, Shaidullina ER, Shapovalova VV, Goforth MP, Hitchings MD, Walsh TR, Edelstein MV, Sheppard SK",
+    "journal": "Research Square",
+    "targetJournal": "Nature Microbiology",
+    "manuscriptId": "NMICROBIOL-26083646",
+    "type": "preprint",
+    "publicationType": "pending",
+    "status": "pending",
+    "doi": "",
+    "pmid": "",
+    "url": "",
+    "citation": "Pascoe B, Mourkas E, Carvalho MJ, Shaidullina ER, Shapovalova VV, Goforth MP, Hitchings MD, Walsh TR, Edelstein MV, Sheppard SK (2026) Resistance architectures underpin the evolution of antimicrobial resistance in Acinetobacter baumannii. Nature Microbiology (submitted; manuscript NMICROBIOL-26083646); Research Square preprint pending.",
+    "selected": false,
+    "featuredHome": false,
+    "themeId": "evolution",
+    "theme": "Evolution and host adaptation",
+    "summary": "Identifies recurrent genomic architectures underlying carbapenem resistance in Acinetobacter baumannii, linking core-genome background with chromosomal and plasmid-borne resistance determinants across Eastern European clinical lineages.",
+    "abstract": "",
+    "organisms": [
+      "Acinetobacter"
+    ],
+    "topics": [
+      "AMR",
+      "Evolution",
+      "Machine learning",
+      "Population genomics"
+    ],
+    "projects": [
+      "CRAB Eastern Europe"
+    ],
+    "geographies": [
+      "Eastern Europe",
+      "Russia",
+      "Belarus",
+      "Kazakhstan"
+    ],
     "publishedDate": "2026-01-01"
   },
   {
