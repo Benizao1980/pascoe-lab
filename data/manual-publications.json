@@ -102,5 +102,46 @@
     ],
     "projects": [],
     "geographies": []
+  },
+  {
+    "id": "2026-acinetobacter-resistance-architectures-pending",
+    "year": 2026,
+    "submittedDate": "2026-09-11",
+    "title": "Resistance architectures underpin the evolution of antimicrobial resistance in Acinetobacter baumannii",
+    "authors": "Pascoe B, Mourkas E, Carvalho MJ, Shaidullina ER, Shapovalova VV, Goforth MP, Hitchings MD, Walsh TR, Edelstein MV, Sheppard SK",
+    "journal": "Research Square",
+    "targetJournal": "Nature Microbiology",
+    "manuscriptId": "NMICROBIOL-26083646",
+    "type": "preprint",
+    "publicationType": "pending",
+    "status": "pending",
+    "doi": "",
+    "pmid": "",
+    "url": "",
+    "citation": "Pascoe B, Mourkas E, Carvalho MJ, Shaidullina ER, Shapovalova VV, Goforth MP, Hitchings MD, Walsh TR, Edelstein MV, Sheppard SK (2026) Resistance architectures underpin the evolution of antimicrobial resistance in Acinetobacter baumannii. Nature Microbiology (submitted; manuscript NMICROBIOL-26083646); Research Square preprint pending.",
+    "selected": false,
+    "featuredHome": false,
+    "themeId": "evolution",
+    "theme": "Evolution and host adaptation",
+    "summary": "Identifies recurrent genomic architectures underlying carbapenem resistance in Acinetobacter baumannii, linking core-genome background with chromosomal and plasmid-borne resistance determinants across Eastern European clinical lineages.",
+    "abstract": "",
+    "organisms": [
+      "Acinetobacter"
+    ],
+    "topics": [
+      "AMR",
+      "Evolution",
+      "Machine learning",
+      "Population genomics"
+    ],
+    "projects": [
+      "CRAB Eastern Europe"
+    ],
+    "geographies": [
+      "Eastern Europe",
+      "Russia",
+      "Belarus",
+      "Kazakhstan"
+    ]
   }
 ]
