@@ -1,5 +1,73 @@
 [
   {
+    "id": "2026-helicobacter-efflux-resistance-databases-in-press",
+    "year": 2026,
+    "publishedDate": "2026-09-17",
+    "acceptedDate": "2026-09-17",
+    "title": "Expanding Resistance Databases: Integrating Efflux Pump Genes for Accurate Genomic Prediction in Helicobacter pylori",
+    "authors": "Disfani MN, Pascoe B, Ghadersoltani P, Saniee P",
+    "journal": "BMC Microbiology",
+    "type": "publication",
+    "publicationType": "journal",
+    "status": "in press",
+    "doi": "",
+    "pmid": "",
+    "url": "",
+    "citation": "Disfani MN, Pascoe B, Ghadersoltani P, Saniee P (2026) Expanding Resistance Databases: Integrating Efflux Pump Genes for Accurate Genomic Prediction in Helicobacter pylori. BMC Microbiology (accepted 17 September 2026; in press; DOI TBC).",
+    "selected": false,
+    "featuredHome": false,
+    "themeId": "prediction",
+    "theme": "Genomics, AI and disease prediction",
+    "summary": "Integrates efflux pump genes into genomic resistance databases to improve prediction of antimicrobial resistance in Helicobacter pylori.",
+    "abstract": "",
+    "organisms": [
+      "Helicobacter"
+    ],
+    "topics": [
+      "AMR",
+      "Diagnostics",
+      "Population genomics"
+    ],
+    "projects": [],
+    "geographies": []
+  },
+  {
+    "id": "2026-campylobacter-piglet-watery-diarrhea-preprint",
+    "year": 2026,
+    "submittedDate": "2026-09-11",
+    "title": "Temporal Pathological and Proteomic Characterization of Watery Diarrhea in a Neonatal Piglet Model of Campylobacter jejuni Infection",
+    "authors": "KK Cooper, B Pascoe, CT Parker",
+    "journal": "Preprints.org",
+    "targetJournal": "Pathogens",
+    "manuscriptId": "pathogens-4589148",
+    "type": "preprint",
+    "publicationType": "preprint",
+    "status": "preprint",
+    "doi": "10.20944/preprints202609.1293.v1",
+    "pmid": "",
+    "url": "https://www.preprints.org/manuscript/202609.1293",
+    "citation": "Cooper KK, Pascoe B, Parker CT (2026) Temporal pathological and proteomic characterization of watery diarrhea in a neonatal piglet model of Campylobacter jejuni infection. Preprints.org, Version 1. doi: 10.20944/preprints202609.1293.v1; Pathogens (under review).",
+    "selected": false,
+    "featuredHome": false,
+    "themeId": "evolution",
+    "theme": "Evolution and host adaptation",
+    "summary": "A neonatal piglet model maps the temporal pathology of Campylobacter jejuni-associated watery diarrhea and identifies bacterial proteins, including CJIE4 prophage-associated proteins, linked to the secretory disease phenotype.",
+    "abstract": "Strains of Campylobacter jejuni are known to produce two distinct diarrheal manifestations in humans: watery, cholera-like diarrhea and bloody, inflammatory diarrhea. Although the inflammatory form has been extensively studied, the mechanisms underlying watery manifestations remain poorly defined, largely due to the limitations of existing animal models. Using a neonatal piglet model, which closely mimics human gastrointestinal physiology, this study characterizes the temporal development of lesions associated with watery diarrhea induced by C. jejuni strain S3 and identifies proteins potentially involved in its pathogenesis. Clinical signs of self-limiting watery diarrhea appeared within 24 h post-infection, peaking at 48 h and largely resolving by 72 h. Gross pathology revealed significant fluid accumulation in the jejunum and colon, whereas histological assessment showed mild villus atrophy and minimal inflammation. Transmission electron microscopy demonstrated marked destruction of colonic microvilli at 24-48 h, followed by evidence of regeneration by 72 h, consistent with transient disruption of fluid absorption. Proteomic analysis of intestinal fluid at 72 h post-infection identified 180 C. jejuni proteins, including three prophage (CJIE4)-encoded proteins predominantly associated with watery diarrheal strains. Together, these findings are consistent with a model in which C. jejuni watery diarrhea results from the combined effects of increased jejunal fluid secretion and transient loss of colonic absorptive capacity. This study provides new insights into the secretory pathogenesis of C. jejuni and highlights phage-derived elements as potential mediators of disease phenotypes.",
+    "organisms": [
+      "Campylobacter"
+    ],
+    "topics": [
+      "Virulence and disease",
+      "Proteomics"
+    ],
+    "projects": [],
+    "geographies": [],
+    "publishedDate": "2026-09-16",
+    "scholarCitationId": "UQrZ-fgAAAAJ:i_7YvbSbtFEC",
+    "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=UQrZ-fgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=UQrZ-fgAAAAJ:i_7YvbSbtFEC",
+    "postedDate": "2026-09-16"
+  },
+  {
     "id": "2026-shigella-serotyping-plos-ntd-in-press",
     "year": 2026,
     "publishedDate": "2026-08-26",
@@ -380,41 +448,6 @@
       "The Gambia",
       "Africa"
     ]
-  },
-  {
-    "id": "2026-campylobacter-piglet-watery-diarrhea-pending",
-    "year": 2026,
-    "submittedDate": "2026-09-11",
-    "title": "Temporal Pathological and Proteomic Characterization of Watery Diarrhea in a Neonatal Piglet Model of Campylobacter jejuni Infection",
-    "authors": "KK Cooper, B Pascoe, CT Parker",
-    "journal": "Preprints.org",
-    "targetJournal": "Pathogens",
-    "manuscriptId": "pathogens-4589148",
-    "type": "preprint",
-    "publicationType": "preprint",
-    "status": "preprint",
-    "doi": "",
-    "pmid": "",
-    "url": "",
-    "citation": "Cooper KK, Pascoe B, Parker CT (2026) Temporal pathological and proteomic characterization of watery diarrhea in a neonatal piglet model of Campylobacter jejuni infection. Preprint pending. Submitted to Pathogens (manuscript pathogens-4589148).",
-    "selected": false,
-    "featuredHome": false,
-    "themeId": "evolution",
-    "theme": "Evolution and host adaptation",
-    "summary": "A neonatal piglet model maps the temporal pathology of Campylobacter jejuni-associated watery diarrhea and identifies bacterial proteins, including CJIE4 prophage-associated proteins, linked to the secretory disease phenotype.",
-    "abstract": "Strains of Campylobacter jejuni are known to produce two distinct diarrheal manifestations in humans: watery, cholera-like diarrhea and bloody, inflammatory diarrhea. Although the inflammatory form has been extensively studied, the mechanisms underlying watery manifestations remain poorly defined, largely due to the limitations of existing animal models. Using a neonatal piglet model, which closely mimics human gastrointestinal physiology, this study characterizes the temporal development of lesions associated with watery diarrhea induced by C. jejuni strain S3 and identifies proteins potentially involved in its pathogenesis. Clinical signs of self-limiting watery diarrhea appeared within 24 h post-infection, peaking at 48 h and largely resolving by 72 h. Gross pathology revealed significant fluid accumulation in the jejunum and colon, whereas histological assessment showed mild villus atrophy and minimal inflammation. Transmission electron microscopy demonstrated marked destruction of colonic microvilli at 24-48 h, followed by evidence of regeneration by 72 h, consistent with transient disruption of fluid absorption. Proteomic analysis of intestinal fluid at 72 h post-infection identified 180 C. jejuni proteins, including three prophage (CJIE4)-encoded proteins predominantly associated with watery diarrheal strains. Together, these findings are consistent with a model in which C. jejuni watery diarrhea results from the combined effects of increased jejunal fluid secretion and transient loss of colonic absorptive capacity. This study provides new insights into the secretory pathogenesis of C. jejuni and highlights phage-derived elements as potential mediators of disease phenotypes.",
-    "organisms": [
-      "Campylobacter"
-    ],
-    "topics": [
-      "Virulence and disease",
-      "Proteomics"
-    ],
-    "projects": [],
-    "geographies": [],
-    "publishedDate": "2026-01-01",
-    "scholarCitationId": "UQrZ-fgAAAAJ:i_7YvbSbtFEC",
-    "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=UQrZ-fgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=UQrZ-fgAAAAJ:i_7YvbSbtFEC"
   },
   {
     "id": "2026-peru-coli-emergence-preprint",
