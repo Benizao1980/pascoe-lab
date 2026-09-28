@@ -1,0 +1,33 @@
+name: Validate site
+
+on:
+  workflow_dispatch:
+  pull_request:
+  push:
+    branches: [main]
+    paths:
+      - "**/*.html"
+      - "styles.css"
+      - "script.js"
+      - "content.js"
+      - "sitemap.xml"
+      - "tools/validate_site.py"
+      - ".github/workflows/validate-site.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate HTML, local links and sitemap
+        run: python tools/validate_site.py
