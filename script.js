@@ -2,13 +2,21 @@ const menuButton = document.querySelector('.menu-button');
 const siteNav = document.querySelector('.site-nav');
 const navLinks = siteNav ? [...siteNav.querySelectorAll('a')] : [];
 
-// Keep the active navigation state tied to the current page rather than relying
-// on duplicated page markup. This also adds an accessible current-page marker.
+// Keep the active navigation state tied to the current section rather than
+// relying on duplicated page markup. Subpages inherit their parent section.
 if (navLinks.length) {
-  const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+  const pathname = window.location.pathname;
+  const currentPage = pathname.split('/').pop() || 'index.html';
+  let navPage = currentPage;
+
+  if (/^project-/.test(currentPage)) navPage = 'projects.html';
+  else if (currentPage === 'publication-overview.html' || currentPage === 'all-publications.html') navPage = 'publications.html';
+  else if (pathname.includes('/stories/') && currentPage !== 'stories.html') navPage = 'stories.html';
+  else if (currentPage === 'logo.html' || currentPage === 'lab-guides.html') navPage = 'resources.html';
+
   navLinks.forEach(link => {
     const target = new URL(link.href, window.location.href).pathname.split('/').pop() || 'index.html';
-    const active = target === currentPage;
+    const active = target === navPage;
     link.classList.toggle('active', active);
     if (active) link.setAttribute('aria-current', 'page');
     else link.removeAttribute('aria-current');
