@@ -1,3 +1,10 @@
+// Load the current visual/accessibility polish across every page, including
+// legacy project and story URLs that still use the shared script.
+const polishStylesheet = document.createElement('link');
+polishStylesheet.rel = 'stylesheet';
+polishStylesheet.href = '/polish.css?v=6.18';
+document.head.appendChild(polishStylesheet);
+
 const menuButton = document.querySelector('.menu-button');
 const siteNav = document.querySelector('.site-nav');
 const navLinks = siteNav ? [...siteNav.querySelectorAll('a')] : [];
