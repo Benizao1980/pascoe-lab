@@ -6,39 +6,53 @@ Public website for the Pascoe Lab at the University of Oxford and the Ineos Oxfo
 
 ## Main pages
 
-- `index.html` — homepage and overview of the lab
+- `index.html` — homepage
 - `research.html` — research themes and representative papers
 - `projects.html` — overview of current research programmes
-- `project-africa.html` — enteric disease research in Africa
-- `project-peru.html` — child health and enteric disease research in Peru
-- `project-thailand.html` — One Health collaborations in Thailand
-- `project-hurizon.html` — wildlife, urbanisation and antimicrobial resistance
-- `publications.html` — searchable and filterable publication list
+- `publications.html` — searchable publication record
 - `publication-overview.html` — publication summaries and visualisations
-- `stories.html` — research stories, threads and behind-the-paper content
-- `people.html` — lab members and supervision
-- `join.html` — opportunities to work with the lab
+- `stories.html` — behind-the-paper pieces, explainers and field notes
+- `people.html` — researchers, supervision and opportunities
 - `network.html` — collaborators and research locations
 - `resources.html` — software, protocols and open resources
-- `logo.html` — downloadable Pascoe Lab logo files
+- `logo.html` — Pascoe Lab logo files
 
-## Site content
+Project pages include `project-africa.html`, `project-getcampy.html`, `project-ccc.html`,
+`project-peru.html`, `project-thailand.html` and `project-hurizon.html`.
 
-Structured content is stored in `data/`:
+`join.html` and several older paths are retained as redirects so existing links continue to work.
 
-- `publications.json` — publication records, tags and links
+## Structured content
+
+Most repeatable content is stored in `data/`:
+
+- `publications.json` — synchronised publication records used by the site
+- `manual-publications.json` — curated pending and in-press records that may not yet be indexed
+- `publication-sync.json` — publication-sync review output
 - `scholar-metrics.json` — Google Scholar citation metrics
-- `projects.json` — project cards and summaries
+- `projects.json` — project cards
 - `people.json` — researcher profiles
-- `stories.json` — stories and social-media threads
+- `stories.json` — story cards
 - `themes.json` and `tag-taxonomy.json` — publication themes and controlled tags
+- `site.json` — small site-wide metadata values
 
-Images, logos and icons are stored in `assets/`.
+Images, illustrations, logos and icons live in `assets/`.
 
-## Publication updates
+## Automation
 
-GitHub Actions and the scripts in `tools/` update Google Scholar metrics and help synchronise publication records with Google Scholar and PubMed. Publication themes, project links and selected homepage content remain manually curated.
+Two GitHub Actions workflows keep the site healthy:
 
-## Technical notes
+- **Update publications and Google Scholar metrics** runs weekly and on demand. It merges
+  curated records with Google Scholar and PubMed data, removes preprint/journal duplicates,
+  and updates Scholar metrics.
+- **Validate site** runs on relevant pushes and pull requests. It checks structured content,
+  HTML metadata, local links, sitemap coverage and JavaScript syntax.
 
-The website is a static HTML, CSS and JavaScript site hosted with GitHub Pages. Legacy redirect pages are retained so older links continue to reach the current content.
+The publication updater depends on the repository secret `SERPAPI_KEY`.
+
+## Editing
+
+See [`EDITOR_GUIDE.md`](EDITOR_GUIDE.md) for the current editing workflow.
+
+The site is deliberately a small static HTML/CSS/JavaScript project hosted with GitHub Pages.
+Legacy redirect pages are kept for link stability rather than used as canonical pages.

@@ -7,11 +7,13 @@ on:
     branches: [main]
     paths:
       - "**/*.html"
-      - "styles.css"
-      - "script.js"
-      - "content.js"
+      - "**/*.css"
+      - "**/*.js"
+      - "assets/**"
+      - "data/**"
+      - "robots.txt"
       - "sitemap.xml"
-      - "tools/validate_site.py"
+      - "tools/**"
       - ".github/workflows/validate-site.yml"
 
 permissions:
@@ -20,6 +22,8 @@ permissions:
 jobs:
   validate:
     runs-on: ubuntu-latest
+    env:
+      PYTHONDONTWRITEBYTECODE: "1"
     steps:
       - name: Check out repository
         uses: actions/checkout@v6
@@ -29,5 +33,13 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Validate HTML, local links and sitemap
+      - name: Validate structured content
+        run: python tools/validate_content.py
+
+      - name: Validate HTML, local links, sitemap and repository hygiene
         run: python tools/validate_site.py
+
+      - name: Check JavaScript syntax
+        run: |
+          node --check script.js
+          node --check content.js
