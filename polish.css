@@ -1,0 +1,66 @@
+/* Pascoe Lab v6.18 — site-wide polish
+   Loaded by script.js so legacy pages inherit the same visual system. */
+
+/* Restore the burgundy masthead as the site's strongest visual anchor. */
+.site-header{
+  background:rgba(114,63,80,.98);
+  border-bottom-color:var(--line);
+  box-shadow:0 3px 0 rgba(38,52,58,.18);
+}
+.brand{color:#fff}
+.brand:hover{color:#fff}
+.brand small{color:var(--mustard-soft)}
+.brand-logo{background:#fff;border-color:var(--line)}
+.site-nav a{color:#fff}
+.site-nav a:hover,.site-nav a.active{color:#fff;border-color:var(--mustard)}
+.menu-button{background:var(--mustard);color:var(--ink)}
+
+/* Strong, consistent keyboard focus across navigation, controls and cards. */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+summary:focus-visible{
+  outline:4px solid var(--mustard);
+  outline-offset:3px;
+}
+.site-header a:focus-visible,.site-header button:focus-visible{
+  outline-color:#fff;
+}
+
+/* Keep page introductions readable rather than stretching across wide screens. */
+.page-hero h1,.hero h1{max-width:18ch}
+.page-hero .lead{max-width:760px}
+
+/* A little more breathing room in dense cards without changing the design language. */
+.card h3,.project-card h3,.story-card h3,.person-card h3{line-height:1.18}
+.card a,.project-card a,.story-card a,.person-card a{font-weight:700}
+
+/* Publication controls are functional first: make their focus and labels easier to scan. */
+.publication-controls label>span{color:var(--green-dark)}
+.publication-controls input:focus-visible,.publication-controls select:focus-visible{
+  border-color:var(--burgundy);
+}
+
+/* Mobile navigation should remain usable on short screens. */
+@media(max-width:1050px){
+  .site-nav{
+    background:var(--burgundy);
+    max-height:calc(100vh - 84px);
+    overflow-y:auto;
+  }
+  .site-nav a{border-bottom-color:rgba(255,255,255,.24)}
+}
+@media(max-width:700px){
+  .site-nav{max-height:calc(100vh - 74px)}
+  .brand strong{font-size:1.16rem}
+}
+
+/* Avoid decorative motion for people who request reduced motion. */
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{
+    animation-duration:.01ms!important;
+    animation-iteration-count:1!important;
+    transition-duration:.01ms!important;
+  }
+}
