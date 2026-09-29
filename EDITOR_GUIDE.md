@@ -1,219 +1,99 @@
 # Updating the Pascoe Lab website
 
-The repeatable content now lives in three JSON files:
+This site is intentionally simple: static HTML/CSS/JavaScript plus structured JSON in `data/`.
+The safest rule is to edit structured content where possible and avoid duplicating the same
+information across pages.
 
-- `data/publications.json`
-- `data/stories.json`
-- `data/projects.json`
+## Publications
 
-The website reads those files in the visitor's browser through `content.js`.
-A publication, story card or project card therefore only needs to be entered once.
+### New pending or in-press paper
 
-## Add a paper
+Add a curated record to `data/manual-publications.json`.
 
-Open `data/publications.json` and copy an existing record.
+Use:
 
-Required fields:
+- `publicationType: "pending"` and `status: "pending"` for a submitted paper/preprint that is
+  not yet public;
+- `publicationType: "preprint"` and `status: "preprint"` once a public preprint is available;
+- `publicationType: "journal"` and `status: "in press"` for an accepted paper without final
+  publication details;
+- `publicationType: "journal"` and `status: "published"` for a final journal article.
 
-```json
-{
-  "id": "short-unique-id",
-  "title": "Full title",
-  "authors": "Author A, Author B, Pascoe B, et al.",
-  "journal": "Journal name",
-  "year": 2026,
-  "doi": "10.xxxx/xxxxx",
-  "theme": "Campylobacter · AMR",
-  "summary": "One sentence explaining why it matters.",
-  "project": "Peru",
-  "selected": true,
-  "featuredHome": false,
-  "status": "published"
-}
-```
+Include an `id`, `year`, `title`, `authors`, `citation`, `themeId` and the structured tag arrays
+(`organisms`, `topics`, `projects`, `geographies`). Use names from `data/tag-taxonomy.json`.
 
-- `selected: true` places it on Selected Publications.
-- `featuredHome: true` places it on the homepage.
-- `story` is optional and should be a relative link such as
-  `stories/my-story.html`.
+### Automatic publication sync
 
-The full publication page merges this local file with Crossref results from
-the ORCID record and removes DOI duplicates.
+The workflow `.github/workflows/update-scholar-metrics.yml` runs each Monday and can also be
+started manually. It:
 
-## Add a blog, Behind-the-Paper page or thread
+1. merges `data/manual-publications.json` into the working publication list;
+2. retrieves the curated Google Scholar profile through SerpAPI;
+3. uses PubMed to enrich journal metadata where the title match is sufficiently strong;
+4. collapses preprint and journal versions into a single record;
+5. updates `data/publications.json`, `data/publication-sync.json` and
+   `data/scholar-metrics.json`.
+
+For normal updates, do **not** hand-edit `data/publications.json` unless repairing a specific
+record. Curated metadata belongs in `manual-publications.json`; the synchronised file is the
+site-facing output.
+
+The publication browser defaults to **in press → published → preprint**, then newest date first.
+Pending records are displayed separately and do not count as public outputs.
+
+## Stories
 
 1. Copy `stories/template.html`.
-2. Rename the copy with lower-case words and hyphens:
-   `stories/peru-coli-emergence.html`.
-3. Edit its title, introduction, text, image and links.
-4. Add one record to `data/stories.json`.
+2. Give the page a lower-case hyphenated filename.
+3. Update its title, description, canonical URL, hero content and body.
+4. Add a matching card to `data/stories.json`.
+5. Add the canonical story URL to `sitemap.xml`.
 
-Example:
-
-```json
-{
-  "id": "peru-coli-emergence",
-  "title": "How an emerging C. coli lineage spread in the Peruvian Amazon",
-  "format": "Behind the paper",
-  "date": "2026-08-01",
-  "summary": "One short sentence for the story card.",
-  "image": "assets/photos/peru-coli-tree.webp",
-  "imageAlt": "Phylogeny of C. coli isolates from Peru",
-  "url": "stories/peru-coli-emergence.html",
-  "tags": ["Peru", "Campylobacter", "AMR"],
-  "featuredHome": true
-}
-```
-
-Use `Bluesky thread`, `Field note`, `Behind the paper`, `Project update` or
-`Research explainer` consistently in the `format` field.
-
-For a quick social-post link, the `url` field may point directly to a public
-Bluesky or X post. For a permanent archive, create a local story page from the
-template and link to the original thread from that page.
-
-## Add or change a project
-
-Project cards are stored in `data/projects.json`.
-
-Each project still has its own normal HTML page. Add the page first, then add
-the JSON record. `featuredHome` controls whether it appears on the homepage.
-
-## Add an image
-
-Upload it to `assets/photos/`.
-
-Recommended:
-- WebP or JPEG
-- 1,400-2,000 pixels on the long edge
-- under about 700 KB
-- lower-case filename with hyphens
-- meaningful alt text
-
-Pages inside `stories/` refer to images as:
-
-```html
-../assets/photos/image-name.webp
-```
-
-The JSON files use:
-
-```text
-assets/photos/image-name.webp
-```
-
-## Check before committing
-
-Run locally when Python is available:
-
-```bash
-python tools/validate_content.py
-```
-
-GitHub also runs this check automatically after each push.
-
-
-# Version 5 additions
-
-## Publication source
-
-The full published-output list was imported from:
-
-`BenPascoe_CV.full_NOV2025(1).docx`
-
-The site currently contains **102 completed outputs**. The import deliberately
-omits manuscripts in preparation, papers under review, preprints, and items still
-marked "In press" in the CV.
-
-To add a newly published paper, append one record to `data/publications.json`.
-
-```json
-{
-  "id": "year-short-title",
-  "year": 2026,
-  "citation": "Full completed citation",
-  "authors": "Authors",
-  "title": "Paper title",
-  "doi": "10.xxxx/xxxxx",
-  "type": "publication",
-  "status": "published",
-  "selected": false,
-  "featuredHome": false
-}
-```
-
-Only set `selected` or `featuredHome` to true when the paper has a final
-publication record.
-
-## People
-
-Current doctoral researchers are stored in `data/people.json`. Add a person once
-and the homepage and People page update together.
+Use the existing story/card classes before adding page-specific CSS. Permanent local story pages
+are preferable to relying on social-media embeds alone.
 
 ## Projects
 
-The four current project cards are:
+Project cards live in `data/projects.json`; detailed project pages remain normal HTML files.
+When adding a new canonical project page, also add it to `sitemap.xml`.
 
-1. Enteric disease in Africa
-2. Peru child health
-3. Thailand One Health
-4. HU-RIZON wildlife and AMR
+## People
 
-They are maintained in `data/projects.json`.
+Current researcher profiles are stored in `data/people.json`. Opportunities are part of
+`people.html`; `join.html` is retained only as a redirect.
 
+## Images and logos
 
-# Version 6 publication themes
+- Put photographs in `assets/photos/`.
+- Put diagrams/illustrations in `assets/illustrations/`.
+- Prefer WebP or a compact SVG for images used on many pages.
+- Aim for roughly 1,400–2,000 px on the long edge for photographs and keep files comfortably
+  below 700 KB when practical.
+- Always provide meaningful `alt` text for content images. Decorative images may use `alt=""`.
+- Keep filenames lower-case and hyphenated.
 
-Every publication record now requires:
+The high-resolution PNG logo is retained as a downloadable asset; site chrome should prefer the
+small SVG logo where practical.
 
-- `publicationType`: `journal` or `preprint`
-- `themeId`: `transmission`, `evolution`, `tools`, or `prediction`
+## Checks before committing
 
-The labels and icons are maintained in `data/themes.json`.
+Run:
 
-Reports, book chapters, unfinished manuscripts and private submissions should
-not be added to `data/publications.json`.
-
-# Logo files
-
-- `assets/logo/pascoe-bacterium-mark.svg`
-- `assets/logo/pascoe-bacterium-mark.png`
-- `assets/logo/pascoe-lab-lockup.svg`
-
-# Automatic Google Scholar metrics
-
-1. Create a SerpAPI account and copy its API key.
-2. In GitHub open **Settings → Secrets and variables → Actions**.
-3. Add a repository secret named `SERPAPI_KEY`.
-4. Run **Actions → Update Google Scholar metrics → Run workflow** once.
-
-The workflow then runs each Monday and updates `data/scholar-metrics.json`.
-The API key is never exposed in the public website.
-
-# Altmetric badges
-
-A badge appears automatically for every record containing a DOI. Because the
-publication list is rendered dynamically, `content.js` calls
-`_altmetric_embed_init()` after each search/filter/grouping update.
-
-# DOI review
-
-Run **Actions → Review missing publication DOIs**. The default mode creates a
-`DOI_REVIEW.csv` artifact without changing the website. Enabling
-`write_matches` commits only very high-confidence Crossref matches.
-
-
-# Structured publication tags (v6.9)
-
-Publication records contain four array fields:
-
-```json
-"organisms": ["Campylobacter"],
-"topics": ["AMR", "Source attribution"],
-"projects": ["Peru"],
-"geographies": ["Peru"]
+```bash
+python tools/validate_content.py
+python tools/validate_site.py
+node --check script.js
+node --check content.js
 ```
 
-Use controlled names from `data/tag-taxonomy.json`. The synchronisation script retains manual tags and adds conservative title-based suggestions. Project membership should be checked manually. The browser displays at most three tags, but every tag remains searchable.
+GitHub Actions runs the same checks on relevant pushes and pull requests.
 
-Within each year, the default order is **in press → published → preprint**, then newest publication date first.
+The validators are deliberately conservative: they catch broken local links, malformed JSON,
+duplicate publication identifiers, missing page metadata and sitemap drift without attempting to
+rewrite scientific content automatically.
+
+## Legacy routes
+
+Small redirect pages such as `all-publications.html`, `latest-work.html`, `news.html`,
+`lab-guides.html`, `join.html` and their directory variants are intentionally retained to protect
+old bookmarks and external links. Do not add redirect URLs to the sitemap.

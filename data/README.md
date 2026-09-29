@@ -1,10 +1,19 @@
 # Content data
 
-Edit these JSON files to update cards across the site.
+Structured content used by the site lives here.
 
-- `publications.json`: homepage, Selected Publications and All Publications
-- `stories.json`: homepage and Stories
-- `projects.json`: homepage and Projects
+- `publications.json` — synchronised site-facing publication records
+- `manual-publications.json` — curated pending/in-press records and metadata that should survive sync
+- `publication-sync.json` — records requiring publication-sync review
+- `scholar-metrics.json` — Google Scholar citation metrics
+- `projects.json` — project cards
+- `people.json` — researcher profiles
+- `stories.json` — story cards
+- `themes.json` — four publication themes
+- `tag-taxonomy.json` — controlled organism/topic/project/geography tags
+- `site.json` — small site-wide metadata values
 
-Keep JSON commas and quotation marks valid. The GitHub validation workflow
-checks required fields, duplicate IDs and referenced local files.
+For ordinary publication updates, edit `manual-publications.json` rather than
+`publications.json`; the weekly workflow rebuilds the latter from curated and indexed sources.
+
+Run `python tools/validate_content.py` after editing JSON.

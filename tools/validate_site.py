@@ -1,19 +1,22 @@
 #!/usr/bin/env python3
-"""Lightweight site-wide QA for the static Pascoe Lab website.
+"""Site-wide QA for the static Pascoe Lab website.
 
-Checks public HTML pages for core metadata, heading/navigation consistency,
-image alt attributes and broken local links/assets. Legacy redirects and the
-404 page are handled separately so they do not generate false failures.
+Checks canonical public HTML pages for core metadata, heading/navigation
+consistency, image alt attributes, broken local links/assets, sitemap coverage,
+robots.txt and repository hygiene. Redirects and the 404 page are treated
+separately so legacy routes do not create false failures.
 """
 
 from __future__ import annotations
 
 import sys
+import xml.etree.ElementTree as ET
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
+SITE_ORIGIN = "https://pascoelab.com"
 NON_PUBLIC_HTML = {"stories/template.html"}
 EDITORIAL_PHRASES = (
     "the next content pass",
@@ -32,7 +35,8 @@ class PageParser(HTMLParser):
         self.title_parts: list[str] = []
         self.description = False
         self.viewport = False
-        self.canonical = False
+        self.canonical_href = ""
+        self.html_lang = ""
         self.h1_count = 0
         self.primary_nav_active = 0
         self.ids: list[str] = []
@@ -43,7 +47,9 @@ class PageParser(HTMLParser):
         attrs = dict(attrs_list)
         classes = set((attrs.get("class") or "").split())
 
-        if tag == "title":
+        if tag == "html":
+            self.html_lang = (attrs.get("lang") or "").strip()
+        elif tag == "title":
             self.in_title = True
         elif tag == "meta":
             name = (attrs.get("name") or "").lower()
@@ -55,7 +61,7 @@ class PageParser(HTMLParser):
             rel = set((attrs.get("rel") or "").lower().split())
             href = attrs.get("href") or ""
             if "canonical" in rel and href:
-                self.canonical = True
+                self.canonical_href = href.strip()
             if "stylesheet" in rel or "icon" in rel:
                 self._record_ref(tag, href)
         elif tag == "script":
@@ -101,6 +107,13 @@ def is_redirect(text: str) -> bool:
     return 'http-equiv="refresh"' in lowered or "http-equiv='refresh'" in lowered
 
 
+def parse_page(path: Path) -> tuple[str, PageParser]:
+    text = path.read_text(encoding="utf-8", errors="replace")
+    parser = PageParser()
+    parser.feed(text)
+    return text, parser
+
+
 def local_target(page: Path, ref: str) -> Path | None:
     parts = urlsplit(ref)
     if parts.scheme or parts.netloc or ref.startswith(("#", "mailto:", "tel:", "javascript:")):
@@ -121,27 +134,31 @@ def local_target(page: Path, ref: str) -> Path | None:
     return target.resolve()
 
 
-def audit_page(path: Path) -> tuple[list[str], list[str]]:
+def audit_page(path: Path) -> tuple[list[str], list[str], str | None]:
     rel = path.relative_to(ROOT)
-    text = path.read_text(encoding="utf-8", errors="replace")
+    text, parser = parse_page(path)
     redirect = is_redirect(text)
     special = rel.as_posix() == "404.html"
 
-    parser = PageParser()
-    parser.feed(text)
-
     errors: list[str] = []
     warnings: list[str] = []
+    canonical: str | None = None
 
     if not redirect and not special:
+        if not parser.html_lang:
+            errors.append("missing html lang attribute")
         if not parser.title:
             errors.append("missing <title>")
         if not parser.description:
             errors.append("missing meta description")
         if not parser.viewport:
             errors.append("missing viewport meta tag")
-        if not parser.canonical:
+        if not parser.canonical_href:
             errors.append("missing canonical link")
+        else:
+            canonical = parser.canonical_href
+            if not canonical.startswith(SITE_ORIGIN + "/") and canonical != SITE_ORIGIN:
+                errors.append(f"canonical URL is outside {SITE_ORIGIN}: {canonical}")
         if parser.h1_count != 1:
             errors.append(f"expected exactly one <h1>, found {parser.h1_count}")
         if parser.primary_nav_active > 1:
@@ -171,24 +188,59 @@ def audit_page(path: Path) -> tuple[list[str], list[str]]:
         if phrase in lowered:
             warnings.append(f"public-facing editorial placeholder: {phrase!r}")
 
-    return errors, warnings
+    return errors, warnings, canonical
 
 
-def audit_sitemap() -> list[str]:
+def audit_sitemap(expected_canonicals: set[str]) -> list[str]:
     sitemap = ROOT / "sitemap.xml"
     if not sitemap.exists():
         return ["sitemap.xml is missing"]
-    text = sitemap.read_text(encoding="utf-8", errors="replace")
+
+    try:
+        root = ET.parse(sitemap).getroot()
+    except ET.ParseError as exc:
+        return [f"sitemap.xml is not valid XML: {exc}"]
+
+    namespace = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
+    actual = {
+        (node.text or "").strip()
+        for node in root.findall("sm:url/sm:loc", namespace)
+        if (node.text or "").strip()
+    }
+
     errors: list[str] = []
-    for unwanted in ("/404.html", "/all-publications.html", "/publications/index.html"):
-        if unwanted in text:
-            errors.append(f"sitemap contains non-canonical/redirect URL: {unwanted}")
+    for url in sorted(expected_canonicals - actual):
+        errors.append(f"sitemap is missing canonical URL: {url}")
+    for url in sorted(actual - expected_canonicals):
+        errors.append(f"sitemap contains non-canonical/redirect URL: {url}")
+    return errors
+
+
+def audit_robots() -> list[str]:
+    path = ROOT / "robots.txt"
+    if not path.exists():
+        return ["robots.txt is missing"]
+    text = path.read_text(encoding="utf-8", errors="replace")
+    expected = f"Sitemap: {SITE_ORIGIN}/sitemap.xml"
+    if expected not in text:
+        return [f"robots.txt does not contain {expected!r}"]
+    return []
+
+
+def audit_repo_hygiene() -> list[str]:
+    errors: list[str] = []
+    for path in ROOT.rglob("*.pyc"):
+        if ".git" not in path.parts:
+            errors.append(f"tracked/generated Python bytecode present: {path.relative_to(ROOT)}")
+    for path in ROOT.rglob(".DS_Store"):
+        errors.append(f"macOS metadata file present: {path.relative_to(ROOT)}")
     return errors
 
 
 def main() -> int:
     html_files = sorted(
-        path for path in ROOT.rglob("*.html")
+        path
+        for path in ROOT.rglob("*.html")
         if ".git" not in path.parts
         and "node_modules" not in path.parts
         and path.relative_to(ROOT).as_posix() not in NON_PUBLIC_HTML
@@ -196,9 +248,12 @@ def main() -> int:
 
     total_errors = 0
     total_warnings = 0
+    expected_canonicals: set[str] = set()
 
     for path in html_files:
-        errors, warnings = audit_page(path)
+        errors, warnings, canonical = audit_page(path)
+        if canonical:
+            expected_canonicals.add(canonical)
         if not errors and not warnings:
             continue
         rel = path.relative_to(ROOT)
@@ -210,14 +265,21 @@ def main() -> int:
         total_errors += len(errors)
         total_warnings += len(warnings)
 
-    sitemap_errors = audit_sitemap()
-    if sitemap_errors:
-        print("\nsitemap.xml")
-        for error in sitemap_errors:
-            print(f"  ERROR: {error}")
-        total_errors += len(sitemap_errors)
+    for label, errors in (
+        ("sitemap.xml", audit_sitemap(expected_canonicals)),
+        ("robots.txt", audit_robots()),
+        ("repository hygiene", audit_repo_hygiene()),
+    ):
+        if errors:
+            print(f"\n{label}")
+            for error in errors:
+                print(f"  ERROR: {error}")
+            total_errors += len(errors)
 
-    print(f"\nChecked {len(html_files)} public HTML files: {total_errors} error(s), {total_warnings} warning(s).")
+    print(
+        f"\nChecked {len(html_files)} public HTML files: "
+        f"{total_errors} error(s), {total_warnings} warning(s)."
+    )
     return 1 if total_errors else 0
 
 
