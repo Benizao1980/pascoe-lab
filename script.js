@@ -59,6 +59,35 @@ if (menuButton && siteNav) {
   });
 }
 
+// Keep the footer identical across old and new pages. The static HTML remains
+// a useful no-JavaScript fallback; this removes drift between duplicated shells.
+const siteFooter = document.querySelector('.site-footer');
+if (siteFooter) {
+  siteFooter.innerHTML = `
+    <div class="wrap footer-grid">
+      <div>
+        <div class="footer-brand">Pascoe Lab</div>
+        <p>Pathogen genomics, evolution and One Health research at the University of Oxford and across an international collaborative network.</p>
+      </div>
+      <div>
+        <h2>Profiles</h2>
+        <p><a href="https://orcid.org/0000-0001-6376-5121">ORCID</a><br>
+        <a href="https://scholar.google.co.uk/citations?hl=en&user=UQrZ-fgAAAAJ">Google Scholar</a><br>
+        <a href="https://github.com/Benizao1980">GitHub</a></p>
+      </div>
+      <div>
+        <h2>Connect</h2>
+        <p><a href="https://bsky.app/profile/benizao.bsky.social">Bluesky</a><br>
+        <a href="https://www.linkedin.com/in/benpascoe">LinkedIn</a><br>
+        <a href="https://campylobacter-control-campaign.github.io/website/">CCC website</a></p>
+      </div>
+    </div>
+    <div class="wrap footer-bottom">
+      <span>© 2026 Pascoe Lab</span>
+      <span>Open, version-controlled research communication.</span>
+    </div>`;
+}
+
 document.querySelectorAll('a[href^="http"]').forEach(a => {
   if (!a.hasAttribute('target')) {
     a.setAttribute('target', '_blank');
