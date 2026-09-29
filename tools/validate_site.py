@@ -201,7 +201,7 @@ def audit_sitemap(expected_canonicals: set[str]) -> list[str]:
     except ET.ParseError as exc:
         return [f"sitemap.xml is not valid XML: {exc}"]
 
-    namespace = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
+    namespace = {"sm": "http://www.sitemaps.org/sitemap/0.9"}
     actual = {
         (node.text or "").strip()
         for node in root.findall("sm:url/sm:loc", namespace)
