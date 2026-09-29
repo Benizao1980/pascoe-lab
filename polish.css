@@ -28,7 +28,9 @@ summary:focus-visible{
   outline-color:#fff;
 }
 
-/* Keep page introductions readable rather than stretching across wide screens. */
+/* Keep page introductions and headings readable at wide viewport sizes. */
+h1,h2,h3{text-wrap:balance}
+.lead,.prose p{text-wrap:pretty}
 .page-hero h1,.hero h1{max-width:18ch}
 .page-hero .lead{max-width:760px}
 
@@ -54,6 +56,7 @@ summary:focus-visible{
 @media(max-width:700px){
   .site-nav{max-height:calc(100vh - 74px)}
   .brand strong{font-size:1.16rem}
+  .page-hero{padding:58px 0 48px}
 }
 
 /* Avoid decorative motion for people who request reduced motion. */
