@@ -14,6 +14,7 @@ from pathlib import Path
 from urllib.parse import unquote, urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
+NON_PUBLIC_HTML = {"stories/template.html"}
 EDITORIAL_PHRASES = (
     "the next content pass",
     "captions are intentionally general",
@@ -188,7 +189,9 @@ def audit_sitemap() -> list[str]:
 def main() -> int:
     html_files = sorted(
         path for path in ROOT.rglob("*.html")
-        if ".git" not in path.parts and "node_modules" not in path.parts
+        if ".git" not in path.parts
+        and "node_modules" not in path.parts
+        and path.relative_to(ROOT).as_posix() not in NON_PUBLIC_HTML
     )
 
     total_errors = 0
@@ -214,7 +217,7 @@ def main() -> int:
             print(f"  ERROR: {error}")
         total_errors += len(sitemap_errors)
 
-    print(f"\nChecked {len(html_files)} HTML files: {total_errors} error(s), {total_warnings} warning(s).")
+    print(f"\nChecked {len(html_files)} public HTML files: {total_errors} error(s), {total_warnings} warning(s).")
     return 1 if total_errors else 0
 
 
