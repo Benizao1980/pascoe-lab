@@ -1,5 +1,16 @@
 const menuButton = document.querySelector('.menu-button');
 const siteNav = document.querySelector('.site-nav');
+
+// Keep the primary navigation deliberately compact. Join is folded into People,
+// while the network map remains available as a secondary link from Projects.
+if (siteNav) {
+  const secondaryNavTargets = new Set(['join.html', 'network.html']);
+  [...siteNav.querySelectorAll('a')].forEach(link => {
+    const target = new URL(link.href, window.location.href).pathname.split('/').pop() || 'index.html';
+    if (secondaryNavTargets.has(target)) link.remove();
+  });
+}
+
 const navLinks = siteNav ? [...siteNav.querySelectorAll('a')] : [];
 
 // Keep the active navigation state tied to the current section rather than
