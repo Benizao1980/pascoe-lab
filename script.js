@@ -31,15 +31,19 @@ if (navLinks.length) {
 }
 
 if (menuButton && siteNav) {
+  menuButton.setAttribute('aria-label', 'Open navigation');
+
   const closeMenu = ({ returnFocus = false } = {}) => {
     siteNav.classList.remove('open');
     menuButton.setAttribute('aria-expanded', 'false');
+    menuButton.setAttribute('aria-label', 'Open navigation');
     if (returnFocus) menuButton.focus();
   };
 
   menuButton.addEventListener('click', () => {
     const open = siteNav.classList.toggle('open');
     menuButton.setAttribute('aria-expanded', open ? 'true' : 'false');
+    menuButton.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
   });
 
   siteNav.addEventListener('click', event => {
@@ -56,6 +60,21 @@ if (menuButton && siteNav) {
     if (!siteNav.classList.contains('open')) return;
     if (siteNav.contains(event.target) || menuButton.contains(event.target)) return;
     closeMenu();
+  });
+}
+
+// Theme filters act like a single-choice control. content.js owns the filtering;
+// this shared layer keeps the state exposed to assistive technology.
+const themeFilterButtons = [...document.querySelectorAll('.theme-filter')];
+if (themeFilterButtons.length) {
+  const syncThemeFilterState = () => {
+    themeFilterButtons.forEach(button => {
+      button.setAttribute('aria-pressed', button.classList.contains('active') ? 'true' : 'false');
+    });
+  };
+  syncThemeFilterState();
+  themeFilterButtons.forEach(button => {
+    button.addEventListener('click', () => requestAnimationFrame(syncThemeFilterState));
   });
 }
 
