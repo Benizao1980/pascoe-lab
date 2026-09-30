@@ -33,6 +33,9 @@ jobs:
           SCHOLAR_AUTHOR_ID: UQrZ-fgAAAAJ
         run: python tools/update_publications.py
 
+      - name: Filter obvious Scholar review noise
+        run: python tools/filter_publication_review.py
+
       - name: Collapse preprint, in-press and journal duplicates
         run: python tools/deduplicate_publications.py
 
