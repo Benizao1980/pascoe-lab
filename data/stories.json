@@ -1,5 +1,22 @@
 [
   {
+    "id": "nctc11168",
+    "title": "Are we really studying the same strain?",
+    "format": "Behind the paper",
+    "date": "2026-09-30",
+    "summary": "What 23 laboratory stocks of Campylobacter jejuni NCTC 11168 taught us about reference strains, evolution and reproducibility.",
+    "image": "assets/stories/nctc11168-meme.webp",
+    "imageAlt": "Meme asking whether two laboratories with NCTC 11168 are really working on the same strain",
+    "url": "stories/nctc11168.html",
+    "tags": [
+      "Campylobacter",
+      "Reference strains",
+      "Reproducibility",
+      "Microbial evolution"
+    ],
+    "featuredHome": true
+  },
+  {
     "id": "campylobacter-infection-outcomes",
     "title": "Not all Campylobacter infections are the same",
     "format": "Explainer",
