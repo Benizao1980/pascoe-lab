@@ -1,6 +1,23 @@
 const menuButton = document.querySelector('.menu-button');
 const siteNav = document.querySelector('.site-nav');
 
+// The first versions of these story assets were malformed WebP blobs. Keep a
+// small compatibility shim so any static page markup or cached JSON still
+// pointing at the old paths renders the browser-safe replacements.
+const storyAssetReplacements = new Map([
+  ['nctc11168-meme.webp', 'nctc11168-meme.svg'],
+  ['nctc11168-fig2.webp', 'nctc11168-fig2.svg'],
+  ['wild-birds-one-health-hero.webp', 'wild-birds-one-health-hero.svg']
+]);
+
+document.querySelectorAll('img[src]').forEach(img => {
+  const current = img.getAttribute('src');
+  if (!current) return;
+  const filename = current.split('/').pop();
+  const replacement = storyAssetReplacements.get(filename);
+  if (replacement) img.setAttribute('src', current.replace(filename, replacement));
+});
+
 // Keep the primary navigation deliberately compact. Join is folded into People,
 // while the network map remains available as a secondary link from Projects.
 if (siteNav) {
