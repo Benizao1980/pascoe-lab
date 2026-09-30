@@ -1,12 +1,12 @@
 const menuButton = document.querySelector('.menu-button');
 const siteNav = document.querySelector('.site-nav');
 
-// The first NCTC story assets were malformed WebP blobs. Keep a narrow
-// compatibility shim for those files only. Do not rewrite unrelated story
-// images that already render correctly.
+// Three story images were accidentally committed as invalid WebP binaries.
+// Route any remaining legacy/static references to browser-safe SVG assets.
 const storyAssetReplacements = new Map([
   ['nctc11168-meme.webp', 'nctc11168-meme.svg'],
-  ['nctc11168-fig2.webp', 'nctc11168-fig2.svg']
+  ['nctc11168-fig2.webp', 'nctc11168-fig2.svg'],
+  ['wild-birds-one-health-hero.webp', 'wild-birds-one-health-hero.svg']
 ]);
 
 document.querySelectorAll('img[src]').forEach(img => {
@@ -16,57 +16,6 @@ document.querySelectorAll('img[src]').forEach(img => {
   const replacement = storyAssetReplacements.get(filename);
   if (replacement) img.setAttribute('src', current.replace(filename, replacement));
 });
-
-// The article meme is intentionally rendered from a full-resolution public
-// template with the paper-specific captions overlaid in HTML. This avoids
-// upscaling the small compatibility SVG used by cards and cached markup.
-if (window.location.pathname.endsWith('/stories/nctc11168.html')) {
-  const memeImg = [...document.querySelectorAll('figure img')].find(img =>
-    (img.getAttribute('src') || '').includes('nctc11168-meme')
-  );
-
-  if (memeImg) {
-    const meme = document.createElement('div');
-    meme.setAttribute('role', 'img');
-    meme.setAttribute('aria-label', 'Meme asking whether two laboratories with NCTC 11168 are really working on the same strain');
-    meme.style.cssText = [
-      'position:relative',
-      'width:100%',
-      'max-width:760px',
-      'aspect-ratio:1/1',
-      'background-image:url(https://i.imgflip.com/4/5c7lwq.jpg)',
-      'background-size:cover',
-      'background-position:center',
-      'border:2px solid var(--ink)',
-      'overflow:hidden'
-    ].join(';');
-
-    const captionStyle = [
-      'position:absolute',
-      'color:#fff',
-      'font-family:Impact, Haettenschweiler, Arial Narrow Bold, sans-serif',
-      'font-weight:700',
-      'line-height:1.05',
-      'text-align:center',
-      'text-transform:uppercase',
-      'text-shadow:-2px -2px 0 #000,2px -2px 0 #000,-2px 2px 0 #000,2px 2px 0 #000,0 3px 0 #000',
-      'letter-spacing:.01em'
-    ].join(';');
-
-    const addCaption = (text, extraStyle) => {
-      const span = document.createElement('span');
-      span.textContent = text;
-      span.style.cssText = `${captionStyle};${extraStyle}`;
-      meme.appendChild(span);
-    };
-
-    addCaption('I HAVE NCTC 11168', 'left:1.5%;bottom:51%;width:47%;font-size:clamp(22px,4.6vw,49px)');
-    addCaption("I ALSO HAVE NCTC 11168. SO, WE'RE WORKING ON THE SAME STRAIN, RIGHT?", 'right:1.5%;top:2.5%;width:47%;font-size:clamp(16px,3.1vw,34px)');
-    addCaption('RIGHT??', 'right:2%;bottom:2.5%;width:46%;font-size:clamp(28px,6vw,62px)');
-
-    memeImg.replaceWith(meme);
-  }
-}
 
 // Keep the primary navigation deliberately compact. Join is folded into People,
 // while the network map remains available as a secondary link from Projects.
