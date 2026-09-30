@@ -1,13 +1,12 @@
 const menuButton = document.querySelector('.menu-button');
 const siteNav = document.querySelector('.site-nav');
 
-// The first versions of these story assets were malformed WebP blobs. Keep a
-// small compatibility shim so any static page markup or cached JSON still
-// pointing at the old paths renders the browser-safe replacements.
+// The first NCTC story assets were malformed WebP blobs. Keep a narrow
+// compatibility shim for those files only. Do not rewrite unrelated story
+// images that already render correctly.
 const storyAssetReplacements = new Map([
   ['nctc11168-meme.webp', 'nctc11168-meme.svg'],
-  ['nctc11168-fig2.webp', 'nctc11168-fig2.svg'],
-  ['wild-birds-one-health-hero.webp', 'wild-birds-one-health-hero.svg']
+  ['nctc11168-fig2.webp', 'nctc11168-fig2.svg']
 ]);
 
 document.querySelectorAll('img[src]').forEach(img => {
