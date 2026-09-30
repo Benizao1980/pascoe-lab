@@ -5,7 +5,7 @@
     "format": "Behind the paper",
     "date": "2026-09-30",
     "summary": "What 23 laboratory stocks of Campylobacter jejuni NCTC 11168 taught us about reference strains, evolution and reproducibility.",
-    "image": "assets/stories/nctc11168-meme.webp",
+    "image": "assets/stories/nctc11168-meme.svg",
     "imageAlt": "Meme asking whether two laboratories with NCTC 11168 are really working on the same strain",
     "url": "stories/nctc11168.html",
     "tags": [
@@ -88,7 +88,7 @@
     "format": "Behind the paper",
     "date": "2024-09-09",
     "summary": "What urban-adapted birds reveal about human influence on microbial ecology and antimicrobial resistance.",
-    "image": "assets/stories/wild-birds-one-health-hero.webp",
+    "image": "assets/stories/wild-birds-one-health-hero.svg",
     "imageAlt": "Wild birds, poultry and a wetland landscape linked by subtle microbial and One Health motifs",
     "url": "stories/wild-birds-amr.html",
     "tags": [
