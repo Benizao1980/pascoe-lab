@@ -8,12 +8,7 @@
     "image": "assets/stories/nctc11168-meme.svg",
     "imageAlt": "Meme asking whether two laboratories with NCTC 11168 are really working on the same strain",
     "url": "stories/nctc11168.html",
-    "tags": [
-      "Campylobacter",
-      "Reference strains",
-      "Reproducibility",
-      "Microbial evolution"
-    ],
+    "tags": ["Campylobacter", "Reference strains", "Reproducibility", "Microbial evolution"],
     "featuredHome": true
   },
   {
@@ -25,12 +20,7 @@
     "image": "assets/illustrations/campylobacter-infection-outcomes-hero.png",
     "imageAlt": "Campylobacter exposure from animal and environmental sources leading to different human outcomes",
     "url": "stories/campylobacter-infection-outcomes.html",
-    "tags": [
-      "Campylobacter",
-      "Disease ecology",
-      "Genomic epidemiology",
-      "One Health"
-    ],
+    "tags": ["Campylobacter", "Disease ecology", "Genomic epidemiology", "One Health"],
     "featuredHome": true
   },
   {
@@ -42,12 +32,7 @@
     "image": "assets/illustrations/campylobacter-vaccine-banner.png",
     "imageAlt": "Wide illustration showing a chicken, diverse Campylobacter cells, genomic motifs and a vaccine shield",
     "url": "stories/campylobacter-vaccines.html",
-    "tags": [
-      "Campylobacter",
-      "Vaccines",
-      "Population genomics",
-      "One Health"
-    ],
+    "tags": ["Campylobacter", "Vaccines", "Population genomics", "One Health"],
     "featuredHome": true
   },
   {
@@ -59,11 +44,7 @@
     "image": "assets/photos/market-sampling.webp",
     "imageAlt": "Poultry-market fieldwork",
     "url": "stories/one-health-sampling.html",
-    "tags": [
-      "GETcampy",
-      "CCC",
-      "Sampling"
-    ],
+    "tags": ["GETcampy", "CCC", "Sampling"],
     "featuredHome": true
   },
   {
@@ -75,11 +56,7 @@
     "image": "assets/photos/source-attribution-figure.webp",
     "imageAlt": "Multi-panel genomic source-attribution figure",
     "url": "stories/source-attribution.html",
-    "tags": [
-      "Campylobacter",
-      "Machine learning",
-      "Source attribution"
-    ],
+    "tags": ["Campylobacter", "Machine learning", "Source attribution"],
     "featuredHome": true
   },
   {
@@ -88,14 +65,10 @@
     "format": "Behind the paper",
     "date": "2024-09-09",
     "summary": "What urban-adapted birds reveal about human influence on microbial ecology and antimicrobial resistance.",
-    "image": "assets/stories/wild-birds-one-health-hero.svg",
+    "image": "assets/stories/wild-birds-one-health-hero.webp",
     "imageAlt": "Wild birds, poultry and a wetland landscape linked by subtle microbial and One Health motifs",
     "url": "stories/wild-birds-amr.html",
-    "tags": [
-      "Wildlife",
-      "AMR",
-      "One Health"
-    ],
+    "tags": ["Wildlife", "AMR", "One Health"],
     "featuredHome": true
   }
 ]
