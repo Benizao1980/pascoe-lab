@@ -1,22 +1,6 @@
 const menuButton = document.querySelector('.menu-button');
 const siteNav = document.querySelector('.site-nav');
 
-// Three story images were accidentally committed as invalid WebP binaries.
-// Route any remaining legacy/static references to browser-safe SVG assets.
-const storyAssetReplacements = new Map([
-  ['nctc11168-meme.webp', 'nctc11168-meme.svg'],
-  ['nctc11168-fig2.webp', 'nctc11168-fig2.svg'],
-  ['wild-birds-one-health-hero.webp', 'wild-birds-one-health-hero.svg']
-]);
-
-document.querySelectorAll('img[src]').forEach(img => {
-  const current = img.getAttribute('src');
-  if (!current) return;
-  const filename = current.split('/').pop();
-  const replacement = storyAssetReplacements.get(filename);
-  if (replacement) img.setAttribute('src', current.replace(filename, replacement));
-});
-
 // Keep the primary navigation deliberately compact. Join is folded into People,
 // while the network map remains available as a secondary link from Projects.
 if (siteNav) {
