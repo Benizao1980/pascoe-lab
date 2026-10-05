@@ -481,9 +481,53 @@
       "Peru"
     ],
     "pmid": "",
-    "journal": "",
+    "journal": "Research Square Preprints, 2026",
     "scholarCitationId": "UQrZ-fgAAAAJ:as0KMg8qHbkC",
     "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=UQrZ-fgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=UQrZ-fgAAAAJ:as0KMg8qHbkC"
+  },
+  {
+    "id": "2026-acinetobacter-resistance-architectures-pending",
+    "year": 2026,
+    "submittedDate": "2026-09-11",
+    "title": "Resistance architectures underpin the evolution of antimicrobial resistance in Acinetobacter baumannii",
+    "authors": "B Pascoe, E Mourkas, M Carvalho, E Shaidullina, V Shapovalova, ...",
+    "journal": "Research Square",
+    "targetJournal": "Nature Microbiology",
+    "manuscriptId": "NMICROBIOL-26083646",
+    "type": "preprint",
+    "publicationType": "preprint",
+    "status": "preprint",
+    "doi": "",
+    "pmid": "",
+    "url": "https://www.researchsquare.com/article/rs-11012039/v1",
+    "citation": "Pascoe B, Mourkas E, Carvalho MJ, Shaidullina ER, Shapovalova VV, Goforth MP, Hitchings MD, Walsh TR, Edelstein MV, Sheppard SK (2026) Resistance architectures underpin the evolution of antimicrobial resistance in Acinetobacter baumannii. Nature Microbiology (submitted; manuscript NMICROBIOL-26083646); Research Square preprint pending.",
+    "selected": false,
+    "featuredHome": false,
+    "themeId": "evolution",
+    "theme": "Evolution and host adaptation",
+    "summary": "Identifies recurrent genomic architectures underlying carbapenem resistance in Acinetobacter baumannii, linking core-genome background with chromosomal and plasmid-borne resistance determinants across Eastern European clinical lineages.",
+    "abstract": "",
+    "organisms": [
+      "Acinetobacter"
+    ],
+    "topics": [
+      "AMR",
+      "Evolution",
+      "Machine learning",
+      "Population genomics"
+    ],
+    "projects": [
+      "CRAB Eastern Europe"
+    ],
+    "geographies": [
+      "Eastern Europe",
+      "Russia",
+      "Belarus",
+      "Kazakhstan"
+    ],
+    "publishedDate": "2026-01-01",
+    "scholarCitationId": "UQrZ-fgAAAAJ:uAPFzskPt0AC",
+    "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=UQrZ-fgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=UQrZ-fgAAAAJ:uAPFzskPt0AC"
   },
   {
     "title": "A stable, hierarchical LIN code system for Campylobacter jejuni and Campylobacter coli: A unified genomic nomenclature for lineage-level typing and global …",
@@ -514,47 +558,6 @@
     "projects": [],
     "geographies": [
       "Global"
-    ]
-  },
-  {
-    "id": "2026-acinetobacter-resistance-architectures-pending",
-    "year": 2026,
-    "submittedDate": "2026-09-11",
-    "title": "Resistance architectures underpin the evolution of antimicrobial resistance in Acinetobacter baumannii",
-    "authors": "Pascoe B, Mourkas E, Carvalho MJ, Shaidullina ER, Shapovalova VV, Goforth MP, Hitchings MD, Walsh TR, Edelstein MV, Sheppard SK",
-    "journal": "Research Square",
-    "targetJournal": "Nature Microbiology",
-    "manuscriptId": "NMICROBIOL-26083646",
-    "type": "preprint",
-    "publicationType": "preprint",
-    "status": "preprint",
-    "doi": "",
-    "pmid": "",
-    "url": "https://www.researchsquare.com/article/rs-11012039/v1",
-    "citation": "Pascoe B, Mourkas E, Carvalho MJ, Shaidullina ER, Shapovalova VV, Goforth MP, Hitchings MD, Walsh TR, Edelstein MV, Sheppard SK (2026) Resistance architectures underpin the evolution of antimicrobial resistance in Acinetobacter baumannii. Research Square, Version 1; Nature Microbiology (under review).",
-    "selected": false,
-    "featuredHome": false,
-    "themeId": "evolution",
-    "theme": "Evolution and host adaptation",
-    "summary": "Identifies recurrent genomic architectures underlying carbapenem resistance in Acinetobacter baumannii, linking core-genome background with chromosomal and plasmid-borne resistance determinants across Eastern European clinical lineages.",
-    "abstract": "",
-    "organisms": [
-      "Acinetobacter"
-    ],
-    "topics": [
-      "AMR",
-      "Evolution",
-      "Machine learning",
-      "Population genomics"
-    ],
-    "projects": [
-      "CRAB Eastern Europe"
-    ],
-    "geographies": [
-      "Eastern Europe",
-      "Russia",
-      "Belarus",
-      "Kazakhstan"
     ]
   },
   {
