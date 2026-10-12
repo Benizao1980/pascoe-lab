@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-07T10:26:20+00:00",
-  "scholar_records": 174,
+  "updated_at": "2026-10-12T15:41:39+00:00",
+  "scholar_records": 175,
   "pubmed_records_examined": 105,
   "site_records": 120,
   "review": [
@@ -43,6 +43,13 @@
       "title": "High resolution whole genome Multilocus Sequence Typing (wgMLST) schemes for Salmonella enterica weltevreden epidemiologic investigations",
       "authors": "P Tadee, P Tadee, MD Hitchings, B Pascoe, SK Sheppard, P Patchanee",
       "publication": "Microbiology and Biotechnology Letters 46 (2), 162, 2018",
+      "year": "2018",
+      "reason": "Not matched to PubMed and not clearly a preprint"
+    },
+    {
+      "title": "Additional file 2: of A GWAS on Helicobacter pylori strains points to genetic variants associated with gastric cancer risk",
+      "authors": "E Berthenet, K Yahara, K Thorell, B Pascoe, G Meric, J Mikhail, ...",
+      "publication": "(No Title), 2018",
       "year": "2018",
       "reason": "Not matched to PubMed and not clearly a preprint"
     },
@@ -132,8 +139,8 @@
     }
   ],
   "review_filter": {
-    "before": 62,
-    "after": 18,
+    "before": 63,
+    "after": 19,
     "rule": "Ben Pascoe author match; exclude obvious protocols/SOPs/theses/conference-only records"
   }
 }

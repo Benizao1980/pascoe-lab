@@ -151,7 +151,7 @@
     "journal": "The American journal of tropical medicine and hygiene",
     "publicationType": "journal",
     "type": "publication",
-    "status": "in press",
+    "status": "published",
     "url": "https://pubmed.ncbi.nlm.nih.gov/42532029/",
     "abstract": "Because of the global increase in resistance of Campylobacter to both fluoroquinolones and macrolides, we explored phenotypic resistance using traditional Kirby-Bauer methods in human- and animal-derived Campylobacter isolates that were concurrently resistant to both azithromycin and ciprofloxacin to an expanded panel of antimicrobials, including clindamycin, fosfomycin, ampicillin and sulbactam, amoxicillin and clavulanic, fosfomycin, tigecycline, and imipenem. Of 235 Campylobacter isolates resistant to ciprofloxacin and azithromycin, more than 94.8% of Campylobacter jejuni and Campylobacter coli were resistant to clindamycin, 68.5% were resistant to ampicillin and sulbactam, 2.6% were resistant to amoxicillin and clavulanic, and 36.2% were resistant to fosfomycin. Less than 2% of isolates were resistant to tigecycline, and there was no observed resistance to imipenem. The results suggest that amoxicillin and clavulanic warrant further evaluation for use in Campylobacter enteritis in ambulatory patients, but it points to no clear alternative oral therapies. Study findings were reassuring in demonstrating continued universal susceptibility to carbapenems.",
     "selected": false,
@@ -160,7 +160,7 @@
     "themeId": "evolution",
     "theme": "Evolution and host adaptation",
     "id": "2026-phenotypic-resistance-of-campylobacter-isolates-to-an-extended-panel-of-antibiot",
-    "citation": "Romaina Cachique L, Schiaffino F, Paredes Olortegui M, Manzanares K, Pinedo Vasquez T, Castro A, Najarro J, Cooper KK, Mourkas E, Pascoe B, Peñataro Yori P, Parker CT, Kosek MN (2026) Phenotypic Resistance of Campylobacter Isolates to an Extended Panel of Antibiotics.. The American journal of tropical medicine and hygiene tpmd260268. doi: 10.4269/ajtmh.26-0268",
+    "citation": "Romaina Cachique L, Schiaffino F, Paredes Olortegui M, Manzanares K, Pinedo Vasquez T, Castro A, Najarro J, Cooper KK, Mourkas E, Pascoe B, Peñataro Yori P, Parker CT, Kosek MN (2026) Phenotypic Resistance of Campylobacter Isolates to an Extended Panel of Antibiotics.. The American journal of tropical medicine and hygiene 115(4):711-714. doi: 10.4269/ajtmh.26-0268",
     "organisms": [
       "Campylobacter"
     ],
