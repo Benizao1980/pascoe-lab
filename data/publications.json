@@ -454,7 +454,7 @@
   {
     "id": "2026-peru-coli-emergence-preprint",
     "year": 2026,
-    "citation": "Pascoe B, Mourkas E, Schiaffino F, et al. (2026) Recent emergence of a multidrug-resistant Campylobacter coli lineage linked to poultry intensification in the Peruvian Amazon. Research Square. doi: 10.21203/rs.3.rs-8865396/v1",
+    "citation": "Pascoe B, Mourkas E, Schiaffino F, et al. (2026) Recent emergence of a multidrug-resistant Campylobacter coli lineage linked to poultry intensification in the Peruvian Amazon. Research Square preprint. doi: 10.21203/rs.3.rs-8865396/v1. Nature Communications: accepted in principle, final revisions pending.",
     "authors": "B Pascoe, E Mourkas, F Schiaffino, M Olortegui, P Yori, PG Bardales, ...",
     "title": "Recent emergence of a multidrug-resistant Campylobacter coli lineage linked to poultry intensification in the Peruvian Amazon",
     "doi": "10.21203/rs.3.rs-8865396/v1",
@@ -481,9 +481,12 @@
       "Peru"
     ],
     "pmid": "",
-    "journal": "Research Square Preprints, 2026",
+    "journal": "Research Square preprint · Nature Communications (accepted in principle; final revisions pending)",
     "scholarCitationId": "UQrZ-fgAAAAJ:as0KMg8qHbkC",
-    "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=UQrZ-fgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=UQrZ-fgAAAAJ:as0KMg8qHbkC"
+    "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=UQrZ-fgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=UQrZ-fgAAAAJ:as0KMg8qHbkC",
+    "targetJournal": "Nature Communications",
+    "manuscriptId": "NCOMMS-26-013654A",
+    "editorialStatus": "Accepted in principle; final revisions pending"
   },
   {
     "id": "2026-acinetobacter-resistance-architectures-pending",
