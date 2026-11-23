@@ -1,5 +1,76 @@
 [
   {
+    "id": "2026-bayesian-belief-network-gambia",
+    "year": 2026,
+    "citation": "Levontin P, Badji H, Bass P, Ceesay O, Conteh B, Hossain MJ, Goforth MP, Leach AW, Pascoe B, Ssebisubi M, Sheppard SK, Collins CM (2026) Using a Bayesian Belief Network to explore public health interventions in The Gambia. Journal of Public Health in Africa 17(1):a1765. doi: 10.4102/jphia.v17i1.1765",
+    "authors": "P Levontin, H Badji, P Bass, O Ceesay, B Conteh, MJ Hossain, M Goforth, ...",
+    "title": "Using a Bayesian Belief Network to explore public health interventions in The Gambia",
+    "doi": "10.4102/jphia.v17i1.1765",
+    "type": "publication",
+    "status": "published",
+    "selected": false,
+    "featuredHome": false,
+    "publicationType": "journal",
+    "themeId": "transmission",
+    "theme": "Transmission across One Health systems",
+    "url": "https://publichealthinafrica.org/index.php/jphia/article/view/1765",
+    "summary": "A participatory Bayesian Belief Network integrates scientific evidence and local knowledge to explore childhood diarrhoea prevention in The Gambia, highlighting the potential importance of structural interventions addressing poverty, safe water and sanitation.",
+    "publishedDate": "2026-11-17",
+    "organisms": [
+      "Campylobacter"
+    ],
+    "topics": [
+      "Machine learning"
+    ],
+    "projects": [
+      "Campylobacter Control Campaign"
+    ],
+    "geographies": [
+      "The Gambia",
+      "Africa"
+    ],
+    "pmid": "",
+    "journal": "Journal of Public Health in Africa 17 (1), 14, 2026",
+    "scholarCitationId": "UQrZ-fgAAAAJ:oursBaop5wYC",
+    "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=UQrZ-fgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=UQrZ-fgAAAAJ:oursBaop5wYC"
+  },
+  {
+    "id": "2026-lin-code-campylobacter-preprint",
+    "year": 2026,
+    "citation": "Parfitt KM, Pascoe B, Jolley KA, Douglas A, Goforth MP, Sheppard SK, Maiden MCJ, Colles FM (2026) A stable, hierarchical LIN code system for Campylobacter jejuni and Campylobacter coli: a unified genomic nomenclature for lineage-level typing and global surveillance. Microbial Genomics (accepted 16 November 2026; in press). Preprint doi: 10.64898/2026.02.10.705007",
+    "authors": "Parfitt KM, Pascoe B, Jolley KA, Douglas A, Goforth MP, Sheppard SK, Maiden MCJ, Colles FM",
+    "title": "A stable, hierarchical LIN code system for Campylobacter jejuni and Campylobacter coli: a unified genomic nomenclature for lineage-level typing and global surveillance",
+    "doi": "",
+    "type": "publication",
+    "publicationType": "journal",
+    "status": "in press",
+    "selected": true,
+    "featuredHome": false,
+    "summary": "A stable genomic nomenclature for lineage-level typing and global Campylobacter surveillance.",
+    "themeId": "tools",
+    "theme": "Open genomic tools and surveillance",
+    "publishedDate": "2026-11-16",
+    "organisms": [
+      "Campylobacter"
+    ],
+    "topics": [
+      "Surveillance"
+    ],
+    "projects": [],
+    "geographies": [
+      "Global"
+    ],
+    "journal": "Microbial Genomics",
+    "acceptedDate": "2026-11-16",
+    "manuscriptId": "MGEN-D-26-00290R1",
+    "preprintDoi": "10.64898/2026.02.10.705007",
+    "preprintUrl": "https://doi.org/10.64898/2026.02.10.705007",
+    "url": "https://doi.org/10.64898/2026.02.10.705007",
+    "scholarCitationId": "UQrZ-fgAAAAJ:uUvzmPk0f8oC",
+    "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=UQrZ-fgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=UQrZ-fgAAAAJ:uUvzmPk0f8oC",
+    "preprintPostedDate": "2026-02-10"
+  },
+  {
     "id": "2026-helicobacter-efflux-resistance-databases-in-press",
     "year": 2026,
     "publishedDate": "2026-09-28",
@@ -359,42 +430,6 @@
     "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=UQrZ-fgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=UQrZ-fgAAAAJ:v_tt_AnqfNMC"
   },
   {
-    "id": "2026-lin-code-campylobacter-preprint",
-    "year": 2026,
-    "citation": "Parfitt KM, Pascoe B, Jolley KA, Douglas A, Goforth MP, Sheppard SK, Maiden MCJ, Colles FM (2026) A stable, hierarchical LIN code system for Campylobacter jejuni and Campylobacter coli: a unified genomic nomenclature for lineage-level typing and global surveillance. Microbial Genomics (accepted 16 November 2026; in press). Preprint doi: 10.64898/2026.02.10.705007",
-    "authors": "Parfitt KM, Pascoe B, Jolley KA, Douglas A, Goforth MP, Sheppard SK, Maiden MCJ, Colles FM",
-    "title": "A stable, hierarchical LIN code system for Campylobacter jejuni and Campylobacter coli: a unified genomic nomenclature for lineage-level typing and global surveillance",
-    "doi": "",
-    "type": "publication",
-    "publicationType": "journal",
-    "status": "in press",
-    "selected": true,
-    "featuredHome": false,
-    "summary": "A stable genomic nomenclature for lineage-level typing and global Campylobacter surveillance.",
-    "themeId": "tools",
-    "theme": "Open genomic tools and surveillance",
-    "publishedDate": "2026-11-16",
-    "organisms": [
-      "Campylobacter"
-    ],
-    "topics": [
-      "Surveillance"
-    ],
-    "projects": [],
-    "geographies": [
-      "Global"
-    ],
-    "journal": "Microbial Genomics",
-    "acceptedDate": "2026-11-16",
-    "manuscriptId": "MGEN-D-26-00290R1",
-    "preprintDoi": "10.64898/2026.02.10.705007",
-    "preprintUrl": "https://doi.org/10.64898/2026.02.10.705007",
-    "url": "https://doi.org/10.64898/2026.02.10.705007",
-    "scholarCitationId": "UQrZ-fgAAAAJ:uUvzmPk0f8oC",
-    "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=UQrZ-fgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=UQrZ-fgAAAAJ:uUvzmPk0f8oC",
-    "preprintPostedDate": "2026-02-10"
-  },
-  {
     "id": "2026-consortium-member-lineage-linked-biofilm-formation-and-widespread-multidrug-resistanc",
     "year": 2026,
     "citation": "Subbaraya VM, Shamanna V, Kumar KA, Nagaraj G, Krishnappa HG, Ravi M, Aanensen DA, Lingegowda RK, NIHR Global Health Research Unit on Genomic Surveillance – India consortium (2026) Lineage-linked biofilm formation and widespread multidrug resistance among Indian Acinetobacter baumannii clinical isolates. Journal of Applied Microbiology 137(1):lxag007. doi: 10.1093/jambio/lxag007",
@@ -428,37 +463,6 @@
     "scholarCitationId": "UQrZ-fgAAAAJ:8VtEwCQfWZkC",
     "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=UQrZ-fgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=UQrZ-fgAAAAJ:8VtEwCQfWZkC",
     "summary": ""
-  },
-  {
-    "id": "2026-bayesian-belief-network-gambia",
-    "year": 2026,
-    "citation": "Levontin P, Badji H, Bass P, Ceesay O, Conteh B, Hossain MJ, Goforth MP, Leach AW, Pascoe B, Ssebisubi M, Sheppard SK, Collins CM (2026) Using a Bayesian Belief Network to explore public health interventions in The Gambia. Journal of Public Health in Africa 17(1):a1765. doi: 10.4102/jphia.v17i1.1765",
-    "authors": "Levontin P, Badji H, Bass P, Ceesay O, Conteh B, Hossain MJ, Goforth MP, Leach A, Pascoe B, Ssebisubi M, Sheppard SK, Collins CM",
-    "title": "Using a Bayesian Belief Network to explore public health interventions in The Gambia",
-    "doi": "10.4102/jphia.v17i1.1765",
-    "type": "publication",
-    "status": "published",
-    "selected": false,
-    "featuredHome": false,
-    "publicationType": "journal",
-    "themeId": "transmission",
-    "theme": "Transmission across One Health systems",
-    "url": "https://publichealthinafrica.org/index.php/jphia/article/view/1765",
-    "summary": "A participatory Bayesian Belief Network integrates scientific evidence and local knowledge to explore childhood diarrhoea prevention in The Gambia, highlighting the potential importance of structural interventions addressing poverty, safe water and sanitation.",
-    "publishedDate": "2026-11-17",
-    "organisms": [
-      "Campylobacter"
-    ],
-    "topics": [
-      "Machine learning"
-    ],
-    "projects": [
-      "Campylobacter Control Campaign"
-    ],
-    "geographies": [
-      "The Gambia",
-      "Africa"
-    ]
   },
   {
     "id": "2026-peru-coli-emergence-preprint",
@@ -540,6 +544,37 @@
     "publishedDate": "2026-01-01",
     "scholarCitationId": "UQrZ-fgAAAAJ:uAPFzskPt0AC",
     "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=UQrZ-fgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=UQrZ-fgAAAAJ:uAPFzskPt0AC"
+  },
+  {
+    "title": "A stable, hierarchical LIN code system for Campylobacter jejuni and Campylobacter coli: A unified genomic nomenclature for lineage-level typing and global …",
+    "authors": "KM Parfitt, B Pascoe, KA Jolley, A Douglas, MP Goforth, SK Sheppard, ...",
+    "year": 2026,
+    "publishedDate": "2026-01-01",
+    "doi": "",
+    "pmid": "",
+    "journal": "bioRxiv, 2026.02. 10.705007, 2026",
+    "scholarCitationId": "UQrZ-fgAAAAJ:uUvzmPk0f8oC",
+    "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=UQrZ-fgAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=UQrZ-fgAAAAJ:uUvzmPk0f8oC",
+    "publicationType": "preprint",
+    "status": "preprint",
+    "type": "preprint",
+    "selected": false,
+    "featuredHome": false,
+    "themeId": "tools",
+    "theme": "Open genomic tools and surveillance",
+    "summary": "",
+    "id": "2026-a-stable-hierarchical-lin-code-system-for-campylobacter-jejuni-and-campylobacter",
+    "citation": "KM Parfitt, B Pascoe, KA Jolley, A Douglas, MP Goforth, SK Sheppard, ... (2026) A stable, hierarchical LIN code system for Campylobacter jejuni and Campylobacter coli: A unified genomic nomenclature for lineage-level typing and global …. bioRxiv, 2026.02. 10.705007, 2026",
+    "organisms": [
+      "Campylobacter"
+    ],
+    "topics": [
+      "Surveillance"
+    ],
+    "projects": [],
+    "geographies": [
+      "Global"
+    ]
   },
   {
     "id": "2025-comparative-genomic-analysis-of-mycoplasma-pneumoniae-isolated-in-the-united-kingdom-",
